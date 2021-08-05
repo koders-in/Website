@@ -1,0 +1,46 @@
+@import '../../Global.scss';
+
+.team{
+    width: 100%;
+
+    .heading{
+        position: relative;
+        margin-top: 0;
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            margin-top: -280px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+            padding-bottom: 200px;
+        }
+    }
+
+    .content
+    {
+        padding-left: 120px;
+        margin-top: 90px;
+
+        p{
+            color: $secondary-color;
+            word-spacing: 5px;
+            width: 75%;
+        }
+    }
+    
+    .teammembers{
+        margin-top: 100px;
+
+        h1{
+            padding-left: 500px;
+            color:$third-color;
+            font-weight: 600;
+            font-size: 40px;
+        }
+    }
+}

@@ -1,0 +1,195 @@
+@import '../../Global.scss';
+
+.career{
+    width: 100%;
+
+    .heading{
+        position: relative;
+        margin-top: -220px;
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            margin-top: -200px;
+            padding-bottom: 50px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+        }
+    }
+
+    .section1{
+        padding-left: 120px;
+        padding-top: 120px;
+
+        h1{
+            color: $secondary-color;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        h3{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 16px;
+            width: 80%;
+            text-align: justify;
+            font-weight: 300;
+        }
+    }
+
+    .section2{
+        padding-left: 120px;
+        padding-top: 150px;
+
+        h1{
+            color: $secondary-color;
+            font-size: 50px;
+            font-weight: 500;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+        }
+
+        .pic{
+            margin-top: 30px;
+            height: 400px;
+            width: 800px;
+            background-color: $secondary-color;
+        }
+    }
+
+    .pab{
+        margin-top: 110px;
+        display:flex;
+
+        .left{
+            flex: 0.5;
+
+            .point1{
+                
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+            }
+
+            .point2{
+                margin-top: 80px;
+                
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+            }
+
+            .point3{
+                margin-top: 80px;
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        .right{
+            flex: 0.5;
+
+            .point1{
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+            }
+
+            .point2{
+                margin-top: 80px;
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+            }
+
+            .point3{
+                margin-top: 80px;
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+

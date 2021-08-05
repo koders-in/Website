@@ -1,0 +1,47 @@
+@import '../../Global.scss';
+
+.blog{
+    width: 100%;
+
+    .heading{
+        position: relative;
+        margin-top: -250px;
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            position: absolute;
+            margin-top: -500px;
+            padding-bottom: 50px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+        }
+
+        p{
+            position: absolute;
+            color: $secondary-color;
+            font-style: italic;
+            margin-left: 120px;
+            margin-top: -350px;
+        }
+    }
+
+    .blogsection{
+        margin-top: 100px;
+        margin-left: 120px;
+
+        h4{
+            font-size: 35px;
+            font-weight: 500;
+            color: $third-color;
+        }
+
+        .blogtiles{
+            margin-left: 50px;
+        }
+    }
+}

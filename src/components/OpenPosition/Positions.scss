@@ -1,0 +1,137 @@
+@import '../../Global.scss';
+
+.positions{
+    padding-top: 150px;
+
+    h1{
+        color: $secondary-color;
+        padding-left: 500px;
+        font-size: 50px;
+        font-weight: 500;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+    }
+
+    .developers{
+        margin-top: 50px;
+        padding-left: 120px;
+
+        h3{
+            color: $third-color;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        h4{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        ol{
+            margin-left: -20px;
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 16px;
+            list-style-position: outside;
+
+            li{
+                padding-left: 10px;
+                padding-bottom: 5px;
+            }
+        }
+
+        p{
+            margin-top: 30px;
+            color: $secondary-color;
+
+            a{
+                text-decoration: none;
+                color: $third-color;
+            }
+        }
+    }
+
+    .social{
+        margin-top: 70px;
+        padding-left: 120px;
+
+        h3{
+            color: $third-color;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        h4{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        ol{
+            margin-left: -20px;
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 16px;
+            list-style-position: outside;
+
+            li{
+                padding-left: 10px;
+                padding-bottom: 5px;
+            }
+        }
+
+        p{
+            margin-top: 30px;
+            color: $secondary-color;
+
+            a{
+                text-decoration: none;
+                color: $third-color;
+            }
+        }
+    }
+
+    .content{
+        margin-top: 70px;
+        padding-left: 120px;
+
+        h3{
+            color: $third-color;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        h4{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        ol{
+            margin-left: -20px;
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 16px;
+            list-style-position: outside;
+
+            li{
+                padding-left: 10px;
+                padding-bottom: 5px;
+            }
+        }
+
+        p{
+            margin-top: 30px;
+            color: $secondary-color;
+
+            a{
+                text-decoration: none;
+                color: $third-color;
+            }
+        }
+    }
+}

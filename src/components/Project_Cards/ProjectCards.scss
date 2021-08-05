@@ -1,0 +1,285 @@
+@import '../../Global.scss';
+
+.projectcards{
+    margin-top: 50px;
+    width: 100%;
+
+    .cards{
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        
+
+        .row1{
+            display: flex;
+            
+
+            .card1{
+                background-color: #1F2436;
+                border-radius: 15px;
+                display: flex;
+                width: 500px;
+                box-shadow: 5px 10px 8px black;
+                flex-direction: column;
+                
+
+                img{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    height: 200px;
+                    width: 400px;
+                }
+
+                h4{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                p{
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    width: 400px;
+                    color: $secondary-color;
+                    font-size: 12px;
+                    text-align: justify;
+                }
+
+                a{
+                    text-decoration: none;
+
+                    p{
+                        color: $third-color;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .card2{
+                background-color: #1F2436;
+                border-radius: 15px;
+                margin-left: 100px;
+                display: flex;
+                width: 500px;
+                box-shadow: 5px 10px 8px black;
+                flex-direction: column;
+
+                img{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    height: 200px;
+                    width: 400px;
+                }
+
+                h4{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                p{
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    width: 400px;
+                    color: $secondary-color;
+                    font-size: 12px;
+                    text-align: justify;
+                }
+
+                a{
+                    text-decoration: none;
+
+                    p{
+                        color: $third-color;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .row2{
+            margin-top: 50px;
+            display: flex;
+
+            .card1{
+                background-color: #1F2436;
+                border-radius: 15px;
+                display: flex;
+                width: 500px;
+                box-shadow: 5px 10px 8px black;
+                flex-direction: column;
+
+                img{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    height: 200px;
+                    width: 400px;
+                }
+
+                h4{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                p{
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    width: 400px;
+                    color: $secondary-color;
+                    font-size: 12px;
+                    text-align: justify;
+                }
+
+                a{
+                    text-decoration: none;
+
+                    p{
+                        color: $third-color;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .card2{
+                background-color: #1F2436;
+                border-radius: 15px;
+                margin-left: 100px;
+                display: flex;
+                width: 500px;
+                box-shadow: 5px 10px 8px black;
+                flex-direction: column;
+
+                img{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    height: 200px;
+                    width: 400px;
+                }
+
+                h4{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                p{
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    width: 400px;
+                    color: $secondary-color;
+                    font-size: 12px;
+                    text-align: justify;
+                }
+
+                a{
+                    text-decoration: none;
+
+                    p{
+                        color: $third-color;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .row3{
+            margin-top: 50px;
+            display: flex;
+
+            .card1{
+                background-color: #1F2436;
+                border-radius: 15px;
+                display: flex;
+                width: 500px;
+                box-shadow: 5px 10px 8px black;
+                flex-direction: column;
+
+                img{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    height: 200px;
+                    width: 400px;
+                }
+
+                h4{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                p{
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    width: 400px;
+                    color: $secondary-color;
+                    font-size: 12px;
+                    text-align: justify;
+                }
+
+                a{
+                    text-decoration: none;
+
+                    p{
+                        color: $third-color;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .card2{
+                background-color: #1F2436;
+                border-radius: 15px;
+                margin-left: 100px;
+                display: flex;
+                width: 500px;
+                box-shadow: 5px 10px 8px black;
+                flex-direction: column;
+
+                img{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    height: 200px;
+                    width: 400px;
+                }
+
+                h4{
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                p{
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    width: 400px;
+                    color: $secondary-color;
+                    font-size: 12px;
+                    text-align: justify;
+                }
+
+                a{
+                    text-decoration: none;
+
+                    p{
+                        color: $third-color;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

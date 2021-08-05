@@ -1,0 +1,11 @@
+$primary-color: #151823;
+$secondary-color: #FFFFFF;
+$third-color: #51E8EF;
+
+$width: 880px;
+
+@mixin mobile {
+    @media  (max-width: #{$width}){
+        @content
+    }
+}

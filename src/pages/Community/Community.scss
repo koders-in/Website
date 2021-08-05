@@ -1,0 +1,28 @@
+@import '../../Global.scss';
+
+.community{
+    width: 100%;
+
+    .heading{
+        position: relative;
+        margin-top: -220px;
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            position: absolute;
+            margin-top: -180px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+        }
+    }
+
+    .discord{
+        margin-top: 50px;
+        margin-left: 550px;
+    }
+}

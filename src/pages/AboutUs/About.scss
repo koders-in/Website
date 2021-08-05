@@ -1,0 +1,222 @@
+@import '../../Global.scss';
+
+.aboutus{
+    width: 100%;
+
+    .heading{
+        position: relative;
+        margin-top: -110px;
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            margin-top: -200px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+            padding-bottom: 120px;
+        }
+    }
+
+    .section1{
+        margin-left: 120px;
+        padding-top: 50px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        img{
+            height: 75px;
+            width: 350px;
+        }
+
+        p{
+            margin-top: 80px;
+            text-align: justify;
+            width: 90%;
+            color: $secondary-color;
+        }
+
+        .text{
+            margin-top: 100px;
+            display: flex;
+
+            .left{
+                flex:0.5;
+                padding-left: 80px;
+
+                .pic{
+                    height: 450px;
+                    width: 450px;
+                    background-color: white;
+                }
+            }
+
+            .right{
+                flex:0.5;
+
+                h4{
+                    padding-top: 300px;
+                    color: $third-color;
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin-left: -100px;
+                }
+
+                p{
+                    margin-top: 20px;
+                    text-align: justify;
+                    margin-left: -100px;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .section2{
+        margin-top: 80px;
+        background-color: #1F2435;
+        width: 100%;
+        
+
+        h2{
+            margin-left: 120px;
+            padding-top: 50px;
+            color: $third-color;
+            font-size: 40px;
+            font-weight: 500;
+            word-spacing: 5px;
+        }
+
+        h3{
+            margin-top: 5px;
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 400;
+            margin-left: 120px;
+        }
+
+        .row1{
+            margin-top: 10px;
+            margin-left: 120px;
+            display: flex;
+            overflow-x:hidden;
+            overflow-y:hidden;
+
+            .left{
+                flex: 0.5;
+                padding-top: 190px;
+
+                p{
+                    font-size: 18px;
+                    text-align: justify;
+                    color: $secondary-color;
+                    width: 85%;
+                    padding-bottom: 40px;
+                }
+            }
+
+            .right{
+                flex: 0.5;
+
+                .pic{
+                    height: 450px;
+                    width: 450px;
+                    background-color: white;
+                }
+            }
+        }
+
+        .row2{
+            margin-top: 30px;
+            margin-left: 120px;
+            display: flex;
+            overflow-x:hidden;
+            overflow-y:hidden;
+
+            .left{
+                flex: 0.5;
+                
+                .pic{
+                    margin-left: 60px;
+                    height: 450px;
+                    width: 450px;
+                    background-color: white;
+                }
+                
+            }
+
+            .right{
+                flex: 0.5;
+                padding-top: 190px;
+
+                p{
+                    margin-left: -50px;
+                    font-size: 18px;
+                    text-align: justify;
+                    color: $secondary-color;
+                    width: 85%;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    .mission{
+        margin-left: 120px;
+
+        h2{
+            padding-top: 50px;
+            color: $third-color;
+            font-size: 40px;
+            font-weight: 500;
+            word-spacing: 5px;
+        }
+
+        p{
+            margin-top: 40px;
+            color:$secondary-color;
+            width: 90%;
+        }
+
+        h5{
+            margin-left: -120px;
+            margin-top: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: $secondary-color;
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+
+    .vision{
+        margin-left: 120px;
+
+        h2{
+            padding-top: 70px;
+            color: $third-color;
+            font-size: 40px;
+            font-weight: 500;
+            word-spacing: 5px;
+        }
+
+        p{
+            margin-top: 40px;
+            color:$secondary-color;
+            width: 90%;
+        }
+
+        h5{
+            margin-left: -120px;
+            margin-top: 40px;
+            font-size: 30px;
+            text-align: center;
+            color: $secondary-color;
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+}

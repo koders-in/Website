@@ -101,7 +101,7 @@ function BlogTiles() {
                     the product, including aspects of branding, design, 
                     usability and function.</p>
                     <HashRouter>
-                        <Link to="/"
+                        <Link to="/UI-vs-UX"
                         tag={Link}>
                             Read More
                         </Link>
@@ -127,7 +127,7 @@ function BlogTiles() {
                     gathers data about everything that can be found on 
                     the Internet.</p>
                     <HashRouter>
-                        <Link to="/"
+                        <Link to="/What you need to know about SEO before starting a website"
                         tag={Link}>
                             Read More
                         </Link>
@@ -154,7 +154,7 @@ function BlogTiles() {
                     But this is not the dark web. The dark web 
                     was never concomitant with felonious acts.</p>
                     <HashRouter>
-                        <Link to="/"
+                        <Link to="/The Dark Web is notorious"
                         tag={Link}>
                             Read More
                         </Link>
@@ -178,7 +178,7 @@ function BlogTiles() {
                     the technical requirements and the set industry standards. 
                     This is a highly underestimated topic.</p>
                     <HashRouter>
-                        <Link to="/"
+                        <Link to="/4 Reasons why Software Quality Assurance is Important"
                         tag={Link}>
                             Read More
                         </Link>

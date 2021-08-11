@@ -14,6 +14,10 @@ import Blog from './Blog/Blog';
 import Blog1 from './BlogPages/Blog1';
 import Blog2 from './BlogPages/Blog_2';
 import Blog3 from './BlogPages/Blog_3';
+import Blog4 from './BlogPages/Blog_4';
+import Blog5 from './BlogPages/Blog_5';
+import Blog6 from './BlogPages/Blog_6';
+import Blog7 from './BlogPages/Blog_7';
 
 function Main() {
     return (
@@ -61,6 +65,18 @@ function Main() {
                     />
                     <Route path="/Automation-the-present-and-future" exact component={() => 
                         <Blog3 /> } 
+                    />
+                    <Route path="/UI-vs-UX" exact component={() => 
+                        <Blog4 /> } 
+                    />
+                    <Route path="/What you need to know about SEO before starting a website" exact component={() => 
+                        <Blog5 /> } 
+                    />
+                    <Route path="/The Dark Web is notorious" exact component={() => 
+                        <Blog6 /> } 
+                    />
+                    <Route path="/4 Reasons why Software Quality Assurance is Important" exact component={() => 
+                        <Blog7 /> } 
                     />
                 </Switch>
             </HashRouter>

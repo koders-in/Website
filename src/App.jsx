@@ -1,17 +1,9 @@
 import React from 'react'
 import AnimatedCursor from "react-animated-cursor"
 import './App.scss'
-//import Portfolio from './pages/Portfolio/Portfolio'
-//import Industry from './components/OurServices/Industry'
-//import Technologies from './components/OurServices/Technologies'
-//import ServicesPage from './components/OurServices/ServicesPage'
 import Header from './components/Header/Header'
-//import Career from './pages/Career/Career'
-//import Community from './pages/Community/Community'
-//import Project1 from './pages/Projects/Project1'
-//import AboutUs from './pages/AboutUs/AboutUs'
-//import Team from './pages/OurTeam/Team'
-//import Home from './pages/Home/Home'
+//import Blog2 from './pages/BlogPages/Blog_2'
+//import Blog1 from './pages/BlogPages/Blog1'
 import Main from './pages/Main'
 
 

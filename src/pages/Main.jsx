@@ -11,7 +11,9 @@ import ServicesPage from '../components/OurServices/ServicesPage';
 import Technologies from '../components/OurServices/Technologies';
 import Industry from '../components/OurServices/Industry';
 import Blog from './Blog/Blog';
-
+import Blog1 from './BlogPages/Blog1';
+import Blog2 from './BlogPages/Blog_2';
+import Blog3 from './BlogPages/Blog_3';
 
 function Main() {
     return (
@@ -50,6 +52,15 @@ function Main() {
                     />
                     <Route path="/blog" exact component={() => 
                         <Blog /> } 
+                    />
+                    <Route path="/Hacking-Humans-is-easier-than-Hacking-Computers" exact component={() => 
+                        <Blog1 /> } 
+                    />
+                    <Route path="/Website-or-Mobile-App" exact component={() => 
+                        <Blog2 /> } 
+                    />
+                    <Route path="/Automation-the-present-and-future" exact component={() => 
+                        <Blog3 /> } 
                     />
                 </Switch>
             </HashRouter>

@@ -45,20 +45,19 @@
 
             .left{
                 flex:0.5;
-                padding-left: 80px;
 
-                .pic{
-                    height: 450px;
-                    width: 450px;
-                    background-color: white;
+                img{
+                    width: 600px;
+                    height: 400px;
                 }
             }
 
             .right{
                 flex:0.5;
+                padding-left: 80px;
 
                 h4{
-                    padding-top: 300px;
+                    padding-top: 260px;
                     color: $third-color;
                     font-size: 30px;
                     font-weight: 500;
@@ -107,7 +106,7 @@
 
             .left{
                 flex: 0.5;
-                padding-top: 190px;
+                padding-top: 145px;
 
                 p{
                     font-size: 18px;
@@ -121,10 +120,8 @@
             .right{
                 flex: 0.5;
 
-                .pic{
-                    height: 450px;
-                    width: 450px;
-                    background-color: white;
+                img{
+                    height: 400px;
                 }
             }
         }
@@ -139,26 +136,52 @@
             .left{
                 flex: 0.5;
                 
-                .pic{
-                    margin-left: 60px;
-                    height: 450px;
-                    width: 450px;
-                    background-color: white;
+                img{
+                    height: 400px;
                 }
                 
             }
 
             .right{
                 flex: 0.5;
-                padding-top: 190px;
+                padding-top: 145px;
 
                 p{
-                    margin-left: -50px;
+                    margin-left: 0px;
+                    font-size: 18px;
+                    text-align: justify;
+                    color: $secondary-color;
+                    width: 80%;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+
+        .row3{
+            margin-top: 10px;
+            margin-left: 120px;
+            display: flex;
+            overflow-x:hidden;
+            overflow-y:hidden;
+
+            .left{
+                flex: 0.5;
+                padding-top: 100px;
+
+                p{
                     font-size: 18px;
                     text-align: justify;
                     color: $secondary-color;
                     width: 85%;
                     padding-bottom: 40px;
+                }
+            }
+
+            .right{
+                flex: 0.5;
+
+                img{
+                    width: 550px;
                 }
             }
         }

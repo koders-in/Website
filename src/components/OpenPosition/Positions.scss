@@ -18,119 +18,272 @@
 
         h3{
             color: $third-color;
-            font-size: 30px;
+            font-size: 35px;
             font-weight: 500;
         }
 
         h4{
             padding-top: 20px;
             color: $secondary-color;
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        img{
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 250px;
+        }
+
+        .spositions{
+            padding-left: 50px;
+
+            .wrapper{
+                display: flex;
+                overflow-x: hidden;
+    
+                .left{
+                    flex: 0.5;
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+    
+                }
+                .right{
+                    flex: 0.5;
+
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
         }
 
         ol{
             margin-left: -20px;
             padding-top: 20px;
             color: $secondary-color;
-            font-size: 16px;
+            font-size: 15px;
             list-style-position: outside;
 
             li{
                 padding-left: 10px;
                 padding-bottom: 5px;
-            }
-        }
-
-        p{
-            margin-top: 30px;
-            color: $secondary-color;
-
-            a{
-                text-decoration: none;
-                color: $third-color;
+                width: 80%;
             }
         }
     }
 
     .social{
-        margin-top: 70px;
+        margin-top: 50px;
         padding-left: 120px;
 
         h3{
             color: $third-color;
-            font-size: 30px;
+            font-size: 35px;
             font-weight: 500;
         }
 
         h4{
             padding-top: 20px;
             color: $secondary-color;
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        img{
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 250px;
+        }
+
+        .spositions{
+            padding-left: 50px;
+
+            .wrapper{
+                display: flex;
+                overflow-x: hidden;
+    
+                .left{
+                    flex: 0.5;
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+    
+                }
+                .right{
+                    flex: 0.5;
+
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
         }
 
         ol{
             margin-left: -20px;
             padding-top: 20px;
             color: $secondary-color;
-            font-size: 16px;
+            font-size: 15px;
             list-style-position: outside;
 
             li{
                 padding-left: 10px;
                 padding-bottom: 5px;
-            }
-        }
-
-        p{
-            margin-top: 30px;
-            color: $secondary-color;
-
-            a{
-                text-decoration: none;
-                color: $third-color;
+                width: 80%;
             }
         }
     }
 
     .content{
-        margin-top: 70px;
+        margin-top: 50px;
         padding-left: 120px;
 
         h3{
             color: $third-color;
-            font-size: 30px;
+            font-size: 35px;
             font-weight: 500;
         }
 
         h4{
             padding-top: 20px;
             color: $secondary-color;
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        img{
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 250px;
+        }
+
+        .spositions{
+            padding-left: 50px;
+
+            .wrapper{
+                display: flex;
+                overflow-x: hidden;
+    
+                .left{
+                    flex: 0.5;
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+    
+                }
+                .right{
+                    flex: 0.5;
+
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
         }
 
         ol{
             margin-left: -20px;
             padding-top: 20px;
             color: $secondary-color;
-            font-size: 16px;
+            font-size: 15px;
             list-style-position: outside;
 
             li{
                 padding-left: 10px;
                 padding-bottom: 5px;
+                width: 80%;
+            }
+        }
+    }
+
+    .design{
+        margin-top: 50px;
+        padding-left: 120px;
+
+        h3{
+            color: $third-color;
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        h4{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        img{
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 250px;
+        }
+
+        .spositions{
+            padding-left: 50px;
+
+            .wrapper{
+                display: flex;
+                overflow-x: hidden;
+    
+                .left{
+                    flex: 0.5;
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+    
+                }
+                .right{
+                    flex: 0.5;
+
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
             }
         }
 
-        p{
-            margin-top: 30px;
+        ol{
+            margin-left: -20px;
+            padding-top: 20px;
             color: $secondary-color;
+            font-size: 15px;
+            list-style-position: outside;
 
-            a{
-                text-decoration: none;
-                color: $third-color;
+            li{
+                padding-left: 10px;
+                padding-bottom: 5px;
+                width: 80%;
             }
         }
     }

@@ -3,6 +3,10 @@ import './About.scss'
 import Fade from 'react-reveal/Fade';
 import Image1 from '../../Images/aboutus.png'
 import Image2 from '../../Images/VKI.png'
+import Image3 from '../../Images/about_1.jpg'
+import Image4 from '../../Images/about_2.jpg'
+import Image5 from '../../Images/about_3.jpg'
+import Image6 from '../../Images/about_4.jpg'
 import Footer from '../../components/Footer/Footer';
 
 function AboutUs() {
@@ -24,7 +28,8 @@ function AboutUs() {
                     <div className="text">
                         <div className="left">
                             <Fade left>
-                            <div className="pic"></div></Fade>
+                                <img src={Image3} alt="" />
+                            </Fade>
                         </div>
                         <div className="right">
                             <Fade right>
@@ -57,7 +62,7 @@ function AboutUs() {
                     </Fade>
                     <Fade right>
                     <div className="right">
-                        <div className="pic"></div>
+                        <img src={Image5} alt="" />
                     </div>
                     </Fade>
                 </div>
@@ -65,7 +70,7 @@ function AboutUs() {
                 <div className="row2">
                     <Fade left>
                     <div className="left">
-                        <div className="pic"></div>
+                        <img src={Image4} alt="" />
                     </div>
                     </Fade>
                     <Fade right>
@@ -82,7 +87,7 @@ function AboutUs() {
                     </Fade>
                 </div>
 
-                <div className="row1">
+                <div className="row3">
                     <Fade left>
                     <div className="left">
                     <p>Our primary goal is to target the global bot market with a variety of our own service-based 
@@ -97,7 +102,7 @@ function AboutUs() {
                     </Fade>
                     <Fade right>
                     <div className="right">
-                        <div className="pic"></div>
+                        <img src={Image6} alt="" />
                     </div></Fade>
                 </div>
             </div>

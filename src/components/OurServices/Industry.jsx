@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import Image1 from '../../Images/services.png'
 import Image2 from '../../Images/arrow_left.svg'
 import Image3 from '../../Images/Industry.svg'
+import Footer from '../Footer/Footer';
 
 function Industry() {
     return (
@@ -31,6 +32,10 @@ function Industry() {
             <div className="table">
                 <Fade bottom>
                 <img src={Image3} alt="" /></Fade>
+            </div>
+
+            <div className="footer">
+                <Footer/>
             </div>
         </div>
     )

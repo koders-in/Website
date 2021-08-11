@@ -8,7 +8,8 @@ function Team() {
     return (
         <div className="team" id="team">
              <div className="heading">
-                <img src={Image1} alt="" />
+                <Fade top>
+                <img src={Image1} alt="" /></Fade>
                 <Fade left>
                 <h3>OUR TEAM</h3></Fade>
             </div>

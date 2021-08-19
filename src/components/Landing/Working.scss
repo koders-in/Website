@@ -3,15 +3,27 @@
 .working{
     margin-top: 0;
 
+    @include mobile{
+        width: 130%;
+    }
+
     .wrapper{
         padding-top: 100px;
         overflow-x: hidden;
+
+        @include mobile{
+            padding-top: 50px;
+        }
 
         h3{
             font-size: 25px;
             font-weight: 500;
             margin-left: 120px;
             color: $third-color;
+
+            @include mobile{
+                margin-left: 60px;
+            }
         }
 
         p{
@@ -21,6 +33,10 @@
             margin-top: 40px;
             word-spacing: 3px;
             text-align: justify;
+
+            @include mobile{
+                margin-left: 60px;
+            }
         }
 
         .timeline{
@@ -32,8 +48,17 @@
             margin-top: 80px;
             width: 100%;
 
+            @include mobile{
+                margin-top: 50px;
+            }
+
             img{
                 height: 700px;
+
+                @include mobile{
+                    height: 500px;
+                    margin-left: 40px;
+                }
             }
         }
     }

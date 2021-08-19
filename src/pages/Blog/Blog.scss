@@ -7,6 +7,11 @@
         position: relative;
         margin-top: -250px;
 
+        @include mobile{
+            margin-top: -100px;
+            width: 170%;
+        }
+
         img{
             width: 100%;
         }
@@ -19,6 +24,11 @@
             color: $third-color;
             font-size: 50px;
             font-weight: 500;
+
+            @include mobile{
+                margin-top: -300px;
+                margin-left: 60px;
+            }
         }
 
         p{
@@ -27,6 +37,11 @@
             font-style: italic;
             margin-left: 120px;
             margin-top: -350px;
+
+            @include mobile{
+                margin-left: 60px;
+                margin-top: -200px;
+            }
         }
     }
 
@@ -34,14 +49,24 @@
         margin-top: 100px;
         margin-left: 120px;
 
+        @include mobile{
+            margin-left: 60px;
+        }
+
         h4{
             font-size: 35px;
             font-weight: 500;
             color: $third-color;
+
         }
 
         .blogtiles{
             margin-left: 50px;
+
+            @include mobile{
+                margin-left: 0px;
+            }
         }
     }
+
 }

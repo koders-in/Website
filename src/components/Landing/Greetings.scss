@@ -7,8 +7,12 @@
     height: 770px;
     overflow-y: hidden;
 
+    @include mobile{
+        width: 125%;
+    }
+
     .left{
-        flex: 0.6;
+        flex: 1;
         overflow-x: hidden;
         position: relative;
         overflow-y: hidden;
@@ -30,6 +34,10 @@
             flex-direction: column;
             top: 280px;
             margin-left: 120px;
+
+            @include mobile{
+                margin-left: 100px;
+            }
 
             h1{
                 color:$third-color;
@@ -79,6 +87,11 @@
         flex:0.4;
         overflow-x:hidden;
         overflow-y: hidden;
+
+        @include mobile{
+            display: none;
+            flex: 0;
+        }
 
         .image{
             z-index: 0;

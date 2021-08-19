@@ -1,9 +1,13 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './ProjectCorousal.scss'
+import './ProjectCorousal_1.scss'
+import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
+import Image2 from '../../Images/Projects/Notes_App/Dashboard.jpg'
+import Image3 from '../../Images/Projects/Notes_App/AddNotes.jpg'
+import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.jpg'
 
-function ProjectCorousal() {
+function ProjectCorousal1() {
 
     const responsive = {
         desktop: {
@@ -33,30 +37,31 @@ function ProjectCorousal() {
                 autoPlaySpeed={5000}
                 autoPlay={true}
                 keyBoardControl={true}
-                customTransition="all .5"
+                customTransition="all 0.7"
                 transitionDuration={500}
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px">
+                itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
+                    <img alt="" src={Image1} />
+                    <p>Login Page</p>
                 </div>
                 <div>
-                    <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" />
+                    <img alt="" src={Image2} />
+                    <p>Dashboard</p>
                 </div>
                 <div>
-                    <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" />
+                    <img alt="" src={Image3} />
+                    <p>Add Notes</p>
                 </div>
                 <div>
-                    <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
-                </div>
-                <div>
-                    <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-5.jpg" />
+                    <img alt="" src={Image4} />
+                    <p>Miscellaneous</p>
                 </div>
             </Carousel>
         </div>
     )
 }
 
-export default ProjectCorousal
+export default ProjectCorousal1

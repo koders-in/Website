@@ -4,10 +4,15 @@
     margin-top: 100px;
     background-color: #1F2436;
     height: 450px;
+    
+    @include mobile{
+        width: 130%;
+        height: 530px;
+    }
 
     .wrapper{
         overflow-y: hidden;
-         overflow-x: hidden;
+        overflow-x: hidden;
         padding-top: 50px;
         width: 100%;
         display: flex;
@@ -20,6 +25,10 @@
                 font-weight: 500;
                 margin-left: 120px;
                 color: $third-color;
+                
+                @include mobile{
+                    margin-left: 100px;
+                }
             }
             
             a{
@@ -34,6 +43,10 @@
                     margin: 0;
                     font-weight: 300;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 100px;
+                    }
                 }
 
                 &:hover{
@@ -50,21 +63,35 @@
             overflow-y: hidden;
             overflow-x: hidden;
 
+            @include mobile{
+                margin-left: 150px;
+            }
+
             h3{
                 font-size: 25px;
                 font-weight: 500;
                 color: $third-color;
+                
             }
 
             .links{
                 display: flex;
                 margin-top: 10px;
+
+                @include mobile{
+                    flex-direction: column;
+                    margin-top: 20px;
+                }
             
                 a{
                     
                     img{
                         padding-right: 25px;
                         height: 30px;
+
+                        @include mobile{
+                            margin-bottom: 10px;
+                        }
                     }
                 }
             }
@@ -77,6 +104,11 @@
         margin-left: 600px;
         margin-top: 50px;
         padding-bottom: 10px;
+
+        @include mobile{
+            margin-top: 70px;
+            margin-left: 170px;
+        }
   
       p{
           color: $secondary-color;

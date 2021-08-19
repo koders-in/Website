@@ -13,7 +13,7 @@ function Community() {
                 <h3>JOIN OUR<br></br> DISCORD COMMUNITY</h3></Fade>
             </div>
 
-            <div className="discord">
+            <div className="discord2">
                 <Fade bottom>
             <iframe title="discord" src="https://discord.com/widget?id=534406455709663233&theme=dark" 
             width="350" height="500" allowtransparency="true" frameborder="0" 

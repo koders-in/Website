@@ -3,12 +3,25 @@
 .industry{
     width: 100%;
 
+    @include mobile{
+        width: 100%;
+    }
+
     .heading{
         position: relative;
         margin-top: -200px;
 
+        @include mobile{
+            margin-top: 0px;
+            width: 170%;
+        }
+
         img{
             width: 100%;
+            
+            @include mobile{
+                height: 400px;
+            }
         }
 
         .wrapper{
@@ -19,6 +32,10 @@
             margin-top: -80px;
             margin-left: 120px;
 
+            @include mobile{
+                flex-direction: column;
+            }
+
             h3{
                 color: $third-color;
                 font-size: 40px;
@@ -26,6 +43,10 @@
             }
 
             .backbutton{
+
+                @include mobile{
+                    display: none;
+                }
 
                 a{
                     margin-top: 20px;
@@ -51,6 +72,13 @@
         img{
             height: 350px;
             margin-left:250px;
+
+            @include mobile{
+                margin-top: 80px;
+                margin-left: 0px;
+                height: 330px;
+                padding-bottom: 40px;
+            }
         }
     }
 }

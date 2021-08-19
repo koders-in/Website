@@ -8,15 +8,26 @@
         font-weight: 500;
         margin-left: 120px;
         color: $third-color;
+
+        @include mobile{
+            margin-left: 60px;
+        }
     }
 
     .wrapper{
         margin-top: 50px;
         display: flex;
 
+        @include mobile{
+        }
+
         .left{
             flex:0.5;
             margin-left: 300px;
+
+            @include mobile{
+                margin-left: 60px;
+            }
 
             h4{
                 color: $secondary-color;
@@ -32,6 +43,10 @@
 
                     img{
                         height: 30px;
+
+                        @include mobile{
+                            height: 25px;
+                        }
                     }
 
                     p{
@@ -39,6 +54,12 @@
                         width: 30%;
                         color: $secondary-color;
                         font-size: 12px;
+
+                        @include mobile{
+                            padding-left: 10px;
+                            font-size: 11px;
+                            width: 45%;
+                        }
                     }
                 }
 
@@ -48,6 +69,11 @@
 
                     img{
                         height: 30px;
+
+                        @include mobile{
+                            height: 25px;
+                            
+                        }
                     }
 
                     p{
@@ -55,6 +81,11 @@
                         width: 30%;
                         color: $secondary-color;
                         font-size: 12px;
+
+                        @include mobile{
+                            padding-left: 10px;
+                            font-size: 11px;
+                        }
                     }
                 }
 
@@ -64,6 +95,10 @@
 
                     img{
                         height: 30px;
+
+                        @include mobile{
+                            height: 25px;
+                        }
                     }
 
                     p{
@@ -71,6 +106,12 @@
                         width: 30%;
                         color: $secondary-color;
                         font-size: 12px;
+
+                        @include mobile{
+                            padding-left: 10px;
+                            font-size: 11px;
+                            width: 50%;
+                        }
                     }
                 }
             }

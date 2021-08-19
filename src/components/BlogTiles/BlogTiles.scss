@@ -2,6 +2,10 @@
 
 .blogtiles{
     margin-top: 50px;
+
+    @include mobile{
+        width: 130%;
+    }
     
     .blog1{
         width: 82%;
@@ -9,15 +13,25 @@
         border-top: 1px solid $secondary-color;
         display: flex;
 
+        @include mobile{
+            height: 450px;
+        }
+
+
         .left{
             flex: 0.7;
             padding-left: 20px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
             
             h5{
                 color: $secondary-color;
                 letter-spacing: 6px;
                 padding-top: 40px;
                 font-weight: 400;
+
             }
 
             h3{
@@ -25,6 +39,11 @@
                 color: $secondary-color;
                 font-size: 32px;
                 padding-top: 40px;
+
+                @include mobile{
+                    font-size: 28px;
+                    width: 300px;
+                }
             }
 
             p{
@@ -33,6 +52,10 @@
                 width: 500px;
                 font-size: 12px;
                 padding-bottom: 30px;
+
+                @include mobile{
+                    width: 300px;
+                }
             }
 
             a{
@@ -66,9 +89,17 @@
         border-top: 1px solid $secondary-color;
         display: flex;
 
+        @include mobile{
+            height: 475px;
+        }
+
         .left{
             flex: 0.7;
             padding-left: 20px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
             
             h5{
                 color: $secondary-color;
@@ -82,6 +113,11 @@
                 color: $secondary-color;
                 font-size: 32px;
                 padding-top: 40px;
+
+                @include mobile{
+                    font-size: 28px;
+                    width: 300px;
+                }
             }
 
             p{
@@ -90,6 +126,10 @@
                 width: 500px;
                 font-size: 12px;
                 padding-bottom: 30px;
+
+                @include mobile{
+                    width: 300px;
+                }
             }
 
             a{
@@ -123,9 +163,17 @@
         border-top: 1px solid $secondary-color;
         display: flex;
 
+        @include mobile{
+            height: 400px;
+        }
+
         .left{
             flex: 0.7;
             padding-left: 20px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
             
             h5{
                 color: $secondary-color;
@@ -139,6 +187,11 @@
                 color: $secondary-color;
                 font-size: 32px;
                 padding-top: 40px;
+
+                @include mobile{
+                    font-size: 28px;
+                    width: 300px;
+                }
             }
 
             p{
@@ -147,6 +200,10 @@
                 width: 500px;
                 font-size: 12px;
                 padding-bottom: 30px;
+
+                @include mobile{
+                    width: 300px;
+                }
             }
 
             a{
@@ -180,9 +237,17 @@
         border-top: 1px solid $secondary-color;
         display: flex;
 
+        @include mobile{
+            height: 475px;
+        }
+
         .left{
             flex: 0.7;
             padding-left: 20px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
             
             h5{
                 color: $secondary-color;
@@ -196,6 +261,11 @@
                 color: $secondary-color;
                 font-size: 32px;
                 padding-top: 40px;
+
+                @include mobile{
+                    font-size: 28px;
+                    width: 300px;
+                }
             }
 
             p{
@@ -204,6 +274,10 @@
                 width: 500px;
                 font-size: 12px;
                 padding-bottom: 30px;
+
+                @include mobile{
+                    width: 300px;
+                }
             }
 
             a{
@@ -237,9 +311,17 @@
         border-top: 1px solid $secondary-color;
         display: flex;
 
+        @include mobile{
+            height: 475px;
+        }
+
         .left{
             flex: 0.7;
             padding-left: 20px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
             
             h5{
                 color: $secondary-color;
@@ -253,6 +335,11 @@
                 color: $secondary-color;
                 font-size: 32px;
                 padding-top: 40px;
+
+                @include mobile{
+                    font-size: 28px;
+                    width: 300px;
+                }
             }
 
             p{
@@ -261,6 +348,10 @@
                 width: 500px;
                 font-size: 12px;
                 padding-bottom: 30px;
+
+                @include mobile{
+                    width: 300px;
+                }
             }
 
             a{
@@ -294,9 +385,17 @@
         border-top: 1px solid $secondary-color;
         display: flex;
 
+        @include mobile{
+            height: 400px;
+        }
+
         .left{
             flex: 0.7;
             padding-left: 20px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
             
             h5{
                 color: $secondary-color;
@@ -310,6 +409,11 @@
                 color: $secondary-color;
                 font-size: 32px;
                 padding-top: 40px;
+
+                @include mobile{
+                    font-size: 28px;
+                    width: 300px;
+                }
             }
 
             p{
@@ -318,6 +422,10 @@
                 width: 500px;
                 font-size: 12px;
                 padding-bottom: 30px;
+
+                @include mobile{
+                    width: 300px;
+                }
             }
 
             a{
@@ -352,9 +460,17 @@
         border-bottom: 1px solid $secondary-color;
         display: flex;
 
+        @include mobile{
+            height: 475px;
+        }
+
         .left{
             flex: 0.7;
             padding-left: 20px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
             
             h5{
                 color: $secondary-color;
@@ -368,6 +484,11 @@
                 color: $secondary-color;
                 font-size: 32px;
                 padding-top: 40px;
+
+                @include mobile{
+                    font-size: 28px;
+                    width: 300px;
+                }
             }
 
             p{
@@ -376,6 +497,10 @@
                 width: 500px;
                 font-size: 12px;
                 padding-bottom: 30px;
+
+                @include mobile{
+                    width: 300px;
+                }
             }
 
             a{

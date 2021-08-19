@@ -5,14 +5,26 @@
     margin-top: 0px;
     background-color: $primary-color;
     
+    @include mobile{
+        width: 130%;
+    }
+    
     .wrapper{
         padding-top: 150px;
+
+        @include mobile{
+            padding-top: 100px;
+        }
 
         h3{
             font-size: 25px;
             font-weight: 500;
             margin-left: 120px;
             color: $third-color;
+
+            @include mobile{
+                margin-left: 60px;
+            }
         }
 
         .boxdesc{
@@ -25,6 +37,12 @@
                 padding: 40px 20px 40px 0px;
                 box-shadow: 20px 20px 20px 0px black;
                 color:$secondary-color;
+
+                @include mobile{
+                    width: 75%;
+                    font-size: 40px;
+                    margin-left: 60px;
+                }
             }
         }
 
@@ -35,6 +53,12 @@
             margin-top: 80px;
             word-spacing: 3px;
             text-align: justify;
+
+            @include mobile{
+                margin-left: 60px;
+                width: 80%;
+                word-spacing: normal;
+            }
         }
 
         .flashcards{
@@ -44,6 +68,11 @@
             overflow-x: hidden;
             overflow-y: hidden;
             justify-content: center;
+
+            @include mobile{
+                margin-top: 50px;
+                flex-direction: column;
+            }
 
             .card1{
                 margin-bottom: 20px;
@@ -56,6 +85,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @include mobile{
+                    height: 300px;
+                }
 
                 img{
                     height: 170px;
@@ -74,6 +107,10 @@
                     text-align: center;
                     margin-left: 0;
                     font-size: 10px;
+
+                    @include mobile{
+                        font-size: 14px;
+                    }
                 }
 
                 &:hover{
@@ -96,6 +133,10 @@
                 justify-content: center;
                 align-items: center;
 
+                @include mobile{
+                    height: 300px;
+                }
+
                 img{
                     height: 170px;
                 }
@@ -113,6 +154,10 @@
                     text-align: center;
                     margin-left: 0;
                     font-size: 10px;
+
+                    @include mobile{
+                        font-size: 14px;
+                    }
                 }
 
                 &:hover{
@@ -133,6 +178,10 @@
                 justify-content: center;
                 align-items: center;
 
+                @include mobile{
+                    height: 300px;
+                }
+
                 img{
                     height: 170px;
                 }
@@ -150,6 +199,10 @@
                     text-align: center;
                     margin-left: 0;
                     font-size: 10px;
+
+                    @include mobile{
+                        font-size: 14px;
+                    }
                 }
 
                 &:hover{

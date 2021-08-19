@@ -18,6 +18,8 @@ import Blog4 from './BlogPages/Blog_4';
 import Blog5 from './BlogPages/Blog_5';
 import Blog6 from './BlogPages/Blog_6';
 import Blog7 from './BlogPages/Blog_7';
+import Project2 from './Projects/Project2';
+import Project3 from './Projects/Project3';
 
 function Main() {
     return (
@@ -41,9 +43,6 @@ function Main() {
                     />
                     <Route path="/Kareer" exact component={() => 
                         <Career /> } 
-                    />
-                    <Route path="/projects/AIO-World" exact component={() => 
-                        <Project1 /> } 
                     />
                     <Route path="/services" exact component={() => 
                         <ServicesPage /> } 
@@ -77,6 +76,15 @@ function Main() {
                     />
                     <Route path="/4 Reasons why Software Quality Assurance is Important" exact component={() => 
                         <Blog7 /> } 
+                    />
+                    <Route path="/projects/Notes Application" exact component={() => 
+                        <Project1 /> } 
+                    />
+                    <Route path="/projects/Food Delivery Application" exact component={() => 
+                        <Project2 /> } 
+                    />
+                    <Route path="/projects/Twitter Monitor" exact component={() => 
+                        <Project3 /> } 
                     />
                 </Switch>
             </HashRouter>

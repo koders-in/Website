@@ -2,6 +2,7 @@ import React from 'react'
 import './Career.scss'
 import Fade from 'react-reveal/Fade';
 import Image1 from '../../Images/career.png'
+import Image2 from '../../Images/Career.jpg'
 import Positions from '../../components/OpenPosition/Positions';
 import Footer from '../../components/Footer/Footer';
 
@@ -31,75 +32,72 @@ function Career() {
                 <Fade left>
                 <h1>PERKS & BENEFITS</h1></Fade>
                 <Fade bottom>
-                <div className="pic"></div></Fade>
+                <div className="pic">
+                <img src= {Image2} alt="" />    
+                </div></Fade>
             </div>
 
             <div className="pab">
                 <div className="left">
                     <div className="point1">
                         <Fade bottom>
-                        <h4>Relax, we’ve got you covered.</h4>
-                        <p>We take care of our employees in more ways than one. 
-                        Our competitive benefits package includes premium medical, 
-                        dental, and vision coverage for employees and their dependent 
-                        children. We also offer up to 20 weeks of paid family leave, 
-                        fertility and adoption benefits, daily gourmet lunches and 
-                        snacks, and more.
-                        </p></Fade>
+                        <h4>All's well that ends well</h4>
+                        <p>We believe in “All work and no play makes Jack a dull boy” 
+                        and we religiously celebrate our weekend with a fun-filled-friday 
+                        night. As serious as we are regarding our work, we are equally 
+                        serious about our weekend and hence we end it on high note on 
+                        Friday where we discuss our work with the team and then end up 
+                        skribbl-ing.</p></Fade>
                     </div>
 
                     <div className="point2">
                     <Fade bottom>
-                        <h4>Work-life balance.</h4>
-                        <p>We believe that quality time outside the office is vital 
-                        to our employees’ satisfaction at work. That’s why our flexible 
-                        PTO plan encourages team members to take time off so they can come 
-                        back refreshed. Employees also get two free lifetime Squarespace 
-                        sites to pursue their creative passions and side hustles
-                        </p></Fade>
+                        <h4>You are precious!</h4>
+                        <p>Government of the Koders, by the koders, for the koders. 
+                        Working at koders is like working at any other company but 
+                        minus the pressure and plus the calm environment. As much as we 
+                        value our clients, we value our employees too. Health is important, 
+                        be it mental or dental. Hence the company allows its employees 
+                        to take some time-off.</p></Fade>
                     </div>
 
                     <div className="point3">
                         <Fade bottom>
-                        <h4>Stay informed.</h4>
-                        <p>We’re dedicated to ensuring all employees have the information 
-                        they need to do their jobs well. Our monthly All Hands meetings, 
-                        email newsletters, and CEO Office Hours are just a few of the programs 
-                        we run to bring our three offices together and share key aspects of the 
-                        business across the entire organization.
-                        </p></Fade>
+                        <h4>A place with 0 boss issues</h4>
+                        <p>The word ‘boss’ makes us imagine a red-faced person who shouts 
+                        and doesn’t talk, who is more of all the bullies you faced combined 
+                        and never talks about anything but work. Don’t worry child, Koders is 
+                        where you meet a boss that not only skribbles with you but also pushes 
+                        you to do better.</p></Fade>
                     </div>
                 </div>
 
                 <div className="right">
                     <div className="point1">
                         <Fade bottom>
-                        <h4>We value our people.</h4>
-                        <p>We’re serious about sharing in Squarespace’s successes. 
-                        All employees receive an equity package in the company as 
-                        part of their total compensation, and we match up to 4% of a 
-                        team member’s annual salary in 401(K) (US) or Pension (Ireland) 
-                        contributions.</p></Fade>
+                        <h4>We have got your back and bank</h4>
+                        <p>With colleagues like family and an environment so relaxed, 
+                        working at Koders just keeps on getting better. Getting paid 
+                        while working from home is no less than a boon, we tell you! 
+                        And when the pay is performance based, that keeps us 
+                        motivated.</p></Fade>
                     </div>
 
                     <div className="point2">
                         <Fade bottom>
-                        <h4>We give back.</h4>
-                        <p>We anonymously match any donation our employees make (up to $/€ 600) 
-                        so they can support the organizations they care about most—times two. 
-                        We also arrange programming for team members to volunteer at specialized 
-                        customer workshops and community activities.</p></Fade>
+                        <h4>Live it up</h4>
+                        <p>Presenting to you, a bunch of young, dynamic koders who 
+                        dedicate their time and energy into work. They are youthful, 
+                        funny, hard-working and so many more adjectives from the grammar 
+                        book.</p></Fade>
                     </div>
 
                     <div className="point3">
                         <Fade bottom>
-                        <h4>Live it up.</h4>
-                        <p>One benefit of having amazing coworkers is enjoying each other’s company, 
-                        and we make up some good excuses to have fun together. Squarespace’s weekly 
-                        catered happy hours are a great way to connect with coworkers and unwind after 
-                        the week. Throughout the year, we host programming ranging from crafting to 
-                        trivia and customer markets. During the summer, we throw family-friendly events 
-                        and activities, and our holiday parties have been known to get fancy.</p></Fade>
+                        <h4>Working is fun-tastic</h4>
+                        <p>We provide flexible working hours to our employees because 
+                        we know life happens while we are at work and with flexible 
+                        work hours, we make sure you don't miss out on life.</p></Fade>
                     </div>
                 </div>
             </div>

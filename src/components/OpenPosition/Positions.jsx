@@ -330,6 +330,10 @@ function Positions() {
                 
                 <h4>Openings: 01</h4>
             </div>
+
+            <div className="kommunity">
+                <p>Join our <a href="https://dsc.gg/koders">Kommunity</a> and stay tuned for further opportunities.</p>
+            </div>
         </div>
     )
 }

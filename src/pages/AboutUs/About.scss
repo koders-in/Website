@@ -3,21 +3,37 @@
 .aboutus{
     width: 100%;
 
+    @include mobile{
+        width: 135%;
+    }
+
     .heading{
         position: relative;
         margin-top: -110px;
 
+        @include mobile{
+            margin: -100px;
+        }
+
         img{
             width: 100%;
+
+            @include mobile{
+                width: 145%;
+            }
         }
 
         h3{
-            margin-top: -200px;
+            margin-top: -100px;
             margin-left: 120px;
             color: $third-color;
             font-size: 50px;
             font-weight: 500;
             padding-bottom: 120px;
+
+            @include mobile{
+                margin-left: 220px;
+            }
         }
     }
 
@@ -27,9 +43,18 @@
         overflow-y: hidden;
         overflow-x: hidden;
 
+        @include mobile{
+            width: 130%;
+        }
+
         img{
             height: 75px;
             width: 350px;
+
+            @include mobile{
+                height: 100px;
+                width: 450px;
+            }
         }
 
         p{
@@ -37,18 +62,27 @@
             text-align: justify;
             width: 90%;
             color: $secondary-color;
+
+            @include mobile{
+                width: 100%;
+                font-size: 20px;
+            }
         }
 
         .text{
             margin-top: 100px;
             display: flex;
 
+            @include mobile{
+                flex-direction: column;
+            }
+
             .left{
                 flex:0.5;
 
                 img{
-                    width: 600px;
-                    height: 400px;
+                    width: 1000px;
+                    height: 600px;
                 }
             }
 
@@ -56,12 +90,20 @@
                 flex:0.5;
                 padding-left: 80px;
 
+                @include mobile{
+                    padding-left: 100px;
+                }
+
                 h4{
                     padding-top: 260px;
                     color: $third-color;
                     font-size: 30px;
                     font-weight: 500;
                     margin-left: -100px;
+
+                    @include mobile{
+                        padding-top: 50px;
+                    }
                 }
 
                 p{
@@ -69,6 +111,11 @@
                     text-align: justify;
                     margin-left: -100px;
                     width: 80%;
+
+                    @include mobile{
+                        width: 100%;
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -78,6 +125,10 @@
         margin-top: 80px;
         background-color: #1F2435;
         width: 100%;
+
+        @include mobile{
+            width: 170%;
+        }
         
 
         h2{
@@ -87,6 +138,8 @@
             font-size: 40px;
             font-weight: 500;
             word-spacing: 5px;
+
+
         }
 
         h3{
@@ -107,6 +160,10 @@
             .left{
                 flex: 0.5;
                 padding-top: 145px;
+
+                @include mobile{
+                    padding-top: 70px;
+                }
 
                 p{
                     font-size: 18px;
@@ -146,6 +203,10 @@
                 flex: 0.5;
                 padding-top: 145px;
 
+                @include mobile{
+                    padding-top: 70px;
+                }
+
                 p{
                     margin-left: 0px;
                     font-size: 18px;
@@ -153,6 +214,10 @@
                     color: $secondary-color;
                     width: 80%;
                     padding-bottom: 40px;
+
+                    @include mobile{
+                        padding-left: 50px;
+                    }
                 }
             }
         }
@@ -167,6 +232,10 @@
             .left{
                 flex: 0.5;
                 padding-top: 100px;
+
+                @include mobile{
+                    padding-top: 50px;
+                }
 
                 p{
                     font-size: 18px;
@@ -189,6 +258,10 @@
 
     .mission{
         margin-left: 120px;
+
+        @include mobile{
+            width: 155%;
+        }
 
         h2{
             padding-top: 50px;
@@ -217,6 +290,10 @@
 
     .vision{
         margin-left: 120px;
+
+        @include mobile{
+            width: 160%;
+        }
 
         h2{
             padding-top: 70px;

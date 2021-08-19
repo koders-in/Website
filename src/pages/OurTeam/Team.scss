@@ -7,8 +7,17 @@
         position: relative;
         margin-top: 0;
 
+        @include mobile{
+            width: 130%;
+        }
+
         img{
             width: 100%;
+
+            @include mobile{
+                width: 130%;
+                margin-left: -150px;
+            }
         }
 
         h3{
@@ -18,6 +27,12 @@
             font-size: 50px;
             font-weight: 500;
             padding-bottom: 200px;
+
+            @include mobile{
+                margin-top: -100px;
+                padding-bottom: 100px;
+                margin-left: 60px;
+            }
         }
     }
 
@@ -26,10 +41,20 @@
         padding-left: 120px;
         margin-top: 90px;
 
+        @include mobile{
+            padding-left: 60px;
+            margin-top: 30px;
+        }
+
         p{
             color: $secondary-color;
             word-spacing: 5px;
             width: 75%;
+
+            @include mobile{
+                width: 100%;
+                font-size: 20px;
+            }
         }
     }
     
@@ -41,6 +66,14 @@
             color:$third-color;
             font-weight: 600;
             font-size: 40px;
+
+            @include mobile{
+                padding-left: 60px;
+            }
         }
+    }
+
+    .footer{
+        width: 120%;
     }
 }

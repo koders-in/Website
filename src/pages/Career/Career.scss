@@ -7,6 +7,11 @@
         position: relative;
         margin-top: -220px;
 
+        @include mobile{
+            width: 170%;
+            margin-top: 0px;
+        }
+
         img{
             width: 100%;
         }
@@ -18,12 +23,22 @@
             color: $third-color;
             font-size: 50px;
             font-weight: 500;
+
+            @include mobile{
+                margin-left: 60px;
+            }
         }
     }
 
     .section1{
         padding-left: 120px;
         padding-top: 120px;
+
+
+        @include mobile{
+            padding-top: 60px;
+            padding-left: 60px;
+        }
 
         h1{
             color: $secondary-color;
@@ -38,6 +53,10 @@
             width: 80%;
             text-align: justify;
             font-weight: 300;
+
+            @include mobile{
+                width: 170%;
+            }
         }
     }
 
@@ -45,25 +64,40 @@
         padding-left: 120px;
         padding-top: 150px;
 
+        @include mobile{
+            padding-top: 80px;
+            padding-left: 60px;
+        }
+
         h1{
             color: $secondary-color;
             font-size: 50px;
             font-weight: 500;
             word-spacing: 10px;
             letter-spacing: 5px;
+
+            @include mobile{
+                width: 130%;
+            }
         }
 
         .pic{
             margin-top: 30px;
-            height: 400px;
-            width: 800px;
-            background-color: $secondary-color;
+
+            img{
+                width: 800px;
+            }
         }
     }
 
     .pab{
         margin-top: 110px;
         display:flex;
+
+        @include mobile{
+            width: 160%;
+            margin-left: -60px;
+        }
 
         .left{
             flex: 0.5;
@@ -151,7 +185,7 @@
             }
 
             .point2{
-                margin-top: 80px;
+                margin-top: 100px;
 
                 h4{
                     font-size: 30px;
@@ -171,7 +205,11 @@
             }
 
             .point3{
-                margin-top: 80px;
+                margin-top: 100px;
+
+                @include mobile{
+                    margin-top: 140px;
+                }
 
                 h4{
                     font-size: 30px;

@@ -4,7 +4,7 @@
     width: 100%;
 
     .section1{
-        height: 450px;
+        height: 600px;
         background-color: #1F2436;
         margin-top: 130px;
 
@@ -17,10 +17,10 @@
         }
 
         img{
-            margin-left: 400px;
+            margin-left: 600px;
             margin-top: 20px;
-            width: 600px;
-            height: 300px;
+            width: 210px;
+            height: 450px;
             border: 2px solid $third-color;
         }
     }
@@ -109,6 +109,7 @@
 
         .corousal{
             margin-top: 40px;
+            padding-bottom: 20px;
             margin-left: -120px;
             background-color: #1F2436;
         }

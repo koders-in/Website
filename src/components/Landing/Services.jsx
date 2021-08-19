@@ -16,23 +16,23 @@ function Services() {
                 <div className="flashcards">
                     <Fade bottom>
                     <div className="card1">
-                        <img src={Image1} alt="/"></img>
-                        <Link to="/services"
+                    <Link to="/services"
                         tag={Link}>
+                        <img src={Image1} alt="/"></img>
                            <h2>Services</h2>
                         </Link>
                     </div>
                     <div className="card2">
-                        <img src={Image2} alt="/"></img>
-                        <Link to="/technologies"
+                    <Link to="/technologies"
                         tag={Link}>
+                        <img src={Image2} alt="/"></img>
                             <h2>Technologies</h2>
                         </Link>
                     </div>
                     <div className="card3">
-                        <img src={Image3} alt="/"></img>
-                        <Link to="/industries"
+                    <Link to="/industries"
                         tag={Link}>
+                        <img src={Image3} alt="/"></img>
                             <h2>Industries</h2>
                         </Link>
                     </div>

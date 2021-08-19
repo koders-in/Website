@@ -7,6 +7,11 @@
         position: relative;
         margin-top: -220px;
 
+        @include mobile{
+            width: 130%;
+            margin-top: 0px;
+        }
+
         img{
             width: 100%;
         }
@@ -17,12 +22,20 @@
             color: $third-color;
             font-size: 50px;
             font-weight: 500;
+
+            @include mobile{
+                margin-left: 60px;
+            }
         }
     }
 
     .wrapper{
         display: flex;
         padding-top: 60px;
+
+        @include mobile{
+            flex-direction: column;
+        }
 
         .left{
             flex:0.5;
@@ -32,6 +45,10 @@
                 font-size: 30px;
                 color: $secondary-color;
                 width: 500px;
+
+                @include mobile{
+                    margin-left: 60px;
+                }
             }
 
             p{
@@ -42,11 +59,19 @@
                 width: 500px;
                 font-weight: 350;
                 color: $secondary-color;
+
+                @include mobile{
+                    margin-left: 60px;
+                }
             }
         }
 
         .right{
             flex:0.5;
+
+            @include mobile{
+                margin-top: 60px;
+            }
 
             .counts{
                 display: flex;
@@ -54,6 +79,11 @@
                 margin-top: 0px;
                 margin-left: 200px;
                 overflow-x: hidden;
+
+                @include mobile{
+                    align-items: center;
+                    margin-left: 0px;
+                }
 
                 h1{
                     font-size: 65px;
@@ -75,10 +105,20 @@
         width: 100%;
         height: 1100px;
 
+        @include mobile{
+            width: 130%;
+            height: 800px;
+        }
+
         img{
             padding-top: 100px;
             padding-left: 250px;
             height: 900px;
+
+            @include mobile{
+                padding-left: 40px;
+                height: 600px;
+            }
         }
     }
 
@@ -88,15 +128,29 @@
         flex-direction: column;
         align-items: center;
 
+        @include mobile{
+            align-items: flex-start;
+        }
+
+
         h3{
             color: $third-color;
             font-size: 35px;
             font-weight: 400;
+
+            @include mobile{
+                margin-left: 60px;
+            }
         }
 
         img{
             margin-top: 50px;
             height: 380px;
+
+            @include mobile{
+                padding-left: 20px;
+                height: 220px;
+            }
         }
     }
 
@@ -111,6 +165,18 @@
             color: $third-color;
             font-size: 35px;
             font-weight: 400;
+
+            @include mobile{
+                margin-left: -190px;
+            }
+        }
+    }
+
+    .footer{
+       
+        @include mobile{
+            width: 115%;
+            height: 100%;
         }
     }
 }

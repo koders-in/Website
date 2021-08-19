@@ -3,13 +3,27 @@
 .technologies{
     width: 100%;
 
+    @include mobile{
+        width: 100%;
+    }
+
     .heading{
         position: relative;
         margin-top: -200px;
 
+        @include mobile{
+            margin-top: 0px;
+            width: 170%;
+        }
+
         img{
             width: 100%;
+
+            @include mobile{
+                height: 400px;
+            }
         }
+        
 
         .wrapper{
             display: flex;
@@ -19,13 +33,22 @@
             margin-top: -80px;
             margin-left: 120px;
 
+            @include mobile{
+                flex-direction: column;
+            }
+
             h3{
                 color: $third-color;
                 font-size: 40px;
                 font-weight: 400;
+
             }
 
             .backbutton{
+
+                @include mobile{
+                    display: none;
+                }
 
                 a{
                     margin-top: 20px;
@@ -48,10 +71,18 @@
     .table{
         overflow-y: hidden;
         margin-top: 20px;
+        width: 170%;
 
         img{
             height: 350px;
             margin-left:150px;
+
+            @include mobile{
+                margin-top: 50px;
+                margin-left: 0px;
+                width: 100%;
+                padding-bottom: 30px;
+            }
         }
     }
 }

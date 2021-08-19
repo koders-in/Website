@@ -1,7 +1,7 @@
 import React from 'react'
 import './Project1.scss'
-import Image1 from '../../Images/Projects/1.PNG'
-import ProjectCorousal from '../../components/Project_Corousal/ProjectCorousal'
+import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
+import ProjectCorousal1 from '../../components/Project_Corousal/ProjectCorousal_1'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 
@@ -13,57 +13,59 @@ function Project_1() {
         <div className="project1">
             <Fade bottom>
             <div className="section1">
-                <h1>AIO World</h1>
+                <h1>Notes Application</h1>
                 <img src={Image1} alt="" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>
                 <h2>Introduction:</h2>
-                <p>E-commerce is the new normal, so are the 
-                online grocery stores but the development of 
-                these platforms has always been a barrier. 
-                We understood the need for the market and developed 
-                a robust, cost-efficient, and top-notch hybrid 
-                E-Commerce application. An application that serves 
-                the restaurant, the client, and the delivery executive 
-                through one application to smooth out the operations 
-                and monitor real-life activities.</p>
+                <p>You take notes to remember and not forget. 
+                Hence the ‘Notes Application’, on the surface this 
+                application might appear to be lackluster but the real 
+                deal lies in its privacy and congenial features. A minimalist interface, extremely easy to use. Notes 
+                bring out maximum productivity with an interface tailor-made 
+                for professional individuals and students. Take notes your way 
+                and create your own flair.</p>
                 </Fade>
             </div>
 
             <div className="challenges">
                 <Fade left>
                 <h2>Challenges:</h2>
-                <p>Clubbing three apps together might sound like a recipe 
-                for debacle but from the perspective of a shop/business owner, 
-                it's a blessing. The challenge we had first mostly was making 
-                the apps gel together and work as a single unit. Through 
-                extensive trials and errors, we were able to achieve it without 
-                compromising on any feature. Instead, we developed a few handy 
-                admin features which are intuitive and monitor activity in real life. 
-                The second challenge was the size of this application, which, 
-                meh, Koders don't find it a challenge enough. The application 
-                developed is well under the average E-commerce app size.</p></Fade>
+                <p>This project proved to be more tricky than challenging. 
+                We had a clear vision for this app to be privacy-oriented 
+                and give the user a seamless experience. Managing room 
+                firebase and real-time firebase data were quick to solve. 
+                Thereafter making the app comfy with all screen sizes 
+                presented a slight encumbrance but we solved it nimbly by 
+                making the use of in-hand experience and a few trial runs. 
+                Making use of libraries eased our workload.</p>
+                <p>For the privacy part, the notes stored are encrypted 
+                and password protection enhances the overall security factor.</p>
+                </Fade>
             </div>
 
             <div className="solution">
                 <Fade left>
                 <h2>Solution:</h2>
-                <p>Team-work led us to develop a layer-on-layer application 
-                process that was not only just efficient but friendly 
-                for all sorts of mobile devices as we executed all the 
-                functionalities by splitting them into pieces and then 
-                ran parallel integration with each panel.</p></Fade>
+                <p>Async and libraries of scalable sizes were our knight shining armor. 
+                Async helped us to add all the real-time databases to the room 
+                databases with no hiccups. The libraries helped us to make 
+                sure that the application adapts to the screen size and is as 
+                serene as it's meant to be. Be it the 4-inch screen or gigantic 
+                6.8 inch screen, we assured the adaptability for all types of 
+                screens.</p></Fade>
             </div>
 
             <div className="tech">
                 <Fade left>
                 <h2>Tech Stack:</h2>
                 <ul>
-                    <li>Ionic</li>
-                    <li>Cordova</li>
-                    <li>Laravel Framework</li>
-                    <li>Angular Js</li>
+                    <li>JAVA</li>
+                    <li>XML</li>
+                    <li>Firebase Realtime Database</li>
+                    <li>Firebase Authentication</li>
+                    <li>Room Database</li>
                 </ul>
                 </Fade>
             </div>
@@ -74,7 +76,7 @@ function Project_1() {
                 </Fade>
                 <Fade bottom>
                 <div className="corousal">
-                    <ProjectCorousal/>
+                    <ProjectCorousal1/>
                 </div>
                 </Fade>
             </div>

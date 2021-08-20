@@ -74,6 +74,9 @@
     }
 
     .footer{
+
+        @include mobile{
         width: 120%;
+        }
     }
 }

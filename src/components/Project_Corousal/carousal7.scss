@@ -1,0 +1,23 @@
+@import '../../Global.scss';
+
+.projectcorousal{
+    padding-top: 40px;
+    padding-bottom: 5px;
+    width: 100%;
+    
+    div{
+        
+
+        img{
+            width: 450px;
+            height: 190px;
+            padding-bottom: 20px;
+        }
+
+        p{
+            color: $third-color;
+            margin-top: -20px;
+            margin-left: 150px;
+        }
+    }
+}

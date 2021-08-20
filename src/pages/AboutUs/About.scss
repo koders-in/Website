@@ -81,8 +81,14 @@
                 flex:0.5;
 
                 img{
-                    width: 1000px;
-                    height: 600px;
+                    width: 600px;
+                    height: 400px;
+
+                    @include mobile{
+                        width: 1000px;
+                        height: 600px;
+                    }
+
                 }
             }
 

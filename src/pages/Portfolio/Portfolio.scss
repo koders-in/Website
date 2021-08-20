@@ -112,12 +112,12 @@
 
         img{
             padding-top: 100px;
-            padding-left: 250px;
+            padding-left: 150px;
             height: 900px;
 
             @include mobile{
                 padding-left: 40px;
-                height: 600px;
+                height: 550px;
             }
         }
     }

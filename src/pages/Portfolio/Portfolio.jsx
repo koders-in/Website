@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import './Portfolio.scss'
 import Footer from "../../components/Footer/Footer"
 import Image1 from '../../Images/c&d.png'
-import Image2 from '../../Images/Featured_Projects.svg'
+import Image2 from '../../Images/Featured Projects.png'
 import Image3 from '../../Images/Technology.svg'
 import ProjectCards from '../../components/Project_Cards/ProjectCards';
 

@@ -1,13 +1,13 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './carousal1.scss'
-import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
-import Image2 from '../../Images/Projects/Notes_App/Dashboard.jpg'
-import Image3 from '../../Images/Projects/Notes_App/AddNotes.jpg'
-import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.jpg'
+import './Carousal_2.scss'
+import Image1 from '../../Images/Projects/Cloud_Kitchen/Home.jpg'
+import Image2 from '../../Images/Projects/Cloud_Kitchen/About Us.jpg'
+import Image3 from '../../Images/Projects/Cloud_Kitchen/Offers.jpg'
+import Image4 from '../../Images/Projects/Cloud_Kitchen/Menu.jpg'
 
-function ProjectCorousal1() {
+function Carousal2() {
 
     const responsive = {
         desktop: {
@@ -45,23 +45,23 @@ function ProjectCorousal1() {
                 itemClass="carousel-item-padding-50-px">
                 <div>
                     <img alt="" src={Image1} />
-                    <p>Login Page</p>
+                    <p>Home Page</p>
                 </div>
                 <div>
                     <img alt="" src={Image2} />
-                    <p>Dashboard</p>
+                    <p>About Us</p>
                 </div>
                 <div>
                     <img alt="" src={Image3} />
-                    <p>Add Notes</p>
+                    <p>Offers</p>
                 </div>
                 <div>
                     <img alt="" src={Image4} />
-                    <p>Miscellaneous</p>
+                    <p>Menu</p>
                 </div>
             </Carousel>
         </div>
     )
 }
 
-export default ProjectCorousal1
+export default Carousal2

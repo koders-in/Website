@@ -1,13 +1,13 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './carousal1.scss'
-import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
-import Image2 from '../../Images/Projects/Notes_App/Dashboard.jpg'
-import Image3 from '../../Images/Projects/Notes_App/AddNotes.jpg'
-import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.jpg'
+import './carousal7.scss'
+import Image1 from '../../Images/Projects/SquaredIO/Dashboard.jpg'
+import Image2 from '../../Images/Projects/SquaredIO/FAQ.jpg'
+import Image3 from '../../Images/Projects/SquaredIO/Features.jpg'
+import Image4 from '../../Images/Projects/SquaredIO/SquaredIO_Login.jpg'
 
-function ProjectCorousal1() {
+function Carousal7() {
 
     const responsive = {
         desktop: {
@@ -45,23 +45,23 @@ function ProjectCorousal1() {
                 itemClass="carousel-item-padding-50-px">
                 <div>
                     <img alt="" src={Image1} />
-                    <p>Login Page</p>
-                </div>
-                <div>
-                    <img alt="" src={Image2} />
                     <p>Dashboard</p>
                 </div>
                 <div>
+                    <img alt="" src={Image2} />
+                    <p>FAQ</p>
+                </div>
+                <div>
                     <img alt="" src={Image3} />
-                    <p>Add Notes</p>
+                    <p>Features</p>
                 </div>
                 <div>
                     <img alt="" src={Image4} />
-                    <p>Miscellaneous</p>
+                    <p>Squared IO Login</p>
                 </div>
             </Carousel>
         </div>
     )
 }
 
-export default ProjectCorousal1
+export default Carousal7

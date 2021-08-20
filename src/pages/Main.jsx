@@ -20,6 +20,14 @@ import Blog6 from './BlogPages/Blog_6';
 import Blog7 from './BlogPages/Blog_7';
 import Project2 from './Projects/Project2';
 import Project3 from './Projects/Project3';
+import Project4 from './Projects/Project4';
+import Project5 from './Projects/Project5';
+import Project6 from './Projects/Project6';
+import Project7 from './Projects/Project7';
+import Project8 from './Projects/Project8';
+import Project9 from './Projects/Project9';
+import Project10 from './Projects/Project10';
+import Project11 from './Projects/Project11';
 
 function Main() {
     return (
@@ -85,6 +93,30 @@ function Main() {
                     />
                     <Route path="/projects/Twitter Monitor" exact component={() => 
                         <Project3 /> } 
+                    />
+                    <Route path="/projects/Virtual Hover Pen" exact component={() => 
+                        <Project4 /> } 
+                    />
+                    <Route path="/projects/Cloud Kitchen" exact component={() => 
+                        <Project5 /> } 
+                    />
+                    <Route path="/projects/Kourage" exact component={() => 
+                        <Project6 /> } 
+                    />
+                    <Route path="/projects/Hawa UI" exact component={() => 
+                        <Project7 /> } 
+                    />
+                    <Route path="/projects/Machina" exact component={() => 
+                        <Project8 /> } 
+                    />
+                    <Route path="/projects/UC-Toolbot" exact component={() => 
+                        <Project9 /> } 
+                    />
+                    <Route path="/projects/Squared IO" exact component={() => 
+                        <Project10 /> } 
+                    />
+                    <Route path="/projects/AIO World" exact component={() => 
+                        <Project11 /> } 
                     />
                 </Switch>
             </HashRouter>

@@ -61,7 +61,7 @@ function ProjectCards() {
                         monitoring twitter and receiving notifications 
                         about the same. Sounds tough for an average 
                         programmer?</p>
-                        <Link to="/"
+                        <Link to="/projects/Twitter Monitor"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>
@@ -76,7 +76,7 @@ function ProjectCards() {
                         contribution to society so that anyone, by using the 
                         code provided, could create a real virtual pen for the 
                         desktop.</p>
-                        <Link to="/"
+                        <Link to="/projects/Virtual Hover Pen"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>
@@ -94,7 +94,7 @@ function ProjectCards() {
                         different restaurants and food outlets to maximize their 
                         business as it provides food-delivery, customization of the 
                         dish and adding requests or notes.</p>
-                        <Link to="/"
+                        <Link to="/projects/Cloud Kitchen"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>
@@ -108,7 +108,7 @@ function ProjectCards() {
                         bot that takes care of a lot of tasks within. It helps in 
                         recording attendance, reminds of the deadlines, bug management 
                         and daily work done by the employees.</p>
-                        <Link to="/"
+                        <Link to="/projects/Kourage"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>
@@ -124,7 +124,7 @@ function ProjectCards() {
                         <p>HAWA UI is a bot to monitor products for different websites, 
                         and show status as available, low or high. For integration, 
                         generally web sockets are used but here we used grpc server.</p>
-                        <Link to="/"
+                        <Link to="/projects/Hawa UI"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>
@@ -137,7 +137,7 @@ function ProjectCards() {
                         <p>Machina is a toolbot that monitors e-commerce websites for 
                         ‘cop the drop’ functionality. Simple frontend using React by 
                         maintaining aspect ratio.</p>
-                        <Link to="/"
+                        <Link to="/projects/Machina"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>
@@ -155,7 +155,7 @@ function ProjectCards() {
                         cookie gen, proxy gen, and other functionalities.Whether 
                         it’s frontend, backend or integration, Koders is here to 
                         kater to your needs.</p>
-                        <Link to="/"
+                        <Link to="/projects/UC-Toolbot"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>
@@ -168,7 +168,7 @@ function ProjectCards() {
                         <p>Squared IO is a next generation automated platform for 
                         botting sites. With a responsive 1:1 UI and great animations, 
                         we built Squared IO's frontend as well as the site.</p>
-                        <Link to="/"
+                        <Link to="/projects/Squared IO"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>
@@ -185,7 +185,7 @@ function ProjectCards() {
                         All-in-one responsive web application with pretty kool 
                         animations? So we present to you, a React web app at 
                         your fingertips.</p>
-                        <Link to="/"
+                        <Link to="/projects/AIO World"
                         tag={Link}>
                            <p>Read more</p>
                         </Link>

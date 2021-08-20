@@ -17,10 +17,10 @@
         }
 
         img{
-            margin-left: 600px;
-            margin-top: 20px;
-            width: 250px;
-            height: 450px;
+            margin-left: 410px;
+            margin-top: 80px;
+            width: 700px;
+            height: 350px;
             border: 2px solid $third-color;
         }
     }
@@ -108,38 +108,10 @@
         }
 
         .corousal{
-            padding-top: 20px;
-            display: flex;
-            margin-top: 50px;
-            padding-left: 200px;
-
-            .img1{
-
-                img{
-                    padding-left: 80px;
-                    width: 250px;
-                    height: 500px;
-                }
-                
-                p{
-                    margin-left: 80px;
-                    color: $third-color;
-                }
-            }
-
-            .img2{
-
-                img{
-                    padding-left: 200px;
-                    width: 250px;
-                    height: 450px;
-                }
-
-                p{
-                    margin-left: 200px;
-                    color: $third-color;
-                }
-            }
+            margin-top: 40px;
+            padding-bottom: 20px;
+            margin-left: -300px;
+            background-color: #1F2436;
         }
     }
 }

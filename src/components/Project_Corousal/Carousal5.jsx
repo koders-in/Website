@@ -1,13 +1,14 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './carousal1.scss'
-import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
-import Image2 from '../../Images/Projects/Notes_App/Dashboard.jpg'
-import Image3 from '../../Images/Projects/Notes_App/AddNotes.jpg'
-import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.jpg'
+import './Carousal5.scss'
+import Image1 from '../../Images/Projects/Machina/SignIn.jpg'
+import Image2 from '../../Images/Projects/Machina/Dashboard_SignIn.png'
+import Image3 from '../../Images/Projects/Machina/Proxies.jpg'
+import Image4 from '../../Images/Projects/Machina/Settings.jpg'
+import Image5 from '../../Images/Projects/Machina/Task Groups.jpg'
 
-function ProjectCorousal1() {
+function Carousal5() {
 
     const responsive = {
         desktop: {
@@ -45,23 +46,27 @@ function ProjectCorousal1() {
                 itemClass="carousel-item-padding-50-px">
                 <div>
                     <img alt="" src={Image1} />
-                    <p>Login Page</p>
+                    <p>Sign In</p>
                 </div>
                 <div>
                     <img alt="" src={Image2} />
-                    <p>Dashboard</p>
+                    <p>Dashboard + SignIn</p>
                 </div>
                 <div>
                     <img alt="" src={Image3} />
-                    <p>Add Notes</p>
+                    <p>Proxies</p>
                 </div>
                 <div>
                     <img alt="" src={Image4} />
-                    <p>Miscellaneous</p>
+                    <p>Settings</p>
+                </div>
+                <div>
+                    <img alt="" src={Image5} />
+                    <p>Task Groups</p>
                 </div>
             </Carousel>
         </div>
     )
 }
 
-export default ProjectCorousal1
+export default Carousal5

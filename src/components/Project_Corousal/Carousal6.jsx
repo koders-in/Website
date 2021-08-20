@@ -1,13 +1,15 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './carousal1.scss'
-import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
-import Image2 from '../../Images/Projects/Notes_App/Dashboard.jpg'
-import Image3 from '../../Images/Projects/Notes_App/AddNotes.jpg'
-import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.jpg'
+import './Carousal6.scss'
+import Image1 from '../../Images/Projects/UCToolbot/Account_generator.jpg'
+import Image2 from '../../Images/Projects/UCToolbot/AutoLinkOpener.jpg'
+import Image3 from '../../Images/Projects/UCToolbot/Cookie_Generator.jpg'
+import Image4 from '../../Images/Projects/UCToolbot/One-click.jpg'
+import Image5 from '../../Images/Projects/UCToolbot/Profile_Converter.jpg'
+import Image6 from '../../Images/Projects/UCToolbot/Proxy_Generator.jpg'
 
-function ProjectCorousal1() {
+function Carousal6() {
 
     const responsive = {
         desktop: {
@@ -45,23 +47,31 @@ function ProjectCorousal1() {
                 itemClass="carousel-item-padding-50-px">
                 <div>
                     <img alt="" src={Image1} />
-                    <p>Login Page</p>
+                    <p>Account Generator</p>
                 </div>
                 <div>
                     <img alt="" src={Image2} />
-                    <p>Dashboard</p>
+                    <p>Auto Link Opener</p>
                 </div>
                 <div>
                     <img alt="" src={Image3} />
-                    <p>Add Notes</p>
+                    <p>Cookie Generator</p>
                 </div>
                 <div>
                     <img alt="" src={Image4} />
-                    <p>Miscellaneous</p>
+                    <p>One Click</p>
+                </div>
+                <div>
+                    <img alt="" src={Image5} />
+                    <p>Profile Converter</p>
+                </div>
+                <div>
+                    <img alt="" src={Image6} />
+                    <p>Proxy Generator</p>
                 </div>
             </Carousel>
         </div>
     )
 }
 
-export default ProjectCorousal1
+export default Carousal6

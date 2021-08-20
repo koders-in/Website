@@ -1,9 +1,9 @@
 import React from 'react'
 import './Testimonials.scss'
 import Fade from 'react-reveal/Fade';
-import Image1 from '../../Images/Avatar_1.svg'
-import Image2 from '../../Images/Avatar_2.svg'
-import Image3 from '../../Images/Avatar_3.svg'
+import Image1 from '../../Images/person-1.png'
+import Image2 from '../../Images/person-2.png'
+import Image3 from '../../Images/person-3.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -49,28 +49,26 @@ function Testimonials() {
                 itemClass="carousel-item-padding-40-px">
                     <div className="card1">
                         <img src={Image1} alt="/"></img>
-                        <h4>Elizabeth Martin</h4>
-                        <h5>SaveSpace Inc.</h5>
-                        <p>“Chamer is the most valuable business resource we have ever purchased. I would be lost without chamer.” </p>
+                        <h4>Jai agarwal</h4>
+                        <h5>Managing Director, JaiG </h5>
+                        <h5>(166-Jai-G-Revamp)</h5>
+                        <p>"I am proud to be a part of a zealous team who always 
+                        astonishes me with great results. I received exactly what 
+                        we had planned together."</p>
                     </div>
                     <div className="card2">
                         <img src={Image2} alt="/"></img>
-                        <h4>Alberto Donko</h4>
-                        <h5>ScreepApp</h5>
-                        <p>“Chamer is the most valuable business resource we have ever purchased. I would be lost without chamer.” </p>
+                        <h4>Bradley B.</h4>
+                        <h5>(0087-Powershell)</h5>
+                        <p>"Excellent work - good communication - Understanding - Professional - Highly recommended!"</p>
                     </div>
                     <div className="card3">
                         <img src={Image3} alt="/"></img>
-                        <h4>Alexander Parkinson</h4>
-                        <h5>MyTravel.com</h5>
-                        <p>“Chamer is the most valuable business resource we have ever purchased. I would be lost without chamer.” </p>
+                        <h4>DiegoTod</h4>
+                        <h5>(170-0089-Support)</h5>
+                        <p>"Always available to find a solution, thank you guys! ❤ "</p>
                     </div>
-                    <div className="card2">
-                        <img src={Image2} alt="/"></img>
-                        <h4>Alberto Donko</h4>
-                        <h5>ScreepApp</h5>
-                        <p>“Chamer is the most valuable business resource we have ever purchased. I would be lost without chamer.” </p>
-                    </div>
+
                 </Carousel>
                 </div>
             </div>

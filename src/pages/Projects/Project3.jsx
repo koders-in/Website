@@ -1,7 +1,8 @@
 import React from 'react'
 import './Project3.scss'
-import Image1 from '../../Images/Projects/Food_Delivery/Client App.jpg'
-import Image2 from '../../Images/Projects/Food_Delivery/Restaurant_App.jpg'
+import Image1 from '../../Images/Projects/Twitter_Monitor/Settings.png'
+import Image2 from '../../Images/Projects/Twitter_Monitor/Twitter and ALO.png'
+import Image3 from '../../Images/Projects/Twitter_Monitor/Twitter_Old_UI.png'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 
@@ -12,48 +13,43 @@ function Project3() {
         <div className="project2">
             <Fade bottom>
             <div className="section1">
-                <h1>Food Delivery Application</h1>
+                <h1>Twitter Monitor</h1>
                 <img src={Image1} alt="" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>
                 <h2>Introduction:</h2>
-                <p>Let’s get one thing straight, E-commerce is 
-                the new normal so are the online grocery stores 
-                but the development of these platforms has always been a 
-                barrier. We understood the needs of the market and developed 
-                a robust, cost-efficient, and top-notch hybrid E-Commerce 
-                application. An application that serves the restaurant, the 
-                client, and the delivery executive through one application to 
-                smooth out the operations and monitor real-life activities.</p>
+                <p>One of our flagships projects under which our client wanted the 
+                agility of 50-60ms while monitoring twitter and receiving notifications 
+                about the same. Sounds tough for an average programmer? Koders pulled 
+                it off with elegance as we served not only the client’s needs but also 
+                an impeccable sneaker bot with our hands-on experience of python and async 
+                functions. Inscribing in the keywords, filtering them out in a matter of 
+                milliseconds was challenging but, an average task, we do not do that here.</p>
                 </Fade>
             </div>
 
             <div className="challenges">
                 <Fade left>
                 <h2>Challenges:</h2>
-                <p>Clubbing three apps together might sound like a recipe for debacle 
-                but from the perspective of a shop/business owner, it's a blessing. 
-                The challenge we had first mostly was to gel the apps  together and 
-                make it work as a single unit. Through extensive trials and errors, 
-                we were able to achieve it without compromising on any feature. 
-                Instead, we developed a few handy admin features which are intuitive 
-                and monitor activity in real life. The second challenge was the size 
-                of this application, which, meh, Koders don't find it a challenge enough. 
-                The application developed is well under the average E-commerce app size.</p>
+                <p>Twitter is one heck of a moderator when it comes to their platform. 
+                The primary challenge with twitter was that it blocks the request if the 
+                limit gets higher in streaming and fetching tweets. Other than that, 
+                all notifications were to be integrated with discord and that was a 
+                tricky task as well.</p>
                 </Fade>
             </div>
 
             <div className="solution">
                 <Fade left>
                 <h2>Solution:</h2>
-                <p>Team-work led us to develop a layer-on-layer application 
-                process that was not only just efficient but friendly for all 
-                sorts of mobile devices as we executed all the functionalities 
-                by splitting them into pieces and then ran parallel integration 
-                with each panel.</p></Fade>
+                <p>The solution lies in maintaining the different API keys with rotation 
+                so that we do not exceed the limit rate. The execution took time but we 
+                made a robust API rotation technique which is keeping up with the changing 
+                times. The integration with discord was done by using the Webhook Library.</p></Fade>
             </div>
 
+            {/*
             <div className="tech">
                 <Fade left>
                 <h2>Tech Stack:</h2>
@@ -66,6 +62,7 @@ function Project3() {
                 </Fade>
             </div>
 
+            */}
             <div className="screenshots">
                 <Fade left>
                 <h2>Snapshots of the Application:</h2>
@@ -74,13 +71,16 @@ function Project3() {
                 <div className="corousal">
                     <div className="img1">
                         <img src={Image1} alt="" />
-                        <p>Client App</p>
+                        <p>Settings</p>
                     </div>
                     <div className="img2">
                         <img src={Image2} alt="" />
-                        <p>Restaurant App</p>
+                        <p>Twitter and ALO Page</p>
                     </div>
-                    
+                    <div className="img3">
+                        <img src={Image3} alt="" />
+                        <p>Twitter Old UI</p>
+                    </div>
                 </div>
                 </Fade>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 import {HashRouter, Link} from "react-router-dom";
 import './Services.scss'
-import Image1  from '../../Images/service.svg'
+import Image1  from '../../Images/Service.png'
 import Image2  from '../../Images/technology.png'
 import Image3  from '../../Images/Industry.png'
 

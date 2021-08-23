@@ -60,7 +60,6 @@
     
     .teammembers{
         margin-top: 100px;
-
         h1{
             padding-left: 500px;
             color:$third-color;
@@ -73,8 +72,10 @@
         }
     }
 
+    .knights{
+        padding-top: 200px;
+    }
     .footer{
-
         @include mobile{
         width: 120%;
         }

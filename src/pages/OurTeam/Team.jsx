@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import './Team.scss';
 import Image1 from '../../Images/team.jpg'
 import TeamCards from '../../components/TeamCards/TeamCards';
+import TeamCardsKnights from '../../components/TeamCards/TeamCardsKnights';
 
 function Team() {
     return (
@@ -25,6 +26,16 @@ function Team() {
                 <Fade bottom>
                 <div className="cards">
                     <TeamCards/>
+                </div>
+                </Fade>
+            </div>
+            <div className="teammembers">
+                <Fade bottom>
+                <h1 className="knights">Internal Board (Knights)</h1>
+                </Fade>
+                <Fade bottom>
+                <div className="cards">
+                    <TeamCardsKnights/>
                 </div>
                 </Fade>
             </div>

@@ -1,0 +1,84 @@
+@import '../../Global.scss';
+
+.industry{
+    width: 100%;
+
+    @include mobile{
+        width: 100%;
+    }
+
+    .heading{
+        position: relative;
+        margin-top: -200px;
+
+        @include mobile{
+            margin-top: 0px;
+            width: 170%;
+        }
+
+        img{
+            width: 100%;
+            
+            @include mobile{
+                height: 400px;
+            }
+        }
+
+        .wrapper{
+            display: flex;
+            width: 86%;
+            justify-content: space-between;
+            position: absolute;
+            margin-top: -80px;
+            margin-left: 120px;
+
+            @include mobile{
+                flex-direction: column;
+            }
+
+            h3{
+                color: $third-color;
+                font-size: 40px;
+                font-weight: 400;
+            }
+
+            .backbutton{
+
+                @include mobile{
+                    display: none;
+                }
+
+                a{
+                    margin-top: 20px;
+                    display: flex;
+                    text-decoration: none;
+
+                    img{
+                        height: 20px;
+                        padding-right: 10px;
+                    }
+
+                    p{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .table{
+        margin-top: 20px;
+
+        img{
+            height: 350px;
+            margin-left:250px;
+
+            @include mobile{
+                margin-top: 80px;
+                margin-left: 0px;
+                height: 330px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}

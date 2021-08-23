@@ -1,0 +1,82 @@
+@import '../../Global.scss';
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: fixed;
+    z-index: 2;
+    top: 0;
+
+    @include mobile{
+        width: 100%;
+        height: 200px;
+    }
+
+    .wrapper{
+        display: flex;
+        padding: 25px 40px;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left{
+            margin-left: 80px;
+
+            @include mobile{
+                margin-left: 0px;
+                padding-bottom: 50px;
+            }
+
+            img{
+                width: 40px;
+                height: 40px;
+            }
+
+            @include mobile{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .right{
+            
+            ul{ 
+                display: flex;
+                list-style: none;
+
+                li{
+                    display: block;
+                    margin-right: 50px;
+
+                    @include mobile{
+                        margin-right: 40px;
+                    }
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: $secondary-color;
+                        font-weight: 200;
+                        font-size: 15px;
+
+                        @include mobile{
+                            font-size: 13px;
+                        }
+
+                        &:hover{
+                            font-weight: 200;
+                            color: $third-color;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

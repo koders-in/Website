@@ -1,0 +1,182 @@
+@import '../../Global.scss';
+
+.portfolio{
+    width: 100%;
+
+    .heading{
+        position: relative;
+        margin-top: -220px;
+
+        @include mobile{
+            width: 130%;
+            margin-top: 0px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            margin-top: -100px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+
+            @include mobile{
+                margin-left: 60px;
+            }
+        }
+    }
+
+    .wrapper{
+        display: flex;
+        padding-top: 60px;
+
+        @include mobile{
+            flex-direction: column;
+        }
+
+        .left{
+            flex:0.5;
+
+            h3{
+                margin-left: 120px;
+                font-size: 30px;
+                color: $secondary-color;
+                width: 500px;
+
+                @include mobile{
+                    margin-left: 60px;
+                }
+            }
+
+            p{
+                margin-left: 120px;
+                text-align: justify;
+                margin-top: 50px;
+                font-size: 18px;
+                width: 500px;
+                font-weight: 350;
+                color: $secondary-color;
+
+                @include mobile{
+                    margin-left: 60px;
+                }
+            }
+        }
+
+        .right{
+            flex:0.5;
+
+            @include mobile{
+                margin-top: 60px;
+            }
+
+            .counts{
+                display: flex;
+                flex-direction: column;
+                margin-top: 0px;
+                margin-left: 200px;
+                overflow-x: hidden;
+
+                @include mobile{
+                    align-items: center;
+                    margin-left: 0px;
+                }
+
+                h1{
+                    font-size: 65px;
+                    font-weight: 420;
+                    color:$third-color;
+                }
+    
+                h3{
+                    font-weight: 250;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    .featuredprojects{
+        margin-top: 30px;
+        background-color: #1F2436;
+        width: 100%;
+        height: 1100px;
+
+        @include mobile{
+            width: 130%;
+            height: 800px;
+        }
+
+        img{
+            padding-top: 100px;
+            padding-left: 150px;
+            height: 900px;
+
+            @include mobile{
+                padding-left: 40px;
+                height: 550px;
+            }
+        }
+    }
+
+    .technologies{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mobile{
+            align-items: flex-start;
+        }
+
+
+        h3{
+            color: $third-color;
+            font-size: 35px;
+            font-weight: 400;
+
+            @include mobile{
+                margin-left: 60px;
+            }
+        }
+
+        img{
+            margin-top: 50px;
+            height: 380px;
+
+            @include mobile{
+                padding-left: 20px;
+                height: 220px;
+            }
+        }
+    }
+
+    .projects{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+
+        h3{
+            color: $third-color;
+            font-size: 35px;
+            font-weight: 400;
+
+            @include mobile{
+                margin-left: -190px;
+            }
+        }
+    }
+
+    .footer{
+       
+        @include mobile{
+            width: 115%;
+            height: 100%;
+        }
+    }
+}

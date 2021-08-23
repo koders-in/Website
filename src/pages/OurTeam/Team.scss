@@ -1,0 +1,83 @@
+@import '../../Global.scss';
+
+.team{
+    width: 100%;
+
+    .heading{
+        position: relative;
+        margin-top: 0;
+
+        @include mobile{
+            width: 130%;
+        }
+
+        img{
+            width: 100%;
+
+            @include mobile{
+                width: 130%;
+                margin-left: -150px;
+            }
+        }
+
+        h3{
+            margin-top: -280px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+            padding-bottom: 200px;
+
+            @include mobile{
+                margin-top: -100px;
+                padding-bottom: 100px;
+                margin-left: 60px;
+            }
+        }
+    }
+
+    .content
+    {
+        padding-left: 120px;
+        margin-top: 90px;
+
+        @include mobile{
+            padding-left: 60px;
+            margin-top: 30px;
+        }
+
+        p{
+            color: $secondary-color;
+            word-spacing: 5px;
+            width: 75%;
+
+            @include mobile{
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+    }
+    
+    .teammembers{
+        margin-top: 100px;
+        h1{
+            padding-left: 500px;
+            color:$third-color;
+            font-weight: 600;
+            font-size: 40px;
+
+            @include mobile{
+                padding-left: 60px;
+            }
+        }
+    }
+
+    .knights{
+        padding-top: 200px;
+    }
+    .footer{
+        @include mobile{
+        width: 120%;
+        }
+    }
+}

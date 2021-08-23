@@ -1,0 +1,233 @@
+@import '../../Global.scss';
+
+.career{
+    width: 100%;
+
+    .heading{
+        position: relative;
+        margin-top: -220px;
+
+        @include mobile{
+            width: 170%;
+            margin-top: 0px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            margin-top: -200px;
+            padding-bottom: 50px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+
+            @include mobile{
+                margin-left: 60px;
+            }
+        }
+    }
+
+    .section1{
+        padding-left: 120px;
+        padding-top: 120px;
+
+
+        @include mobile{
+            padding-top: 60px;
+            padding-left: 60px;
+        }
+
+        h1{
+            color: $secondary-color;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        h3{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 16px;
+            width: 80%;
+            text-align: justify;
+            font-weight: 300;
+
+            @include mobile{
+                width: 170%;
+            }
+        }
+    }
+
+    .section2{
+        padding-left: 120px;
+        padding-top: 150px;
+
+        @include mobile{
+            padding-top: 80px;
+            padding-left: 60px;
+        }
+
+        h1{
+            color: $secondary-color;
+            font-size: 50px;
+            font-weight: 500;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+
+            @include mobile{
+                width: 130%;
+            }
+        }
+
+        .pic{
+            margin-top: 30px;
+
+            img{
+                width: 800px;
+            }
+        }
+    }
+
+    .pab{
+        margin-top: 110px;
+        display:flex;
+
+        @include mobile{
+            width: 160%;
+            margin-left: -60px;
+        }
+
+        .left{
+            flex: 0.5;
+
+            .point1{
+                
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+            }
+
+            .point2{
+                margin-top: 80px;
+                
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+            }
+
+            .point3{
+                margin-top: 80px;
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        .right{
+            flex: 0.5;
+
+            .point1{
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+            }
+
+            .point2{
+                margin-top: 100px;
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+            }
+
+            .point3{
+                margin-top: 100px;
+
+                @include mobile{
+                    margin-top: 140px;
+                }
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+

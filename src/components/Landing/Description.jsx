@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import Image1 from '../../Images/Creative.svg'
 import Image2 from '../../Images/Efficient.svg'
 import Image3 from '../../Images/Proffiecient.svg'
+import Motto2 from "../../Images/motto2.png"
 
 function Description() {
     return (
@@ -12,7 +13,8 @@ function Description() {
                 <Fade left>
                 <h3>ABOUT KODERS</h3>
                 <div className="boxdesc">
-                    <h1>We strive to make the <br></br>best for our customers.</h1>
+                    {/* <h1>We strive to make the <br></br>best for our customers.</h1> */}
+                    <img src={Motto2} alt="/"></img> 
                 </div>
                 </Fade>
                 <Fade bottom>

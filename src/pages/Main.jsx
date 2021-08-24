@@ -29,11 +29,13 @@ import Project9 from './Projects/Project9';
 import Project10 from './Projects/Project10';
 import Project11 from './Projects/Project11';
 import Description from '../components/Landing/Description';
+import ScrollTop from './ScrollTop';
 
 function Main() {
     return (
         <div>
             <HashRouter basename="/">
+                <ScrollTop/>
                 <Switch>
                     <Route path="/" exact component={() => 
                         <Home /> } 

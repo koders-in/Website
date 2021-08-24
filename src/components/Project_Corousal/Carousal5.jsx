@@ -29,8 +29,8 @@ function Carousal5() {
       };
 
     return (
-        <div className="projectcorousal">
-            <Carousel swipeable={true}
+        <div className="projectcorousal_machina">
+            <Carousel centerMode={true} swipeable={true}
                 draggable={true}
                 responsive={responsive}
                 ssr={true} // means to render carousel on server-side.

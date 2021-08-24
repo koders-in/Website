@@ -5,13 +5,11 @@ import Image2 from '../../Images/Projects/Food_Delivery/Restaurant_App.jpg'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 
-function Project2() {
-
-    
+function Project2() {   
     return (
         <div className="project2">
             <Fade bottom>
-            <div className="section1">
+            <div className="section2">
                 <h1>Food Delivery Application</h1>
                 <img src={Image1} alt="" />
             </div></Fade>
@@ -66,12 +64,12 @@ function Project2() {
                 </Fade>
             </div>
 
-            <div className="screenshots">
+            <div className="screenshots2">
                 <Fade left>
                 <h2>Snapshots of the Application:</h2>
                 </Fade>
                 <Fade bottom>
-                <div className="corousal">
+                <div className="corousal2">
                     <div className="img1">
                         <img src={Image1} alt="" />
                         <p>Client App</p>

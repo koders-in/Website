@@ -97,9 +97,9 @@
        }
     }
 
-    .screenshots{
+    .screenshots1{
         margin-top: 50px;
-        margin-left: 120px;
+        margin-left: 60px;
         
         h2{
             color: $secondary-color;
@@ -107,11 +107,12 @@
             font-weight: 500;
         }
 
-        .corousal{
-            height: 500px;
+        .corousal1{
+            height: 450px;
             margin-top: 40px;
             padding-bottom: 40px;
             margin-left: -120px;
+            padding-left: 4px;
             background-color: #1F2436;
         }
     }

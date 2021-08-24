@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import Image1 from '../../Images/person-1.png'
 import Image2 from '../../Images/person-2.png'
 import Image3 from '../../Images/person-3.png'
+import Image4 from '../../Images/person-4.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -49,7 +50,7 @@ function Testimonials() {
                 itemClass="carousel-item-padding-40-px">
                     <div className="card1">
                         <img src={Image1} alt="/"></img>
-                        <h4>Jai agarwal</h4>
+                        <h4>Jai Agarwal</h4>
                         <h5>Managing Director, JaiG </h5>
                         <h5>(166-Jai-G-Revamp)</h5>
                         <p>"I am proud to be a part of a zealous team who always 
@@ -67,6 +68,12 @@ function Testimonials() {
                         <h4>DiegoTod</h4>
                         <h5>(170-0089-Support)</h5>
                         <p>"Always available to find a solution, thank you guys! ❤ "</p>
+                    </div>
+                    <div className="card4">
+                        <img src={Image4} alt="/"></img>
+                        <h4>Enz</h4>
+                        <h5>(168-Machina-UI)</h5>
+                        <p>"Speed and price and cleaness of code exceeded expectations"</p>
                     </div>
 
                 </Carousel>

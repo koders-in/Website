@@ -128,7 +128,7 @@ function AboutUs() {
             <div className="vision">
                 <h2>VISION</h2>
 
-                <h5>"Code less, create more"</h5>
+                <h5>"Kode less, Kreate more"</h5>
 
                 <p>To build the best and invent a better tomorrow with the help of the great growling engine -Technology. 
                 Koders is Kore of galvanized enthusiasts working for a vision beyond reality.

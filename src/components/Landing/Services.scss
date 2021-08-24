@@ -65,14 +65,18 @@
                     text-decoration: none;
 
                     img{
-                        margin-top: -20px;
-                        height: 180px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 150px;
+                        width: 140px;
                     }
 
                     h2{
                         font-weight: 500;
                         margin-top: 20px;
-                        margin-left: 45px;
+                        margin-left: 18px;
+                        align-items: center;
                         color: $secondary-color;
                     }
 
@@ -105,19 +109,17 @@
                     text-decoration: none;
 
                     img{
-                        margin-top: -25px;
-                        height: 150px;
+                         height: 150px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 140px;
                     }
 
                     h2{
                         font-weight: 500;
                         margin-top: 20px;
                         margin-left: 15px;
-                        color: $secondary-color;
-                    }
-
-                    h2{
-                        font-weight: 500;
                         color: $secondary-color;
                     }
 
@@ -148,14 +150,17 @@
                     text-decoration: none;
 
                     img{
-                        margin-top: -20px;
-                        height: 160px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 150px;
+                        width: 140px;
                     }
 
                     h2{
                         font-weight: 500;
                         margin-top: 20px;
-                        margin-left: 55px;
+                        margin-left: 15px;
                         color: $secondary-color;
                     }
 

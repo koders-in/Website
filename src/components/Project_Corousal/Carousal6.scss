@@ -1,6 +1,6 @@
 @import '../../Global.scss';
 
-.projectcorousal{
+.projectcorousal_UC{
     padding-top: 40px;
     padding-bottom: 5px;
     width: 100%;
@@ -9,15 +9,14 @@
         
 
         img{
-            width: 380px;
-            height: 190px;
+            width: 390px;
+            height: 200px;
             padding-bottom: 20px;
         }
 
         p{
             color: $third-color;
             margin-top: -20px;
-            margin-left: 150px;
         }
     }
 }

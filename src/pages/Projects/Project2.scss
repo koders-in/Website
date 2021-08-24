@@ -3,7 +3,7 @@
 .project2{
     width: 100%;
 
-    .section1{
+    .section2{
         height: 600px;
         background-color: #1F2436;
         margin-top: 130px;
@@ -19,7 +19,7 @@
         img{
             margin-left: 600px;
             margin-top: 20px;
-            width: 250px;
+            width: 210px;
             height: 450px;
             border: 2px solid $third-color;
         }
@@ -97,7 +97,7 @@
        }
     }
 
-    .screenshots{
+    .screenshots2{
         margin-top: 50px;
         margin-left: 120px;
         
@@ -107,7 +107,7 @@
             font-weight: 500;
         }
 
-        .corousal{
+        .corousal2{
             padding-top: 20px;
             display: flex;
             margin-top: 50px;
@@ -118,7 +118,7 @@
                 img{
                     padding-left: 80px;
                     width: 250px;
-                    height: 500px;
+                    height: 450px;
                 }
                 
                 p{

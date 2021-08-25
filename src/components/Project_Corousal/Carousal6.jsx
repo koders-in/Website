@@ -31,7 +31,7 @@ function Carousal6() {
 
     return (
         <div className="projectcorousal_UC">
-            <Carousel centerMode={true} swipeable={true}
+            <Carousel swipeable={true}
                 draggable={true}
                 responsive={responsive}
                 ssr={true} // means to render carousel on server-side.

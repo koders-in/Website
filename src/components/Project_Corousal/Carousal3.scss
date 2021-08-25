@@ -17,6 +17,7 @@
             @include mobile{
                 width: 280px;
                 height: 170px;
+                padding-left: 20px;
             }
         }
 
@@ -25,6 +26,7 @@
             margin-top: -20px;
             @include mobile{
                 margin-left: 0px;
+                padding-left: 20px;
             }
 
         }

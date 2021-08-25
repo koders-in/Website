@@ -30,7 +30,7 @@ function Carousal4() {
 
     return (
         <div className="projectcorousal_hawa">
-            <Carousel centerMode={true} swipeable={true}
+            <Carousel swipeable={true}
                 draggable={true}
                 responsive={responsive}
                 ssr={true} // means to render carousel on server-side.

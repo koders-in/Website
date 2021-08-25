@@ -29,7 +29,7 @@ function ProjectCorousal1() {
 
     return (
         <div className="projectcorousal1">
-            <Carousel centerMode={true} swipeable={true}
+            <Carousel swipeable={true}
                 draggable={true}
                 responsive={responsive}
                 ssr={true} // means to render carousel on server-side.

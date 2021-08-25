@@ -135,6 +135,38 @@
                 }
             }
         
+            .card4{
+                margin-top: 40px;
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img{
+                    height: 110px;
+                }
+
+                h4{
+                    padding-top: 20px;
+                    color: $third-color;
+                    font-weight: 500;
+                }
+
+                h5{
+                    color: $secondary-color;
+                    font-weight: 300;
+                }
+
+                p{
+                    color: $secondary-color;
+                    padding-top: 50px;
+                    padding-right: 50px;
+                    padding-left: 50px;
+                    text-align: center;
+                    font-size: 12px;
+                    font-style: oblique;
+                }
+            }
 
         .more{
             height: 50px;

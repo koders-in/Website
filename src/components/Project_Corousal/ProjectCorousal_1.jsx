@@ -42,9 +42,9 @@ function ProjectCorousal1() {
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-50-px">
+                itemClass="carousel-item-padding-10-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="" src={Image1}/>
                     <p>Login Page</p>
                 </div>
                 <div>

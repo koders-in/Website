@@ -49,21 +49,20 @@ function Project3() {
                 times. The integration with discord was done by using the Webhook Library.</p></Fade>
             </div>
 
-            {/*
+            
             <div className="tech">
                 <Fade left>
                 <h2>Tech Stack:</h2>
                 <ul>
-                    <li>Ionic</li>
-                    <li>Cordova</li>
-                    <li>Laravel Framework</li>
-                    <li>Angular Js</li>
+                    <li>Node</li>
+                    <li>Electron</li>
+                    <li>React</li>
                 </ul>
                 </Fade>
             </div>
 
-            */}
-            <div className="screenshots">
+           
+            <div className="screenshots_twitter">
                 <Fade left>
                 <h2>Snapshots of the Application:</h2>
                 </Fade>

@@ -29,8 +29,8 @@ function Carousal3() {
       };
 
     return (
-        <div className="projectcorousal3">
-            <Carousel swipeable={true}
+        <div className="projectcorousal_kourage">
+            <Carousel  swipeable={true}
                 draggable={true}
                 responsive={responsive}
                 ssr={true} // means to render carousel on server-side.

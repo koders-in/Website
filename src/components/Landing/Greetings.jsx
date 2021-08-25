@@ -20,7 +20,7 @@ function Greetings() {
                         software <br></br>needs with their touch of Koding.</p>
                         <img src={Image2} alt="/"></img>
                         <div className="arrow">
-                            <a href="#desc">
+                            <a href="#aboutus">
                                 <img src={Image4} alt="" />
                             </a>
                         </div>

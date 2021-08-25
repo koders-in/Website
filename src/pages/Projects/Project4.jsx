@@ -57,38 +57,13 @@ function Project4() {
                 <Fade left>
                 <h2>Tech Stack:</h2>
                 <ul>
-                    <li>Python (version >= 3.5)</li>
-                    <li>OpenCV Library (version >= 3)</li>
+                    <li>Python (version &#8805; 3.5)</li>
+                    <li>OpenCV Library (version &#8805; 3)</li>
                     <li>Numpy Library</li>
                     <li>A working webcam for the desktop</li>
                 </ul>
                 </Fade>
             </div>
-
-            {/*
-            <div className="screenshots">
-                <Fade left>
-                <h2>Snapshots of the Application:</h2>
-                </Fade>
-                <Fade bottom>
-                <div className="corousal">
-                    <div className="img1">
-                        <img src={Image1} alt="" />
-                        <p>Settings</p>
-                    </div>
-                    <div className="img2">
-                        <img src={Image2} alt="" />
-                        <p>Twitter and ALO Page</p>
-                    </div>
-                    <div className="img3">
-                        <img src={Image3} alt="" />
-                        <p>Twitter Old UI</p>
-                    </div>
-                </div>
-                </Fade>
-            </div>
-
-            */}
             <div className="footer">
                 <Footer/>
             </div>

@@ -28,7 +28,7 @@ function Carousal8() {
       };
 
     return (
-        <div className="projectcorousal8">
+        <div className="projectcorousal_aio">
             <Carousel swipeable={true}
                 draggable={true}
                 responsive={responsive}

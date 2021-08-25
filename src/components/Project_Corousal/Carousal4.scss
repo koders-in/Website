@@ -1,6 +1,6 @@
 @import '../../Global.scss';
 
-.projectcorousal4{
+.projectcorousal_hawa{
     padding-top: 40px;
     padding-bottom: 5px;
     width: 100%;
@@ -9,13 +9,14 @@
         
 
         img{
-            width: 380px;
-            height: 190px;
+            width: 320px;
+            height: 180px;
             padding-bottom: 20px;
 
             @include mobile{
                 width: 280px;
                 height: 160px;
+                padding-left: 20px;
             }
         }
 
@@ -23,9 +24,9 @@
             color: $third-color;
             margin-top: -20px;
             margin-left: 0px;
-
             @include mobile{
                 margin-left: 0px;
+                padding-left: 20px;
             }
         }
     }

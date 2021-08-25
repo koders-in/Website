@@ -3,13 +3,18 @@
 .portfolio{
     width: 100%;
 
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
     .heading{
         position: relative;
         margin-top: -220px;
 
         @include mobile{
-            width: 130%;
-            margin-top: 0px;
+            width: 590px;
+            margin-top: -40px;
         }
 
         img{
@@ -24,7 +29,9 @@
             font-weight: 500;
 
             @include mobile{
-                margin-left: 60px;
+                margin-top: 20px;
+                margin-left: 30px;
+                font-size: 40px;
             }
         }
     }
@@ -35,6 +42,7 @@
 
         @include mobile{
             flex-direction: column;
+            padding-top: 30px;
         }
 
         .left{
@@ -47,7 +55,8 @@
                 width: 500px;
 
                 @include mobile{
-                    margin-left: 60px;
+                    margin-left: 30px;
+                    font-size: 25px;
                 }
             }
 
@@ -56,12 +65,14 @@
                 text-align: justify;
                 margin-top: 50px;
                 font-size: 18px;
-                width: 500px;
+                width: 95%;
                 font-weight: 350;
                 color: $secondary-color;
 
                 @include mobile{
-                    margin-left: 60px;
+                    margin-left: 30px;
+                    margin-top: 30px;
+                    width: 90%;
                 }
             }
         }
@@ -106,8 +117,8 @@
         height: 1100px;
 
         @include mobile{
-            width: 130%;
-            height: 800px;
+            width: 590px;
+            height: 500px;
         }
 
         img{
@@ -116,8 +127,9 @@
             height: 900px;
 
             @include mobile{
-                padding-left: 40px;
-                height: 550px;
+                padding-top: 30px;
+                padding-left: 20px;
+                height: 440px;
             }
         }
     }
@@ -129,6 +141,7 @@
         align-items: center;
 
         @include mobile{
+            margin-top: 50px;
             align-items: flex-start;
         }
 
@@ -139,7 +152,8 @@
             font-weight: 400;
 
             @include mobile{
-                margin-left: 60px;
+                margin-left: 30px;
+                font-size: 30px;
             }
         }
 
@@ -148,8 +162,8 @@
             height: 380px;
 
             @include mobile{
-                padding-left: 20px;
-                height: 220px;
+                padding-left: 0px;
+                height: 170px;
             }
         }
     }
@@ -160,6 +174,11 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 20px;
+
+        @include mobile{
+            margin-top: 50px;
+            margin-left: -60px;
+        }
 
         h3{
             color: $third-color;
@@ -172,11 +191,4 @@
         }
     }
 
-    .footer{
-       
-        @include mobile{
-            width: 115%;
-            height: 100%;
-        }
-    }
 }

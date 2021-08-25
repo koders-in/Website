@@ -4,8 +4,10 @@
     margin-top: 50px;
 
     @include mobile{
-        width: 130%;
+        width: 590px;
+        overflow-x: hidden;
     }
+
     
     .blog1{
         width: 82%;
@@ -14,7 +16,9 @@
         display: flex;
 
         @include mobile{
-            height: 450px;
+            width: 90%;
+            flex-direction: column;
+            height: 700px;
         }
 
 
@@ -41,8 +45,9 @@
                 padding-top: 40px;
 
                 @include mobile{
+                    text-align: justify;
                     font-size: 28px;
-                    width: 300px;
+                    width: 95%;
                 }
             }
 
@@ -54,7 +59,8 @@
                 padding-bottom: 30px;
 
                 @include mobile{
-                    width: 300px;
+                    width: 95%;
+                    text-align: justify;
                 }
             }
 
@@ -74,10 +80,20 @@
                 height: 250px;
                 background-color: rgb(228, 228, 228);
 
+                @include mobile{
+                    margin-top: 0px;
+                    margin-bottom: 100px;
+                }
+
                 img{
                     height: 250px;
                     width: 400px;
                     border: 1px solid $third-color;
+
+                    @include mobile{
+                        width: 510px;
+                        height: 300px;
+                    }
                 }
             }
         }
@@ -90,7 +106,9 @@
         display: flex;
 
         @include mobile{
-            height: 475px;
+            width: 90%;
+            flex-direction: column;
+            height: 750px;
         }
 
         .left{
@@ -115,8 +133,9 @@
                 padding-top: 40px;
 
                 @include mobile{
+                    text-align: justify;
                     font-size: 28px;
-                    width: 300px;
+                    width: 95%;
                 }
             }
 
@@ -128,7 +147,8 @@
                 padding-bottom: 30px;
 
                 @include mobile{
-                    width: 300px;
+                    width: 95%;
+                    text-align: justify;
                 }
             }
 
@@ -147,12 +167,22 @@
                 width: 400px;
                 height: 250px;
                 background-color: rgb(228, 228, 228);
+
+                @include mobile{
+                    margin-top: 0px;
+                    margin-bottom: 100px;
+                }
             }
 
             img{
                 height: 250px;
                 width: 400px;
                 border: 1px solid $third-color;
+
+                @include mobile{
+                    width: 510px;
+                    height: 300px;
+                }
             }
         }
     }
@@ -164,7 +194,9 @@
         display: flex;
 
         @include mobile{
-            height: 400px;
+            width: 90%;
+            flex-direction: column;
+            height: 700px;
         }
 
         .left{
@@ -189,8 +221,9 @@
                 padding-top: 40px;
 
                 @include mobile{
+                    text-align: justify;
                     font-size: 28px;
-                    width: 300px;
+                    width: 95%;
                 }
             }
 
@@ -202,7 +235,8 @@
                 padding-bottom: 30px;
 
                 @include mobile{
-                    width: 300px;
+                    width: 95%;
+                    text-align: justify;
                 }
             }
 
@@ -221,12 +255,22 @@
                 width: 400px;
                 height: 250px;
                 background-color: rgb(228, 228, 228);
+
+                @include mobile{
+                    margin-top: 0px;
+                    margin-bottom: 100px;
+                }
             }
 
             img{
                 height: 250px;
                 width: 400px;
                 border: 1px solid $third-color;
+                
+                @include mobile{
+                    width: 510px;
+                    height: 300px;
+                }
             }
         }
     }
@@ -238,7 +282,9 @@
         display: flex;
 
         @include mobile{
-            height: 475px;
+            width: 90%;
+            flex-direction: column;
+            height: 700px;
         }
 
         .left{
@@ -263,8 +309,9 @@
                 padding-top: 40px;
 
                 @include mobile{
+                    text-align: justify;
                     font-size: 28px;
-                    width: 300px;
+                    width: 95%;
                 }
             }
 
@@ -276,7 +323,8 @@
                 padding-bottom: 30px;
 
                 @include mobile{
-                    width: 300px;
+                    width: 95%;
+                    text-align: justify;
                 }
             }
 
@@ -295,12 +343,22 @@
                 width: 400px;
                 height: 250px;
                 background-color: rgb(228, 228, 228);
+
+                @include mobile{
+                    margin-top: 0px;
+                    margin-bottom: 100px;
+                }
             }
 
             img{
                 height: 250px;
                 width: 400px;
                 border: 1px solid $third-color;
+
+                @include mobile{
+                    width: 510px;
+                    height: 300px;
+                }
             }
         }
     }
@@ -312,7 +370,9 @@
         display: flex;
 
         @include mobile{
-            height: 475px;
+            width: 90%;
+            flex-direction: column;
+            height: 700px;
         }
 
         .left{
@@ -337,8 +397,9 @@
                 padding-top: 40px;
 
                 @include mobile{
+                    text-align: justify;
                     font-size: 28px;
-                    width: 300px;
+                    width: 95%;
                 }
             }
 
@@ -350,7 +411,8 @@
                 padding-bottom: 30px;
 
                 @include mobile{
-                    width: 300px;
+                    width: 95%;
+                    text-align: justify;
                 }
             }
 
@@ -369,12 +431,22 @@
                 width: 400px;
                 height: 250px;
                 background-color: rgb(228, 228, 228);
+
+                @include mobile{
+                    margin-top: 0px;
+                    margin-bottom: 100px;
+                }
             }
 
             img{
                 height: 250px;
                 width: 400px;
                 border: 1px solid $third-color;
+
+                @include mobile{
+                    width: 510px;
+                    height: 300px;
+                }
             }
         }
     }
@@ -386,7 +458,9 @@
         display: flex;
 
         @include mobile{
-            height: 400px;
+            width: 90%;
+            flex-direction: column;
+            height: 680px;
         }
 
         .left{
@@ -411,8 +485,9 @@
                 padding-top: 40px;
 
                 @include mobile{
+                    text-align: justify;
                     font-size: 28px;
-                    width: 300px;
+                    width: 95%;
                 }
             }
 
@@ -424,7 +499,8 @@
                 padding-bottom: 30px;
 
                 @include mobile{
-                    width: 300px;
+                    width: 95%;
+                    text-align: justify;
                 }
             }
 
@@ -443,12 +519,22 @@
                 width: 400px;
                 height: 250px;
                 background-color: rgb(228, 228, 228);
+
+                @include mobile{
+                    margin-top: 0px;
+                    margin-bottom: 100px;
+                }
             }
 
             img{
                 height: 250px;
                 width: 400px;
                 border: 1px solid $third-color;
+
+                @include mobile{
+                    width: 510px;
+                    height: 300px;
+                }
             }
         }
     }
@@ -461,7 +547,9 @@
         display: flex;
 
         @include mobile{
-            height: 475px;
+            width: 90%;
+            flex-direction: column;
+            height: 680px;
         }
 
         .left{
@@ -486,8 +574,9 @@
                 padding-top: 40px;
 
                 @include mobile{
+                    text-align: justify;
                     font-size: 28px;
-                    width: 300px;
+                    width: 95%;
                 }
             }
 
@@ -499,7 +588,8 @@
                 padding-bottom: 30px;
 
                 @include mobile{
-                    width: 300px;
+                    width: 95%;
+                    text-align: justify;
                 }
             }
 
@@ -518,12 +608,22 @@
                 width: 400px;
                 height: 250px;
                 background-color: rgb(228, 228, 228);
+
+                @include mobile{
+                    margin-top: 0px;
+                    margin-bottom: 100px;
+                }
             }
 
             img{
                 height: 250px;
                 width: 400px;
                 border: 1px solid $third-color;
+
+                @include mobile{
+                    width: 510px;
+                    height: 300px;
+                }
             }
         }
     }

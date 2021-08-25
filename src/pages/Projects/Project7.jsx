@@ -9,7 +9,7 @@ function Project7() {
 
     
     return (
-        <div className="project2">
+        <div className="Hawaproject">
             <Fade bottom>
             <div className="section1">
                 <h1>Hawa UI</h1>

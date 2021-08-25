@@ -3,13 +3,18 @@
 .career{
     width: 100%;
 
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
     .heading{
         position: relative;
         margin-top: -220px;
 
         @include mobile{
-            width: 170%;
-            margin-top: 0px;
+            width: 590px;
+            margin-top: -60px;
         }
 
         img{
@@ -25,7 +30,10 @@
             font-weight: 500;
 
             @include mobile{
-                margin-left: 60px;
+                margin-top: 20px;
+                margin-left: 30px;
+                font-size: 40px;
+                padding-bottom: 0px;
             }
         }
     }
@@ -37,13 +45,17 @@
 
         @include mobile{
             padding-top: 60px;
-            padding-left: 60px;
+            padding-left: 30px;
         }
 
         h1{
             color: $secondary-color;
             font-size: 40px;
             font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
         }
 
         h3{
@@ -55,7 +67,7 @@
             font-weight: 300;
 
             @include mobile{
-                width: 170%;
+                width: 95%;
             }
         }
     }
@@ -66,7 +78,7 @@
 
         @include mobile{
             padding-top: 80px;
-            padding-left: 60px;
+            padding-left: 30px;
         }
 
         h1{
@@ -77,7 +89,8 @@
             letter-spacing: 5px;
 
             @include mobile{
-                width: 130%;
+                width: 590px;
+                font-size: 40px;
             }
         }
 
@@ -85,7 +98,7 @@
             margin-top: 30px;
 
             img{
-                width: 800px;
+                width: 530px;
             }
         }
     }
@@ -95,8 +108,8 @@
         display:flex;
 
         @include mobile{
-            width: 160%;
-            margin-left: -60px;
+            flex-direction: column;
+            margin-top: 50px;
         }
 
         .left{
@@ -109,6 +122,11 @@
                     font-weight: 600;
                     padding-left: 120px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
                 }
 
                 p{
@@ -118,17 +136,32 @@
                     margin-top: 30px;
                     padding-left: 120px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
                 }
             }
 
             .point2{
                 margin-top: 80px;
+
+                @include mobile{
+                    margin-top: 40px;
+                }
                 
                 h4{
                     font-size: 30px;
                     font-weight: 600;
                     padding-left: 120px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
                 }
 
                 p{
@@ -138,17 +171,32 @@
                     margin-top: 30px;
                     padding-left: 120px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
                 }
             }
 
             .point3{
                 margin-top: 80px;
 
+                @include mobile{
+                    margin-top: 40px;
+                }
+
                 h4{
                     font-size: 30px;
                     font-weight: 600;
                     padding-left: 120px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
                 }
 
                 p{
@@ -158,12 +206,22 @@
                     margin-top: 30px;
                     padding-left: 120px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
                 }
             }
         }
 
         .right{
             flex: 0.5;
+
+            @include mobile{
+                margin-top: 40px;
+            }
 
             .point1{
 
@@ -172,6 +230,11 @@
                     font-weight: 600;
                     padding-left: 50px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
                 }
 
                 p{
@@ -181,17 +244,32 @@
                     margin-top: 30px;
                     padding-left: 50px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
                 }
             }
 
             .point2{
                 margin-top: 100px;
 
+                @include mobile{
+                    margin-top: 40px;
+                }
+
                 h4{
                     font-size: 30px;
                     font-weight: 600;
                     padding-left: 50px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
                 }
 
                 p{
@@ -201,6 +279,12 @@
                     margin-top: 30px;
                     padding-left: 50px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
                 }
             }
 
@@ -208,7 +292,7 @@
                 margin-top: 100px;
 
                 @include mobile{
-                    margin-top: 140px;
+                    margin-top: 40px;
                 }
 
                 h4{
@@ -216,6 +300,11 @@
                     font-weight: 600;
                     padding-left: 50px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
                 }
 
                 p{
@@ -225,6 +314,12 @@
                     margin-top: 30px;
                     padding-left: 50px;
                     color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
                 }
             }
         }

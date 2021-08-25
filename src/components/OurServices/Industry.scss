@@ -13,14 +13,13 @@
 
         @include mobile{
             margin-top: 0px;
-            width: 170%;
         }
 
         img{
             width: 100%;
             
             @include mobile{
-                height: 400px;
+                width: 590px;
             }
         }
 
@@ -34,12 +33,18 @@
 
             @include mobile{
                 flex-direction: column;
+                margin-top: 20px;
+                margin-left: 50px;
             }
 
             h3{
                 color: $third-color;
                 font-size: 40px;
                 font-weight: 400;
+
+                @include mobile{
+                    font-size: 30px;
+                }
             }
 
             .backbutton{
@@ -67,17 +72,17 @@
     }
 
     .table{
-        margin-top: 20px;
+        margin-top: 40px;
 
         img{
-            height: 350px;
-            margin-left:250px;
+            width: 1000px;
+            margin-left:220px;
 
             @include mobile{
                 margin-top: 80px;
                 margin-left: 0px;
-                height: 330px;
-                padding-bottom: 40px;
+                width: 590px;
+                padding-bottom: 10px;
             }
         }
     }

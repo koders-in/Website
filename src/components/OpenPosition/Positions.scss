@@ -4,7 +4,9 @@
     padding-top: 150px;
 
     @include mobile{
-        width: 170%;
+        padding-top: 80px;
+        width: 590px;
+        overflow-x: hidden;
     }
 
     h1{
@@ -16,7 +18,8 @@
         letter-spacing: 5px;
 
         @include mobile{
-            padding-left: 60px;
+            padding-left: 30px;
+            font-size: 40px;
         }
     }
 
@@ -25,13 +28,17 @@
         padding-left: 120px;
 
         @include mobile{
-            padding-left: 60px;
+            padding-left: 30px;
         }
 
         h3{
             color: $third-color;
             font-size: 35px;
             font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
         }
 
         h4{
@@ -39,6 +46,10 @@
             color: $secondary-color;
             font-size: 25px;
             font-weight: 400;
+
+            @include mobile{
+                font-size: 20px;
+            }
         }
 
         img{
@@ -49,7 +60,7 @@
 
             @include mobile{
                 margin-left: 0px;
-                height: 180px;
+                height: 110px;
             }
         }
 
@@ -63,6 +74,10 @@
             .wrapper{
                 display: flex;
                 overflow-x: hidden;
+
+                @include mobile{
+                    flex-direction: column;
+                }
     
                 .left{
                     flex: 0.5;
@@ -107,13 +122,17 @@
         padding-left: 120px;
 
         @include mobile{
-            padding-left: 60px;
+            padding-left: 30px;
         }
 
         h3{
             color: $third-color;
             font-size: 35px;
             font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
         }
 
         h4{
@@ -121,6 +140,10 @@
             color: $secondary-color;
             font-size: 25px;
             font-weight: 400;
+
+            @include mobile{
+                font-size: 20px;
+            }
         }
 
         img{
@@ -131,7 +154,7 @@
 
             @include mobile{
                 margin-left: 0px;
-                height: 180px;
+                height: 110px;
             }
         }
 
@@ -145,6 +168,10 @@
             .wrapper{
                 display: flex;
                 overflow-x: hidden;
+
+                @include mobile{
+                    flex-direction: column;
+                }
     
                 .left{
                     flex: 0.5;
@@ -189,13 +216,17 @@
         padding-left: 120px;
 
         @include mobile{
-            padding-left: 60px;
+            padding-left: 30px;
         }
 
         h3{
             color: $third-color;
             font-size: 35px;
             font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
         }
 
         h4{
@@ -203,6 +234,10 @@
             color: $secondary-color;
             font-size: 25px;
             font-weight: 400;
+
+            @include mobile{
+                font-size: 20px;
+            }
         }
 
         img{
@@ -213,6 +248,7 @@
 
             @include mobile{
                 margin-left: 0px;
+                height: 160px;
             }
         }
 
@@ -226,6 +262,10 @@
             .wrapper{
                 display: flex;
                 overflow-x: hidden;
+
+                @include mobile{
+                    flex-direction: column;
+                }
     
                 .left{
                     flex: 0.5;
@@ -270,13 +310,17 @@
         padding-left: 120px;
 
         @include mobile{
-            padding-left: 60px;
+            padding-left: 30px;
         }
 
         h3{
             color: $third-color;
             font-size: 35px;
             font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
         }
 
         h4{
@@ -284,6 +328,10 @@
             color: $secondary-color;
             font-size: 25px;
             font-weight: 400;
+
+            @include mobile{
+                font-size: 20px;
+            }
         }
 
         img{
@@ -294,7 +342,7 @@
 
             @include mobile{
                 margin-left: 0px;
-                height: 180px;
+                height: 110px;
             }
         }
 
@@ -308,6 +356,10 @@
             .wrapper{
                 display: flex;
                 overflow-x: hidden;
+
+                @include mobile{
+                    flex-direction: column;
+                }
     
                 .left{
                     flex: 0.5;
@@ -361,7 +413,7 @@
         }
 
         @include mobile{
-            padding-left: 60px;
+            padding-left: 30px;
         }
     }
 }

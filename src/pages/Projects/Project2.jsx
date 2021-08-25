@@ -9,7 +9,7 @@ function Project2() {
 
     
     return (
-        <div className="project2">
+        <div className="foodproject">
             <Fade bottom>
             <div className="section1">
                 <h1>Food Delivery Application</h1>

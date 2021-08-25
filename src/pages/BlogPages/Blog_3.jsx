@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 function Blog3() {    
 
     return (
-        <div className="blog2">
+        <div className="blogAutomation">
             <div className="headimage">
                 <Fade top>
                 <img src={Image1} alt="" /></Fade>

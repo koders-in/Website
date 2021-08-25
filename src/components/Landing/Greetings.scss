@@ -1,6 +1,7 @@
 @import '../../Global.scss';
 
 .greetings{
+    width: 100%;
     top:0;
     background-color: $primary-color;
     display: flex;
@@ -8,14 +9,20 @@
     overflow-y: hidden;
 
     @include mobile{
-        width: 125%;
+        display: block;
+        width: 590px;
     }
 
+
     .left{
-        flex: 1;
+        flex: 0.6;
         overflow-x: hidden;
         position: relative;
         overflow-y: hidden;
+
+        @include mobile{
+            width: 590px;
+        }
 
         .float{
             animation: float 3s infinite;
@@ -78,6 +85,10 @@
                     50%  { transform: translate(0, 15px); }
                     100%   { transform: translate(0, -0px); }
                 }
+
+                @include mobile{
+                    display: none;
+                }
                 
             }
         }
@@ -90,7 +101,6 @@
 
         @include mobile{
             display: none;
-            flex: 0;
         }
 
         .image{

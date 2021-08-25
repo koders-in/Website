@@ -1,8 +1,6 @@
 import React from 'react'
 import './Project4.scss'
 import Image1 from '../../Images/Projects/Virtual_hover_pen.png'
-//import Image2 from '../../Images/Projects/Twitter_Monitor/Twitter and ALO.png'
-//import Image3 from '../../Images/Projects/Twitter_Monitor/Twitter_Old_UI.png'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 
@@ -10,7 +8,7 @@ function Project4() {
 
     
     return (
-        <div className="project2">
+        <div className="penproject">
             <Fade bottom>
             <div className="section1">
                 <h1>Virtual Hover Pen</h1>

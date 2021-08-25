@@ -28,7 +28,7 @@ function Carousal7() {
       };
 
     return (
-        <div className="projectcorousal">
+        <div className="projectcorousal7">
             <Carousel swipeable={true}
                 draggable={true}
                 responsive={responsive}

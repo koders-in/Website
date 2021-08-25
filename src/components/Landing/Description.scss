@@ -6,7 +6,7 @@
     background-color: $primary-color;
     
     @include mobile{
-        width: 130%;
+        width: 590px;
     }
     
     .wrapper{
@@ -39,8 +39,8 @@
                 color:$secondary-color;
 
                 @include mobile{
-                    width: 75%;
-                    font-size: 40px;
+                    width: 80%;
+                    font-size: 35px;
                     margin-left: 60px;
                 }
             }
@@ -71,6 +71,7 @@
 
             @include mobile{
                 margin-top: 50px;
+                margin-left: 50px;
                 flex-direction: column;
             }
 
@@ -89,6 +90,7 @@
 
                 @include mobile{
                     height: 300px;
+                    width: 450px;
                 }
 
                 img{
@@ -110,6 +112,7 @@
                     font-size: 13px;
 
                     @include mobile{
+                        width: 100%;
                         font-size: 14px;
                     }
                 }
@@ -137,6 +140,7 @@
 
                 @include mobile{
                     height: 300px;
+                    width: 450px;
                 }
 
                 img{
@@ -158,6 +162,7 @@
                     font-size: 13px;
 
                     @include mobile{
+                        width: 100%;
                         font-size: 14px;
                     }
                 }
@@ -183,6 +188,7 @@
 
                 @include mobile{
                     height: 300px;
+                    width: 450px;
                 }
 
                 img{
@@ -204,6 +210,7 @@
                     font-size: 13px;
 
                     @include mobile{
+                        width: 100%;
                         font-size: 14px;
                     }
                 }

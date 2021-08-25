@@ -14,7 +14,7 @@ function Footer() {
         <Fade bottom>
         <div className="footer" id="footer">
             <HashRouter>
-            <div className="wrapper">
+            <div className="footerwrapper">
                 <Fade left>
                 <div className="left">
                     <h3>QUICK LINKS:</h3>

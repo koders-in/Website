@@ -1,6 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import './Blog_6.scss'
+import './Blog_5.scss'
 import {HashRouter, Link} from "react-router-dom";
 import Image2 from '../../Images/arrow_left.svg'
 import Image1 from '../../Images/seo_1.jpg'
@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 function Blog5() {    
 
     return (
-        <div className="blog2">
+        <div className="blogSEO">
             <div className="headimage">
                 <Fade top>
                 <img src={Image1} alt="" /></Fade>

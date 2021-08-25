@@ -4,6 +4,7 @@ import './Team.scss';
 import Image1 from '../../Images/team.jpg'
 import TeamCards from '../../components/TeamCards/TeamCards';
 import TeamCardsKnights from '../../components/TeamCards/TeamCardsKnights';
+import Footer from '../../components/Footer/Footer';
 
 function Team() {
     return (
@@ -38,6 +39,10 @@ function Team() {
                     <TeamCardsKnights/>
                 </div>
                 </Fade>
+            </div>
+
+            <div className="footer">
+                <Footer/>
             </div>
         </div>
     )

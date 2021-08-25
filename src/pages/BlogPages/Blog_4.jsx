@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 function Blog4() {    
 
     return (
-        <div className="blog2">
+        <div className="blogUIUX">
             <div className="headimage">
                 <Fade top>
                 <img src={Image1} alt="" /></Fade>

@@ -1,7 +1,12 @@
 @import '../../Global.scss';
 
-.blog2{
+.blogDarkweb{
     width: 100%;
+
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
 
     .headimage{
 
@@ -9,11 +14,19 @@
             
             width: 100%;
             margin-top: -300px;
+
+            @include mobile{
+                margin-top: 0px;
+            }
         }  
     }
 
     .backbutton{
         margin-left: 150px;
+
+        @include mobile{
+            display: none;
+        }
 
         a{
             width: 100px;
@@ -44,12 +57,22 @@
         margin-top: 50px;
         margin-left: 290px;
 
+        @include mobile{
+            margin-left: 30px;
+        }
+
         h1{
             font-size: 50px;
             color: $secondary-color;
             font-weight: 300;
             text-align: center;
             width: 900px;
+
+            @include mobile{
+                text-align: left;
+                font-size: 30px;
+                width: 90%;
+            }
 
             span{
                 color: $third-color;
@@ -61,6 +84,12 @@
         margin-top: 100px;
         margin-left: 150px;
         width: 75%;
+
+        @include mobile{
+            margin-left: 30px;
+            margin-top: 50px;
+            width: 90%;
+        }
 
         .para1{
 
@@ -137,6 +166,12 @@
         margin-top: 30px;
         margin-left: 150px;
         width: 75%;
+
+        @include mobile{
+            margin-left: 30px;
+            margin-top: 50px;
+            width: 90%;
+        }
 
         .para1{
 

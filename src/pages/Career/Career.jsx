@@ -13,7 +13,7 @@ function Career() {
                 <Fade top>
                 <img src={Image1} alt="" /></Fade>
                 <Fade left>
-                <h3>KAREER <br></br>AT KODERS</h3></Fade>
+                <h3>KAREER AT KODERS</h3></Fade>
             </div>
             <div className="section1">
                 <Fade left>

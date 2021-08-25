@@ -8,7 +8,7 @@ function Project4() {
 
     
     return (
-        <div className="project2">
+        <div className="penproject">
             <Fade bottom>
             <div className="section1">
                 <h1>Virtual Hover Pen</h1>

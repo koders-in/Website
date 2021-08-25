@@ -3,13 +3,18 @@
 .community{
     width: 100%;
 
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
     .heading{
         position: relative;
         margin-top: -220px;
 
         @include mobile{
-            width: 170%;
-            margin-top: 0px;
+            width: 590px;
+            margin-top: -50px;
         }
 
         img{
@@ -23,6 +28,13 @@
             color: $third-color;
             font-size: 50px;
             font-weight: 500;
+
+            @include mobile{
+                margin-top: 20px;
+                position: static;
+                margin-left: 30px;
+                font-size: 40px;
+            }
         }
     }
 
@@ -31,11 +43,8 @@
         margin-left: 550px;
 
         @include mobile{
-            margin-left: 300px;
+            margin-left: 120px;
         }
     }
 
-    .footer{
-        height: 140%;
-    }
 }

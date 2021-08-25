@@ -76,9 +76,8 @@ function Portfolio() {
                 <h3>OUR PROJECTS</h3>
                 <ProjectCards/>
             </div>
-            <div className="footer">
-                <Footer/>
-            </div>
+
+            <Footer/>
         </div>
     )
 }

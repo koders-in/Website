@@ -4,7 +4,7 @@
     margin-top: 0;
 
     @include mobile{
-        width: 130%;
+        width: 590px;
     }
 
     .wrapper{
@@ -56,7 +56,7 @@
                 height: 700px;
 
                 @include mobile{
-                    height: 500px;
+                    height: 440px;
                     margin-left: 40px;
                 }
             }

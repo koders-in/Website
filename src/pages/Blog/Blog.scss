@@ -3,13 +3,18 @@
 .blog{
     width: 100%;
 
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
     .heading{
         position: relative;
         margin-top: -250px;
 
         @include mobile{
-            margin-top: -100px;
-            width: 170%;
+            margin-top: -150px;
+            width: 590px;
         }
 
         img{
@@ -26,8 +31,11 @@
             font-weight: 500;
 
             @include mobile{
-                margin-top: -300px;
-                margin-left: 60px;
+                position: static;
+                margin-top: 20px;
+                margin-left: 30px;
+                padding-bottom: 0px;
+                font-size: 40px;
             }
         }
 
@@ -39,8 +47,9 @@
             margin-top: -350px;
 
             @include mobile{
-                margin-left: 60px;
-                margin-top: -200px;
+                position: static;
+                margin-left: 30px;
+                margin-top: 20px;
             }
         }
     }
@@ -50,13 +59,18 @@
         margin-left: 120px;
 
         @include mobile{
-            margin-left: 60px;
+            margin-left: 30px;
+            margin-top: 50px;
         }
 
         h4{
             font-size: 35px;
             font-weight: 500;
             color: $third-color;
+
+            @include mobile{
+                font-size: 30px;
+            }
 
         }
 

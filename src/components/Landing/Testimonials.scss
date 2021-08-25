@@ -2,6 +2,10 @@
 
 .testimonials{
     margin-top: 120px;
+    
+    @include mobile{
+        width: 590px;
+    }
 
     h3{
         font-size: 25px;
@@ -23,7 +27,7 @@
         border-radius: 50px;
 
         @include mobile{
-            margin-left: 90px;
+            margin-left: 50px;
             width: 500px;
         }
 

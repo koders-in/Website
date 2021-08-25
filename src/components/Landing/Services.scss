@@ -4,7 +4,7 @@
     margin-top: 0;
 
     @include mobile{
-        width: 130%;
+        width: 590px;
     }
 
     .wrapper{
@@ -143,6 +143,7 @@
 
                 @include mobile{
                     margin-bottom: 20px;
+                    height: 275px;
                 }
 
                 a{

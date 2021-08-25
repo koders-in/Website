@@ -1,12 +1,20 @@
 @import '../../Global.scss';
 
-.project2{
+.UCproject{
     width: 100%;
+
+    @include mobile{
+        width: 590px;
+    }
 
     .section1{
         height: 600px;
         background-color: #1F2436;
         margin-top: 130px;
+
+        @include mobile{
+            height: 500px;
+        }
 
         h1{
             padding-top: 20px;
@@ -14,6 +22,10 @@
             font-weight: 500;
             color: $third-color;
             font-size: 40px;
+
+            @include mobile{
+                padding-left: 30px;
+            }
         }
 
         img{
@@ -22,12 +34,23 @@
             width: 700px;
             height: 350px;
             border: 2px solid $third-color;
+
+            @include mobile{
+                margin-left: 30px;
+                margin-top: 50px;
+                width: 520px;
+                height: 290px;
+            }
         }
     }
 
     .introduction{
         margin-top: 40px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;
@@ -46,6 +69,10 @@
     .challenges{
         margin-top: 40px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;
@@ -64,6 +91,10 @@
     .solution{
         margin-top: 50px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;
@@ -82,6 +113,10 @@
     .tech{
         margin-top: 50px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;
@@ -100,6 +135,10 @@
     .screenshots{
         margin-top: 50px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;
@@ -112,6 +151,10 @@
             padding-bottom: 20px;
             margin-left: -300px;
             background-color: #1F2436;
+
+            @include mobile{
+                margin-left: -30px;
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ function Project9() {
 
     
     return (
-        <div className="project2">
+        <div className="UCproject">
             <Fade bottom>
             <div className="section1">
                 <h1>UC-Toolbot</h1>

@@ -10,7 +10,7 @@ function Project3() {
 
     
     return (
-        <div className="project2">
+        <div className="twitterproject">
             <Fade bottom>
             <div className="section1">
                 <h1>Twitter Monitor</h1>

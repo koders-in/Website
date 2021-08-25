@@ -114,8 +114,7 @@ function AboutUs() {
                 makes you the man. Our mission is to kreate simple solutions for complex problems. As it is rightly said:
                 </p>
 
-                <h5>"Simplicity is about subtracting the obvious and adding the meaningful."
-                <br></br>— John Maeda</h5>
+                <h5>"Simplicity is about subtracting the obvious and adding the meaningful." — John Maeda</h5>
 
                 <p>The aim is to foster technological innovation and to embellish the lives of people all around the globe. 
                 The members of our team have committed themselves to responsible behaviour and proper conduct. Koders stand 

@@ -29,6 +29,7 @@ function Carousal5() {
       };
 
     return (
+
         <div className="projectcorousal_machina">
             <Carousel centerMode={true} swipeable={true}
                 draggable={true}

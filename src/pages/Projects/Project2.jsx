@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 function Project2() {   
     return (
-        <div className="project2">
+        <div className="foodproject">
             <Fade bottom>
             <div className="section2">
                 <h1>Food Delivery Application</h1>

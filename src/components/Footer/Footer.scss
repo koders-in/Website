@@ -6,11 +6,11 @@
     height: 450px;
     
     @include mobile{
-        width: 130%;
-        height: 530px;
+        width: 590px;
+        height: 100%;
     }
 
-    .wrapper{
+    .footerwrapper{
         overflow-y: hidden;
         overflow-x: hidden;
         padding-top: 50px;
@@ -27,7 +27,7 @@
                 color: $third-color;
                 
                 @include mobile{
-                    margin-left: 100px;
+                    margin-left: 60px;
                 }
             }
             
@@ -45,7 +45,7 @@
                     color: $secondary-color;
 
                     @include mobile{
-                        padding-left: 100px;
+                        padding-left: 60px;
                     }
                 }
 

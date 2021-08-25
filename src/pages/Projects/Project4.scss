@@ -1,12 +1,21 @@
 @import '../../Global.scss';
 
-.project2{
+.penproject{
     width: 100%;
+
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
 
     .section1{
         height: 600px;
         background-color: #1F2436;
         margin-top: 130px;
+
+        @include mobile{
+            height: 520px;
+        }
 
         h1{
             padding-top: 20px;
@@ -14,6 +23,10 @@
             font-weight: 500;
             color: $third-color;
             font-size: 40px;
+
+            @include mobile{
+                padding-left: 30px;
+            }
         }
 
         img{
@@ -22,12 +35,22 @@
             width: 650px;
             height: 350px;
             border: 2px solid $third-color;
+
+            @include mobile{
+                margin-left: 30px;
+                width: 530px;
+                height: 300px;
+            }
         }
     }
 
     .introduction{
         margin-top: 40px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;
@@ -40,12 +63,20 @@
             margin-top: 10px;
             width: 85%;
             text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
         }
     }
 
     .challenges{
         margin-top: 40px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;
@@ -58,12 +89,20 @@
             margin-top: 10px;
             width: 85%;
             text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
         }
     }
 
     .solution{
         margin-top: 50px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;
@@ -76,12 +115,20 @@
             margin-top: 10px;
             width: 85%;
             text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
         }
     }
 
     .tech{
         margin-top: 50px;
         margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
         
         h2{
             color: $secondary-color;

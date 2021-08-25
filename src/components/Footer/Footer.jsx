@@ -27,7 +27,7 @@ function Footer() {
                         <Link to="/aboutus"
                         tag={Link}
                         className="ql">
-                           <h4>About US</h4>
+                           <h4>About Us</h4>
                         </Link>
 
                         <Link to="/ourteam"

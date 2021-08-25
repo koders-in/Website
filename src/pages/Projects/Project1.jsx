@@ -70,12 +70,12 @@ function Project_1() {
                 </Fade>
             </div>
 
-            <div className="screenshots">
+            <div className="screenshots1">
                 <Fade left>
                 <h2>Snapshots of the Application:</h2>
                 </Fade>
                 <Fade bottom>
-                <div className="corousal">
+                <div className="corousal1">
                     <ProjectCorousal1/>
                 </div>
                 </Fade>

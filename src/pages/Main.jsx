@@ -28,11 +28,14 @@ import Project8 from './Projects/Project8';
 import Project9 from './Projects/Project9';
 import Project10 from './Projects/Project10';
 import Project11 from './Projects/Project11';
+import Description from '../components/Landing/Description';
+import ScrollTop from './ScrollTop';
 
 function Main() {
     return (
         <div>
             <HashRouter basename="/">
+                <ScrollTop/>
                 <Switch>
                     <Route path="/" exact component={() => 
                         <Home /> } 
@@ -63,6 +66,9 @@ function Main() {
                     />
                     <Route path="/blog" exact component={() => 
                         <Blog /> } 
+                    />
+                    <Route path="/desc" exact component={() => 
+                        <Description /> } 
                     />
                     <Route path="/Hacking-Humans-is-easier-than-Hacking-Computers" exact component={() => 
                         <Blog1 /> } 

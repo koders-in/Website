@@ -28,21 +28,30 @@
         }
 
         .boxdesc{
-            margin-top: 30px;
+            // h1{
+            //     width: 45%;
+            //     font-size: 50px;
+            //     margin-left: 120px;
+            //     padding: 40px 20px 40px 0px;
+            //     box-shadow: 20px 20px 20px 0px black;
+            //     color:$secondary-color;
 
-            h1{
-                width: 45%;
-                font-size: 50px;
-                margin-left: 120px;
-                padding: 40px 20px 40px 0px;
-                box-shadow: 20px 20px 20px 0px black;
-                color:$secondary-color;
-
-                @include mobile{
-                    width: 80%;
-                    font-size: 35px;
-                    margin-left: 60px;
-                }
+            //     @include mobile{
+            //         width: 75%;
+            //         font-size: 40px;
+            //         margin-left: 60px;
+            //     }
+            // }
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                //margin-left: 140px;
+                width: 40%;
+                margin-top: 20px;
+                // box-shadow: 20px 20px 20px 0px black;
+                // color:$secondary-color;
+                margin-bottom: 30px;
             }
         }
 
@@ -50,7 +59,7 @@
             width: 85%;
             color:$secondary-color;
             margin-left: 120px;
-            margin-top: 80px;
+            
             word-spacing: 3px;
             text-align: justify;
 
@@ -123,7 +132,10 @@
                 }
             }
 
-           
+           .motto{
+               height: 50px;
+               width: 50px;
+           }
 
             .card2{
                 margin-bottom: 20px;

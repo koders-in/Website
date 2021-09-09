@@ -16,7 +16,7 @@ function ContactUs() {
                     <div className="details">
                         <div className="location">
                             <img src={Image1} alt="" />
-                            <p>Flat No 9, Dron Vihar Housing Society, Mitthi beri, Prem Nagar, Dehradun, Uttarakhand - 248007</p>
+                            <p>House No 111, New Mohan Nagar Colony, Prem Nagar, Dehradun, Uttarakhand - 248007</p>
                         </div>
                         <div className="mail">
                             <img src={Image2} alt="" />
@@ -24,7 +24,7 @@ function ContactUs() {
                         </div>
                         <div className="phone">
                             <img src={Image3} alt="" />
-                            <p>+91-8630306110,<br></br> +91-7999029220</p>
+                            <p>+91-7017799756,<br></br> +91-7008493497</p>
                         </div>
                     </div>
                 </div>

@@ -82,7 +82,7 @@ function Main() {
                     <Route path="/UI-vs-UX" exact component={() => 
                         <Blog4 /> } 
                     />
-                    <Route path="/What you need to know about UFO before starting a website" exact component={() => 
+                    <Route path="/What you need to know about SEO before starting a website" exact component={() => 
                         <Blog5 /> } 
                     />
                     <Route path="/The Dark Web is notorious" exact component={() => 

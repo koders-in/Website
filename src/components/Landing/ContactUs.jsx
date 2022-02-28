@@ -16,7 +16,7 @@ function ContactUs() {
                     <div className="details">
                         <div className="location">
                             <img src={Image1} alt="" />
-                            <p>House No 111, New Mohan Nagar Colony, Prem Nagar, Dehradun, Uttarakhand - 248007</p>
+                            <p>House No 111, New Mohan Pur Colony, Prem Nagar, Dehradun, Uttarakhand - 248007</p>
                         </div>
                         <div className="mail">
                             <img src={Image2} alt="" />

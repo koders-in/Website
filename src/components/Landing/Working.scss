@@ -1,0 +1,65 @@
+@import '../../Global.scss';
+
+.working{
+    margin-top: 0;
+
+    @include mobile{
+        width: 590px;
+    }
+
+    .wrapper{
+        padding-top: 100px;
+        overflow-x: hidden;
+
+        @include mobile{
+            padding-top: 50px;
+        }
+
+        h3{
+            font-size: 25px;
+            font-weight: 500;
+            margin-left: 120px;
+            color: $third-color;
+
+            @include mobile{
+                margin-left: 60px;
+            }
+        }
+
+        p{
+            width: 85%;
+            color:$secondary-color;
+            margin-left: 120px;
+            margin-top: 40px;
+            word-spacing: 3px;
+            text-align: justify;
+
+            @include mobile{
+                margin-left: 60px;
+            }
+        }
+
+        .timeline{
+            overflow-y: hidden;
+            overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+            width: 100%;
+
+            @include mobile{
+                margin-top: 50px;
+            }
+
+            img{
+                height: 700px;
+
+                @include mobile{
+                    height: 440px;
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,206 @@
+@import '../../Global.scss';
+
+.blogUIUX{
+    width: 100%;
+
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
+    .headimage{
+
+        img{            
+            width: 100%;
+            margin-top: -300px;
+
+            @include mobile{
+                margin-top: 0px;
+            }
+        }  
+    }
+
+    .backbutton{
+        margin-left: 150px;
+
+        @include mobile{
+            display: none;
+        }
+
+        a{
+            width: 100px;
+            display: flex;
+            margin-top: 20px;
+            text-decoration: none;
+            
+            img{
+                margin-top: 2px;
+                height: 20px;
+                padding-right: 10px;
+            }
+
+            p{
+                color: $secondary-color;
+            }
+
+            &:hover{
+
+               p{
+                   color: $third-color;
+               }
+            }
+        }
+    }
+
+    .heading{
+        margin-top: 50px;
+        margin-left: 290px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+
+        h1{
+            font-size: 50px;
+            color: $secondary-color;
+            font-weight: 300;
+            text-align: center;
+            width: 900px;
+
+            @include mobile{
+                text-align: left;
+                font-size: 30px;
+                width: 90%;
+            }
+
+            span{
+                color: $third-color;
+            }
+        }
+    }
+
+    .section1{
+        margin-top: 100px;
+        margin-left: 150px;
+        width: 75%;
+
+        @include mobile{
+            margin-left: 30px;
+            margin-top: 50px;
+            width: 90%;
+        }
+
+        .para1{
+
+            p{
+                text-align: justify;
+                color: $secondary-color;
+                font-weight: 400;
+
+                span{
+                    color: $third-color;
+                }
+            }
+        }
+
+        .para2{
+            padding-top: 30px;
+
+            h4{
+                color:$third-color;
+                font-size: 22px;
+                font-weight: 400;
+            }
+
+            p{
+                text-align: justify;
+                color: $secondary-color;
+                font-weight: 400;
+            }
+        }
+
+        .para3{
+            padding-top: 30px;
+
+            h4{
+                color:$third-color;
+                font-size: 22px;
+                font-weight: 400;
+            }
+
+            p{
+                text-align: justify;
+                color: $secondary-color;
+                font-weight: 400;
+            }
+        }
+
+        .para4{
+
+            h4{
+                padding-top: 30px;
+                color:$third-color;
+                font-size: 22px;
+                font-weight: 400;
+            }
+
+            p{
+                text-align: justify;
+                color: $secondary-color;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .image2{
+        margin-top: 50px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .section2{
+        margin-top: 30px;
+        margin-left: 150px;
+        width: 75%;
+
+        @include mobile{
+            margin-left: 30px;
+            margin-top: 50px;
+            width: 90%;
+        }
+
+        p{
+            text-align: justify;
+            color: $secondary-color;
+            font-weight: 400;
+        }
+
+        ol{
+            color: $third-color;
+            padding-left: 15px;
+
+            li{
+                padding-left: 20px;
+
+                span{
+                    color:$third-color;
+                }
+            }
+        }
+
+        }
+
+    .end{
+
+        p{
+            color: $third-color;
+
+            span{
+                color:$third-color;
+            }
+        }
+    }
+}

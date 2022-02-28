@@ -1,0 +1,313 @@
+@import '../../Global.scss';
+
+.teamcards{
+    width: 100%;
+
+    .row1{
+        padding-top: 100px;
+        padding-left: 150px;
+        display: flex;
+
+        @include mobile{
+            flex-direction: column;
+        }
+
+        .card1{
+
+            img{
+                position: relative;
+                width: 400px;
+            }
+
+            .box{
+                padding:10px 10px 10px 10px;
+                position: absolute;
+                z-index: 1;
+                background-color:#1F2436;
+                margin-top: -50px;
+                margin-left: 200px;
+                width: 300px;
+                border: 2px solid $third-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 20px 20px 20px 0px black;;
+
+                h3{
+                    color: $secondary-color;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                h5{
+                    margin-top: -2px;
+                    color: $third-color;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+
+                p{
+                    margin-top: 10px;
+                    color: white;
+                    font-size: 13px;
+                    text-align: center;
+
+                }
+            }
+        }
+
+        .card2{
+            padding-left: 300px;
+
+            @include mobile{
+                padding-left: 0px;
+                padding-top: 400px;
+            }
+
+            img{
+                position: relative;
+                width: 400px;
+            }
+
+            .box{
+                padding:10px 10px 10px 10px;
+                position: absolute;
+                z-index: 1;
+                background-color:#1F2436;
+                margin-top: -50px;
+                margin-left: 200px;
+                width: 300px;
+                border: 2px solid $third-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 20px 20px 20px 0px black;;
+
+                h3{
+                    color: $secondary-color;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                h5{
+                    margin-top: -2px;
+                    color: $third-color;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+
+                p{
+                    margin-top: 10px;
+                    color: white;
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .row2{
+        padding-top: 100px;
+        padding-left: 150px;
+        display: flex;
+
+        @include mobile{
+            flex-direction: column;
+        }
+
+        .card1{
+
+            img{
+                position: relative;
+                width: 400px;
+            }
+
+            .box{
+                padding:10px 10px 10px 10px;
+                position: absolute;
+                z-index: 1;
+                background-color:#1F2436;
+                margin-top: -50px;
+                margin-left: 200px;
+                width: 300px;
+                border: 2px solid $third-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 20px 20px 20px 0px black;;
+
+                h3{
+                    color: $secondary-color;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                h5{
+                    margin-top: -2px;
+                    color: $third-color;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+
+                p{
+                    margin-top: 10px;
+                    color: white;
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .card2{
+            padding-left: 300px;
+
+            @include mobile{
+                padding-left: 0px;
+                padding-top: 400px;
+            }
+
+            img{
+                position: relative;
+                width: 400px;
+            }
+
+            .box{
+                padding:10px 10px 10px 10px;
+                position: absolute;
+                z-index: 1;
+                background-color:#1F2436;
+                margin-top: -50px;
+                margin-left: 200px;
+                width: 300px;
+                border: 2px solid $third-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 20px 20px 20px 0px black;;
+
+                h3{
+                    color: $secondary-color;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                h5{
+                    margin-top: -2px;
+                    color: $third-color;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+
+                p{
+                    margin-top: 10px;
+                    color: white;
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .row3{
+        padding-top: 300px;
+        padding-left: 150px;
+        display: flex;
+
+        @include mobile{
+            padding-top: 400px;
+        }
+
+        .card1{
+
+            img{
+                position: relative;
+                width: 400px;
+            }
+
+            .box{
+                padding:10px 10px 10px 10px;
+                position: absolute;
+                z-index: 1;
+                background-color:#1F2436;
+                margin-top: -50px;
+                margin-left: 200px;
+                width: 300px;
+                border: 2px solid $third-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 20px 20px 20px 0px black;;
+
+                h3{
+                    color: $secondary-color;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                h5{
+                    margin-top: -2px;
+                    color: $third-color;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+
+                p{
+                    margin-top: 10px;
+                    color: white;
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+/*
+                        <div className="handles">
+                            <a href="/" className="facebook">
+                                <img src={Image2} alt="" />
+                            </a>
+                            <a href="/" className="instagram">
+                                <img src={Image3} alt="" />
+                            </a>
+                            <a href="/" className="linkdin">
+                                <img src={Image4} alt="" />
+                            </a>
+                            <a href="/" className="twitter">
+                                <img src={Image5} alt="" />
+                            </a>
+                        </div>
+
+                        .handles{
+                    display: flex;
+                    margin-left: -10px;
+
+                    a{
+                        margin-top: 15px;
+
+                        img{
+                            margin-left: 20px;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+
+
+
+                        */

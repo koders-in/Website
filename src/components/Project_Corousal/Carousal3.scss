@@ -1,0 +1,36 @@
+@import '../../Global.scss';
+
+
+.projectcorousal_kourage{
+    padding-top: 40px;
+    padding-bottom: 5px;
+    width: 100%;
+    
+    div{
+        
+
+        img{
+            width: 370px;
+            height: 220px;
+            padding-bottom: 20px;
+            padding-left: 70px;
+            @include mobile{
+                width: 280px;
+                height: 170px;
+                padding-left: 20px;
+            }
+        }
+
+        p{
+            color: $third-color;
+            margin-top: -20px;
+            margin-left: 0px;
+            padding-left: 70px;
+            @include mobile{
+                margin-left: 0px;
+                padding-left: 20px;
+            }
+
+        }
+    }
+}

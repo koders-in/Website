@@ -1,0 +1,419 @@
+@import '../../Global.scss';
+
+.positions{
+    padding-top: 150px;
+
+    @include mobile{
+        padding-top: 80px;
+        width: 590px;
+        overflow-x: hidden;
+    }
+
+    h1{
+        color: $secondary-color;
+        padding-left: 500px;
+        font-size: 50px;
+        font-weight: 500;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+
+        @include mobile{
+            padding-left: 30px;
+            font-size: 40px;
+        }
+    }
+
+    .developers{
+        margin-top: 50px;
+        padding-left: 120px;
+
+        @include mobile{
+            padding-left: 30px;
+        }
+
+        h3{
+            color: $third-color;
+            font-size: 35px;
+            font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+
+        h4{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 400;
+
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+
+        img{
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 250px;
+
+            @include mobile{
+                margin-left: 0px;
+                height: 110px;
+            }
+        }
+
+        .spositions{
+            padding-left: 50px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
+
+            .wrapper{
+                display: flex;
+                overflow-x: hidden;
+
+                @include mobile{
+                    flex-direction: column;
+                }
+    
+                .left{
+                    flex: 0.5;
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+    
+                }
+                .right{
+                    flex: 0.5;
+
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        ol{
+            margin-left: -20px;
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 15px;
+            list-style-position: outside;
+
+            li{
+                padding-left: 10px;
+                padding-bottom: 5px;
+                width: 80%;
+            }
+        }
+    }
+
+    .social{
+        margin-top: 50px;
+        padding-left: 120px;
+
+        @include mobile{
+            padding-left: 30px;
+        }
+
+        h3{
+            color: $third-color;
+            font-size: 35px;
+            font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+
+        h4{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 400;
+
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+
+        img{
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 250px;
+
+            @include mobile{
+                margin-left: 0px;
+                height: 110px;
+            }
+        }
+
+        .spositions{
+            padding-left: 50px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
+
+            .wrapper{
+                display: flex;
+                overflow-x: hidden;
+
+                @include mobile{
+                    flex-direction: column;
+                }
+    
+                .left{
+                    flex: 0.5;
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+    
+                }
+                .right{
+                    flex: 0.5;
+
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        ol{
+            margin-left: -20px;
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 15px;
+            list-style-position: outside;
+
+            li{
+                padding-left: 10px;
+                padding-bottom: 5px;
+                width: 80%;
+            }
+        }
+    }
+
+    .content{
+        margin-top: 50px;
+        padding-left: 120px;
+
+        @include mobile{
+            padding-left: 30px;
+        }
+
+        h3{
+            color: $third-color;
+            font-size: 35px;
+            font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+
+        h4{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 400;
+
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+
+        img{
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 250px;
+
+            @include mobile{
+                margin-left: 0px;
+                height: 160px;
+            }
+        }
+
+        .spositions{
+            padding-left: 50px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
+
+            .wrapper{
+                display: flex;
+                overflow-x: hidden;
+
+                @include mobile{
+                    flex-direction: column;
+                }
+    
+                .left{
+                    flex: 0.5;
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+    
+                }
+                .right{
+                    flex: 0.5;
+
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        ol{
+            margin-left: -20px;
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 15px;
+            list-style-position: outside;
+
+            li{
+                padding-left: 10px;
+                padding-bottom: 5px;
+                width: 80%;
+            }
+        }
+    }
+
+    .design{
+        margin-top: 50px;
+        padding-left: 120px;
+
+        @include mobile{
+            padding-left: 30px;
+        }
+
+        h3{
+            color: $third-color;
+            font-size: 35px;
+            font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+
+        h4{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 400;
+
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+
+        img{
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 250px;
+
+            @include mobile{
+                margin-left: 0px;
+                height: 100px;
+            }
+        }
+
+        .spositions{
+            padding-left: 50px;
+
+            @include mobile{
+                padding-left: 0px;
+            }
+
+            .wrapper{
+                display: flex;
+                overflow-x: hidden;
+
+                @include mobile{
+                    flex-direction: column;
+                }
+    
+                .left{
+                    flex: 0.5;
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+    
+                }
+                .right{
+                    flex: 0.5;
+
+                    h5{
+                        padding-top: 20px;
+                        color: $third-color;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        ol{
+            margin-left: -20px;
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 15px;
+            list-style-position: outside;
+
+            li{
+                padding-left: 10px;
+                padding-bottom: 5px;
+                width: 80%;
+            }
+        }
+    }
+
+    .kommunity{
+        padding-top: 50px;
+        padding-left: 120px;
+
+        p{
+            color: $secondary-color;
+
+            a{
+                text-decoration: none;
+                color: $third-color;
+            }
+        }
+
+        @include mobile{
+            padding-left: 30px;
+        }
+    }
+}

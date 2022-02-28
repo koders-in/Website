@@ -1,0 +1,165 @@
+@import '../../Global.scss';
+
+.project1{
+    width: 100%;
+
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
+    .section1{
+        height: 600px;
+        background-color: #1F2436;
+        margin-top: 130px;
+
+        h1{
+            padding-top: 20px;
+            padding-left: 120px;
+            font-weight: 500;
+            color: $third-color;
+            font-size: 40px;
+
+            @include mobile{
+                padding-left: 30px;
+            }
+        }
+
+        img{
+            margin-left: 600px;
+            margin-top: 20px;
+            width: 210px;
+            height: 450px;
+            border: 2px solid $third-color;
+
+            @include mobile{
+                margin-top: 40px;
+                margin-left: 180px;
+            }
+        }
+    }
+
+    .introduction{
+        margin-top: 40px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        p{
+            color: $secondary-color;
+            margin-top: 10px;
+            width: 85%;
+            text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
+        }
+    }
+
+    .challenges{
+        margin-top: 40px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        p{
+            color: $secondary-color;
+            margin-top: 10px;
+            width: 85%;
+            text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
+        }
+    }
+
+    .solution{
+        margin-top: 50px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        p{
+            color: $secondary-color;
+            margin-top: 10px;
+            width: 85%;
+            text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
+        }
+    }
+
+    .tech{
+        margin-top: 50px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+       li{
+           margin-left: -20px;
+           margin-top: 10px;
+           color: $secondary-color;
+           font-size: 18px;
+       }
+    }
+
+    .screenshots1{
+        margin-top: 50px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .corousal1{
+            height: 450px;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            margin-left: -120px;
+            padding-left: 4px;
+            background-color: #1F2436;
+        }
+    }
+}

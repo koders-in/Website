@@ -1,0 +1,415 @@
+@import '../../Global.scss';
+
+.aboutus{
+    width: 100%;
+
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
+    .heading{
+        position: relative;
+        margin-top: -110px;
+
+        @include mobile{
+            margin: -50px;
+        }
+
+        img{
+            width: 100%;
+
+            @include mobile{
+                width: 640px;
+            }
+        }
+
+        h3{
+            margin-top: -100px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+            padding-bottom: 120px;
+
+            @include mobile{
+                margin-top: 20px;
+                margin-left: 80px;
+                font-size: 40px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .section1{
+        margin-left: 120px;
+        padding-top: 50px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        @include mobile{
+            width: 590px;
+            margin-left: 0px;
+            padding-left: 30px;
+        }
+
+        img{
+            height: 75px;
+
+            @include mobile{
+                height: 60px;
+            }
+        }
+
+        p{
+            margin-top: 80px;
+            text-align: justify;
+            width: 90%;
+            color: $secondary-color;
+
+            @include mobile{
+                width: 90%;
+                font-size: 20px;
+            }
+        }
+
+        .text{
+            margin-top: 60px;
+            display: flex;
+
+            @include mobile{
+                flex-direction: column;
+            }
+
+            .left{
+                flex:0.5;
+
+                img{
+                    width: 600px;
+                    height: 400px;
+
+                    @include mobile{
+                        width: 530px;
+                        height: 330px;
+                    }
+
+                }
+            }
+
+            .right{
+                flex:0.5;
+                padding-left: 80px;
+
+                @include mobile{
+                    padding-left: 0px;
+                }
+
+                h4{
+                    padding-top: 260px;
+                    color: $third-color;
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin-left: -100px;
+
+                    @include mobile{
+                        padding-top: 50px;
+                        margin-left: 0px;
+                    }
+                }
+
+                p{
+                    margin-top: 20px;
+                    text-align: justify;
+                    margin-left: -100px;
+                    width: 80%;
+
+                    @include mobile{
+                        width: 90%;
+                        margin-left: 0px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section2{
+        margin-top: 80px;
+        background-color: #1F2435;
+        width: 100%;
+
+        @include mobile{
+            width: 590px;
+        }
+        
+
+        h2{
+            margin-left: 120px;
+            padding-top: 50px;
+            color: $third-color;
+            font-size: 40px;
+            font-weight: 500;
+            word-spacing: 5px;
+
+            @include mobile{
+                margin-left: 30px;
+                font-size: 33px;
+            }
+        }
+
+        h3{
+            margin-top: 5px;
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 400;
+            margin-left: 120px;
+
+            @include mobile{
+                margin-left: 30px;
+                font-size: 20px;
+            }
+        }
+
+        .row1{
+            margin-top: 10px;
+            margin-left: 120px;
+            display: flex;
+            overflow-x:hidden;
+            overflow-y:hidden;
+
+            @include mobile{
+                flex-direction: column;
+                margin-left: 30px;
+            }
+
+            .left{
+                flex: 0.5;
+                padding-top: 145px;
+
+                @include mobile{
+                    padding-top: 20px;
+                }
+
+                p{
+                    font-size: 18px;
+                    text-align: justify;
+                    color: $secondary-color;
+                    width: 85%;
+                    padding-bottom: 40px;
+
+                    @include mobile{
+                        width: 95%;
+                    }
+                }
+            }
+
+            .right{
+                flex: 0.5;
+
+                img{
+                    height: 400px;
+
+                    @include mobile{
+                        height: 400px;
+                    }
+                }
+            }
+        }
+
+        .row2{
+            margin-top: 30px;
+            margin-left: 120px;
+            display: flex;
+            overflow-x:hidden;
+            overflow-y:hidden;
+
+            @include mobile{
+                flex-direction: column;
+                margin-left: 30px;
+            }
+
+            .left{
+                flex: 0.5;
+                
+                img{
+                    height: 400px;
+
+                    @include mobile{
+                        height: 355px;
+                    }
+                }
+                
+            }
+
+            .right{
+                flex: 0.5;
+                padding-top: 145px;
+
+                @include mobile{
+                    padding-top: 30px;
+                }
+
+                p{
+                    margin-left: 0px;
+                    font-size: 18px;
+                    text-align: justify;
+                    color: $secondary-color;
+                    width: 80%;
+                    padding-bottom: 40px;
+
+                    @include mobile{
+                        padding-left: 0px;
+                        width: 95%;
+                        padding-bottom: 20px;
+
+                    }
+                }
+            }
+        }
+
+        .row3{
+            margin-top: 10px;
+            margin-left: 120px;
+            display: flex;
+            overflow-x:hidden;
+            overflow-y:hidden;
+
+            @include mobile{
+                margin-left: 30px;
+                margin-top: 0px;
+                flex-direction: column;
+            }
+
+            .left{
+                flex: 0.5;
+                padding-top: 100px;
+
+                @include mobile{
+                    padding-top: 50px;
+                }
+
+                p{
+                    font-size: 18px;
+                    text-align: justify;
+                    color: $secondary-color;
+                    width: 85%;
+                    padding-bottom: 40px;
+
+                    @include mobile{
+                        width: 95%;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .right{
+                flex: 0.5;
+
+                img{
+                    width: 550px;
+
+                    @include mobile{
+                        margin-top: 20px;
+                        padding-bottom: 20px;
+                        width: 530px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mission{
+        margin-left: 120px;
+
+        @include mobile{
+            width: 590px;
+            margin-left: 30px;
+        }
+
+        h2{
+            padding-top: 50px;
+            color: $third-color;
+            font-size: 40px;
+            font-weight: 500;
+            word-spacing: 5px;
+
+            @include mobile{
+                font-size: 35px;
+            }
+        }
+
+        p{
+            margin-top: 40px;
+            color:$secondary-color;
+            width: 90%;
+
+            @include mobile{
+                width: 90%;
+                text-align: justify;
+            }
+        }
+
+        h5{
+            margin-left: -120px;
+            margin-top: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: $secondary-color;
+            font-style: italic;
+            font-weight: 500;
+
+            @include mobile{
+                margin-left: 0px;
+                font-size: 17px;
+                width: 90%;
+            }
+        }
+    }
+
+    .vision{
+        margin-left: 120px;
+
+        @include mobile{
+            width: 590px;
+            margin-left: 30px;
+        }
+
+        h2{
+            padding-top: 70px;
+            color: $third-color;
+            font-size: 40px;
+            font-weight: 500;
+            word-spacing: 5px;
+
+            @include mobile{
+                font-size: 35px;
+            }
+        }
+
+        p{
+            margin-top: 40px;
+            color:$secondary-color;
+            width: 90%;
+
+            @include mobile{
+                width: 90%;
+                text-align: justify;
+            }
+        }
+
+        h5{
+            margin-left: -120px;
+            margin-top: 40px;
+            font-size: 30px;
+            text-align: center;
+            color: $secondary-color;
+            font-style: italic;
+            font-weight: 300;
+
+            @include mobile{
+                margin-left: 0px;
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,173 @@
+@import '../../Global.scss';
+
+.kitchenproject{
+    width: 100%;
+
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
+    .section1{
+        height: 600px;
+        background-color: #1F2436;
+        margin-top: 130px;
+
+        @include mobile{
+            height: 500px;
+        }
+
+        h1{
+            padding-top: 20px;
+            padding-left: 120px;
+            font-weight: 500;
+            color: $third-color;
+            font-size: 40px;
+
+            @include mobile{
+                padding-left: 30px;
+            }
+        }
+
+        img{
+            margin-left: 410px;
+            margin-top: 80px;
+            width: 700px;
+            height: 350px;
+            border: 2px solid $third-color;
+
+            @include mobile{
+                margin-left: 30px;
+                margin-top: 50px;
+                width: 530px;
+                height: 290px;
+            }
+        }
+    }
+
+    .introduction{
+        margin-top: 40px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        p{
+            color: $secondary-color;
+            margin-top: 10px;
+            width: 85%;
+            text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
+        }
+    }
+
+    .challenges{
+        margin-top: 40px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        p{
+            color: $secondary-color;
+            margin-top: 10px;
+            width: 85%;
+            text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
+        }
+    }
+
+    .solution{
+        margin-top: 50px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        p{
+            color: $secondary-color;
+            margin-top: 10px;
+            width: 85%;
+            text-align: justify;
+
+            @include mobile{
+                width: 95%;
+            }
+        }
+    }
+
+    .tech{
+        margin-top: 50px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+       li{
+           margin-left: -20px;
+           margin-top: 10px;
+           color: $secondary-color;
+           font-size: 18px;
+       }
+    }
+
+    .screenshots{
+        margin-top: 50px;
+        margin-left: 120px;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+        
+        h2{
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .corousal{
+            margin-top: 40px;
+            padding-bottom: 20px;
+            margin-left: -120px;
+            background-color: #1F2436;
+
+            @include mobile{
+                margin-left: -30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@import '../../Global.scss';
+
+.greetings{
+    width: 100%;
+    top:0;
+    background-color: $primary-color;
+    display: flex;
+    height: 770px;
+    overflow-y: hidden;
+
+    @include mobile{
+        display: block;
+        width: 590px;
+    }
+
+
+    .left{
+        flex: 0.6;
+        overflow-x: hidden;
+        position: relative;
+        overflow-y: hidden;
+
+        @include mobile{
+            width: 590px;
+        }
+
+        .float{
+            animation: float 3s infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0,  0px); }
+            50%  { transform: translate(4px, 10px); }
+            100%   { transform: translate(-0, 0px); }
+        }
+
+
+        .content{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 280px;
+            margin-left: 120px;
+
+            @include mobile{
+                margin-left: 100px;
+            }
+
+            h1{
+                color:$third-color;
+                font-size: 60px;
+                font-weight: 500;
+            }
+
+            h3{
+                font-weight: 400;
+                color: $secondary-color;
+                font-size: 40px;
+            }
+
+            p{
+                margin-top: 40px;
+                font-size: 15px;
+                font-weight: 200;
+                color:$secondary-color;
+            }
+
+            img{
+                margin-top: 40px;
+                height:65px;
+                width: 300px;
+            }
+
+            .arrow{
+                margin-top: 20px;
+
+                img{
+                    fill: #949494;
+                    height: 25px;
+                    animation: floating 5s infinite;
+                }
+
+                @keyframes floating {
+                    0% { transform: translate(0,  0px); }
+                    50%  { transform: translate(0, 15px); }
+                    100%   { transform: translate(0, -0px); }
+                }
+
+                @include mobile{
+                    display: none;
+                }
+                
+            }
+        }
+    }
+
+    .right{
+        flex:0.4;
+        overflow-x:hidden;
+        overflow-y: hidden;
+
+        @include mobile{
+            display: none;
+        }
+
+        .image{
+            z-index: 0;
+            margin-top: 30px;
+            right: 0;
+            
+            svg{
+                transform: scaleX(-1);
+            }
+        }
+    }
+}

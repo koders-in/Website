@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="51" viewBox="55 0 379 81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 30px;
+        font-family: SegoeUI, Segoe UI;
+        letter-spacing: 0.06em;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #51e8ef;
+        stroke-width: 2px;
+        stroke-dasharray: 200 180;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_44" data-name="Group 44" transform="translate(-145 -703)">
+    <text id="Vision._Kreate._Inspire." data-name="Vision. Kreate. Inspire." class="cls-1" transform="translate(169 754)"><tspan x="0" y="0">Vision. Kreate. Inspire.</tspan></text>
+    <g id="Rectangle_3" data-name="Rectangle 3" class="cls-2" transform="translate(145 703)">
+      <rect class="cls-3" width="379" height="81" rx="40"/>
+      <rect class="cls-4" x="1" y="1" width="377" height="79" rx="39"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+@import '../../Global.scss';
+
+.community{
+    width: 100%;
+
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
+    .heading{
+        position: relative;
+        margin-top: -220px;
+
+        @include mobile{
+            width: 590px;
+            margin-top: -50px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            position: absolute;
+            margin-top: -180px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+
+            @include mobile{
+                margin-top: 20px;
+                position: static;
+                margin-left: 30px;
+                font-size: 40px;
+            }
+        }
+    }
+
+    .discord2{
+        margin-top: 50px;
+        margin-left: 550px;
+
+        @include mobile{
+            margin-left: 120px;
+        }
+    }
+
+}

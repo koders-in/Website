@@ -1,0 +1,28 @@
+@import '../../Global.scss';
+
+.projectcorousal1{
+    padding-top: 40px;
+    padding-bottom: 5px;
+    width: 100%;
+    div{
+        img{
+            width: 210px;
+            height: 400px;
+            padding-bottom: 20px;
+            padding-left: 130px;
+            @include mobile{
+                padding-left: 150px;
+            }
+        }
+
+        p{
+            color: $third-color;
+            margin-top: -20px;
+            display: block;
+            padding-left: 130px;
+            @include mobile{
+                padding-left: 150px;
+            }
+        }
+    }
+}

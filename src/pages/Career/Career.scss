@@ -1,0 +1,328 @@
+@import '../../Global.scss';
+
+.career{
+    width: 100%;
+
+    @include mobile{
+        width: 590px;
+        overflow-x: hidden;
+    }
+
+    .heading{
+        position: relative;
+        margin-top: -220px;
+
+        @include mobile{
+            width: 590px;
+            margin-top: -60px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        h3{
+            margin-top: -200px;
+            padding-bottom: 50px;
+            margin-left: 120px;
+            color: $third-color;
+            font-size: 50px;
+            font-weight: 500;
+
+            @include mobile{
+                margin-top: 20px;
+                margin-left: 30px;
+                font-size: 40px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+    .section1{
+        padding-left: 120px;
+        padding-top: 120px;
+
+
+        @include mobile{
+            padding-top: 60px;
+            padding-left: 30px;
+        }
+
+        h1{
+            color: $secondary-color;
+            font-size: 40px;
+            font-weight: 500;
+
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+
+        h3{
+            padding-top: 20px;
+            color: $secondary-color;
+            font-size: 16px;
+            width: 80%;
+            text-align: justify;
+            font-weight: 300;
+
+            @include mobile{
+                width: 95%;
+            }
+        }
+    }
+
+    .section2{
+        padding-left: 120px;
+        padding-top: 150px;
+
+        @include mobile{
+            padding-top: 80px;
+            padding-left: 30px;
+        }
+
+        h1{
+            color: $secondary-color;
+            font-size: 50px;
+            font-weight: 500;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+
+            @include mobile{
+                width: 590px;
+                font-size: 40px;
+            }
+        }
+
+        .pic{
+            margin-top: 30px;
+
+            img{
+                width: 530px;
+            }
+        }
+    }
+
+    .pab{
+        margin-top: 110px;
+        display:flex;
+
+        @include mobile{
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        .left{
+            flex: 0.5;
+
+            .point1{
+                
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
+                }
+            }
+
+            .point2{
+                margin-top: 80px;
+
+                @include mobile{
+                    margin-top: 40px;
+                }
+                
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
+                }
+            }
+
+            .point3{
+                margin-top: 80px;
+
+                @include mobile{
+                    margin-top: 40px;
+                }
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 120px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
+                }
+
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 120px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        .right{
+            flex: 0.5;
+
+            @include mobile{
+                margin-top: 40px;
+            }
+
+            .point1{
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
+                }
+            }
+
+            .point2{
+                margin-top: 100px;
+
+                @include mobile{
+                    margin-top: 40px;
+                }
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
+                }
+            }
+
+            .point3{
+                margin-top: 100px;
+
+                @include mobile{
+                    margin-top: 40px;
+                }
+
+                h4{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-left: 50px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        font-size: 25px;
+                    }
+                }
+
+                p{
+                    padding-right: 150px;
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-top: 30px;
+                    padding-left: 50px;
+                    color: $secondary-color;
+
+                    @include mobile{
+                        padding-left: 30px;
+                        padding-right: 0px;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+

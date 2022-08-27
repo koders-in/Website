@@ -1,198 +1,165 @@
-@import '../../Global.scss';
+@import "../../Global.scss";
 
-.testimonials{
-    margin-top: 120px;
-    
-    @include mobile{
-        width: 590px;
+.testimonial-wrapper {
+  background-color: #1f2436;
+  border-radius: 50px;
+
+  .card1 {
+    margin-top: 40px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      height: 100px;
     }
 
-    h3{
-        font-size: 25px;
-        font-weight: 500;
-        margin-left: 120px;
-        color: $third-color;
-
-        @include mobile{
-            margin-left: 60px;
-        }
+    h4 {
+      padding-top: 20px;
+      color: $third-color;
+      font-weight: 500;
     }
 
-    .wrapper{
-        margin-top: 30px;
-        width: 1000px;
-        margin-left: 250px;
-        height: 375px;
-        background-color: #1F2436;
-        border-radius: 50px;
-
-        @include mobile{
-            margin-left: 50px;
-            width: 500px;
-        }
-
-            
-            .card1{
-                margin-top: 40px;
-                flex: 3;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                @include mobile{
-                    height: 200px;
-                }
-
-                img{
-                    height: 100px;
-                }
-
-                h4{
-                    padding-top: 20px;
-                    color: $third-color;
-                    font-weight: 500;
-                }
-
-                h5{
-                    color: $secondary-color;
-                    font-weight: 300;
-                }
-
-                p{
-                    color: $secondary-color;
-                    padding-top: 30px;
-                    padding-right: 50px;
-                    padding-left: 50px;
-                    text-align: center;
-                    font-size: 12px;
-                    font-style: oblique;
-                }
-            }
-
-            .card2{
-                margin-top: 40px;
-                flex: 3;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                img{
-                    height: 100px;
-                }
-
-                h4{
-                    padding-top: 20px;
-                    color: $third-color;
-                    font-weight: 500;
-                }
-
-                h5{
-                    color: $secondary-color;
-                    font-weight: 300;
-                }
-
-                p{
-                    color: $secondary-color;
-                    padding-top: 50px;
-                    padding-right: 50px;
-                    padding-left: 50px;
-                    text-align: center;
-                    font-size: 12px;
-                    font-style: oblique;
-                }
-            }
-
-            .card3{
-                margin-top: 40px;
-                flex: 3;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                img{
-                    height: 100px;
-                }
-
-                h4{
-                    padding-top: 20px;
-                    color: $third-color;
-                    font-weight: 500;
-                }
-
-                h5{
-                    color: $secondary-color;
-                    font-weight: 300;
-                }
-
-                p{
-                    color: $secondary-color;
-                    padding-top: 50px;
-                    padding-right: 50px;
-                    padding-left: 50px;
-                    text-align: center;
-                    font-size: 12px;
-                    font-style: oblique;
-                }
-            }
-        
-            .card4{
-                margin-top: 40px;
-                flex: 3;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                img{
-                    height: 110px;
-                }
-
-                h4{
-                    padding-top: 20px;
-                    color: $third-color;
-                    font-weight: 500;
-                }
-
-                h5{
-                    color: $secondary-color;
-                    font-weight: 300;
-                }
-
-                p{
-                    color: $secondary-color;
-                    padding-top: 50px;
-                    padding-right: 50px;
-                    padding-left: 50px;
-                    text-align: center;
-                    font-size: 12px;
-                    font-style: oblique;
-                }
-            }
-
-        .more{
-            height: 50px;
-            margin-top: 15px;
-            width: 100%;
-            display: flex;
-            background-color: #4D5470;
-            border-radius: 50px;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-            a{
-                text-decoration: none;
-
-                p{
-                    font-size: 13px;
-                    color: $secondary-color;
-                }
-
-                &:hover{
-                    p{
-                        color: $third-color;
-                    }
-                }
-            }
-        }
+    h5 {
+      color: $secondary-color;
+      font-weight: 300;
     }
+
+    p {
+      color: $secondary-color;
+      padding-top: 30px;
+      padding-right: 50px;
+      padding-left: 50px;
+      text-align: center;
+      font-size: 12px;
+      font-style: oblique;
+    }
+  }
+
+  .card2 {
+    margin-top: 40px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      height: 100px;
+    }
+
+    h4 {
+      padding-top: 20px;
+      color: $third-color;
+      font-weight: 500;
+    }
+
+    h5 {
+      color: $secondary-color;
+      font-weight: 300;
+    }
+
+    p {
+      color: $secondary-color;
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-left: 50px;
+      text-align: center;
+      font-size: 12px;
+      font-style: oblique;
+    }
+  }
+
+  .card3 {
+    margin-top: 40px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      height: 100px;
+    }
+
+    h4 {
+      padding-top: 20px;
+      color: $third-color;
+      font-weight: 500;
+    }
+
+    h5 {
+      color: $secondary-color;
+      font-weight: 300;
+    }
+
+    p {
+      color: $secondary-color;
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-left: 50px;
+      text-align: center;
+      font-size: 12px;
+      font-style: oblique;
+    }
+  }
+
+  .card4 {
+    margin-top: 40px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      height: 110px;
+    }
+
+    h4 {
+      padding-top: 20px;
+      color: $third-color;
+      font-weight: 500;
+    }
+
+    h5 {
+      color: $secondary-color;
+      font-weight: 300;
+    }
+
+    p {
+      color: $secondary-color;
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-left: 50px;
+      text-align: center;
+      font-size: 12px;
+      font-style: oblique;
+    }
+  }
+
+  .more {
+    height: 50px;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    background-color: #4d5470;
+    border-radius: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+
+      p {
+        font-size: 13px;
+        color: $secondary-color;
+      }
+
+      &:hover {
+        p {
+          color: $third-color;
+        }
+      }
+    }
+  }
 }

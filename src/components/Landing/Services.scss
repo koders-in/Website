@@ -1,183 +1,51 @@
-@import '../../Global.scss';
-
-.services{
-    margin-top: 0;
-
-    @include mobile{
-        width: 590px;
-    }
-
-    .wrapper{
-        padding-top: 100px;
-        overflow-x: hidden;
-        //overflow-y: hidden;
-
-        @include mobile{
-            padding-top: 50px;
-        }
+@import "../../Global.scss";
 
 
-        h3{
-            font-size: 25px;
+.service-wrapper {
+
+
+
+    // @include mobile {
+    //   padding-top: 50px;
+    // }
+
+ 
+
+    .service-card {
+        background-color: #1f2436;
+        border-radius: 50px;
+        padding: 20px;
+   
+
+        // @include mobile {
+        //   margin-bottom: 20px;
+        // }
+
+        a {
+          margin-top: 20px;
+          text-decoration: none;
+          display: block;
+
+          img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 150px;
+            width: 140px;
+          }
+
+          h2 {
             font-weight: 500;
-            margin-left: 120px;
-            color: $third-color;
+            margin-top: 20px;
+          text-align: center;
+            color: $secondary-color;
+          }
 
-            @include mobile{
-                margin-left: 60px;
+          &:hover {
+            h2 {
+              color: $third-color;
             }
+          }
         }
-
-        .flashcards{
-            margin-bottom: 30px;
-            margin-top: 80px;
-            margin-left: 50px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            overflow-x: hidden;
-            overflow-y: hidden;
-
-            @include mobile{
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            .card1{
-                margin-right: 100px;   
-                position: relative;   
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: #1F2436;
-                border-radius: 50px;
-                padding: 20px 60px 20px 60px;
-
-                @include mobile{
-                    margin-bottom: 20px;
-                }
-
-                
-
-                a{
-                    margin-top: 20px;
-                    text-decoration: none;
-
-                    img{
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        height: 150px;
-                        width: 140px;
-                    }
-
-                    h2{
-                        font-weight: 500;
-                        margin-top: 20px;
-                        margin-left: 18px;
-                        align-items: center;
-                        color: $secondary-color;
-                    }
-
-                    &:hover{
-                        h2{
-                            color:$third-color;
-                            
-                        }
-                    }
-                }
-            }
-
-            .card2{
-                margin-right: 100px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: #1F2436;
-                border-radius: 50px;
-                padding: 20px 60px 20px 60px;
-
-                @include mobile{
-                    margin-bottom: 20px;
-                }
-
-
-                a{
-                    margin-top: 20px;
-                    text-decoration: none;
-
-                    img{
-                         height: 150px;
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        width: 140px;
-                    }
-
-                    h2{
-                        font-weight: 500;
-                        margin-top: 20px;
-                        margin-left: 15px;
-                        color: $secondary-color;
-                    }
-
-                    &:hover{
-                        h2{
-                            color:$third-color;
-                            
-                        }
-                    }
-                }
-            }
-            .card3{
-                margin-right: 100px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: #1F2436;
-                border-radius: 50px;
-                padding: 20px 60px 0px 60px;
-
-                @include mobile{
-                    margin-bottom: 20px;
-                    height: 275px;
-                }
-
-                a{
-                    margin-top: 20px;
-                    text-decoration: none;
-
-                    img{
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        height: 150px;
-                        width: 140px;
-                    }
-
-                    h2{
-                        font-weight: 500;
-                        margin-top: 20px;
-                        margin-left: 15px;
-                        color: $secondary-color;
-                    }
-
-                    h2{
-                        font-weight: 500;
-                        color: $secondary-color;
-                    }
-
-                    &:hover{
-                        h2{
-                            color:$third-color;
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+      }
+  }

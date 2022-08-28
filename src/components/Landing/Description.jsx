@@ -16,7 +16,7 @@ function Description() {
           <img src={Motto2} className="motto-logo d-block mx-auto " alt="/" />
         </Fade>
         <Fade bottom>
-          <p className="my-3">
+          <p className="my-4">
             Koders isn't your normal software development firm. Koders provide a
             platform where people can engage themselves in various tech-related
             activities, be it keeping themselves updated with the latest

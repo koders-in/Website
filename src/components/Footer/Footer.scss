@@ -24,18 +24,16 @@
       }
 
       a {
-        text-decoration: none;
-
+        text-decoration: none  !important;
+   
         h4 {
-          width: 110px;
+     
           font-size: 18px;
-          // padding-left: 120px;
-          padding-top: 15px;
-          padding-right: -200px;
-          margin: 0;
-          font-weight: 300;
+          
+          margin-top: 10px;
+      font-weight: 300;
           color: $secondary-color;
-
+        
        
         }
 
@@ -48,7 +46,9 @@
     }
 
     .right {
-  
+  @media screen and (max-width:768px) {
+    margin-top: 20px;
+  }
 
       h3 {
         font-size: 25px;
@@ -79,7 +79,7 @@
 
     text-align: center;
     justify-content: center;
-
+margin-top: 30px;
  
 
     p {

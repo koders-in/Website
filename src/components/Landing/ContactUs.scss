@@ -26,10 +26,10 @@
       color: $secondary-color;
       font-size: 12px;
 
-      @include mobile {
+      @media screen and (max-width:968px)  {
         padding-left: 10px;
         font-size: 11px;
-        width: 45%;
+        width: 70%;
       }
     }
   }
@@ -89,11 +89,14 @@
     }
     .requirements {
       h4 {
-        // margin-top: 10px;
+        
         color: $secondary-color;
         font-weight: 300;
         font-size: 15px;
-        padding-bottom: 10px;
+     &:not(:first-of-type){
+          margin-top: 10px;
+        }
+        
       }
 
       input {
@@ -107,6 +110,7 @@
     }
 
     .message {
+      margin-top: 10px;
       textarea {
         width: 100%;
         padding-top: 10px;

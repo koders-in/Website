@@ -4,6 +4,16 @@ $third-color: #51E8EF;
 
 $width: 880px;
 
+
+.section-margin{
+    margin-bottom: 80px;
+}
+.title-margin{
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    color: $third-color;
+}
 @mixin mobile {
     @media  (max-width: #{$width}){
         @content

@@ -1,192 +1,137 @@
-@import '../../Global.scss';
+@import "../../Global.scss";
 
-.contactus{
-    margin-top: 120px;
 
-    @include mobile{
-        width: 590px ;
+
+.contact-wrapper {
+ 
+  h4 {
+    color: $secondary-color;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  img {
+    height: 30px;
+
+    @include mobile {
+      height: 25px;
+    }
+  }
+
+  .location {
+    display: flex;
+
+    p {
+      padding-left: 20px;
+      width: 30%;
+      color: $secondary-color;
+      font-size: 12px;
+
+      @media screen and (max-width:968px)  {
+        padding-left: 10px;
+        font-size: 11px;
+        width: 70%;
+      }
+    }
+  }
+  .mail {
+    margin-top: 20px;
+    display: flex;
+
+    img {
+      height: 30px;
+
+      @include mobile {
+        height: 25px;
+      }
     }
 
-    h3{
-        font-size: 25px;
-        font-weight: 500;
-        margin-left: 120px;
-        color: $third-color;
+    p {
+      padding-left: 20px;
+      width: 30%;
+      color: $secondary-color;
+      font-size: 12px;
 
-        @include mobile{
-            margin-left: 50px;
-        }
+      @include mobile {
+        padding-left: 10px;
+        font-size: 11px;
+      }
+    }
+  }
+  .phone {
+    margin-top: 20px;
+    display: flex;
+
+    img {
+      height: 30px;
+
+      @include mobile {
+        height: 25px;
+      }
     }
 
-    .wrapper{
-        margin-top: 50px;
-        display: flex;
+    p {
+      padding-left: 20px;
+      width: 30%;
+      color: $secondary-color;
+      font-size: 12px;
 
-        @include mobile{
-        }
-
-        .left{
-            flex:0.5;
-            margin-left: 300px;
-
-            @include mobile{
-                margin-left: 50px;
-            }
-
-            h4{
-                color: $secondary-color;
-                font-size: 20px;
-                font-weight: 500;
-            }
-            
-            .details{
-                margin-top: 20px;
-
-                .location{
-                    display: flex;
-
-                    img{
-                        height: 30px;
-
-                        @include mobile{
-                            height: 25px;
-                        }
-                    }
-
-                    p{
-                        padding-left: 20px;
-                        width: 30%;
-                        color: $secondary-color;
-                        font-size: 12px;
-
-                        @include mobile{
-                            padding-left: 10px;
-                            font-size: 11px;
-                            width: 45%;
-                        }
-                    }
-                }
-
-                .mail{
-                    margin-top: 20px;
-                    display: flex;
-
-                    img{
-                        height: 30px;
-
-                        @include mobile{
-                            height: 25px;
-                            
-                        }
-                    }
-
-                    p{
-                        padding-left: 20px;
-                        width: 30%;
-                        color: $secondary-color;
-                        font-size: 12px;
-
-                        @include mobile{
-                            padding-left: 10px;
-                            font-size: 11px;
-                        }
-                    }
-                }
-
-                .phone{
-                    margin-top: 20px;
-                    display: flex;
-
-                    img{
-                        height: 30px;
-
-                        @include mobile{
-                            height: 25px;
-                        }
-                    }
-
-                    p{
-                        padding-left: 20px;
-                        width: 30%;
-                        color: $secondary-color;
-                        font-size: 12px;
-
-                        @include mobile{
-                            padding-left: 10px;
-                            font-size: 11px;
-                            width: 50%;
-                        }
-                    }
-                }
-            }
-           
-        }
-
-        .right{
-            flex:0.5;
-
-            @include mobile{
-                margin-left: -50px;
-            }
-
-            .contactform{
-                width: 200px;
-
-                form{
-                    
-                    .requirements{
-
-                        h4{
-                            margin-top: 10px;
-                            color: $secondary-color;
-                            font-weight: 300;
-                            font-size: 15px;
-                            padding-bottom: 10px;
-                        }
-
-                        input
-                        {
-                            width: 350px;
-                            height: 30px;
-                            border: 1px solid $primary-color;
-                            border-radius: 10px;
-                            text-indent: 10px;
-
-                            @include mobile{
-                                width: 250px;
-                            }
-                        }
-                    }
-
-                    .message{
-
-                        textarea{
-                            width: 350px;
-                            height: 100px;
-                            border: 1px solid $primary-color;
-                            border-radius: 10px;
-                            text-indent: 10px;
-
-                            @include mobile{
-                                width: 250px;
-                            }
-                        } 
-                    }
-
-                    .submitbutton{
-                        padding-top: 20px;
-
-                        button{
-                            height: 40px;
-                            border-radius: 10px;
-                            background-color: $third-color;
-                            color: $secondary-color;
-                            border: 1px solid $third-color;
-
-                        }
-                    }
-                }
-            }
-        }
+      @include mobile {
+        padding-left: 10px;
+        font-size: 11px;
+        width: 50%;
+      }
     }
+  }
+
+  #contact_form {
+    ::placeholder {
+      font-size: 12px;
+    }
+    .requirements {
+      h4 {
+        
+        color: $secondary-color;
+        font-weight: 300;
+        font-size: 15px;
+     &:not(:first-of-type){
+          margin-top: 10px;
+        }
+        
+      }
+
+      input {
+        width: 100%;
+        border: 1px solid $primary-color;
+        padding: 5px;
+        border-radius: 8px;
+        text-indent: 10px;
+     
+      }
+    }
+
+    .message {
+      margin-top: 10px;
+      textarea {
+        width: 100%;
+        padding-top: 10px;
+        height: 100px;
+        border: 1px solid $primary-color;
+        border-radius: 10px;
+        text-indent: 10px;
+      }
+    }
+
+    .submitbutton {
+      padding-top: 20px;
+
+      button {
+        height: 40px;
+
+        border-radius: 8px;
+        background-color: $third-color;
+        color: $secondary-color;
+        border: 1px solid $third-color;
+      }
+    }
+  }
 }

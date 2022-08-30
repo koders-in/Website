@@ -3,8 +3,8 @@
 .app{
     height: 100vh;
     background-color: $primary-color;
-    // scroll-behavior: smooth;
-    // scrollbar-width: none;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar{
         display: none;

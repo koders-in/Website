@@ -8,7 +8,7 @@
   );
 
   position: fixed;
-  z-index: 9999;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -29,6 +29,7 @@
     @media screen and (max-width: 1012px) {
       flex-direction: column;
     }
+   
 
     .left {
       width: 20%;
@@ -37,7 +38,10 @@
         display: flex;
         justify-content: center;
       }
-
+      @media screen and (max-width: 568px) {
+        width: 90%;
+        justify-content: flex-start;
+      }
       img {
         height: 70px;
         object-fit: contain;

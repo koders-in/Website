@@ -10,6 +10,7 @@ function Header() {
   const link = "/";
 
   const handleSidebar = () => {
+    console.log("TTT");
     setOpen((pre) => !pre);
   };
 
@@ -31,7 +32,11 @@ function Header() {
         {open && (
           <div className="sidebar-wrapper">
             <div className="sidebar">
-              <AiOutlineClose size={30} color="#ffffff" />
+              <AiOutlineClose
+                size={30}
+                color="#ffffff"
+                onClick={handleSidebar}
+              />
               <LinkOption link={link} isMenu={false} />
             </div>
           </div>

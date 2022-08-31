@@ -34,8 +34,8 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: "./build"
-        target: "/home/basudev/website"
+        source: "./build ./Dockerfile"
+        target: "/home/panther/website"
     - name: ls -a via ssh
       uses: fifsky/ssh-action@master
       with:

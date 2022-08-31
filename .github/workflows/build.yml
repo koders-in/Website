@@ -36,3 +36,12 @@ jobs:
         port: ${{ secrets.PORT }}
         source: "Dockerfile build/"
         target: "/home/basudev/website"
+    - name: ls -a via ssh
+      uses: fifsky/ssh-action@master
+      with:
+        command: |
+          ls -a
+        host: ${{ secrets.HOST }}
+        user: ${{ secrets.USERNAME }}
+        key: ${{ secrets.PASSWORD}}
+        port: ${{ secrets.PORT}}

@@ -3,10 +3,16 @@ import { HashRouter, Link } from "react-router-dom";
 import "./Header.scss";
 import Image1 from "../../Images/Logo.png";
 import Fade from "react-reveal/Fade";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
 function Header() {
   const [open, setOpen] = useState(false);
   const link = "/";
+
+  const handleSidebar = () => {
+    console.log("TTT");
+    setOpen((pre) => !pre);
+  };
 
   return (
     <div className="header" id="#header">
@@ -19,15 +25,22 @@ function Header() {
               </Link>
             </div>
             <div className="right">
-              <LinkOption link={link} />
+              <LinkOption link={link} onClick={handleSidebar} />
             </div>
           </div>
         </Fade>
-        {/* <div className="sidebar-wrapper">
-          <div className="sidebar">
-            <LinkOption link={link} isMenu={false} />
+        {open && (
+          <div className="sidebar-wrapper">
+            <div className="sidebar">
+              <AiOutlineClose
+                size={30}
+                color="#ffffff"
+                onClick={handleSidebar}
+              />
+              <LinkOption link={link} isMenu={false} />
+            </div>
           </div>
-        </div> */}
+        )}
       </HashRouter>
     </div>
   );
@@ -35,7 +48,7 @@ function Header() {
 
 export default Header;
 
-const LinkOption = ({ isMenu = true, link }) => {
+const LinkOption = ({ isMenu = true, link, onClick }) => {
   return (
     <ul className="Quick Links">
       <li className="au">
@@ -69,7 +82,11 @@ const LinkOption = ({ isMenu = true, link }) => {
         </Link>
       </li>
 
-      {isMenu && <AiOutlineMenu size={30} color="#ffffff" />}
+      <li>
+        {isMenu && (
+          <AiOutlineMenu onClick={onClick} size={30} color="#ffffff" />
+        )}
+      </li>
     </ul>
   );
 };

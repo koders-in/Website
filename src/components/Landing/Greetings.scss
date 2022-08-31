@@ -3,15 +3,16 @@
 .greetings {
   background-color: $primary-color;
   display: flex;
-  height: 770px;
-  // @media screen and (max-width: 1012px) {
-  //   height: 100vh;
-  // }
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
   .greeting-left {
-    position: relative;
+
     overflow: hidden;
     .float {
       height: 100%;
+      width: 100%;
       animation: float 3s infinite;
       @media screen and (max-width: 968px) {
         animation: unset;
@@ -36,7 +37,7 @@
     .content {
       position: absolute;
       overflow: hidden;
-      top: 10%;
+      top: 30%;
       left: 20%;
       img {
         margin-top: 40px;
@@ -62,8 +63,9 @@
         color: $secondary-color;
       }
       @media screen and (max-width: 1012px) {
-        left: 10%;
-        top: 5%;
+        left: 5%;
+        right: 5%;
+        top:30%;
       }
     }
     .arrow {
@@ -96,9 +98,9 @@
     overflow: hidden;
     .company-logo {
       img {
-        max-height: 520px;
-        width: 100%;
-        transform: translateX(15%);
+       height: 100%;
+        display: block;
+       margin-left: auto;
       }
     }
     @media screen and (max-width: 1012px) {

@@ -34,7 +34,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: "./*"
+        source: "./build"
         target: "/home/basudev/website"
     - name: ls -a via ssh
       uses: fifsky/ssh-action@master

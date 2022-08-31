@@ -29,7 +29,7 @@ function ContactUs() {
             <div className="phone">
               <img src={Image3} alt="" />
               <p>
-                +91-7017799756,<br></br> +91-7008493497
+                135-3544702
               </p>
             </div>
           </div>

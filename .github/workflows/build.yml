@@ -27,3 +27,12 @@ jobs:
       run: npm test
     - name: Build
       run: npm run build
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USER }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        source: "build/"
+        target: "/home/basudev/website"

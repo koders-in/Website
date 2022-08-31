@@ -45,7 +45,7 @@ jobs:
         port: ${{ secrets.PORT }}
         source: "./build"
         target: "/home/panther/website"
-    - name: Copy docker filer to remote
+    - name: Copy docker file to remote
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -54,5 +54,23 @@ jobs:
         port: ${{ secrets.PORT }}
         source: "./Dockerfile"
         target: "/home/panther/website"
+    - name: Stopping and remove existing container
+      uses: fifsky/ssh-action@master
+      with:
+        command: |
+          docker rm $(docker stop $(docker ps -a -q --filter ancestor=koders-website-v3 --format="{{.ID}}"))
+        host: ${{ secrets.HOST }}
+        user: ${{ secrets.USERNAME }}
+        pass: ${{ secrets.PASSWORD}}
+        port: ${{ secrets.PORT}}
+    - name: Building and deploying new website
+      uses: fifsky/ssh-action@master
+      with:
+        command: |
+          cd /home/panther/website && docker build . -t koders-website-v3 && docker run -d -p 9440:80 koders-website-v3
+        host: ${{ secrets.HOST }}
+        user: ${{ secrets.USERNAME }}
+        pass: ${{ secrets.PASSWORD}}
+        port: ${{ secrets.PORT}}
 
     

@@ -52,7 +52,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: "./build"
+        source: "./Dockerfile"
         target: "/home/panther/website"
 
     

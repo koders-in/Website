@@ -43,5 +43,5 @@ jobs:
           ls -a
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USERNAME }}
-        key: ${{ secrets.PASSWORD}}
+        pass: ${{ secrets.PASSWORD}}
         port: ${{ secrets.PORT}}

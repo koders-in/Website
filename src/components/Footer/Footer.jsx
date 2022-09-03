@@ -42,6 +42,18 @@ function Footer() {
                   <Link to="/Kareer" tag={Link} className="ql">
                     <h4>Kareer</h4>
                   </Link>
+                  <Link to="/cancellation" tag={Link} className="ql">
+                    <h4>Cancellation</h4>
+                  </Link>
+                  <Link to="/privacy-policy" tag={Link} className="ql">
+                    <h4> Privacy Policy</h4>
+                  </Link>
+                  <Link to="/terms-of-service" tag={Link} className="ql">
+                    <h4>Terms Of Services</h4>
+                  </Link>
+                  <Link to="/support" tag={Link} className="ql">
+                    <h4>Customer Support</h4>
+                  </Link>
                 </div>
               </Fade>
               <Fade right>

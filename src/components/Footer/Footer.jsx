@@ -18,42 +18,49 @@ function Footer() {
             <div className="row">
               <Fade left>
                 <div className="left col-lg-6 mb-lg-0 mb-sm-3">
-                  <h3>QUICK LINKS:</h3>
-                  <Link to="/" tag={Link} className="ql">
-                    <h4>Home</h4>
-                  </Link>
+                  <div className="row">
+                    <div className="left col-lg-4 mb-lg-0 mb-sm-3">
+                      <h3>QUICK LINKS:</h3>
+                      <Link to="/" tag={Link} className="ql">
+                        <h4>Home</h4>
+                      </Link>
 
-                  <Link to="/aboutus" tag={Link} className="ql">
-                    <h4>About Us</h4>
-                  </Link>
+                      <Link to="/aboutus" tag={Link} className="ql">
+                        <h4>About Us</h4>
+                      </Link>
 
-                  <Link to="/ourteam" tag={Link} className="ql">
-                    <h4>Team</h4>
-                  </Link>
+                      <Link to="/ourteam" tag={Link} className="ql">
+                        <h4>Team</h4>
+                      </Link>
 
-                  <Link to="/portfolio" tag={Link} className="ql">
-                    <h4>Portfolio</h4>
-                  </Link>
+                      <Link to="/portfolio" tag={Link} className="ql">
+                        <h4>Portfolio</h4>
+                      </Link>
 
-                  <Link to="/Kommunity" tag={Link} className="ql">
-                    <h4>Kommunity</h4>
-                  </Link>
+                      <Link to="/Kommunity" tag={Link} className="ql">
+                        <h4>Kommunity</h4>
+                      </Link>
 
-                  <Link to="/Kareer" tag={Link} className="ql">
-                    <h4>Kareer</h4>
-                  </Link>
-                  <Link to="/cancellation" tag={Link} className="ql">
-                    <h4>Cancellation</h4>
-                  </Link>
-                  <Link to="/privacy-policy" tag={Link} className="ql">
-                    <h4> Privacy Policy</h4>
-                  </Link>
-                  <Link to="/terms-of-service" tag={Link} className="ql">
-                    <h4>Terms Of Services</h4>
-                  </Link>
-                  <Link to="/support" tag={Link} className="ql">
-                    <h4>Customer Support</h4>
-                  </Link>
+                      <Link to="/Kareer" tag={Link} className="ql">
+                        <h4>Kareer</h4>
+                      </Link>
+                    </div>
+                    <div className="left col-lg-8 mb-lg-0 mb-sm-3">
+                      <h3 style={{ opacity: 0 }}>QUICK LINKS:</h3>
+                      <Link to="/privacy-policy" tag={Link} className="ql">
+                        <h4> Privacy Policy</h4>
+                      </Link>
+                      <Link to="/terms-of-service" tag={Link} className="ql">
+                        <h4>Terms Of Services</h4>
+                      </Link>
+                      <Link to="/support" tag={Link} className="ql">
+                        <h4>Customer Support</h4>
+                      </Link>
+                      <Link to="/cancellation" tag={Link} className="ql">
+                        <h4>Cancellation and Refund Policies</h4>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </Fade>
               <Fade right>

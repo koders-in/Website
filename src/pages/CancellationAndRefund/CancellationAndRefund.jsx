@@ -4,7 +4,7 @@ import "./CancellationAndRefund.scss";
 const CancellationAndRefund = () => {
   return (
     <div className="cancellation-and-refund">
-      <h1>Cancellation and Refund Policy:</h1>
+      <h1>Cancellation and Refund Policy</h1>
       <p>
         All the services provided by Koders including Web Design, Web
         Development, Mobile Application Development, Software Development,
@@ -83,7 +83,7 @@ const CancellationAndRefund = () => {
         application or transaction fees that may be in place with other service
         providers, including the gateway, may be carried over to (and collected
         and retained by) Koders, and you hereby agree that Koders may keep all
-        such
+        such.
       </p>
     </div>
   );

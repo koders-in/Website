@@ -11,7 +11,10 @@ function App() {
   const isAccept = getCookieConsentValue("koders-website");
   useEffect(() => {
     if (Boolean(isAccept)) {
-      ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+      const trackingID = process.env.REACT_APP_TRACKING_ID;
+      if (trackingID) {
+        ReactGA.initialize();
+      }
     }
   }, [isAccept, userClick]);
 

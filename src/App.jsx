@@ -1,11 +1,24 @@
-import React from "react";
-import AnimatedCursor from "react-animated-cursor";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
-import Header from "./components/Header/Header";
-import CookieConsent from "react-cookie-consent";
+import ReactGA from "react-ga";
 import Main from "./pages/Main";
+import Header from "./components/Header/Header";
+import AnimatedCursor from "react-animated-cursor";
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 
 function App() {
+  const [userClick, setUserClick] = useState(false);
+  const isAccept = getCookieConsentValue("koders-website");
+  useEffect(() => {
+    if (Boolean(isAccept)) {
+      ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+    }
+  }, [isAccept, userClick]);
+
+  const handleAccept = () => {
+    setUserClick(true);
+  };
+
   return (
     <div className="app">
       <AnimatedCursor
@@ -24,7 +37,7 @@ function App() {
         cookieName="koders-website"
         setDeclineCookie={false}
         declineButtonText="Decline"
-        onAccept={() => {}}
+        onAccept={handleAccept}
         style={{
           background: "#1d2c48",
           fontSize: "14px",

@@ -5,21 +5,30 @@ import Main from "./pages/Main";
 import Header from "./components/Header/Header";
 import AnimatedCursor from "react-animated-cursor";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
+import { useLocation } from "react-router-dom";
 
 function App() {
-  const [userClick, setUserClick] = useState(false);
-  const isAccept = getCookieConsentValue("koders-website");
+  const location = useLocation();
+  const [isAccept, setIsAccept] = useState(false);
+  const isAcceptValue = getCookieConsentValue("koders-website");
+
   useEffect(() => {
-    if (Boolean(isAccept)) {
-      const trackingID = process.env.REACT_APP_TRACKING_ID;
-      if (trackingID) {
-        ReactGA.initialize(trackingID);
-      }
+    const trackingID = process.env.REACT_APP_TRACKING_ID;
+    if (Boolean(isAcceptValue)) {
+      if (!trackingID) return;
+      ReactGA.initialize(trackingID);
     }
-  }, [isAccept, userClick]);
+  }, [isAcceptValue, isAccept]);
+
+  useEffect(() => {
+    if (!window.ga) return;
+    const { pathname: page } = location;
+    window.ga("set", "page", page);
+    window.ga("send", "pageview");
+  }, [location]);
 
   const handleAccept = () => {
-    setUserClick(true);
+    setIsAccept(true);
   };
 
   return (

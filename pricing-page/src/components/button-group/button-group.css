@@ -1,0 +1,65 @@
+.button-group {
+  width: 42%;
+  margin: 3rem auto;
+  position: relative;
+}
+
+/* first chile */
+.child-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.child-one > div {
+  padding: 15px 20px;
+  width: 33.33%;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+}
+.child-one > div:hover {
+  opacity: 0.7;
+  background-color: var(--green);
+  color: var(--black);
+}
+.child-one > :nth-child(2) {
+  background-color: var(--blur);
+  color: var(--green);
+}
+
+/* second child */
+.child-two {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.child-two > div {
+  width: 33.33%;
+  color: var(--white);
+  text-align: center;
+  padding: 5px 20px;
+}
+
+/* For tab */
+@media (max-width: 930px) {
+  .button-group {
+    width: 65%;
+  }
+}
+
+/* For Mobile */
+@media (max-width: 600px) {
+  .button-group {
+    width: 92%;
+  }
+  .child-one > div {
+    padding: 10px 14px;
+  }
+  .child-two > div {
+    padding: 5px 0px;
+  }
+}

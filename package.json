@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "caniuse-lite": "^1.0.30001400",
     "material-testimonial-card": "0.0.3",
     "react": "^17.0.2",
     "react-animated-cursor": "^2.2.0",

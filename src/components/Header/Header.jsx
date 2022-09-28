@@ -81,7 +81,6 @@ const LinkOption = ({ isMenu = true, link, onClick }) => {
           Kareer
         </Link>
       </li>
-
       <li>
         {isMenu && (
           <AiOutlineMenu onClick={onClick} size={30} color="#ffffff" />

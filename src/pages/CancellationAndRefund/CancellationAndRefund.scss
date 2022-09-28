@@ -1,0 +1,19 @@
+.cancellation-and-refund {
+  width: 76%;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  & > h1 {
+    color: white;
+  }
+  & > p {
+    font-size: 15px;
+    margin: 2rem auto;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: white;
+  }
+  & > p > ul > li {
+    margin: 2rem 0;
+  }
+}

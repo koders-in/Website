@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { HashRouter, Link } from "react-router-dom";
 import "./Header.scss";
-import Image1 from "../../Images/Logo.png";
+// import Image1 from "../../Images/Logo.png";
+import Image2 from "../../Images/log0-new.png";
 import Fade from "react-reveal/Fade";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -21,7 +22,7 @@ function Header() {
           <div className="header-wrapper container">
             <div className="left">
               <Link to={link} tag={Link}>
-                <img src={Image1} alt="/"></img>
+                <img src={Image2} alt="/"></img>
               </Link>
             </div>
             <div className="right">

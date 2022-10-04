@@ -13,10 +13,10 @@ function Description() {
         <Fade left>
           <h3 className="title-margin">ABOUT KODERS</h3>
 
-          <img src={Motto2} className="motto-logo d-block mx-auto " alt="/" />
+          <img src={Motto2} className="motto-logo d-block mx-auto" alt="/" />
         </Fade>
         <Fade bottom>
-          <p className="my-4">
+          <p className="mt-3 mb-4 text-center">
             Koders isn't your normal software development firm. Koders provide a
             platform where people can engage themselves in various tech-related
             activities, be it keeping themselves updated with the latest
@@ -31,8 +31,8 @@ function Description() {
           <DescriptionCard>
             <Fade left>
               <img src={Image1} alt="" />
-              <h4 className="text-center">Creative</h4>
-              <p>
+              <h4 className="py-1 text-center">Creative</h4>
+              <p className="text-center">
                 Forget about weeks and weeks of persuasion and reminders. We
                 give our clients a fixed timeline and serve well before it. Our
                 aim is to serve you the finished project with all your desired
@@ -43,20 +43,20 @@ function Description() {
           <DescriptionCard>
             <Fade bottom>
               <img src={Image3} alt="" />
-              <h4 className="text-center">Proficient</h4>
-              <p>
+              <h4 className="py-1 text-center">Proficient</h4>
+              <p className="text-center">
                 Our team is a family of developers who code to embellish
                 programs and make it aesthetic. Creativity is primordial for our
                 team. Get in touch and you may find some talented musicians,
-                sketch artists too ;)
+                sketch artists too :)
               </p>
             </Fade>
           </DescriptionCard>
           <DescriptionCard isLast={true}>
             <Fade right>
               <img src={Image2} alt="" />
-              <h4 className="text-center">Efficient</h4>
-              <p>
+              <h4 className="py-1 text-center">Efficient</h4>
+              <p className="text-center">
                 With leading and cutting edge knowledge of all the contemporary
                 changes in the world of technology, we are always a step ahead
                 in our game. Constant improvement and adaptation is our key
@@ -73,5 +73,5 @@ function Description() {
 export default Description;
 
 const DescriptionCard = ({ children, isLast = false }) => (
-  <div className={`col-lg-3 description-card p-3 mb-3`}>{children}</div>
+  <div className={`col-lg-3 description-card p-3 mb-3 mt-3`}>{children}</div>
 );

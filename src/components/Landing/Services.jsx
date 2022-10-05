@@ -12,7 +12,7 @@ function Services() {
       <HashRouter>
         <div className="service-wrapper">
           <Fade left>
-            <h3 className="title-margin">Our Services</h3>
+            <h3 className="title-margin">OUR SERVICES</h3>
           </Fade>
           <div className="row  justify-content-between px-3">
             <Fade bottom>

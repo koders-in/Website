@@ -16,7 +16,10 @@ function Positions() {
                 <h3>Developers</h3>
                 <h4>Levels of Working:</h4></Fade>
                 <Fade bottom>
-                <img src={Image1} alt="" /></Fade>
+									<div className="image-wrapper">
+                    <img src={Image1} alt="" />
+									</div>
+                </Fade>
                 <div className="spositions">
                     <div className="wrapper">
                         <Fade left>
@@ -89,7 +92,7 @@ function Positions() {
                             <li>Document and maintain software functionality.</li>
                         </ol>
                     </div>
-                
+
                 <h4>Openings:</h4>
                 <ol>
                     <li>Linux Server Admin - 02</li>
@@ -109,7 +112,10 @@ function Positions() {
                 <h3>Marketing</h3>
                 <h4>Levels of Working:</h4></Fade>
                 <Fade bottom>
-                <img src={Image2} alt="" /></Fade>
+                    <div className="image-wrapper">
+                        <img src={Image2} alt="" />
+                    </div>
+                </Fade>
                 <div className="spositions">
                     <div className="wrapper">
                         <Fade left>
@@ -179,18 +185,20 @@ function Positions() {
                             <li>Prepare a content plan for the month.</li>
                         </ol>
                     </div>
-                
+
                 <h4>Openings: 02</h4>
                 </Fade>
             </div>
-           
-         
+
+
             <div className="content">
             <Fade left>
                 <h3>Technical Content Writing</h3>
                 <h4>Levels of Working:</h4></Fade>
                 <Fade bottom>
-                <img src={Image3} alt="" /></Fade>
+                    <div className="image-wrapper">
+                        <img src={Image3} alt="" />
+                    </div></Fade>
                 <div className="spositions">
                     <div className="wrapper">
                         <Fade left>
@@ -247,7 +255,7 @@ function Positions() {
                             <li>Create and maintain the information architecture.</li>
                         </ol>
                     </div>
-                
+
                 <h4>Openings: 02</h4>
             </div>
 
@@ -256,7 +264,9 @@ function Positions() {
                 <h3>Designing</h3>
                 <h4>Levels of Working:</h4></Fade>
                 <Fade bottom>
-                <img src={Image4} alt="" /></Fade>
+                    <div className="image-wrapper">
+                        <img src={Image4} alt="" />
+                    </div></Fade>
                 <div className="spositions">
                     <div className="wrapper">
                         <Fade left>
@@ -327,7 +337,7 @@ function Positions() {
                             <li>Work with copywriters to produce the final design.</li>
                         </ol>
                     </div>
-                
+
                 <h4>Openings: 01</h4>
             </div>
 

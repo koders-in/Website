@@ -80,6 +80,7 @@
             color: $secondary-color;
             font-weight: 200;
             font-size: 15px;
+            white-space: nowrap;
 
             @include mobile {
               font-size: 13px;

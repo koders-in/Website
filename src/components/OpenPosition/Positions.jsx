@@ -17,7 +17,7 @@ function Positions() {
                 <h4>Levels of Working:</h4></Fade>
                 <Fade bottom>
 									<div className="image-wrapper">
-                    <img src={Image1} alt="" />
+                    <img src={Image1} alt="Developer roles starting from Intern Level 1 and 2, Junior developer to Qyality assurance specialist, Senior developer and Project Manager" />
 									</div>
                 </Fade>
                 <div className="spositions">
@@ -113,7 +113,7 @@ function Positions() {
                 <h4>Levels of Working:</h4></Fade>
                 <Fade bottom>
                     <div className="image-wrapper">
-                        <img src={Image2} alt="" />
+                        <img src={Image2} alt="Marketing roles starting from Intern level 1 and 2, Marketing excutive/coordinator to Manager, VP and Cheif marketing officer" />
                     </div>
                 </Fade>
                 <div className="spositions">
@@ -197,7 +197,7 @@ function Positions() {
                 <h4>Levels of Working:</h4></Fade>
                 <Fade bottom>
                     <div className="image-wrapper">
-                        <img src={Image3} alt="" />
+                        <img src={Image3} alt="Content writing roles starting from Intern copywriter, Junior copywriter to Senior copywriter and Cheif content officer" />
                     </div></Fade>
                 <div className="spositions">
                     <div className="wrapper">
@@ -265,7 +265,7 @@ function Positions() {
                 <h4>Levels of Working:</h4></Fade>
                 <Fade bottom>
                     <div className="image-wrapper">
-                        <img src={Image4} alt="" />
+                        <img src={Image4} alt="Designing roles starting from Intern, Junior and senior graphich designers to Manager, Creative executive and Cheif creative officer" />
                     </div></Fade>
                 <div className="spositions">
                     <div className="wrapper">
@@ -342,7 +342,7 @@ function Positions() {
             </div>
 
             <div className="kommunity">
-                <p>Join our <a href="https://dsc.gg/koders">Kommunity</a> and stay tuned for further opportunities.</p>
+                <p>Join our <a href="https://dsc.gg/koders" aria-label="community link">Kommunity</a> and stay tuned for further opportunities.</p>
             </div>
         </div>
     )

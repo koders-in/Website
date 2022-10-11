@@ -18,19 +18,19 @@ function Services() {
             <Fade bottom>
               <div className="service-card col-lg-3 col-sm-12 mb-3">
                 <Link to="/services" tag={Link}>
-                  <img src={Image1} alt="/"></img>
+                  <img src={Image1} alt=""></img>
                   <h2>Services</h2>
                 </Link>
               </div>
               <div className="service-card  col-lg-3 col-sm-12 mb-3">
                 <Link to="/technologies" tag={Link}>
-                  <img src={Image2} alt="/"></img>
+                  <img src={Image2} alt=""></img>
                   <h2>Technologies</h2>
                 </Link>
               </div>
               <div className="service-card  col-lg-3 col-sm-12 mb-3 ">
                 <Link to="/industries" tag={Link}>
-                  <img src={Image3} alt="/"></img>
+                  <img src={Image3} alt=""></img>
                   <h2>Industries</h2>
                 </Link>
               </div>

@@ -51,7 +51,7 @@ function Testimonials() {
               itemClass="carousel-item-padding-40-px"
             >
               <div className="card1">
-                <img src={Image1} alt="/"></img>
+                <img src={Image1} alt=""></img>
                 <h4>Jai Agarwal</h4>
                 <h5>Managing Director, JaiG </h5>
                 <h5>(166-Jai-G-Revamp)</h5>
@@ -62,7 +62,7 @@ function Testimonials() {
                 </p>
               </div>
               <div className="card2">
-                <img src={Image2} alt="/"></img>
+                <img src={Image2} alt=""></img>
                 <h4>Bradley B.</h4>
                 <h5>(0087-Powershell)</h5>
                 <p>
@@ -71,13 +71,13 @@ function Testimonials() {
                 </p>
               </div>
               <div className="card3">
-                <img src={Image3} alt="/"></img>
+                <img src={Image3} alt=""></img>
                 <h4>DiegoTod</h4>
                 <h5>(170-0089-Support)</h5>
                 <p>"Always available to find a solution, thank you guys! ❤ "</p>
               </div>
               <div className="card4">
-                <img src={Image4} alt="/"></img>
+                <img src={Image4} alt=""></img>
                 <h4>Enz</h4>
                 <h5>(168-Machina-UI)</h5>
                 <p>

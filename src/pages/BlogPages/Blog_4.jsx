@@ -13,12 +13,12 @@ function Blog4() {
         <div className="blogUIUX">
             <div className="headimage">
                 <Fade top>
-                <img src={Image1} alt="" /></Fade>
+                <img src={Image1} alt="A tablet on a work space displaying mockup designs for a product" /></Fade>
             </div>
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog">
+                <Link to="/blog" aria-label="back button">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>
@@ -75,7 +75,7 @@ function Blog4() {
 
             <Fade bottom>
             <div className="image2">
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="A table decorated with live plants, lightings and a monitor displaying designs for different web applications" />
             </div></Fade>
 
             <Fade bottom>

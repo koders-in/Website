@@ -12,13 +12,13 @@ function Blog1() {
     <div className="blog1">
       <div className="headimage">
         <Fade top>
-          <img src={Image1} alt="" />
+          <img src={Image1} alt="Code snippet for calculating hash for signature used to sign a message" />
         </Fade>
       </div>
       <Fade bottom>
         <div className="backbutton">
           <HashRouter>
-            <Link to="/blog">
+            <Link to="/blog" aria-label="back button">
               <img src={Image2} alt="" />
               <p>Back</p>
             </Link>
@@ -121,7 +121,7 @@ function Blog1() {
 
       <Fade bottom>
         <div className="image2">
-          <img src={Image3} alt="" />
+          <img src={Image3} alt="A person working on laptop and external monitors" />
         </div>
       </Fade>
 

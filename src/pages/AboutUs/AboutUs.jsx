@@ -14,7 +14,7 @@ function AboutUs() {
     <div className="aboutus" id="aboutus">
       <div className="heading">
         <Fade top>
-          <img src={Image1} alt="" />
+          <img src={Image1} alt="A person standing up and speaking in an office meeting" />
         </Fade>
         <Fade left>
           <Container>
@@ -25,7 +25,7 @@ function AboutUs() {
       <div className="section1 section-margin">
         <Container>
           <Fade left>
-            <img src={Image2} alt="" />
+            <img src={Image2} alt="Vision. Kreate. Inspire." />
             <p>
               At Koders we build the software with new dimensions. The team at
               Koders help to add value to your business by creating
@@ -39,7 +39,7 @@ function AboutUs() {
           <div className="text row align-items-center">
             <div className="left col-md-6 col-sm-12">
               <Fade left>
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="A person reading out ideas in sticky notes to group of people" />
               </Fade>
             </div>
             <div className="right col-md-6 col-sm-12">
@@ -82,14 +82,14 @@ function AboutUs() {
             </Fade>
             <Fade right>
               <div className="right col-md-6 col-sm-12">
-                <img src={Image5} alt="" />
+                <img src={Image5} alt="A person looking into a mind map created for analysing problems" />
               </div>
             </Fade>
           </div>
           <div className="row2 row align-items-center">
             <Fade left>
               <div className="left  col-md-6 col-sm-12">
-                <img src={Image4} alt="" />
+                <img src={Image4} alt="Reflection of a person coding on their own screen" />
               </div>
             </Fade>
             <Fade right>
@@ -129,7 +129,7 @@ function AboutUs() {
             </Fade>
             <Fade right>
               <div className="right col-md-6">
-                <img src={Image6} alt="" />
+                <img src={Image6} alt="A workplace table containing laptops, headphones, storage devices, etc." />
               </div>
             </Fade>
           </div>

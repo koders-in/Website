@@ -2,19 +2,26 @@
 
 .career{
     width: 100%;
+    overflow-x: hidden;
 
-    @include mobile{
-        width: 590px;
-        overflow-x: hidden;
+    @include media-query-xlarge {
+        overflow-x: auto;
     }
 
     .heading{
         position: relative;
-        margin-top: -220px;
+        margin-top: 100px;
 
-        @include mobile{
-            width: 590px;
-            margin-top: -60px;
+        @include media-query-large {
+            margin-top: -40px;
+            margin-bottom: 90px;
+        }
+        @include media-query-xlarge {
+            margin-top: -220px;
+            margin-bottom: 60px;
+        }
+        @include media-query-xxlarge {
+            margin-top: -210px;
         }
 
         img{
@@ -22,31 +29,33 @@
         }
 
         h3{
-            margin-top: -200px;
-            padding-bottom: 50px;
-            margin-left: 120px;
+            margin: 20px auto 0;
+            width: 80%;
             color: $third-color;
-            font-size: 50px;
+            font-size: 40px;
             font-weight: 500;
 
-            @include mobile{
-                margin-top: 20px;
-                margin-left: 30px;
-                font-size: 40px;
-                padding-bottom: 0px;
+            @include media-query-medium {
+                margin-top: -170px;
+                margin-bottom: 100px;
+                font-size: 50px;
+            }
+
+            @include media-query-xlarge {
+                margin-top: -140px;
+                margin-bottom: 100px;
+            }
+
+            @include media-query-xxlarge {
+                margin-top: -100px;
             }
         }
     }
 
     .section1{
-        padding-left: 120px;
-        padding-top: 120px;
-
-
-        @include mobile{
-            padding-top: 60px;
-            padding-left: 30px;
-        }
+        width: 80%;
+        margin: 0 auto;
+        padding: 60px 0;
 
         h1{
             color: $secondary-color;
@@ -62,35 +71,30 @@
             padding-top: 20px;
             color: $secondary-color;
             font-size: 16px;
-            width: 80%;
+            width: 100%;
             text-align: justify;
             font-weight: 300;
 
-            @include mobile{
-                width: 95%;
+            @include media-query-xlarge{
+                width: 80%;
             }
         }
     }
 
     .section2{
-        padding-left: 120px;
-        padding-top: 150px;
-
-        @include mobile{
-            padding-top: 80px;
-            padding-left: 30px;
-        }
+        width: 80%;
+        margin: 0 auto;
 
         h1{
+
             color: $secondary-color;
-            font-size: 50px;
+            font-size: 40px;
             font-weight: 500;
             word-spacing: 10px;
             letter-spacing: 5px;
 
-            @include mobile{
-                width: 590px;
-                font-size: 40px;
+            @include media-query-large {
+                font-size: 50px;
             }
         }
 
@@ -98,14 +102,18 @@
             margin-top: 30px;
 
             img{
+              width: 100%;
+              @include media-query-large {
                 width: 530px;
+              }
             }
         }
     }
 
     .pab{
-        margin-top: 110px;
         display:flex;
+        width: 80%;
+        margin: 110px auto 0;
 
         @include mobile{
             flex-direction: column;
@@ -114,34 +122,29 @@
 
         .left{
             flex: 0.5;
+            padding-right: 0;
+
+            @include media-query-large{
+                padding-right: 40px;
+            }
 
             .point1{
-                
+
                 h4{
-                    font-size: 30px;
+                    font-size: 25px;
                     font-weight: 600;
-                    padding-left: 120px;
                     color: $secondary-color;
 
-                    @include mobile{
-                        padding-left: 30px;
-                        font-size: 25px;
+                    @include media-query-large {
+                        font-size: 30px;
                     }
                 }
 
                 p{
-                    padding-right: 50px;
                     text-align: justify;
                     font-size: 13px;
                     margin-top: 30px;
-                    padding-left: 120px;
                     color: $secondary-color;
-
-                    @include mobile{
-                        padding-left: 30px;
-                        padding-right: 0px;
-                        width: 90%;
-                    }
                 }
             }
 
@@ -151,32 +154,22 @@
                 @include mobile{
                     margin-top: 40px;
                 }
-                
+
                 h4{
-                    font-size: 30px;
+                    font-size: 25px;
                     font-weight: 600;
-                    padding-left: 120px;
                     color: $secondary-color;
 
-                    @include mobile{
-                        padding-left: 30px;
-                        font-size: 25px;
+                    @include media-query-large {
+                        font-size: 30px;
                     }
                 }
 
                 p{
-                    padding-right: 50px;
                     text-align: justify;
                     font-size: 13px;
                     margin-top: 30px;
-                    padding-left: 120px;
                     color: $secondary-color;
-
-                    @include mobile{
-                        padding-left: 30px;
-                        padding-right: 0px;
-                        width: 90%;
-                    }
                 }
             }
 
@@ -188,36 +181,31 @@
                 }
 
                 h4{
-                    font-size: 30px;
+                    font-size: 25px;
                     font-weight: 600;
-                    padding-left: 120px;
                     color: $secondary-color;
 
-                    @include mobile{
-                        padding-left: 30px;
-                        font-size: 25px;
+                    @include media-query-large {
+                        font-size: 30px;
                     }
                 }
 
                 p{
-                    padding-right: 50px;
                     text-align: justify;
                     font-size: 13px;
                     margin-top: 30px;
-                    padding-left: 120px;
                     color: $secondary-color;
-
-                    @include mobile{
-                        padding-left: 30px;
-                        padding-right: 0px;
-                        width: 90%;
-                    }
                 }
             }
         }
 
         .right{
             flex: 0.5;
+            padding-left: 0;
+
+            @include media-query-large{
+                padding-left: 40px;
+            }
 
             @include mobile{
                 margin-top: 40px;
@@ -228,28 +216,18 @@
                 h4{
                     font-size: 30px;
                     font-weight: 600;
-                    padding-left: 50px;
                     color: $secondary-color;
 
                     @include mobile{
-                        padding-left: 30px;
                         font-size: 25px;
                     }
                 }
 
                 p{
-                    padding-right: 150px;
                     text-align: justify;
                     font-size: 13px;
                     margin-top: 30px;
-                    padding-left: 50px;
                     color: $secondary-color;
-
-                    @include mobile{
-                        padding-left: 30px;
-                        padding-right: 0px;
-                        width: 90%;
-                    }
                 }
             }
 
@@ -263,28 +241,18 @@
                 h4{
                     font-size: 30px;
                     font-weight: 600;
-                    padding-left: 50px;
                     color: $secondary-color;
 
                     @include mobile{
-                        padding-left: 30px;
                         font-size: 25px;
                     }
                 }
 
                 p{
-                    padding-right: 150px;
                     text-align: justify;
                     font-size: 13px;
                     margin-top: 30px;
-                    padding-left: 50px;
                     color: $secondary-color;
-
-                    @include mobile{
-                        padding-left: 30px;
-                        padding-right: 0px;
-                        width: 90%;
-                    }
                 }
             }
 
@@ -298,28 +266,18 @@
                 h4{
                     font-size: 30px;
                     font-weight: 600;
-                    padding-left: 50px;
                     color: $secondary-color;
 
                     @include mobile{
-                        padding-left: 30px;
                         font-size: 25px;
                     }
                 }
 
                 p{
-                    padding-right: 150px;
                     text-align: justify;
                     font-size: 13px;
                     margin-top: 30px;
-                    padding-left: 50px;
                     color: $secondary-color;
-
-                    @include mobile{
-                        padding-left: 30px;
-                        padding-right: 0px;
-                        width: 90%;
-                    }
                 }
             }
         }

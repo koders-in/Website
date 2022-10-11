@@ -13,7 +13,7 @@ function Project11() {
             <Fade bottom>
             <div className="section1">
                 <h1>AIO World</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Home page of AIO World describing advantages of the product" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

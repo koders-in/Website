@@ -13,7 +13,7 @@ function Project6() {
             <Fade bottom>
             <div className="section1">
                 <h1>Kourage</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="A message from bot displaying details about a user" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

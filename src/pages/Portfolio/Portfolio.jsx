@@ -12,7 +12,7 @@ function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
       <div className="heading">
-        <img src={Image1} alt="" />
+        <img src={Image1} alt="Depiction of cloud created using data links" />
         <Fade left>
           <h3>Portfolio</h3>
         </Fade>
@@ -52,13 +52,13 @@ function Portfolio() {
       </div>
       <div className="featuredprojects">
         <Fade bottom>
-          <img src={Image2} alt="" />
+          <img src={Image2} alt="Snaps of featured product called 'Kyro tools'" />
         </Fade>
       </div>
       <div className="technologies">
         <Fade bottom>
           <h3>TECHNOLOGIES</h3>
-          <img src={Image3} alt="" />
+          <img src={Image3} alt="HTML, PHP, MongoDB, C++, React, CSS, NodeJS, Java, C#, Vue, JavaScript, My SQL, C, .NET, Angular" />
         </Fade>
       </div>
       <div className="projects">

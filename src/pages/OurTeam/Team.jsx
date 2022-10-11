@@ -11,7 +11,7 @@ function Team() {
     <div className="team" id="team">
       <div className="heading section-margin">
         <Fade top>
-          <img src={Image1} alt="" />
+          <img src={Image1} alt="Two hands trying to match pieces of jigsaw puzzle" />
         </Fade>
         <div className="container">
           <Fade left>

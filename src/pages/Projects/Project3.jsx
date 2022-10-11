@@ -14,7 +14,7 @@ function Project3() {
             <Fade bottom>
             <div className="section1">
                 <h1>Twitter Monitor</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Kyros tools application settings page showing user details and space to configure keys and webhooks" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>
@@ -69,15 +69,15 @@ function Project3() {
                 <Fade bottom>
                 <div className="corousal">
                     <div className="img1">
-                        <img src={Image1} alt="" />
+                        <img src={Image1} alt="Kyros tools application settings page showing user details and space to configure keys and webhooks" />
                         <p>Settings</p>
                     </div>
                     <div className="img2">
-                        <img src={Image2} alt="" />
+                        <img src={Image2} alt="Kyros tools application auto link opener or joiner page showing details about latest and featured tweets of user" />
                         <p>Twitter and ALO Page</p>
                     </div>
                     <div className="img3">
-                        <img src={Image3} alt="" />
+                        <img src={Image3} alt="Snap of old user interface of Twitter monitor application" />
                         <p>Twitter Old UI</p>
                     </div>
                 </div>

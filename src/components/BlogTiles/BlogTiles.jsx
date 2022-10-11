@@ -20,6 +20,7 @@ const BlogList = [
         plan, just in case.`,
     blogMoreLink: "/Hacking-Humans-is-easier-than-Hacking-Computers",
     blogPoster: Image1,
+    blogPosterDescription: 'Code snippet for calculating hash for signature used to sign a message',
   },
   {
     blogContext: "E-Commerce",
@@ -31,6 +32,7 @@ const BlogList = [
         and create a loyal customer base.`,
     blogMoreLink: "/Website-or-Mobile-App",
     blogPoster: Image2,
+    blogPosterDescription: 'A hand holding debit/credit card which is going to be used on an e-commerce website',
   },
   {
     blogContext: "Artificial Intelligence",
@@ -41,6 +43,7 @@ const BlogList = [
         manufacturing, transportation, defense.`,
     blogMoreLink: "/Automation-the-present-and-future",
     blogPoster: Image3,
+    blogPosterDescription: 'Hand of a human and robot reaching out to touch each other',
   },
   {
     blogContext: "UI & UX",
@@ -52,6 +55,7 @@ const BlogList = [
         branding, design, usability and function.`,
     blogMoreLink: "/UI-vs-UX",
     blogPoster: Image4,
+    blogPosterDescription: 'A tablet on a work space displaying mockup designs for a product',
   },
   {
     blogContext: "Digital Marketing",
@@ -62,6 +66,7 @@ const BlogList = [
         gathers data about everything that can be found on the Internet.`,
     blogMoreLink: "/What you need to know about SEO before starting a website",
     blogPoster: Image5,
+    blogPosterDescription: 'A hand going to select option SEO which is highlighted among options like settings, statistics, search, web, etc.',
   },
   {
     blogContext: "Dark Web",
@@ -73,6 +78,7 @@ const BlogList = [
         concomitant with felonious acts.`,
     blogMoreLink: "/The Dark Web is notorious",
     blogPoster: Image6,
+    blogPosterDescription: 'A person with long hair sitting in front of large monitor having abstract illustration',
   },
   {
     blogContext: "Quality Assurance",
@@ -83,6 +89,7 @@ const BlogList = [
         highly underestimated topic.`,
     blogMoreLink: "/4 Reasons why Software Quality Assurance is Important",
     blogPoster: Image7,
+    blogPosterDescription: 'A hand drawing an exponential curve representing quality',
   },
 ];
 
@@ -96,6 +103,7 @@ function BlogTiles() {
           blogPoster,
           blogTitle,
           blogMoreLink,
+          blogPosterDescription,
         }) => {
           return (
             <Fade key={blogTitle} bottom>
@@ -111,7 +119,7 @@ function BlogTiles() {
                   </HashRouter>
                 </BlogContent>
                 <BlogContent>
-                  <img src={blogPoster} alt="" />
+                  <img src={blogPoster} alt={blogPosterDescription} />
                 </BlogContent>
               </BlogContainer>
             </Fade>

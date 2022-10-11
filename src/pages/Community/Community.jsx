@@ -8,7 +8,7 @@ function Community() {
   return (
     <div className="community" id="community">
       <div className="heading">
-        <img src={Image1} alt="" />
+        <img src={Image1} alt="A person holding bulb" />
         <Fade left>
           <div className="container">
             <h3>

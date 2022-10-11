@@ -12,7 +12,7 @@ function Project4() {
             <Fade bottom>
             <div className="section1">
                 <h1>Virtual Hover Pen</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Text Koders being written on a screen by a person" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

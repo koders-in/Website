@@ -11,7 +11,7 @@ function Project2() {
             <Fade bottom>
             <div className="section2">
                 <h1>Food Delivery Application</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Food delivery application displaying restaurants with options to search, apply offers and configure various choices" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>
@@ -71,11 +71,11 @@ function Project2() {
                 <Fade bottom>
                 <div className="corousal2">
                     <div className="img1">
-                        <img src={Image1} alt="" />
+                        <img src={Image1} alt="Food delivery application displaying restaurants with options to search, apply offers and configure various choices" />
                         <p>Client App</p>
                     </div>
                     <div className="img2">
-                        <img src={Image2} alt="" />
+                        <img src={Image2} alt="Food delivery application displaying options to configure the restaurant's menu and offers" />
                         <p>Restaurant App</p>
                     </div>
                     

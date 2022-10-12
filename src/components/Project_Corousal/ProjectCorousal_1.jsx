@@ -56,7 +56,7 @@ function ProjectCorousal1() {
                     <p>Add Notes</p>
                 </div>
                 <div>
-                    <img alt="Add notes page with options to select color, add image and URL" src={Image4} />
+                    <img alt="Add notes page with options to select color, add images and URL" src={Image4} />
                     <p>Miscellaneous</p>
                 </div>
             </Carousel>

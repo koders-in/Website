@@ -44,19 +44,19 @@ function Carousal8() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Home page of AIO World describing advantages of the product" src={Image1} />
                     <p>Dashboard</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Frequently asked questions in AIO World" src={Image2} />
                     <p>FAQ</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Social media page with discord widget" src={Image3} />
                     <p>Social Media</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Page describing how users have benefitted from the application" src={Image4} />
                     <p>Success</p>
                 </div>
             </Carousel>

@@ -44,19 +44,19 @@ function Carousal2() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Home page of My Kitchen application featuring a man decorating food to be serve" src={Image1} />
                     <p>Home Page</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="About us page of My Kitchen displaying history of the company" src={Image2} />
                     <p>About Us</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Offers page dislaying various offers that are currently active" src={Image3} />
                     <p>Offers</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Menu page containing dishes name and cost" src={Image4} />
                     <p>Menu</p>
                 </div>
             </Carousel>

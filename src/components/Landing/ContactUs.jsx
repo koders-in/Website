@@ -77,7 +77,7 @@ function ContactUs() {
               </div>
 
               <div className="submitbutton">
-                <button type="submit" className="formbutton">
+                <button type="submit" className="formbutton" aria-label="send message">
                   Send Message
                 </button>
               </div>

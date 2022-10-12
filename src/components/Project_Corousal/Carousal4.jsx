@@ -45,23 +45,23 @@ function Carousal4() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Dashboard of Hawa UI that displays statistics about e-commerce websites" src={Image1} />
                     <p>Home Page</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Profile tab of Hawa UI displaying different profile cards, groups and statistics" src={Image2} />
                     <p>Profiles</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Proxies tab of Hawa UI displaying active proxies, proxy links and test settings" src={Image3} />
                     <p>Proxies</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Session modal displaying details of a session" src={Image4} />
                     <p>Sessions</p>
                 </div>
                 <div>
-                    <img alt="" src={Image5} />
+                    <img alt="Settings tab of Hawa UI displaying settings navigation section, captcha harvester, section to create captcha harvester, webhooks and renew information" src={Image5} />
                     <p>Settings</p>
                 </div>
             </Carousel>

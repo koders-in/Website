@@ -113,7 +113,7 @@ function BlogTiles() {
                   <h3>{blogTitle}</h3>
                   <p>{blogDescription}</p>
                   <HashRouter>
-                    <Link to={blogMoreLink} tag={Link}>
+                    <Link to={blogMoreLink} tag={Link} aria-label="read more">
                       Read More
                     </Link>
                   </HashRouter>

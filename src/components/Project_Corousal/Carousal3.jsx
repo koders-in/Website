@@ -45,19 +45,19 @@ function Carousal3() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="A message from bot displaying details about a user" src={Image1} />
                     <p>User Profile</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Message from bot named explaining how to provide suggestions which has received reactions of emojis like checkmark and heart" src={Image2} />
                     <p>Suggestions Guidelines</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Message from bot displaying suggestion received and the ticket details of the suggestion" src={Image3} />
                     <p>Suggestion Portal</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Bar graph representing sentiment analysis of the messages received" src={Image4} />
                     <p>Sentiment Analysis</p>
                 </div>
                 <div>

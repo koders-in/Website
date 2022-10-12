@@ -46,27 +46,27 @@ function Carousal6() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Account generator page of UC Toolbot displaying options to configure the account details" src={Image1} />
                     <p>Account Generator</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Auto link opener tab displaying monitor section and tasks section" src={Image2} />
                     <p>Auto Link Opener</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Cookie generator tab displaying section to add new task and cookie lists" src={Image3} />
                     <p>Cookie Generator</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="One click tab displaying section to add account and usage details" src={Image4} />
                     <p>One Click</p>
                 </div>
                 <div>
-                    <img alt="" src={Image5} />
+                    <img alt="Profile convertor tab displaying options to import or export profiles and profile lists" src={Image5} />
                     <p>Profile Converter</p>
                 </div>
                 <div>
-                    <img alt="" src={Image6} />
+                    <img alt="Cookie generator tab displaying section to add new task and proxy lists" src={Image6} />
                     <p>Proxy Generator</p>
                 </div>
             </Carousel>

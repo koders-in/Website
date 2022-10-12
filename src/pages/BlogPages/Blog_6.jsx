@@ -18,7 +18,7 @@ function Blog6() {
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog" aria-label="back button">
+                <Link to="/blog" aria-label="back">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>

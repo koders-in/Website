@@ -44,19 +44,19 @@ function ProjectCorousal1() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-10-px">
                 <div>
-                    <img alt="" src={Image1}/>
+                    <img alt="Log in page of mobile application to take notes" src={Image1}/>
                     <p>Login Page</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Dashboard of notes application displaying notes added by the user" src={Image2} />
                     <p>Dashboard</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Add notes page of the notes application" src={Image3} />
                     <p>Add Notes</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Add notes page with options to select color, add image and URL" src={Image4} />
                     <p>Miscellaneous</p>
                 </div>
             </Carousel>

@@ -12,7 +12,9 @@ function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
       <div className="heading">
+        <Fade top>
         <img src={Image1} alt="" />
+        </Fade>
         <Fade left>
           <h3>Portfolio</h3>
         </Fade>

@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import Image1 from '../../Images/positions_1.webp'
 import Image2 from '../../Images/positions_2.webp'
 import Image3 from '../../Images/positions_3.webp'
-import Image4 from '../../Images/positions_4.webp'
+import Image4 from '../../Images/positions_4.png'
 
 function Positions() {
     return (

@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.scss";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/aboutus.png";
+import Image1 from "../../Images/aboutus.webp";
 import Image2 from "../../Images/VKI.png";
-import Image3 from "../../Images/about_1.jpg";
-import Image4 from "../../Images/about_2.jpg";
-import Image5 from "../../Images/about_3.jpg";
-import Image6 from "../../Images/about_4.jpg";
+import Image3 from "../../Images/about_1.webp";
+import Image4 from "../../Images/about_2.webp";
+import Image5 from "../../Images/about_3.webp";
+import Image6 from "../../Images/about_4.webp";
 import Footer from "../../components/Footer/Footer";
 
 function AboutUs() {

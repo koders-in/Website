@@ -1,10 +1,10 @@
 import React from "react";
 import "./Testimonials.scss";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/person-1.png";
-import Image2 from "../../Images/person-2.png";
-import Image3 from "../../Images/person-3.png";
-import Image4 from "../../Images/person-4.png";
+import Image1 from "../../Images/person-1.webp";
+import Image2 from "../../Images/person-2.webp";
+import Image3 from "../../Images/person-3.webp";
+import Image4 from "../../Images/person-4.webp";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 

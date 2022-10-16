@@ -1,7 +1,7 @@
 import React from 'react'
 import './Project2.scss'
-import Image1 from '../../Images/Projects/Food_Delivery/Client App.jpg'
-import Image2 from '../../Images/Projects/Food_Delivery/Restaurant_App.jpg'
+import Image1 from '../../Images/Projects/Food_Delivery/Client App.webp'
+import Image2 from '../../Images/Projects/Food_Delivery/Restaurant_App.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 

@@ -2,12 +2,12 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal6.scss'
-import Image1 from '../../Images/Projects/UCToolbot/Account_generator.jpg'
-import Image2 from '../../Images/Projects/UCToolbot/AutoLinkOpener.jpg'
-import Image3 from '../../Images/Projects/UCToolbot/Cookie_Generator.jpg'
-import Image4 from '../../Images/Projects/UCToolbot/One-click.jpg'
-import Image5 from '../../Images/Projects/UCToolbot/Profile_Converter.jpg'
-import Image6 from '../../Images/Projects/UCToolbot/Proxy_Generator.jpg'
+import Image1 from '../../Images/Projects/UCToolbot/Account_generator.webp'
+import Image2 from '../../Images/Projects/UCToolbot/AutoLinkOpener.webp'
+import Image3 from '../../Images/Projects/UCToolbot/Cookie_Generator.webp'
+import Image4 from '../../Images/Projects/UCToolbot/One-click.webp'
+import Image5 from '../../Images/Projects/UCToolbot/Profile_Converter.webp'
+import Image6 from '../../Images/Projects/UCToolbot/Proxy_Generator.webp'
 
 function Carousal6() {
 

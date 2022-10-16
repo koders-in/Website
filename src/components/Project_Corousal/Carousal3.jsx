@@ -61,7 +61,7 @@ function Carousal3() {
                     <p>Sentiment Analysis</p>
                 </div>
                 <div>
-                    <img alt="" src={Image5} />
+                    <img alt="Message from the bot displaying absent users on morning shift of particular day" src={Image5} />
                     <p>Attendance Portal</p>
                 </div>
             </Carousel>

@@ -51,7 +51,7 @@ function Testimonials() {
               shouldResetAutoplay={false}
               showDots={true}
             >
-              <div className="card1">
+              <div className="card1 testimonial-card">
                 <img src={Image1} alt=""></img>
                 <h4>Jai Agarwal</h4>
                 <h5>Managing Director, JaiG </h5>
@@ -62,7 +62,7 @@ function Testimonials() {
                   had planned together."
                 </p>
               </div>
-              <div className="card2">
+              <div className="card2 testimonial-card">
                 <img src={Image2} alt=""></img>
                 <h4>Bradley B.</h4>
                 <h5>(0087-Powershell)</h5>
@@ -71,13 +71,13 @@ function Testimonials() {
                   Professional - Highly recommended!"
                 </p>
               </div>
-              <div className="card3">
+              <div className="card3 testimonial-card">
                 <img src={Image3} alt=""></img>
                 <h4>DiegoTod</h4>
                 <h5>(170-0089-Support)</h5>
                 <p>"Always available to find a solution, thank you guys! ❤ "</p>
               </div>
-              <div className="card4">
+              <div className="card4 testimonial-card">
                 <img src={Image4} alt=""></img>
                 <h4>Enz</h4>
                 <h5>(168-Machina-UI)</h5>

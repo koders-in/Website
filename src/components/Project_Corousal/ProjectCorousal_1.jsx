@@ -2,10 +2,10 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './carousal1.scss'
-import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
-import Image2 from '../../Images/Projects/Notes_App/Dashboard.jpg'
-import Image3 from '../../Images/Projects/Notes_App/AddNotes.jpg'
-import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.jpg'
+import Image1 from '../../Images/Projects/Notes_App/Login.webp'
+import Image2 from '../../Images/Projects/Notes_App/Dashboard.webp'
+import Image3 from '../../Images/Projects/Notes_App/AddNotes.webp'
+import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.webp'
 
 function ProjectCorousal1() {
 

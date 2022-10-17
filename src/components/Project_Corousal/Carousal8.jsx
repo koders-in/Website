@@ -2,10 +2,10 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal8.scss'
-import Image1 from '../../Images/Projects/AIO World/HomePage.jpg'
-import Image2 from '../../Images/Projects/AIO World/FAQ.jpg'
-import Image3 from '../../Images/Projects/AIO World/Social Media.jpg'
-import Image4 from '../../Images/Projects/AIO World/Success.jpg'
+import Image1 from '../../Images/Projects/AIO World/HomePage.webp'
+import Image2 from '../../Images/Projects/AIO World/FAQ.webp'
+import Image3 from '../../Images/Projects/AIO World/Social Media.webp'
+import Image4 from '../../Images/Projects/AIO World/Success.webp'
 
 function Carousal8() {
 

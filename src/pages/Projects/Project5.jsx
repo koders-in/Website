@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project5.scss'
-import Image1 from '../../Images/Projects/Cloud_Kitchen/Home.jpg'
+import Image1 from '../../Images/Projects/Cloud_Kitchen/Home.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal2 from '../../components/Project_Corousal/Carousal_2'

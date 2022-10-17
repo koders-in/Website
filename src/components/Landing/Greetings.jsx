@@ -1,7 +1,7 @@
 import React from "react";
 import "./Greetings.scss";
 import Image1 from "../../Images/Flow.svg";
-import Image2 from "../../Images/Moto.png";
+import Image2 from "../../Images/Moto.webp";
 import Image3 from "../../Images/Logo2.svg";
 import Image4 from "../../Images/Arrow.svg";
 import Fade from "react-reveal/Fade";

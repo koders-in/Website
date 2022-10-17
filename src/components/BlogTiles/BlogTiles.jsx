@@ -2,13 +2,13 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import { Link, HashRouter } from "react-router-dom";
 import "./BlogTiles.scss";
-import Image1 from "../../Images/Hacking_1.jpg";
-import Image2 from "../../Images/ecom_1.jpg";
-import Image3 from "../../Images/AI_1.jpg";
+import Image1 from "../../Images/Hacking_1.webp";
+import Image2 from "../../Images/ecom_1.webp";
+import Image3 from "../../Images/AI_1.webp";
 import Image4 from "../../Images/UI_1.jpg";
-import Image5 from "../../Images/seo_1.jpg";
-import Image6 from "../../Images/dark_web_1.jpeg";
-import Image7 from "../../Images/QA_1.png";
+import Image5 from "../../Images/seo_1.webp";
+import Image6 from "../../Images/dark_web_1.webp";
+import Image7 from "../../Images/QA_1.webp";
 
 const BlogList = [
   {

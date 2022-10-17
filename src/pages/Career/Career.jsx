@@ -1,8 +1,8 @@
 import React from "react";
 import "./Career.scss";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/career.png";
-import Image2 from "../../Images/Career.jpg";
+import Image1 from "../../Images/career1.webp";
+import Image2 from "../../Images/career2.webp";
 import Positions from "../../components/OpenPosition/Positions";
 import Footer from "../../components/Footer/Footer";
 

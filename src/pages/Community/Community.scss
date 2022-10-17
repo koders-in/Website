@@ -3,11 +3,17 @@
 .community {
   .heading {
     position: relative;
-    margin-top: -220px;
+    margin: 70px 0 200px;
 
-    @include mobile {
-      width: 590px;
-      margin-top: -50px;
+    @include media-query-medium {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+    @include media-query-large {
+      margin-top: -120px;
+    }
+    @include media-query-xlarge {
+      margin-top: -200px;
     }
 
     img {
@@ -16,15 +22,15 @@
 
     h3 {
       position: absolute;
-      margin-top: -180px;
       color: $third-color;
       font-size: 50px;
       font-weight: 500;
 
-      @include mobile {
-        margin-top: 20px;
-        position: static;
-        font-size: 40px;
+      @include media-query-medium {
+        margin-top: -140px;
+      }
+      @include media-query-xlarge {
+        margin-top: -180px;
       }
     }
   }

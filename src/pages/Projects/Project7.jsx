@@ -13,7 +13,7 @@ function Project7() {
             <Fade bottom>
             <div className="section1">
                 <h1>Hawa UI</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Dashboard of Hawa UI that displays statistics about e-commerce websites" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

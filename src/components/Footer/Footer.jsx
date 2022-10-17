@@ -65,8 +65,9 @@ function Footer() {
                         href="https://www.instagram.com/koders_in/"
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="instagram"
                       >
-                        <img src={Image1} alt=""></img>
+                        <img src={Image1} alt="instagram logo"></img>
                       </a>
                     </div>
                     <div className="facebook">
@@ -74,8 +75,9 @@ function Footer() {
                         href="https://www.facebook.com/kodersin"
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="facebook"
                       >
-                        <img src={Image2} alt=""></img>
+                        <img src={Image2} alt="facebook logo"></img>
                       </a>
                     </div>
                     <div className="twitter">
@@ -83,8 +85,9 @@ function Footer() {
                         href="https://twitter.com/KodersHQ"
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="twitter"
                       >
-                        <img src={Image3} alt=""></img>
+                        <img src={Image3} alt="twitter logo"></img>
                       </a>
                     </div>
                     <div className="github">
@@ -92,8 +95,9 @@ function Footer() {
                         href="https://github.com/koders-in"
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="github"
                       >
-                        <img src={Image4} alt=""></img>
+                        <img src={Image4} alt="github logo"></img>
                       </a>
                     </div>
                     <div className="Linkdin">
@@ -101,8 +105,9 @@ function Footer() {
                         href="https://www.linkedin.com/company/koders-in/"
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="linkedin"
                       >
-                        <img src={Image5} alt=""></img>
+                        <img src={Image5} alt="linkedin logo"></img>
                       </a>
                     </div>
                     <div className="discord">
@@ -110,8 +115,9 @@ function Footer() {
                         href="https://dsc.gg/koders"
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="discord"
                       >
-                        <img src={Image6} alt=""></img>
+                        <img src={Image6} alt="discord logo"></img>
                       </a>
                     </div>
                   </div>

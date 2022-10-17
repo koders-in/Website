@@ -13,7 +13,7 @@ function Project9() {
             <Fade bottom>
             <div className="section1">
                 <h1>UC-Toolbot</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Account generator page of UC Toolbot displaying options to configure the account details" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

@@ -13,7 +13,7 @@ function Project8() {
             <Fade bottom>
             <div className="section1">
                 <h1>Machina UI</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Sign in screen of Machina UI" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

@@ -9,7 +9,7 @@ function Blog() {
   return (
     <div className="blog">
       <div className="heading section-margin">
-        <img src={Image1} alt="" />
+        <img src={Image1} alt="A monitor displaying code for a webpage" />
         <div className="header-content">
           <div className="container ">
             <Fade left>

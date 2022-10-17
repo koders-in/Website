@@ -11,7 +11,7 @@ function Career() {
     <div className="career">
       <div className="heading">
         <Fade top>
-          <img src={Image1} alt="" />
+          <img src={Image1} alt="Two people shaking their hands" />
         </Fade>
         <Fade left>
           <h3>KAREER AT KODERS</h3>
@@ -38,7 +38,7 @@ function Career() {
         </Fade>
         <Fade bottom>
           <div className="pic">
-            <img src={Image2} alt="" />
+            <img src={Image2} alt="A pair of hands signing few papers" />
           </div>
         </Fade>
       </div>

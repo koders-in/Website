@@ -13,7 +13,7 @@ function Project10() {
             <Fade bottom>
             <div className="section1">
                 <h1>Squared IO</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Home page of Squared IO featuring Premimum retailer bot details" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

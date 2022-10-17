@@ -12,14 +12,14 @@ function Industry() {
     <div className="industry" id="industry">
       <Fade top>
         <div className="heading">
-          <img src={Image1} alt="" />
+          <img src={Image1} alt="Fingers of a person trying to zoom in the content of tablet" />
           <div className="wrapper">
             <Fade left>
               <h3>Industries</h3>
             </Fade>
             <HashRouter>
               <div className="backbutton">
-                <Link to="/" tag={Link}>
+                <Link to="/" tag={Link}  aria-label="back">
                   <Fade right>
                     <img src={Image2} alt="" />
                     <p>Back</p>
@@ -33,7 +33,8 @@ function Industry() {
 
       <div className="table">
         <Fade bottom>
-          <img src={Image3} alt="" />
+          <img src={Image3} alt="Software services, Hardware, Design, Cloud services, IT services, Consulting, Internet of things,
+          Media, Entertainment, Education, E-commerce, Science and Fintech" />
         </Fade>
       </div>
 

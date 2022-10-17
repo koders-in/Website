@@ -12,14 +12,14 @@ function ServicesPage() {
     <div className="servicespage" id="servicespage">
       <Fade top>
         <div className="heading">
-          <img src={Image1} alt="" />
+          <img src={Image1} alt="Fingers of a person trying to zoom in the content of tablet" />
           <div className="wrapper">
             <Fade left>
               <h3>Our Services</h3>
             </Fade>
             <HashRouter>
               <div className="backbutton">
-                <Link to="/" tag={Link}>
+                <Link to="/" tag={Link} aria-label="back">
                   <Fade right>
                     <img src={Image2} alt="" />
                     <p>Back</p>
@@ -33,7 +33,8 @@ function ServicesPage() {
 
       <div className="table">
         <Fade bottom>
-          <img src={Image3} alt="" />
+          <img src={Image3} alt="Web applications, APIs, Blockchain, Internet of things, Cloud computing, Process automation,
+          Artificial Intelligence, Network security, Devops, Information security, Business Analytics and Mobile applications" />
         </Fade>
       </div>
 

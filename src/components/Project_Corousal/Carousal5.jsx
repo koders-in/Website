@@ -46,23 +46,23 @@ function Carousal5() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Sign in screen of Machina UI" src={Image1} />
                     <p>Sign In</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Side by side view of Machina UI dashboard and sign in screen" src={Image2} />
                     <p>Dashboard + SignIn</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Proxies tab of Machina UI displaying details about footlocker proxies" src={Image3} />
                     <p>Proxies</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Settings section that provides option to configure discord or slack webhooks" src={Image4} />
                     <p>Settings</p>
                 </div>
                 <div>
-                    <img alt="" src={Image5} />
+                    <img alt="Task groups section displaying details of footlocker proxies" src={Image5} />
                     <p>Task Groups</p>
                 </div>
             </Carousel>

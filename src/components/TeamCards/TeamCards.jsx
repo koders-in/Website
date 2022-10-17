@@ -52,7 +52,7 @@ export const TeamCard = ({
   memberDescription,
 }) => (
   <div className="team-card-wrapper">
-    <img src={memberPoster} alt="" />
+    <img src={memberPoster} alt={memberName} />
     <div className="box">
       <h3>{memberName}</h3>
       <h5>{memberDesignation}</h5>

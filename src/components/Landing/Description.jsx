@@ -13,7 +13,7 @@ function Description() {
         <Fade left>
           <h3 className="title-margin">ABOUT KODERS</h3>
 
-          <img src={Motto2} className="motto-logo d-block mx-auto " alt="/" />
+          <img src={Motto2} className="motto-logo d-block mx-auto " alt="We strive to make the best for our customers" />
         </Fade>
         <Fade bottom>
           <p className="my-4">
@@ -30,7 +30,7 @@ function Description() {
         <div className="row justify-content-between px-3">
           <DescriptionCard>
             <Fade left>
-              <img src={Image1} alt="" />
+              <img src={Image1} alt="illustration of person looking at various charts" />
               <h4 className="text-center">Creative</h4>
               <p>
                 Forget about weeks and weeks of persuasion and reminders. We
@@ -42,7 +42,7 @@ function Description() {
           </DescriptionCard>
           <DescriptionCard>
             <Fade bottom>
-              <img src={Image3} alt="" />
+              <img src={Image3} alt="illustration of person standing next to a board containing data" />
               <h4 className="text-center">Proficient</h4>
               <p>
                 Our team is a family of developers who code to embellish
@@ -54,7 +54,7 @@ function Description() {
           </DescriptionCard>
           <DescriptionCard isLast={true}>
             <Fade right>
-              <img src={Image2} alt="" />
+              <img src={Image2} alt="illustration of person delivering higher throughput" />
               <h4 className="text-center">Efficient</h4>
               <p>
                 With leading and cutting edge knowledge of all the contemporary

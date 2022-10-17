@@ -13,12 +13,12 @@ function Blog6() {
         <div className="blogDarkweb">
             <div className="headimage">
                 <Fade top>
-                <img src={Image1} alt="" /></Fade>
+                <img src={Image1} alt="A person with long hair sitting in front of large monitor having abstract illustration" /></Fade>
             </div>
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog">
+                <Link to="/blog" aria-label="back">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>
@@ -86,7 +86,7 @@ function Blog6() {
 
             <Fade bottom>
             <div className="image2">
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="A person wearing hoodie looking into two screen containing data from every continents" />
             </div></Fade>
 
             <Fade bottom>

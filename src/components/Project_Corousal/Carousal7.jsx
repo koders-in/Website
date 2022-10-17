@@ -44,19 +44,19 @@ function Carousal7() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Home page of Squared IO featuring Premimum retailer bot details" src={Image1} />
                     <p>Dashboard</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Frequently asked questions page of Squared IO" src={Image2} />
                     <p>FAQ</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Squared IO feature explanations" src={Image3} />
                     <p>Features</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Login page having login with discord option" src={Image4} />
                     <p>Squared IO Login</p>
                 </div>
             </Carousel>

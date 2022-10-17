@@ -13,12 +13,12 @@ function Blog3() {
         <div className="blogAutomation">
             <div className="headimage">
                 <Fade top>
-                <img src={Image1} alt="" /></Fade>
+                <img src={Image1} alt="Hand of a human and robot reaching out to touch each other" /></Fade>
             </div>
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog">
+                <Link to="/blog" aria-label="back">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>
@@ -94,7 +94,7 @@ function Blog3() {
 
             <Fade bottom>
             <div className="image2">
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="Depiction of a brain created using artificial neurons" />
             </div></Fade>
 
             <Fade bottom>

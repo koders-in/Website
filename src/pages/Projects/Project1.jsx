@@ -14,7 +14,7 @@ function Project_1() {
             <Fade bottom>
             <div className="section1">
                 <h1>Notes Application</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Log in page of mobile application to take notes" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

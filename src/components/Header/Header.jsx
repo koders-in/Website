@@ -21,7 +21,7 @@ function Header() {
           <div className="header-wrapper container">
             <div className="left">
               <Link to={link} tag={Link}>
-                <img src={Image1} alt="/"></img>
+                <img src={Image1} alt="Koders logo"></img>
               </Link>
             </div>
             <div className="right">
@@ -52,32 +52,32 @@ const LinkOption = ({ isMenu = true, link, onClick }) => {
   return (
     <ul className="Quick Links">
       <li className="au">
-        <Link to="/aboutus" tag={Link}>
+        <Link to="/aboutus" tag={Link} aria-label="about us page link">
           About Us
         </Link>
       </li>
       <li className="te">
-        <Link to="/ourteam" tag={Link}>
+        <Link to="/ourteam" tag={Link} aria-label="team page link">
           Team
         </Link>
       </li>
       <li className="te">
-        <Link to="/portfolio" tag={Link}>
+        <Link to="/portfolio" tag={Link} aria-label="portfolio page link">
           Portfolio
         </Link>
       </li>
       <li className="te">
-        <Link to="/blog" tag={Link}>
+        <Link to="/blog" tag={Link} aria-label="blogs page link">
           Blog
         </Link>
       </li>
       <li className="te">
-        <Link to="/kommunity" tag={Link}>
+        <Link to="/kommunity" tag={Link} aria-label="community page link">
           Kommunity
         </Link>
       </li>
       <li className="te">
-        <Link to="/Kareer" tag={Link}>
+        <Link to="/Kareer" tag={Link} aria-label="career page link">
           Kareer
         </Link>
       </li>

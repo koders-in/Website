@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Community.scss";
-import Image1 from "../../Images/community.png";
+import Image1 from "../../Images/community.webp";
 import Footer from "../../components/Footer/Footer";
 
 function Community() {

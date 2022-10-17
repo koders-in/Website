@@ -2,7 +2,7 @@ import React from "react";
 import "./Technologies.scss";
 import { Link, HashRouter } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/services.png";
+import Image1 from "../../Images/services.webp";
 import Image2 from "../../Images/arrow_left.svg";
 import Image3 from "../../Images/Technology.svg";
 import Footer from "../Footer/Footer";

@@ -17,11 +17,8 @@
             margin-bottom: 90px;
         }
         @include media-query-xlarge {
-            margin-top: -220px;
+            margin-top: -300px;
             margin-bottom: 60px;
-        }
-        @include media-query-xxlarge {
-            margin-top: -210px;
         }
 
         img{

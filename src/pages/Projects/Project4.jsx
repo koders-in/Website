@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project4.scss'
-import Image1 from '../../Images/Projects/Virtual_hover_pen.png'
+import Image1 from '../../Images/Projects/Virtual_hover_pen.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 

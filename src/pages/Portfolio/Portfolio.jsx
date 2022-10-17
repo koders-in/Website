@@ -3,8 +3,8 @@ import CountUp from "react-countup";
 import Fade from "react-reveal/Fade";
 import "./Portfolio.scss";
 import Footer from "../../components/Footer/Footer";
-import Image1 from "../../Images/c&d.png";
-import Image2 from "../../Images/Featured Projects.png";
+import Image1 from "../../Images/c&d.webp";
+import Image2 from "../../Images/Featured Projects.webp";
 import Image3 from "../../Images/Technology.svg";
 import ProjectCards from "../../components/Project_Cards/ProjectCards";
 
@@ -12,7 +12,9 @@ function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
       <div className="heading">
-        <img src={Image1} alt="Depiction of cloud created using data links" />
+        <Fade top>
+         <img src={Image1} alt="Depiction of cloud created using data links" />
+        </Fade>
         <Fade left>
           <h3>Portfolio</h3>
         </Fade>

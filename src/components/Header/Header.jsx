@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HashRouter, Link } from "react-router-dom";
 import "./Header.scss";
-import Image1 from "../../Images/Logo.png";
+import Image1 from "../../Images/Logo.webp";
 import Fade from "react-reveal/Fade";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 

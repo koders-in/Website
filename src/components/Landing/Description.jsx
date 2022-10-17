@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import Image1 from "../../Images/Creative.svg";
 import Image2 from "../../Images/Efficient.svg";
 import Image3 from "../../Images/Proffiecient.svg";
-import Motto2 from "../../Images/motto2.png";
+import Motto2 from "../../Images/motto2.webp";
 
 function Description() {
   return (

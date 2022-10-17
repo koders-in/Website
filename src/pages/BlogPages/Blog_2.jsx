@@ -3,8 +3,8 @@ import Fade from 'react-reveal/Fade';
 import './Blog_2.scss'
 import {HashRouter, Link} from "react-router-dom";
 import Image2 from '../../Images/arrow_left.svg'
-import Image1 from '../../Images/ecom_1.jpg'
-import Image3 from '../../Images/ecom_2.jpg'
+import Image1 from '../../Images/ecom_1.webp'
+import Image3 from '../../Images/ecom_2.webp'
 import Footer from '../../components/Footer/Footer';
 
 function Blog2() {    

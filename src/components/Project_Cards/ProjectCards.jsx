@@ -2,24 +2,24 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 import './ProjectCards.scss'
 import {HashRouter, Link} from "react-router-dom";
-import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
-import Image2 from '../../Images/Projects/Food_Delivery/Client App.jpg'
-import Image3 from '../../Images/Projects/Twitter_Monitor/Settings.png'
-import Image4 from '../../Images/Projects/Virtual_hover_pen.png'
-import Image5 from '../../Images/Projects/Cloud_Kitchen/Home.jpg'
-import Image6 from '../../Images/Projects/Kourage/User Profile.jpg'
-import Image7 from '../../Images/Projects/HawaUI/HomePage.jpg'
-import Image8 from '../../Images/Projects/Machina/SignIn.jpg'
-import Image9 from '../../Images/Projects/UCToolbot/Account_generator.jpg'
-import Image10 from '../../Images/Projects/SquaredIO/Dashboard.jpg'
-import Image11 from '../../Images/Projects/AIO World/HomePage.jpg'
+import Image1 from '../../Images/Projects/Notes_App/Login.webp'
+import Image2 from '../../Images/Projects/Food_Delivery/Client App.webp'
+import Image3 from '../../Images/Projects/Twitter_Monitor/Settings.webp'
+import Image4 from '../../Images/Projects/Virtual_hover_pen.webp'
+import Image5 from '../../Images/Projects/Cloud_Kitchen/Home.webp'
+import Image6 from '../../Images/Projects/Kourage/User Profile.webp'
+import Image7 from '../../Images/Projects/HawaUI/HomePage.webp'
+import Image8 from '../../Images/Projects/Machina/SignIn.webp'
+import Image9 from '../../Images/Projects/UCToolbot/Account_generator.webp'
+import Image10 from '../../Images/Projects/SquaredIO/Dashboard.webp'
+import Image11 from '../../Images/Projects/AIO World/HomePage.webp'
 
 function ProjectCards() {
     return (
         <div className="projectcards" id="projectscards">
             <HashRouter>
             <div className="cards">
-                <div className="row1">
+                <div className="row1 row">
                     <Fade left>
                     <div className="card1">
                         <img src={Image1} alt="Log in page of mobile application to take notes" />
@@ -51,7 +51,7 @@ function ProjectCards() {
                     </Fade>
                 </div>
 
-                <div className="row2">
+                <div className="row2 row">
                     <Fade left>
                     <div className="card1">
                         <img src={Image3} alt="Twitter monitor application settings page showing user details and space to configure keys and webhooks" />
@@ -84,7 +84,7 @@ function ProjectCards() {
                     </Fade>
                 </div>
 
-                <div className="row3">
+                <div className="row3 row">
                     <Fade left>
                     <div className="card1">
                         <img src={Image5} alt="Home page of My Kitchen application featuring a man decorating food to be served" />
@@ -116,7 +116,7 @@ function ProjectCards() {
                     </Fade>
                 </div>
 
-                <div className="row4">
+                <div className="row4 row">
                     <Fade left>
                     <div className="card1">
                         <img src={Image7} alt="Dashboard of Hawa UI that displays statistics about e-commerce websites" />
@@ -145,7 +145,7 @@ function ProjectCards() {
                     </Fade>
                 </div>
 
-                <div className="row5">
+                <div className="row5 row">
                     <Fade left>
                     <div className="card1">
                         <img src={Image9} alt="Account generator page of UC Toolbot displaying options to configure the account details" />
@@ -176,7 +176,7 @@ function ProjectCards() {
                     </Fade>
                 </div>
 
-                <div className="row6">
+                <div className="row6 row">
                     <Fade left>
                     <div className="card1">
                         <img src={Image11} alt="Home page of AIO World describing advantages of the product" />

@@ -21,7 +21,7 @@ function ProjectCards() {
             <div className="cards">
                 <div className="row1 row">
                     <Fade left>
-                    <div className="card1">
+                    <div className="card1 card">
                         <img src={Image1} alt="Log in page of mobile application to take notes" />
                         <h4>Notes Application</h4>
                         <p>You take notes to remember and not forget. 
@@ -36,7 +36,7 @@ function ProjectCards() {
                     </div>
                     </Fade>
                     <Fade right>
-                    <div className="card2">
+                    <div className="card2 card">
                         <img src={Image2} alt="Food delivery application displaying restaurants with options to search, apply offers and configure various choices" />
                         <h4>Food Delivery Application</h4>
                         <p>Let’s get one thing straight, E-commerce 
@@ -53,7 +53,7 @@ function ProjectCards() {
 
                 <div className="row2 row">
                     <Fade left>
-                    <div className="card1">
+                    <div className="card1 card">
                         <img src={Image3} alt="Twitter monitor application settings page showing user details and space to configure keys and webhooks" />
                         <h4>Twitter Monitor</h4>
                         <p>One of our flagships projects under which 
@@ -68,7 +68,7 @@ function ProjectCards() {
                     </div>
                     </Fade>
                     <Fade right>
-                    <div className="card2">
+                    <div className="card2 card">
                         <img src={Image4} alt="Text Koders being written on a screen by a person" />
                         <h4>Virtual Hover Pen</h4>
                         <p>The project was to build a Virtual Pen with Virtual 
@@ -86,7 +86,7 @@ function ProjectCards() {
 
                 <div className="row3 row">
                     <Fade left>
-                    <div className="card1">
+                    <div className="card1 card">
                         <img src={Image5} alt="Home page of My Kitchen application featuring a man decorating food to be served" />
                         <h4>Cloud Kitchen</h4>
                         <p>A little food has never hurt anyone nor our Cloud 
@@ -101,7 +101,7 @@ function ProjectCards() {
                     </div>
                     </Fade>
                     <Fade right>
-                    <div className="card2">
+                    <div className="card2 card">
                         <img src={Image6} alt="A message from bot displaying details about a user" />
                         <h4>Kourage</h4>
                         <p>In an era of work from home, Kourage is a multi-functional 
@@ -118,7 +118,7 @@ function ProjectCards() {
 
                 <div className="row4 row">
                     <Fade left>
-                    <div className="card1">
+                    <div className="card1 card">
                         <img src={Image7} alt="Dashboard of Hawa UI that displays statistics about e-commerce websites" />
                         <h4>Hawa UI</h4>
                         <p>HAWA UI is a bot to monitor products for different websites, 
@@ -131,7 +131,7 @@ function ProjectCards() {
                     </div>
                     </Fade>
                     <Fade right>
-                    <div className="card2">
+                    <div className="card2 card">
                         <img src={Image8} alt="Sign in screen of Machina UI" />
                         <h4>Machina</h4>
                         <p>Machina is a toolbot that monitors e-commerce websites for 
@@ -147,7 +147,7 @@ function ProjectCards() {
 
                 <div className="row5 row">
                     <Fade left>
-                    <div className="card1">
+                    <div className="card1 card">
                         <img src={Image9} alt="Account generator page of UC Toolbot displaying options to configure the account details" />
                         <h4>UC-Toolbot</h4>
                         <p>Electron app being the forte of our team, the toolbox. 
@@ -162,7 +162,7 @@ function ProjectCards() {
                     </div>
                     </Fade>
                     <Fade right>
-                    <div className="card2">
+                    <div className="card2 card">
                         <img src={Image10} alt="Home page of Squared IO featuring Premimum retailer bot details" />
                         <h4>Squared IO</h4>
                         <p>Squared IO is a next generation automated platform for 
@@ -178,7 +178,7 @@ function ProjectCards() {
 
                 <div className="row6 row">
                     <Fade left>
-                    <div className="card1">
+                    <div className="card1 card">
                         <img src={Image11} alt="Home page of AIO World describing advantages of the product" />
                         <h4>AIO World</h4>
                         <p>Every action has an equal and opposite REACT-ion. 

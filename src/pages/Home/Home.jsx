@@ -7,18 +7,21 @@ import Working from "../../components/Landing/Working";
 import Testimonials from "../../components/Landing/Testimonials";
 import ContactUs from "../../components/Landing/ContactUs";
 import Footer from "../../components/Footer/Footer";
+import PageContainer from "../../components/PageContainer/PageContainer";
 
 function Home() {
   return (
-    <div className="home" id="home">
-      <Greetings />
-      <Description />
-      <Services />
-      <Working />
-      <Testimonials />
-      <ContactUs />
-      <Footer />
-    </div>
+    <PageContainer showScrollBar={true}>
+      <div className="home" id="home">
+        <Greetings />
+        <Description />
+        <Services />
+        <Working />
+        <Testimonials />
+        <ContactUs />
+        <Footer />
+      </div>
+    </PageContainer>
   );
 }
 

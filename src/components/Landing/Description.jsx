@@ -14,9 +14,10 @@ function Description() {
           <h3 className="title-margin">ABOUT KODERS</h3>
 
           <img src={Motto2} className="motto-logo d-block mx-auto " alt="We strive to make the best for our customers" />
+
         </Fade>
         <Fade bottom>
-          <p className="my-4">
+          <p className="mt-3 mb-4 text-center">
             Koders isn't your normal software development firm. Koders provide a
             platform where people can engage themselves in various tech-related
             activities, be it keeping themselves updated with the latest
@@ -30,9 +31,11 @@ function Description() {
         <div className="row justify-content-between px-3">
           <DescriptionCard>
             <Fade left>
+
               <img src={Image1} alt="illustration of person looking at various charts" />
               <h4 className="text-center">Creative</h4>
               <p>
+
                 Forget about weeks and weeks of persuasion and reminders. We
                 give our clients a fixed timeline and serve well before it. Our
                 aim is to serve you the finished project with all your desired
@@ -42,13 +45,14 @@ function Description() {
           </DescriptionCard>
           <DescriptionCard>
             <Fade bottom>
+
               <img src={Image3} alt="illustration of person standing next to a board containing data" />
               <h4 className="text-center">Proficient</h4>
               <p>
                 Our team is a family of developers who code to embellish
                 programs and make it aesthetic. Creativity is primordial for our
                 team. Get in touch and you may find some talented musicians,
-                sketch artists too ;)
+                sketch artists too :)
               </p>
             </Fade>
           </DescriptionCard>
@@ -57,6 +61,7 @@ function Description() {
               <img src={Image2} alt="illustration of person delivering higher throughput" />
               <h4 className="text-center">Efficient</h4>
               <p>
+
                 With leading and cutting edge knowledge of all the contemporary
                 changes in the world of technology, we are always a step ahead
                 in our game. Constant improvement and adaptation is our key
@@ -73,5 +78,5 @@ function Description() {
 export default Description;
 
 const DescriptionCard = ({ children, isLast = false }) => (
-  <div className={`col-lg-3 description-card p-3 mb-3`}>{children}</div>
+  <div className={`col-lg-3 description-card p-3 mb-3 mt-3`}>{children}</div>
 );

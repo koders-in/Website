@@ -2,10 +2,10 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './carousal7.scss'
-import Image1 from '../../Images/Projects/SquaredIO/Dashboard.jpg'
-import Image2 from '../../Images/Projects/SquaredIO/FAQ.jpg'
-import Image3 from '../../Images/Projects/SquaredIO/Features.jpg'
-import Image4 from '../../Images/Projects/SquaredIO/SquaredIO_Login.jpg'
+import Image1 from '../../Images/Projects/SquaredIO/Dashboard.webp'
+import Image2 from '../../Images/Projects/SquaredIO/FAQ.webp'
+import Image3 from '../../Images/Projects/SquaredIO/Features.webp'
+import Image4 from '../../Images/Projects/SquaredIO/SquaredIO_Login.webp'
 
 function Carousal7() {
 
@@ -44,19 +44,19 @@ function Carousal7() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Home page of Squared IO featuring Premimum retailer bot details" src={Image1} />
                     <p>Dashboard</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Frequently asked questions page of Squared IO" src={Image2} />
                     <p>FAQ</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Squared IO feature explanations" src={Image3} />
                     <p>Features</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Login page having login with discord option" src={Image4} />
                     <p>Squared IO Login</p>
                 </div>
             </Carousel>

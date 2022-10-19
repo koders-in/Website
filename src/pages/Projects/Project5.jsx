@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project5.scss'
-import Image1 from '../../Images/Projects/Cloud_Kitchen/Home.jpg'
+import Image1 from '../../Images/Projects/Cloud_Kitchen/Home.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal2 from '../../components/Project_Corousal/Carousal_2'
@@ -13,7 +13,7 @@ function Project5() {
             <Fade bottom>
             <div className="section1">
                 <h1>Cloud Kitchen</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Home page of My Kitchen application featuring a man decorating food to be served" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

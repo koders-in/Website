@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project10.scss'
-import Image1 from '../../Images/Projects/SquaredIO/Dashboard.jpg'
+import Image1 from '../../Images/Projects/SquaredIO/Dashboard.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal7 from '../../components/Project_Corousal/Carousal7';
@@ -13,7 +13,7 @@ function Project10() {
             <Fade bottom>
             <div className="section1">
                 <h1>Squared IO</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Home page of Squared IO featuring Premimum retailer bot details" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

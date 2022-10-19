@@ -3,8 +3,8 @@ import Fade from 'react-reveal/Fade';
 import './Blog_6.scss'
 import {HashRouter, Link} from "react-router-dom";
 import Image2 from '../../Images/arrow_left.svg'
-import Image1 from '../../Images/dark_web_1.jpeg'
-import Image3 from '../../Images/dark_web_2.jpg'
+import Image1 from '../../Images/dark_web_1.webp'
+import Image3 from '../../Images/dark_web_2.webp'
 import Footer from '../../components/Footer/Footer';
 
 function Blog6() {    
@@ -13,12 +13,12 @@ function Blog6() {
         <div className="blogDarkweb">
             <div className="headimage">
                 <Fade top>
-                <img src={Image1} alt="" /></Fade>
+                <img src={Image1} alt="A person with long hair sitting in front of large monitor having abstract illustration" /></Fade>
             </div>
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog">
+                <Link to="/blog" aria-label="back">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>
@@ -86,7 +86,7 @@ function Blog6() {
 
             <Fade bottom>
             <div className="image2">
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="A person wearing hoodie looking into two screen containing data from every continents" />
             </div></Fade>
 
             <Fade bottom>

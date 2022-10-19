@@ -1,7 +1,7 @@
 import React from "react";
 import "./Greetings.scss";
 import Image1 from "../../Images/Flow.svg";
-import Image2 from "../../Images/Moto.png";
+import Image2 from "../../Images/Moto.webp";
 import Image3 from "../../Images/Logo2.svg";
 import Image4 from "../../Images/Arrow.svg";
 import Fade from "react-reveal/Fade";
@@ -19,10 +19,10 @@ function Greetings() {
               An institution that caters to all your software <br></br>needs
               with their touch of Koding.
             </p>
-            <img src={Image2} alt="/" />
+            <img src={Image2} alt="Vision. Kreate. Inspire" />
             <div className="arrow">
               <a href="#aboutus">
-                <img src={Image4} alt="" />
+                <img src={Image4} alt="scroll to about us page" />
               </a>
             </div>
           </div>
@@ -31,7 +31,7 @@ function Greetings() {
       <div className="greeting-right col-lg-6 col-md-12">
         <Fade right>
           <div className="company-logo">
-            <img src={Image3} alt="/" />
+            <img src={Image3} alt="koders logo" />
           </div>
         </Fade>
       </div>

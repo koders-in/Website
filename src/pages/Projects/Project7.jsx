@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project7.scss'
-import Image1 from '../../Images/Projects/HawaUI/HomePage.jpg'
+import Image1 from '../../Images/Projects/HawaUI/HomePage.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal4 from '../../components/Project_Corousal/Carousal4';
@@ -13,7 +13,7 @@ function Project7() {
             <Fade bottom>
             <div className="section1">
                 <h1>Hawa UI</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Dashboard of Hawa UI that displays statistics about e-commerce websites" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

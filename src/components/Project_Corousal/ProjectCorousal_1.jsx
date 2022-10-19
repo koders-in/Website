@@ -2,10 +2,10 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './carousal1.scss'
-import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
-import Image2 from '../../Images/Projects/Notes_App/Dashboard.jpg'
-import Image3 from '../../Images/Projects/Notes_App/AddNotes.jpg'
-import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.jpg'
+import Image1 from '../../Images/Projects/Notes_App/Login.webp'
+import Image2 from '../../Images/Projects/Notes_App/Dashboard.webp'
+import Image3 from '../../Images/Projects/Notes_App/AddNotes.webp'
+import Image4 from '../../Images/Projects/Notes_App/Miscellaneous.webp'
 
 function ProjectCorousal1() {
 
@@ -44,19 +44,19 @@ function ProjectCorousal1() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-10-px">
                 <div>
-                    <img alt="" src={Image1}/>
+                    <img alt="Log in page of mobile application to take notes" src={Image1}/>
                     <p>Login Page</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Dashboard of notes application displaying notes added by the user" src={Image2} />
                     <p>Dashboard</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Add notes page of the notes application" src={Image3} />
                     <p>Add Notes</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Add notes page with options to select color, add images and URL" src={Image4} />
                     <p>Miscellaneous</p>
                 </div>
             </Carousel>

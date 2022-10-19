@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project4.scss'
-import Image1 from '../../Images/Projects/Virtual_hover_pen.png'
+import Image1 from '../../Images/Projects/Virtual_hover_pen.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 
@@ -12,7 +12,7 @@ function Project4() {
             <Fade bottom>
             <div className="section1">
                 <h1>Virtual Hover Pen</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Text Koders being written on a screen by a person" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

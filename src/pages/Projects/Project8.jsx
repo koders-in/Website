@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project8.scss'
-import Image1 from '../../Images/Projects/Machina/SignIn.jpg'
+import Image1 from '../../Images/Projects/Machina/SignIn.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal5 from '../../components/Project_Corousal/Carousal5';
@@ -13,7 +13,7 @@ function Project8() {
             <Fade bottom>
             <div className="section1">
                 <h1>Machina UI</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Sign in screen of Machina UI" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

@@ -2,10 +2,10 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal8.scss'
-import Image1 from '../../Images/Projects/AIO World/HomePage.jpg'
-import Image2 from '../../Images/Projects/AIO World/FAQ.jpg'
-import Image3 from '../../Images/Projects/AIO World/Social Media.jpg'
-import Image4 from '../../Images/Projects/AIO World/Success.jpg'
+import Image1 from '../../Images/Projects/AIO World/HomePage.webp'
+import Image2 from '../../Images/Projects/AIO World/FAQ.webp'
+import Image3 from '../../Images/Projects/AIO World/Social Media.webp'
+import Image4 from '../../Images/Projects/AIO World/Success.webp'
 
 function Carousal8() {
 
@@ -44,19 +44,19 @@ function Carousal8() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Home page of AIO World describing advantages of the product" src={Image1} />
                     <p>Dashboard</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Frequently asked questions in AIO World" src={Image2} />
                     <p>FAQ</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Social media page with discord widget" src={Image3} />
                     <p>Social Media</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Page describing how users have benefitted from the application" src={Image4} />
                     <p>Success</p>
                 </div>
             </Carousel>

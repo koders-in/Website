@@ -1,4 +1,5 @@
-FROM node:alpine as build-stage
+FROM node:slim as build-stage
+ENV NODE_OPTIONS=--openssl-legacy-provider
 WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./

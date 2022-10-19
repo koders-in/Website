@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import Image1 from "../../Images/Creative.svg";
 import Image2 from "../../Images/Efficient.svg";
 import Image3 from "../../Images/Proffiecient.svg";
-import Motto2 from "../../Images/motto2.png";
+import Motto2 from "../../Images/motto2.webp";
 
 function Description() {
   return (
@@ -13,7 +13,8 @@ function Description() {
         <Fade left>
           <h3 className="title-margin">ABOUT KODERS</h3>
 
-          <img src={Motto2} className="motto-logo d-block mx-auto" alt="/" />
+          <img src={Motto2} className="motto-logo d-block mx-auto " alt="We strive to make the best for our customers" />
+
         </Fade>
         <Fade bottom>
           <p className="mt-3 mb-4 text-center">
@@ -30,9 +31,11 @@ function Description() {
         <div className="row justify-content-between px-3">
           <DescriptionCard>
             <Fade left>
-              <img src={Image1} alt="" />
-              <h4 className="py-1 text-center">Creative</h4>
-              <p className="text-center">
+
+              <img src={Image1} alt="illustration of person looking at various charts" />
+              <h4 className="text-center">Creative</h4>
+              <p>
+
                 Forget about weeks and weeks of persuasion and reminders. We
                 give our clients a fixed timeline and serve well before it. Our
                 aim is to serve you the finished project with all your desired
@@ -42,9 +45,10 @@ function Description() {
           </DescriptionCard>
           <DescriptionCard>
             <Fade bottom>
-              <img src={Image3} alt="" />
-              <h4 className="py-1 text-center">Proficient</h4>
-              <p className="text-center">
+
+              <img src={Image3} alt="illustration of person standing next to a board containing data" />
+              <h4 className="text-center">Proficient</h4>
+              <p>
                 Our team is a family of developers who code to embellish
                 programs and make it aesthetic. Creativity is primordial for our
                 team. Get in touch and you may find some talented musicians,
@@ -54,9 +58,10 @@ function Description() {
           </DescriptionCard>
           <DescriptionCard isLast={true}>
             <Fade right>
-              <img src={Image2} alt="" />
-              <h4 className="py-1 text-center">Efficient</h4>
-              <p className="text-center">
+              <img src={Image2} alt="illustration of person delivering higher throughput" />
+              <h4 className="text-center">Efficient</h4>
+              <p>
+
                 With leading and cutting edge knowledge of all the contemporary
                 changes in the world of technology, we are always a step ahead
                 in our game. Constant improvement and adaptation is our key

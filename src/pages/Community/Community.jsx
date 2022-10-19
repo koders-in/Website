@@ -1,14 +1,14 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Community.scss";
-import Image1 from "../../Images/community.png";
+import Image1 from "../../Images/community.webp";
 import Footer from "../../components/Footer/Footer";
 
 function Community() {
   return (
     <div className="community" id="community">
       <div className="heading">
-        <img src={Image1} alt="" />
+        <img src={Image1} alt="A person holding bulb" />
         <Fade left>
           <div className="container">
             <h3>
@@ -26,7 +26,7 @@ function Community() {
             width="350"
             height="500"
             allowtransparency="true"
-            frameborder="0"
+            frameBorder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
           />
         </Fade>

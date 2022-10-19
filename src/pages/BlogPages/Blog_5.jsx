@@ -3,8 +3,8 @@ import Fade from 'react-reveal/Fade';
 import './Blog_5.scss'
 import {HashRouter, Link} from "react-router-dom";
 import Image2 from '../../Images/arrow_left.svg'
-import Image1 from '../../Images/seo_1.jpg'
-import Image3 from '../../Images/seo_2.jpg'
+import Image1 from '../../Images/seo_1.webp'
+import Image3 from '../../Images/seo_2.webp'
 import Footer from '../../components/Footer/Footer';
 
 function Blog5() {    
@@ -13,12 +13,12 @@ function Blog5() {
         <div className="blogSEO">
             <div className="headimage">
                 <Fade top>
-                <img src={Image1} alt="" /></Fade>
+                <img src={Image1} alt="A hand going to select option SEO which is highlighted among options like settings, statistics, search, web, etc." /></Fade>
             </div>
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog">
+                <Link to="/blog" aria-label="back">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>
@@ -61,7 +61,7 @@ function Blog5() {
 
             <Fade bottom>
             <div className="image2">
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="Laptop displaying home page of Google" />
             </div></Fade>
 
             <Fade bottom>

@@ -3,136 +3,52 @@
 .testimonial-wrapper {
   background-color: #1f2436;
   border-radius: 50px;
+  padding: 20px 0;
 
-  .card1 {
-    margin-top: 40px;
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .cards {
+    .testimonial-card {
+      margin: 40px 0;
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    img {
-      height: 100px;
+      img {
+        height: 100px;
+      }
+
+      h4 {
+        padding-top: 20px;
+        color: $third-color;
+        font-weight: 500;
+      }
+
+      h5 {
+        color: $secondary-color;
+        font-weight: 300;
+      }
+
+      p {
+        color: $secondary-color;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: center;
+        font-size: 12px;
+        font-style: oblique;
+      }
     }
 
-    h4 {
-      padding-top: 20px;
-      color: $third-color;
-      font-weight: 500;
+    .card1 {
+      p {
+        padding-top: 30px;
+      }
     }
 
-    h5 {
-      color: $secondary-color;
-      font-weight: 300;
-    }
-
-    p {
-      color: $secondary-color;
-      padding-top: 30px;
-      padding-right: 50px;
-      padding-left: 50px;
-      text-align: center;
-      font-size: 12px;
-      font-style: oblique;
-    }
-  }
-
-  .card2 {
-    margin-top: 40px;
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      height: 100px;
-    }
-
-    h4 {
-      padding-top: 20px;
-      color: $third-color;
-      font-weight: 500;
-    }
-
-    h5 {
-      color: $secondary-color;
-      font-weight: 300;
-    }
-
-    p {
-      color: $secondary-color;
-      padding-top: 50px;
-      padding-right: 50px;
-      padding-left: 50px;
-      text-align: center;
-      font-size: 12px;
-      font-style: oblique;
-    }
-  }
-
-  .card3 {
-    margin-top: 40px;
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      height: 100px;
-    }
-
-    h4 {
-      padding-top: 20px;
-      color: $third-color;
-      font-weight: 500;
-    }
-
-    h5 {
-      color: $secondary-color;
-      font-weight: 300;
-    }
-
-    p {
-      color: $secondary-color;
-      padding-top: 50px;
-      padding-right: 50px;
-      padding-left: 50px;
-      text-align: center;
-      font-size: 12px;
-      font-style: oblique;
-    }
-  }
-
-  .card4 {
-    margin-top: 40px;
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      height: 110px;
-    }
-
-    h4 {
-      padding-top: 20px;
-      color: $third-color;
-      font-weight: 500;
-    }
-
-    h5 {
-      color: $secondary-color;
-      font-weight: 300;
-    }
-
-    p {
-      color: $secondary-color;
-      padding-top: 50px;
-      padding-right: 50px;
-      padding-left: 50px;
-      text-align: center;
-      font-size: 12px;
-      font-style: oblique;
+    .card4 {
+      img {
+        height: 110px;
+      }
     }
   }
 

@@ -3,8 +3,8 @@ import Fade from 'react-reveal/Fade';
 import './Blog_7.scss'
 import {HashRouter, Link} from "react-router-dom";
 import Image2 from '../../Images/arrow_left.svg'
-import Image1 from '../../Images/QA_1.png'
-import Image3 from '../../Images/QA_2.jpg'
+import Image1 from '../../Images/QA_1.webp'
+import Image3 from '../../Images/QA_2.webp'
 import Footer from '../../components/Footer/Footer';
 
 function Blog7() {    
@@ -13,12 +13,12 @@ function Blog7() {
         <div className="blogSQA">
             <div className="headimage">
                 <Fade top>
-                <img src={Image1} alt="" /></Fade>
+                <img src={Image1} alt="A hand drawing an exponential curve representing quality" /></Fade>
             </div>
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog">
+                <Link to="/blog" aria-label="back">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>
@@ -101,7 +101,7 @@ function Blog7() {
 
             <Fade bottom>
             <div className="image2">
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="Hands of three people pointing screen in front of them" />
             </div></Fade>
 
             <Fade bottom>

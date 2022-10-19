@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project6.scss'
-import Image1 from '../../Images/Projects/Kourage/User Profile.jpg'
+import Image1 from '../../Images/Projects/Kourage/User Profile.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal3 from '../../components/Project_Corousal/Carousal3';
@@ -13,7 +13,7 @@ function Project6() {
             <Fade bottom>
             <div className="section1">
                 <h1>Kourage</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="A message from bot displaying details about a user" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

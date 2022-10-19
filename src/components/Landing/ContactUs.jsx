@@ -16,18 +16,18 @@ function ContactUs() {
           <h4>Contact Details</h4>
           <div className="details">
             <div className="location">
-              <img src={Image1} alt="" />
+              <img src={Image1} alt="location icon" />
               <p>
                 House No 111, New Mohanpur Colony, Prem Nagar, Dehradun,
                 Uttarakhand - 248007
               </p>
             </div>
             <div className="mail">
-              <img src={Image2} alt="" />
+              <img src={Image2} alt="email icon" />
               <p>support@koders.in</p>
             </div>
             <div className="phone">
-              <img src={Image3} alt="" />
+              <img src={Image3} alt="phone icon" />
               <p>
                 0135-3504103
               </p>
@@ -44,6 +44,7 @@ function ContactUs() {
                 className="inputfieldname"
                 placeholder="Name"
                 required="true"
+                aria-label="name"
               />
               <h4>Email:</h4>
               <input
@@ -52,6 +53,7 @@ function ContactUs() {
                 className="inputfieldmail"
                 placeholder="Email"
                 required="true"
+                aria-label="email"
               />
               <h4>Subject:</h4>
               <input
@@ -60,6 +62,7 @@ function ContactUs() {
                 className="inputfieldsubject"
                 placeholder="Subject"
                 required="true"
+                aria-label="subject"
               />
 
               <div className="message">
@@ -69,11 +72,12 @@ function ContactUs() {
                   className="inputfieldmessage"
                   placeholder="Your Message"
                   required="true"
+                  aria-label="message"
                 />
               </div>
 
               <div className="submitbutton">
-                <button type="submit" className="formbutton">
+                <button type="submit" className="formbutton" aria-label="send message">
                   Send Message
                 </button>
               </div>

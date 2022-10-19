@@ -3,7 +3,11 @@ $secondary-color: #FFFFFF;
 $third-color: #51E8EF;
 
 $width: 880px;
-
+$screen-small: 576px;
+$screen-medium: 768px;
+$screen-large: 992px;
+$screen-xlarge: 1200px;
+$screen-xxlarge: 1440px;
 
 .section-margin{
     margin-bottom: 80px;
@@ -17,5 +21,35 @@ $width: 880px;
 @mixin mobile {
     @media  (max-width: #{$width}){
         @content
+    }
+}
+
+@mixin media-query-small { // 576px and above
+    @media screen and (min-width: $screen-small) {
+        @content;
+    }
+}
+
+@mixin media-query-medium { //768px and above (iPad / Tablets)
+    @media screen and (min-width: $screen-medium) {
+        @content;
+    }
+}
+
+@mixin media-query-large { // 992px and above (Small desktops)
+    @media screen and (min-width: $screen-large) {
+        @content;
+    }
+}
+
+@mixin media-query-xlarge { // 1200px and above (Actual desktops)
+    @media screen and (min-width: $screen-xlarge) {
+        @content;
+    }
+}
+
+@mixin media-query-xxlarge { // 1440px and above (Retina screen display)
+    @media screen and (min-width: $screen-xxlarge) {
+        @content;
     }
 }

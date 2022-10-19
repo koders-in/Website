@@ -3,8 +3,8 @@ import Fade from 'react-reveal/Fade';
 import './Blog_3.scss'
 import {HashRouter, Link} from "react-router-dom";
 import Image2 from '../../Images/arrow_left.svg'
-import Image1 from '../../Images/AI_1.jpg'
-import Image3 from '../../Images/AI_2.jpg'
+import Image1 from '../../Images/AI_1.webp'
+import Image3 from '../../Images/AI_2.webp'
 import Footer from '../../components/Footer/Footer';
 
 function Blog3() {    
@@ -13,12 +13,12 @@ function Blog3() {
         <div className="blogAutomation">
             <div className="headimage">
                 <Fade top>
-                <img src={Image1} alt="" /></Fade>
+                <img src={Image1} alt="Hand of a human and robot reaching out to touch each other" /></Fade>
             </div>
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog">
+                <Link to="/blog" aria-label="back">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>
@@ -94,7 +94,7 @@ function Blog3() {
 
             <Fade bottom>
             <div className="image2">
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="Depiction of a brain created using artificial neurons" />
             </div></Fade>
 
             <Fade bottom>

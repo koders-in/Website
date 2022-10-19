@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project1.scss'
-import Image1 from '../../Images/Projects/Notes_App/Login.jpg'
+import Image1 from '../../Images/Projects/Notes_App/Login.webp'
 import ProjectCorousal1 from '../../components/Project_Corousal/ProjectCorousal_1'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
@@ -14,7 +14,7 @@ function Project_1() {
             <Fade bottom>
             <div className="section1">
                 <h1>Notes Application</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Log in page of mobile application to take notes" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

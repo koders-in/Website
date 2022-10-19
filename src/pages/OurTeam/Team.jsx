@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Team.scss";
-import Image1 from "../../Images/team.jpg";
+import Image1 from "../../Images/team.webp";
 import TeamCards from "../../components/TeamCards/TeamCards";
 import TeamCardsKnights from "../../components/TeamCards/TeamCardsKnights";
 import Footer from "../../components/Footer/Footer";
@@ -11,7 +11,7 @@ function Team() {
     <div className="team" id="team">
       <div className="heading section-margin">
         <Fade top>
-          <img src={Image1} alt="" />
+          <img src={Image1} alt="Two hands trying to match pieces of jigsaw puzzle" />
         </Fade>
         <div className="container">
           <Fade left>

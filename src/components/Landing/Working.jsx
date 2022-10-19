@@ -18,7 +18,7 @@ function Working() {
         </Fade>
         <div className="timeline">
           <Fade bottom>
-            <img src={Image1} alt="" />
+            <img src={Image1} alt="timeline representing flow of conceptualisation, developing wireframes, prototype development, testing and delivering solution" />
           </Fade>
         </div>
       </div>

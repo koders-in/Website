@@ -3,8 +3,8 @@ import Fade from 'react-reveal/Fade';
 import './Blog_2.scss'
 import {HashRouter, Link} from "react-router-dom";
 import Image2 from '../../Images/arrow_left.svg'
-import Image1 from '../../Images/ecom_1.jpg'
-import Image3 from '../../Images/ecom_2.jpg'
+import Image1 from '../../Images/ecom_1.webp'
+import Image3 from '../../Images/ecom_2.webp'
 import Footer from '../../components/Footer/Footer';
 
 function Blog2() {    
@@ -13,12 +13,12 @@ function Blog2() {
         <div className="blogWebsite">
             <div className="headimage">
                 <Fade top>
-                <img src={Image1} alt="" /></Fade>
+                <img src={Image1} alt="A hand holding debit/credit card which is going to be used on an e-commerce website" /></Fade>
             </div>
             <Fade bottom>
             <div className="backbutton">
                 <HashRouter>
-                <Link to="/blog">
+                <Link to="/blog" aria-label="back">
                     <img src={Image2} alt="" />
                     <p>Back</p>
                 </Link>
@@ -83,7 +83,7 @@ function Blog2() {
 
             <Fade bottom>
             <div className="image2">
-                <img src={Image3} alt="" />
+                <img src={Image3} alt="Mobile screen displaying application logos of Google maps, Unsplash, Apple store, Amazon, etc." />
             </div></Fade>
 
             <Fade bottom>

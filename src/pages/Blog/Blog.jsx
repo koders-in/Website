@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Blog.scss";
-import Image1 from "../../Images/Blog.png";
+import Image1 from "../../Images/Blog.webp";
 import BlogTiles from "../../components/BlogTiles/BlogTiles";
 import Footer from "../../components/Footer/Footer";
 
@@ -9,7 +9,7 @@ function Blog() {
   return (
     <div className="blog">
       <div className="heading section-margin">
-        <img src={Image1} alt="" />
+        <img src={Image1} alt="A monitor displaying code for a webpage" />
         <div className="header-content">
           <div className="container ">
             <Fade left>

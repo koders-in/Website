@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project11.scss'
-import Image1 from '../../Images/Projects/AIO World/HomePage.jpg'
+import Image1 from '../../Images/Projects/AIO World/HomePage.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal8 from '../../components/Project_Corousal/Carousal8';
@@ -13,7 +13,7 @@ function Project11() {
             <Fade bottom>
             <div className="section1">
                 <h1>AIO World</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Home page of AIO World describing advantages of the product" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>

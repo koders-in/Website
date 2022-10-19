@@ -2,11 +2,11 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal4.scss'
-import Image1 from '../../Images/Projects/HawaUI/HomePage.jpg'
-import Image2 from '../../Images/Projects/HawaUI/Profiles.jpg'
-import Image3 from '../../Images/Projects/HawaUI/Proxies.jpg'
-import Image4 from '../../Images/Projects/HawaUI/Sessions.jpg'
-import Image5 from '../../Images/Projects/HawaUI/Settings.jpg'
+import Image1 from '../../Images/Projects/HawaUI/HomePage.webp'
+import Image2 from '../../Images/Projects/HawaUI/Profiles.webp'
+import Image3 from '../../Images/Projects/HawaUI/Proxies.webp'
+import Image4 from '../../Images/Projects/HawaUI/Sessions.webp'
+import Image5 from '../../Images/Projects/HawaUI/Settings.webp'
 
 function Carousal4() {
 
@@ -45,23 +45,23 @@ function Carousal4() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="Dashboard of Hawa UI that displays statistics about e-commerce websites" src={Image1} />
                     <p>Home Page</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Profile tab of Hawa UI displaying different profile cards, groups and statistics" src={Image2} />
                     <p>Profiles</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Proxies tab of Hawa UI displaying active proxies, proxy links and test settings" src={Image3} />
                     <p>Proxies</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Session modal displaying details of a session" src={Image4} />
                     <p>Sessions</p>
                 </div>
                 <div>
-                    <img alt="" src={Image5} />
+                    <img alt="Settings tab of Hawa UI displaying settings navigation section, captcha harvester, section to create captcha harvester, webhooks and renew information" src={Image5} />
                     <p>Settings</p>
                 </div>
             </Carousel>

@@ -2,11 +2,11 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal3.scss'
-import Image1 from '../../Images/Projects/Kourage/User Profile.jpg'
-import Image2 from '../../Images/Projects/Kourage/Suggestions Guidelines.jpg'
-import Image3 from '../../Images/Projects/Kourage/Suggestion Portal.jpg'
-import Image4 from '../../Images/Projects/Kourage/Sentiment Analysis .jpg'
-import Image5 from '../../Images/Projects/Kourage/Attendance Portal .jpg'
+import Image1 from '../../Images/Projects/Kourage/User Profile.webp'
+import Image2 from '../../Images/Projects/Kourage/Suggestions Guidelines.webp'
+import Image3 from '../../Images/Projects/Kourage/Suggestion Portal.webp'
+import Image4 from '../../Images/Projects/Kourage/Sentiment Analysis .webp'
+import Image5 from '../../Images/Projects/Kourage/Attendance Portal .webp'
 
 function Carousal3() {
 
@@ -45,23 +45,23 @@ function Carousal3() {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-50-px">
                 <div>
-                    <img alt="" src={Image1} />
+                    <img alt="A message from bot displaying details about a user" src={Image1} />
                     <p>User Profile</p>
                 </div>
                 <div>
-                    <img alt="" src={Image2} />
+                    <img alt="Message from bot named explaining how to provide suggestions which has received reactions of emojis like checkmark and heart" src={Image2} />
                     <p>Suggestions Guidelines</p>
                 </div>
                 <div>
-                    <img alt="" src={Image3} />
+                    <img alt="Message from bot displaying suggestion received and the ticket details of the suggestion" src={Image3} />
                     <p>Suggestion Portal</p>
                 </div>
                 <div>
-                    <img alt="" src={Image4} />
+                    <img alt="Bar graph representing sentiment analysis of the messages received" src={Image4} />
                     <p>Sentiment Analysis</p>
                 </div>
                 <div>
-                    <img alt="" src={Image5} />
+                    <img alt="Message from the bot displaying absent users on morning shift of particular day" src={Image5} />
                     <p>Attendance Portal</p>
                 </div>
             </Carousel>

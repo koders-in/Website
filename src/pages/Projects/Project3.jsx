@@ -1,8 +1,8 @@
 import React from 'react'
 import './Project3.scss'
-import Image1 from '../../Images/Projects/Twitter_Monitor/Settings.png'
-import Image2 from '../../Images/Projects/Twitter_Monitor/Twitter and ALO.png'
-import Image3 from '../../Images/Projects/Twitter_Monitor/Twitter_Old_UI.png'
+import Image1 from '../../Images/Projects/Twitter_Monitor/Settings.webp'
+import Image2 from '../../Images/Projects/Twitter_Monitor/Twitter and ALO.webp'
+import Image3 from '../../Images/Projects/Twitter_Monitor/Twitter_Old_UI.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 
@@ -14,7 +14,7 @@ function Project3() {
             <Fade bottom>
             <div className="section1">
                 <h1>Twitter Monitor</h1>
-                <img src={Image1} alt="" />
+                <img src={Image1} alt="Twitter monitor application settings page showing user details and space to configure keys and webhooks" />
             </div></Fade>
             <div className="introduction">
                 <Fade left>
@@ -69,15 +69,15 @@ function Project3() {
                 <Fade bottom>
                 <div className="corousal">
                     <div className="img1">
-                        <img src={Image1} alt="" />
+                        <img src={Image1} alt="Kyros tools application settings page showing user details and space to configure keys and webhooks" />
                         <p>Settings</p>
                     </div>
                     <div className="img2">
-                        <img src={Image2} alt="" />
+                        <img src={Image2} alt="Kyros tools application auto link opener or joiner page showing details about latest and featured tweets of user" />
                         <p>Twitter and ALO Page</p>
                     </div>
                     <div className="img3">
-                        <img src={Image3} alt="" />
+                        <img src={Image3} alt="Snap of old user interface of Twitter monitor application" />
                         <p>Twitter Old UI</p>
                     </div>
                 </div>

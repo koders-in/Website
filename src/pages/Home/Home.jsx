@@ -11,7 +11,7 @@ import PageContainer from "../../components/PageContainer/PageContainer";
 
 function Home() {
   return (
-    <PageContainer showScrollBar={true}>
+    <PageContainer showScrollOnDelay={true}>
       <div className="home" id="home">
         <Greetings />
         <Description />

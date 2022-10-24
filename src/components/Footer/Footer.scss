@@ -58,7 +58,7 @@
 
       .links {
         display: flex;
-        margin-top: 10px;
+        margin-top: 20px;
 
     
 
@@ -66,7 +66,11 @@
           img {
             padding-right: 25px; 
             height: 30px;
+            transition: transform .2s;
 
+            &:hover {
+              transform: scale(1.4);
+            }
          
           }
         }

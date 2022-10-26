@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^12.8.3",
     "material-testimonial-card": "0.0.3",
     "react": "^17.0.2",
-    "react-animated-cursor": "^2.5.1",
     "react-cookie-consent": "^8.0.1",
     "react-countup": "^5.0.0",
     "react-cursor-custom": "^1.2.4",

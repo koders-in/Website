@@ -1,20 +1,23 @@
 import React from "react";
+import PageContainer from "../../components/PageContainer/PageContainer";
 import "./PrivacyPolicy.scss";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="privacy-policy">
-      <h1>Privacy Policy</h1>
-      <p>
-        Before you use this website we encourage you to familiarize yourself
-        with our Privacy Policy and its details.
-        <ul>
-          {points.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </p>
-    </div>
+    <PageContainer showScrollOnDelay={true}>
+      <div className="privacy-policy">
+        <h1>Privacy Policy</h1>
+        <p>
+          Before you use this website we encourage you to familiarize yourself
+          with our Privacy Policy and its details.
+          <ul>
+            {points.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </p>
+      </div>
+    </PageContainer>
   );
 };
 

@@ -2,9 +2,9 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import { HashRouter, Link } from "react-router-dom";
 import "./Services.scss";
-import Image1 from "../../Images/Service.webp";
-import Image2 from "../../Images/technology.webp";
-import Image3 from "../../Images/Industry.webp";
+import Image1 from "../../assets/images/Service.webp";
+import Image2 from "../../assets/images/technology.webp";
+import Image3 from "../../assets/images/Industry.webp";
 
 function Services() {
   return (

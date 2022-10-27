@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project7.scss'
-import Image1 from '../../Images/Projects/HawaUI/HomePage.webp'
+import Image1 from '../../assets/images/projects/HawaUI/HomePage.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal4 from '../../components/Project_Corousal/Carousal4';

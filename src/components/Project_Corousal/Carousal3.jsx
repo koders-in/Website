@@ -2,11 +2,11 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal3.scss'
-import Image1 from '../../Images/Projects/Kourage/User Profile.webp'
-import Image2 from '../../Images/Projects/Kourage/Suggestions Guidelines.webp'
-import Image3 from '../../Images/Projects/Kourage/Suggestion Portal.webp'
-import Image4 from '../../Images/Projects/Kourage/Sentiment Analysis .webp'
-import Image5 from '../../Images/Projects/Kourage/Attendance Portal .webp'
+import Image1 from '../../assets/images/projects/Kourage/User Profile.webp'
+import Image2 from '../../assets/images/projects/Kourage/Suggestions Guidelines.webp'
+import Image3 from '../../assets/images/projects/Kourage/Suggestion Portal.webp'
+import Image4 from '../../assets/images/projects/Kourage/Sentiment Analysis .webp'
+import Image5 from '../../assets/images/projects/Kourage/Attendance Portal .webp'
 
 function Carousal3() {
 

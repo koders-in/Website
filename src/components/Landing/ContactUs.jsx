@@ -1,9 +1,9 @@
 import React from "react";
 import "./ContactUs.scss";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/Location.svg";
-import Image2 from "../../Images/Mail.svg";
-import Image3 from "../../Images/Phone.svg";
+import Image1 from "../../assets/images/Location.svg";
+import Image2 from "../../assets/images/Mail.svg";
+import Image3 from "../../assets/images/Phone.svg";
 
 function ContactUs() {
   return (

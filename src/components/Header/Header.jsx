@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { HashRouter, Link } from "react-router-dom";
 import "./Header.scss";
 
-// import Image1 from "../../Images/Logo.png";
-import Image2 from "../../Images/log0-new.png";
+// import Image1 from "../../assets/images/Logo.png";
+import Image2 from "../../assets/images/log0-new.png";
 import Fade from "react-reveal/Fade";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 

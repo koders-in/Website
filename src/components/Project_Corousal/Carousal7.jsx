@@ -2,10 +2,10 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './carousal7.scss'
-import Image1 from '../../Images/Projects/SquaredIO/Dashboard.webp'
-import Image2 from '../../Images/Projects/SquaredIO/FAQ.webp'
-import Image3 from '../../Images/Projects/SquaredIO/Features.webp'
-import Image4 from '../../Images/Projects/SquaredIO/SquaredIO_Login.webp'
+import Image1 from '../../assets/images/projects/SquaredIO/Dashboard.webp'
+import Image2 from '../../assets/images/projects/SquaredIO/FAQ.webp'
+import Image3 from '../../assets/images/projects/SquaredIO/Features.webp'
+import Image4 from '../../assets/images/projects/SquaredIO/SquaredIO_Login.webp'
 
 function Carousal7() {
 

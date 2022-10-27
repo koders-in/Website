@@ -2,11 +2,11 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal5.scss'
-import Image1 from '../../Images/Projects/Machina/SignIn.webp'
-import Image2 from '../../Images/Projects/Machina/Dashboard_SignIn.webp'
-import Image3 from '../../Images/Projects/Machina/Proxies.webp'
-import Image4 from '../../Images/Projects/Machina/Settings.webp'
-import Image5 from '../../Images/Projects/Machina/Task Groups.webp'
+import Image1 from '../../assets/images/projects/Machina/SignIn.webp'
+import Image2 from '../../assets/images/projects/Machina/Dashboard_SignIn.webp'
+import Image3 from '../../assets/images/projects/Machina/Proxies.webp'
+import Image4 from '../../assets/images/projects/Machina/Settings.webp'
+import Image5 from '../../assets/images/projects/Machina/Task Groups.webp'
 
 function Carousal5() {
 

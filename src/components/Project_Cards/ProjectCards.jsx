@@ -2,17 +2,17 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 import './ProjectCards.scss'
 import {HashRouter, Link} from "react-router-dom";
-import Image1 from '../../Images/Projects/Notes_App/Login.webp'
-import Image2 from '../../Images/Projects/Food_Delivery/Client App.webp'
-import Image3 from '../../Images/Projects/Twitter_Monitor/Settings.webp'
-import Image4 from '../../Images/Projects/Virtual_hover_pen.webp'
-import Image5 from '../../Images/Projects/Cloud_Kitchen/Home.webp'
-import Image6 from '../../Images/Projects/Kourage/User Profile.webp'
-import Image7 from '../../Images/Projects/HawaUI/HomePage.webp'
-import Image8 from '../../Images/Projects/Machina/SignIn.webp'
-import Image9 from '../../Images/Projects/UCToolbot/Account_generator.webp'
-import Image10 from '../../Images/Projects/SquaredIO/Dashboard.webp'
-import Image11 from '../../Images/Projects/AIO World/HomePage.webp'
+import Image1 from '../../assets/images/projects/Notes_App/Login.webp'
+import Image2 from '../../assets/images/projects/Food_Delivery/Client App.webp'
+import Image3 from '../../assets/images/projects/Twitter_Monitor/Settings.webp'
+import Image4 from '../../assets/images/projects/Virtual_hover_pen.webp'
+import Image5 from '../../assets/images/projects/Cloud_Kitchen/Home.webp'
+import Image6 from '../../assets/images/projects/Kourage/User Profile.webp'
+import Image7 from '../../assets/images/projects/HawaUI/HomePage.webp'
+import Image8 from '../../assets/images/projects/Machina/SignIn.webp'
+import Image9 from '../../assets/images/projects/UCToolbot/Account_generator.webp'
+import Image10 from '../../assets/images/projects/SquaredIO/Dashboard.webp'
+import Image11 from '../../assets/images/projects/AIO World/HomePage.webp'
 
 function ProjectCards() {
     return (

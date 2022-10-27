@@ -2,9 +2,9 @@ import React from "react";
 import "./ServicesPage.scss";
 import { HashRouter, Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/services.webp";
-import Image2 from "../../Images/arrow_left.svg";
-import Image3 from "../../Images/ServicesTable.svg";
+import Image1 from "../../assets/images/services.webp";
+import Image2 from "../../assets/images/arrow_left.svg";
+import Image3 from "../../assets/images/ServicesTable.svg";
 import Footer from "../Footer/Footer";
 
 function ServicesPage() {

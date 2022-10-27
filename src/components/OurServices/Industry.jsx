@@ -2,9 +2,9 @@ import React from "react";
 import "./Industry.scss";
 import { HashRouter, Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/services.webp";
-import Image2 from "../../Images/arrow_left.svg";
-import Image3 from "../../Images/Industry.svg";
+import Image1 from "../../assets/images/services.webp";
+import Image2 from "../../assets/images/arrow_left.svg";
+import Image3 from "../../assets/images/Industry.svg";
 import Footer from "../Footer/Footer";
 
 function Industry() {

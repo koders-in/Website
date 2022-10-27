@@ -3,9 +3,9 @@ import CountUp from "react-countup";
 import Fade from "react-reveal/Fade";
 import "./Portfolio.scss";
 import Footer from "../../components/Footer/Footer";
-import Image1 from "../../Images/c&d.webp";
-import Image2 from "../../Images/Featured Projects.webp";
-import Image3 from "../../Images/Technology.svg";
+import Image1 from "../../assets/images/c&d.webp";
+import Image2 from "../../assets/images/Featured Projects.webp";
+import Image3 from "../../assets/images/Technology.svg";
 import ProjectCards from "../../components/Project_Cards/ProjectCards";
 
 function Portfolio() {

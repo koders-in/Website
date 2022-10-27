@@ -1,0 +1,7 @@
+.koders-page-container {
+    &.with-scroll {
+    overflow-x: scroll;
+    visibility: hidden;
+    height: 1000px;
+    }
+}

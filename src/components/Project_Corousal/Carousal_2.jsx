@@ -2,10 +2,10 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal_2.scss'
-import Image1 from '../../Images/Projects/Cloud_Kitchen/Home.webp'
-import Image2 from '../../Images/Projects/Cloud_Kitchen/About Us.webp'
-import Image3 from '../../Images/Projects/Cloud_Kitchen/Offers.webp'
-import Image4 from '../../Images/Projects/Cloud_Kitchen/Menu.webp'
+import Image1 from '../../assets/images/projects/Cloud_Kitchen/Home.webp'
+import Image2 from '../../assets/images/projects/Cloud_Kitchen/About Us.webp'
+import Image3 from '../../assets/images/projects/Cloud_Kitchen/Offers.webp'
+import Image4 from '../../assets/images/projects/Cloud_Kitchen/Menu.webp'
 
 function Carousal2() {
 

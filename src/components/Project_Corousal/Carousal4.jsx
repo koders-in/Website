@@ -2,11 +2,11 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carousal4.scss'
-import Image1 from '../../Images/Projects/HawaUI/HomePage.webp'
-import Image2 from '../../Images/Projects/HawaUI/Profiles.webp'
-import Image3 from '../../Images/Projects/HawaUI/Proxies.webp'
-import Image4 from '../../Images/Projects/HawaUI/Sessions.webp'
-import Image5 from '../../Images/Projects/HawaUI/Settings.webp'
+import Image1 from '../../assets/images/projects/HawaUI/HomePage.webp'
+import Image2 from '../../assets/images/projects/HawaUI/Profiles.webp'
+import Image3 from '../../assets/images/projects/HawaUI/Proxies.webp'
+import Image4 from '../../assets/images/projects/HawaUI/Sessions.webp'
+import Image5 from '../../assets/images/projects/HawaUI/Settings.webp'
 
 function Carousal4() {
 

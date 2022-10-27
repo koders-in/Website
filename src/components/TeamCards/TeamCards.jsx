@@ -1,8 +1,8 @@
 import React from "react";
 import "./TeamCards.scss";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/Kartikey_Kushwah.webp";
-import Image6 from "../../Images/Shaloni_Modi.webp";
+import Image1 from "../../assets/images/Kartikey_Kushwah.webp";
+import Image6 from "../../assets/images/Shaloni_Modi.webp";
 import { TeamCardWrapper } from "./TeamCardsKnights";
 
 function TeamCards() {

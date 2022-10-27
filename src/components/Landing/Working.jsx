@@ -1,7 +1,7 @@
 import React from "react";
 import "./Working.scss";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/Working.svg";
+import Image1 from "../../assets/images/Working.svg";
 
 function Working() {
   return (

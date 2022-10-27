@@ -2,12 +2,12 @@ import React from "react";
 import "./Footer.scss";
 import { HashRouter, Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/instagram.svg";
-import Image2 from "../../Images/facebook.svg";
-import Image3 from "../../Images/twitter.svg";
-import Image4 from "../../Images/github.svg";
-import Image5 from "../../Images/linkedin-rect.svg";
-import Image6 from "../../Images/discord.svg";
+import Image1 from "../../assets/images/instagram.svg";
+import Image2 from "../../assets/images/facebook.svg";
+import Image3 from "../../assets/images/twitter.svg";
+import Image4 from "../../assets/images/github.svg";
+import Image5 from "../../assets/images/linkedin-rect.svg";
+import Image6 from "../../assets/images/discord.svg";
 
 function Footer() {
   return (

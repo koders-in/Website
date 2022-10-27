@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project8.scss'
-import Image1 from '../../Images/Projects/Machina/SignIn.webp'
+import Image1 from '../../assets/images/projects/Machina/SignIn.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal5 from '../../components/Project_Corousal/Carousal5';

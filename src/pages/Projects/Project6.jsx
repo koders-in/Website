@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project6.scss'
-import Image1 from '../../Images/Projects/Kourage/User Profile.webp'
+import Image1 from '../../assets/images/projects/Kourage/User Profile.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 import Carousal3 from '../../components/Project_Corousal/Carousal3';

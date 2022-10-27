@@ -2,9 +2,9 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 import './Blog_6.scss'
 import {HashRouter, Link} from "react-router-dom";
-import Image2 from '../../Images/arrow_left.svg'
-import Image1 from '../../Images/dark_web_1.webp'
-import Image3 from '../../Images/dark_web_2.webp'
+import Image2 from '../../assets/images/arrow_left.svg'
+import Image1 from '../../assets/images/dark_web_1.webp'
+import Image3 from '../../assets/images/dark_web_2.webp'
 import Footer from '../../components/Footer/Footer';
 
 function Blog6() {    

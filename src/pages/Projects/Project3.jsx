@@ -1,8 +1,8 @@
 import React from 'react'
 import './Project3.scss'
-import Image1 from '../../Images/Projects/Twitter_Monitor/Settings.webp'
-import Image2 from '../../Images/Projects/Twitter_Monitor/Twitter and ALO.webp'
-import Image3 from '../../Images/Projects/Twitter_Monitor/Twitter_Old_UI.webp'
+import Image1 from '../../assets/images/projects/Twitter_Monitor/Settings.webp'
+import Image2 from '../../assets/images/projects/Twitter_Monitor/Twitter and ALO.webp'
+import Image3 from '../../assets/images/projects/Twitter_Monitor/Twitter_Old_UI.webp'
 import Footer from '../../components/Footer/Footer'
 import Fade from 'react-reveal/Fade';
 

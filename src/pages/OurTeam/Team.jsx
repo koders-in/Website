@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Team.scss";
-import Image1 from "../../Images/team.webp";
+import Image1 from "../../assets/images/team.webp";
 import TeamCards from "../../components/TeamCards/TeamCards";
 import TeamCardsKnights from "../../components/TeamCards/TeamCardsKnights";
 import Footer from "../../components/Footer/Footer";

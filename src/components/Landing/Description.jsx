@@ -1,10 +1,10 @@
 import React from "react";
 import "./Description.scss";
 import Fade from "react-reveal/Fade";
-import Image1 from "../../Images/Creative.svg";
-import Image2 from "../../Images/Efficient.svg";
-import Image3 from "../../Images/Proffiecient.svg";
-import Motto2 from "../../Images/motto2.webp";
+import Image1 from "../../assets/images/Creative.svg";
+import Image2 from "../../assets/images/Efficient.svg";
+import Image3 from "../../assets/images/Proffiecient.svg";
+import Motto2 from "../../assets/images/motto2.webp";
 
 function Description() {
   return (

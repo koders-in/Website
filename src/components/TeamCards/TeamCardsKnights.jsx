@@ -1,9 +1,9 @@
 import React from "react";
 import "./TeamCards.scss";
 import Fade from "react-reveal/Fade";
-import Image7 from "../../Images/Sourav_Jena.webp";
-import Image8 from "../../Images/SaakshiPilliwar.webp";
-import Image9 from "../../Images/Pranav_Kaushik.webp";
+import Image7 from "../../assets/images/Sourav_Jena.webp";
+import Image8 from "../../assets/images/SaakshiPilliwar.webp";
+import Image9 from "../../assets/images/Pranav_Kaushik.webp";
 import { TeamCard } from "./TeamCards";
 
 function TeamCardsKnights() {

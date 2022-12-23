@@ -44,7 +44,7 @@ jobs:
       with:
         command: |
           docker rm $(docker stop $(docker ps -a -q --filter ancestor=${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v3 --format="{{.ID}}"))  && 
-          docker rmi ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v3
+          docker rmi ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v5
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USERNAME }}
         pass: ${{ secrets.PASSWORD}}
@@ -54,7 +54,7 @@ jobs:
       uses: fifsky/ssh-action@master
       with:
         command: |
-          docker run -d -p 9440:80 --name koders-website-v3 ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v3
+          docker run -d -p 9440:80 -e NEXT_PUBLIC_COLLABORATE=${{ secrets.NEXT_PUBLIC_COLLABORATE }} -e NEXT_PUBLIC_JOB=${{ secrets.NEXT_PUBLIC_JOB }} -e NEXT_PUBLIC_PROJECT_REQUEST=${{ secrets.NEXT_PUBLIC_PROJECT_REQUEST }} --name koders-website-v3 ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v5
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USERNAME }}
         pass: ${{ secrets.PASSWORD}}

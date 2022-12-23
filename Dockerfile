@@ -10,5 +10,5 @@ COPY package-lock.json ./
 COPY . .
 RUN npm install
 RUN npm run build
-RUN npm install pm2 -g  # For installing pm2 globally
-CMD ["/bin/sh", "-c", "pm2-runtime 'npm start'"]
+CMD npm start
+

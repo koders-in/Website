@@ -1,14 +1,9 @@
-FROM ubuntu:latest
-RUN apt-get update 
-RUN apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
-RUN apt-get update 
-RUN apt-get install -y nodejs libgl1-mesa-dev
+FROM node:slim
+ENV NODE_OPTIONS=--openssl-legacy-provider
 WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./
 COPY . .
-RUN npm install
+RUN npm ci --force
 RUN npm run build
-CMD npm start
-
+CMD ["npm", "start"]

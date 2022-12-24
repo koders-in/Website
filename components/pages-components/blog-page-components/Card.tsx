@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 import Tag from "../../Tag";
 import Divider from "../../Divider";
-import { blogCard, blogProfile } from "../../../assets";
 
 const Card = ({ className, data }: { className?: string; data: any }) => {
   const router = useRouter();
@@ -15,12 +14,12 @@ const Card = ({ className, data }: { className?: string; data: any }) => {
   return (
     <div
       data-aos="fade-up"
-      className={`relative h-full ${className} flex flex-wrap msm:flex-nowrap gap-3 sm:block md:w-[30%] lg:w-[31%] xl:w-[32%]`}
+      className={`relative sm:h-[85vh] ${className} flex flex-wrap msm:flex-nowrap gap-3 sm:block md:w-[30%] lg:w-[31%] xl:w-[32%]`}
     >
       <Image
         src={data.img}
         alt="card"
-        className="w-full msm:w-[45%] sm:w-full sm:h-[10rem] lg:h-[12rem] xl:h-[15rem] xxl:h-[20rem]"
+        className="w-full relative msm:w-[45%] sm:w-full sm:h-[10rem] lg:h-[12rem] xl:h-[15rem] xxl:h-[20rem]"
       />
       <div className="w-full msm:w-[75%] sm:w-full">
         <span className=" text-main-light_white block sm:hidden  font-miligramMedium text-[0.8rem]">
@@ -48,18 +47,14 @@ const Card = ({ className, data }: { className?: string; data: any }) => {
               Read More
             </button>
           </p>
-          <div className="flex mt-14 justify-between items-center">
-            <span className=" text-white block  font-miligramMedium">
-              {data?.date}
-            </span>
-            <div className="overflow-hidden border-[1px] border-main-teal rounded-full mr-3 w-12 h-12 p-2">
-              <Image
-                src={data.profile}
-                alt="profile"
-                className="h-full w-full"
-              />
-            </div>
-          </div>
+        </div>
+      </div>
+      <div className="fixed w-full bottom-0 flex mt-14 justify-between items-center">
+        <span className=" text-white block  font-miligramMedium">
+          {data?.date}
+        </span>
+        <div className="overflow-hidden border-[1px] border-main-teal rounded-full mr-3 w-12 h-12 p-2">
+          <Image src={data.profile} alt="profile" className="h-full w-full" />
         </div>
       </div>
     </div>

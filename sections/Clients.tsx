@@ -99,7 +99,7 @@ const Clients = () => {
       )}
       <div
         data-aos="fade-up"
-        className="w-[85%] h-[43vh] xl:h-[60vh] overflow-hidden sm:w-[55%] mt-10 mx-auto shadow-client shadow-main-teal border-2 border-main-light_white"
+        className="w-[85%] h-[30vh]  md:h-[43vh] xl:h-[60vh] overflow-hidden sm:w-[55%] mt-10 mx-auto shadow-client shadow-main-teal border-2 border-main-light_white"
       >
         {count === 0 && (
           <Image src={theBest} alt="project" className="w-full h-full" />

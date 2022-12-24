@@ -123,7 +123,7 @@ const Testmonials = () => {
                       logo: item.user.thumbnail,
                       title: item.user.name,
                       rating: item.rating,
-                      link: item.user.link,
+                      link: item?.user?.redirectTo || null,
                     }}
                   />
                 );
@@ -139,7 +139,7 @@ const Testmonials = () => {
                       logo: item.user.thumbnail,
                       title: item.user.name,
                       rating: item.rating,
-                      link: item.user.link,
+                      link: item?.user?.redirectTo || null,
                     }}
                   />
                 );
@@ -155,7 +155,7 @@ const Testmonials = () => {
                       logo: item.user.thumbnail,
                       title: item.user.name,
                       rating: item.rating,
-                      link: item.user.link,
+                      link: item?.user?.redirectTo || null,
                     }}
                   />
                 );

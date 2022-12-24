@@ -4,7 +4,6 @@ import AOS from "aos";
 import Head from "next/head";
 
 import "aos/dist/aos.css";
-import axios from "axios";
 
 const Footer = dynamic(() => import("../components/Footer"), {
   suspense: true,
@@ -42,8 +41,6 @@ const WhyKoders = dynamic(() => import("../sections/WhyKoders"), {
 });
 
 export default function Home() {
-  const isRender = useRef(false);
-
   React.useEffect(() => {
     AOS.init({
       easing: "ease-out-cubic",
@@ -52,21 +49,7 @@ export default function Home() {
     });
   }, []);
   // ------------
-  React.useEffect(() => {
-    if (!isRender.current) {
-      isRender.current = true;
-      axios
-        .get("http://localhost:3000/api", {
-          headers: {
-            home: true,
-          },
-        })
-        .then((data) => console.log("data", data))
-        .catch((e) => {
-          console.log("error is:- ", e);
-        });
-    }
-  }, []);
+
   return (
     <div className="bg-main-primary overflow-hidden relative">
       <Head>

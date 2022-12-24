@@ -6,7 +6,6 @@ export const useFetchDataFromServer = () => {
   const fetchData = async (endpoint: any, setJobs) => {
     try {
       const res = await JobClient.get(endpoint);
-      console.log(res);
       setJobs(res?.data);
       return res;
     } catch (error) {

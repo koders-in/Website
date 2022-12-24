@@ -38,7 +38,6 @@ const Newsletter = () => {
           const res: any = await sendData("newsletter", {
             email,
           });
-          console.log(res);
           if (res?.status === 200) {
             window.alert("Your response has been recorded.");
             setEmail("");

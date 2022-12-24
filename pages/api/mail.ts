@@ -6,7 +6,7 @@ const handler = async (
   res: NextApiResponse
 ) => {
   const { email, name, message } = req.headers;
-  console.log(email, name, message);
+  // console.log(email, name, message);
   res.status(200).send("OK");
 
   //   async function main() {

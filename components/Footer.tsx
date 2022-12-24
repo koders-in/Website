@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -10,11 +10,13 @@ import {
   socialMediaHandles,
   socialMediaTealIcons,
 } from "../helper/constant";
+import AppContext from "./AppContext";
 
 const Footer = () => {
   const [onHover, setOnHover] = useState(false);
   const [hoverOnMob, setHoverOnMob] = useState(false);
   const [hoverOnSocialMedia, setHoverOnSocialMedia] = useState<any>(false);
+  const { jobs }: any = useContext(AppContext);
 
   const router = useRouter();
   const handleNavigate = (href: string) => {
@@ -140,9 +142,9 @@ const Footer = () => {
                     ) : (
                       item.title
                     )}
-                    {item.chip && (
-                      <span className="absolute w-auto right-[-340%] md:right-[-281%] xl:right-[-300%] bottom-[8%] font-miligramMedium text-[0.8rem] xxl:text-[1rem] bg-main-greenOpt-200 border-[1px] border-main-lightTeal text-main-lightTeal px-2 py-[2px] rounded-lg pointer-events-none">
-                        {item.chip}
+                    {item?.chip && jobs?.jobs_listing?.length && (
+                      <span className="absolute w-auto right-[-340%] md:right-[-281%] xl:right-[-240%] bottom-[8%] font-miligramMedium text-[0.7rem] xxl:text-[1rem] bg-main-teal border-[0px] border-main-lightTeal text-black px-2 py-[3px] rounded-md pointer-events-none">
+                        {item.chip}!
                       </span>
                     )}
                     <AnimatedBorder />

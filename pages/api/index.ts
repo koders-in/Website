@@ -85,7 +85,7 @@ const writeInFile = (data) => {
   return new Promise((resolve, reject) => {
     try {
       fs.writeFile(filePath, JSON.stringify(data), (err) => {
-        if (err) console.log("Error writing file:", err);
+        if (err) console.log(err);
         resolve(true);
       });
     } catch (error) {
@@ -100,7 +100,7 @@ const readFromFile = () => {
     try {
       fs.readFile(filePath, "utf8", async (err, jsonString) => {
         if (err) {
-          console.log("File read failed:", err);
+          console.log( err);
           return resolve(null);
         }
         if (jsonString) {

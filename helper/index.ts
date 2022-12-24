@@ -136,9 +136,7 @@ export const testMain = async () => {
   if (!running) {
     running = true;
     // getReviewList();
-    console.log("testMain");
     running = setInterval(() => {
-      console.log("testMain", running);
       // getReviewList();
     }, 5000);
   }

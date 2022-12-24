@@ -1,5 +1,12 @@
 const puppeteer = require("puppeteer");
 
+
+ const sleep = (time: number) => {
+  return new Promise((resolve) => {
+    setTimeout(resolve, time);
+  });
+};
+
 const placeUrl =
   "https://www.google.com/maps/place/Koders/@30.3307776,77.9591553,17z/data=!3m1!4b1!4m5!3m4!1s0x39092b338ee9e6f1:0x5964dd90fecf95d2!8m2!3d30.3307776!4d77.961344";
 
@@ -82,6 +89,30 @@ async function fillPlaceInfo(page) {
   return placeInfo;
 }
 
+async function getPageUrl(page) {
+  try {
+    return await page.evaluate(async () => {
+      const urls = [];
+      const tempArr:any =  document.querySelectorAll(".GBkF3d");
+      for (let i = 0; i < tempArr.length; i++) {
+        if (i % 2 !== 0) {
+          tempArr[i].click();
+          await new Promise((resolve) => {
+            setTimeout(resolve, 2000);
+          });
+          const tempVar:any = document.querySelectorAll('.vrsrZe')[0];
+          urls.push(tempVar.value);
+          const tempVar1:any = document.querySelectorAll('.AmPKde')[0];
+          tempVar1.click();
+        }
+      }
+      return urls;
+    });
+  } catch (error) {
+   console.log(error);
+  }
+}
+
 async function getLocalPlaceReviews() {
   const commonProps = {
     headless: true,
@@ -127,7 +158,25 @@ async function getLocalPlaceReviews() {
       page,
       ".w6VYqd > .tTVLSc > .k7jAl > .e07Vkf > .aIFcqe > .m6QErb > .m6QErb"
     );
-    const reviews = await getReviewsFromPage(page);
+    let reviews = await getReviewsFromPage(page);
+    const url = await getPageUrl(page);
+    reviews = reviews.map((item, i) => {
+      if (i < url?.length)
+        return {
+          ...item,
+          user: {
+            ...item.user,
+            redirectTo: url[i]
+          }
+        };
+      else return {
+        ...item,
+        user: {
+          ...item.user,
+          redirectTo: item?.user?.link
+        }
+      };
+    })
 
     await browser.close();
     return { placeInfo: {}, reviews };

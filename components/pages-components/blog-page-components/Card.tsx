@@ -20,7 +20,7 @@ const Card = ({ className, data }: { className?: string; data: any }) => {
       <Image
         src={data.img}
         alt="card"
-        className="w-full msm:w-[45%] sm:w-full"
+        className="w-full msm:w-[45%] sm:w-full sm:h-[10rem] lg:h-[12rem] xl:h-[15rem] xxl:h-[20rem]"
       />
       <div className="w-full msm:w-[75%] sm:w-full">
         <span className=" text-main-light_white block sm:hidden  font-miligramMedium text-[0.8rem]">

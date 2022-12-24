@@ -36,7 +36,7 @@ const PricingCard = ({
             }
           : {}
       }
-      className={`shadow-lg w-[25%] shadow-black py-5 px-3 xl:px-6 rounded-xl bg-main-lightBg hover:bg-black hover:shadow-main-teal ${className}`}
+      className={`shadow-lg md:w-[25%] shadow-black py-5 px-3 xl:px-6 rounded-xl bg-main-lightBg hover:bg-black hover:shadow-main-teal ${className}`}
     >
       {/* ------Most popular tag------- */}
       {index === 1 && (
@@ -66,11 +66,11 @@ const PricingCard = ({
         text="Get Started"
         className="mx-auto text-[0.8rem] xl:text-[1rem] w-full block mt-3 sm:mt-5 bg-main-greenOpt-200 font-miligramLight text-main-lightTeal py-[6px] px-8 rounded-lg border-[1px] border-main-lightTeal hover:text-main-teal"
       />
-      <ul className="mt-3 lg:mt-4 w-full xxl:w-[80%] mx-auto h-[170px] ">
+      <ul className="mt-3 lg:mt-4 w-full xxl:w-[80%] mx-auto h-[150px] md:h-[170px] ">
         {services.map((item, i) => (
           <li
             key={i}
-            className="text-white gap-2 flex text-[0.8rem] xl:text-[0.9rem] items-center mt-1 lg:mt-3 leading-none"
+            className="text-white gap-2 flex text-[0.8rem] xl:text-[0.9rem] items-center mt-3 lg:mt-3 leading-none"
           >
             <Image src={check} alt="checked" className="h-3 w-3" />
             <span>{item}</span>

@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const [appContext, setAppContext] = useState("");
   return (
     <AppContext.Provider value={{ appContext, setAppContext }}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </AppContext.Provider>
   );
 }

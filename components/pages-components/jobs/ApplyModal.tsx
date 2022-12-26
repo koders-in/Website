@@ -123,10 +123,7 @@ const ApplyModal = ({
       redirect: "follow",
     };
     try {
-      const response = await fetch(
-        "http://localhost:3000/api/",
-        requestOptions
-      );
+      const response = await fetch("/api/", requestOptions);
       if (response.status !== 201) {
         window.alert("Unable to upload resume. Try again later.");
         setIsShowLoader(false);

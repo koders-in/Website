@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         fetchData("open-job-listings", setJobs);
 
       axios
-        .get("http://localhost:3000/api", {
+        .get("/api", {
           headers: {
             home: true,
           },

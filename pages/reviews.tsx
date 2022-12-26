@@ -28,7 +28,7 @@ const Testmonials = () => {
   const fetchReview = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:3000/api", {
+      const res = await axios.get("/api", {
         headers: {
           testmonial: true,
         },

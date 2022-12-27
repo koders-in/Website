@@ -143,7 +143,7 @@ const Footer = () => {
                       item.title
                     )}
                     {item?.chip && jobs?.jobs_listing?.length && (
-                      <span className="absolute w-auto right-[-340%] md:right-[-281%] xl:right-[-240%] bottom-[8%] font-miligramMedium text-[0.7rem] xxl:text-[1rem] bg-main-teal border-[0px] border-main-lightTeal text-black px-2 py-[3px] rounded-md pointer-events-none">
+                      <span className="absolute w-auto right-[-340%] md:right-[-281%] xl:right-[-240%] xxl:right-[-330%] bottom-[8%] font-miligramMedium text-[0.7rem] xxl:text-[1rem] bg-main-greenOpt-200 border-[0px] border-main-lightTeal text-main-teal px-2 py-[3px] rounded-md pointer-events-none">
                         {item.chip}!
                       </span>
                     )}

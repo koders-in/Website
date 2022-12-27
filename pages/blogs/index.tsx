@@ -62,9 +62,18 @@ const Blog = () => {
           className="w-fit mx-auto text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold"
           text="Blogs"
         />
-        <MainCard />
+        {/* <MainCard /> */}
+        <div className="flex flex-wrap md:flex-nowrap  gap-5 sm:gap-9 mt-10">
+          {[...blogs.slice(0, 2)].map((item) => (
+            <Card
+              customStyle="w-full md:w-[49%] lg:w-[49%] xl:w-[49%]"
+              key={item.id}
+              data={item}
+            />
+          ))}
+        </div>
         <div className="flex justify-between flex-wrap  gap-5 sm:gap-9 mt-10">
-          {[...blogs.slice(1, blogs.length)].map((item) => (
+          {[...blogs.slice(2, blogs.length)].map((item) => (
             <Card key={item.id} data={item} />
           ))}
         </div>

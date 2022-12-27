@@ -661,7 +661,7 @@ export const blogs = [
     img: blog1img,
     chips: ["Software development", "Mobile Apps", "Web Apps", "Desktop Apps"],
     profile: kodersProfile,
-    date: "AUG 6,2022",
+    date: "AUG 6, 2022",
     title: "Top Considerations for Developing High-Quality Software",
     mainPara:
       "Developing quality software is a complex and multifaceted process that requires careful planning and attention to detail. Here are a few key considerations when working on software development projects:",
@@ -684,7 +684,7 @@ export const blogs = [
     chips: ["Software development", "IT"],
     author: "Koders",
     profile: kodersProfile,
-    date: "SEP 2,2022",
+    date: "SEP 2, 2022",
     title:
       "Our Company Culture: A Behind-the-Scenes Look at Our Values and Philosophy",
     mainPara:
@@ -708,7 +708,7 @@ export const blogs = [
     chips: ["Software development", "Mobile Apps", "Web Apps", "Desktop Apps"],
     author: "Koders",
     profile: kodersProfile,
-    date: "OCT 8,2022",
+    date: "OCT 8, 2022",
     title: "How to effectively plan and design high quality software projects",
     mainPara:
       "Planning and designing software projects can be a complex and time-consuming process, but it is essential for ensuring that the project is delivered on time, within budget, and meets the needs of the stakeholders. Here are some tips for effectively planning and designing software projects:",
@@ -741,7 +741,7 @@ export const blogs = [
     chips: ["Automation", "Business software", "E-commerce"],
     author: "Koders",
     profile: kodersProfile,
-    date: "NOV 1,2022",
+    date: "NOV 1, 2022",
     title: "The benefits of automating business processes with custom software",
     mainPara:
       "Custom software is an excellent tool for automating business processes and increasing efficiency within an organization. Some of the advantages of using custom software to automate business processes include:",
@@ -772,7 +772,7 @@ export const blogs = [
     chips: ["Software development", "IT"],
     author: "Koders",
     profile: kodersProfile,
-    date: "DEC 5,2022",
+    date: "DEC 5, 2022",
     title:
       "Why Partnering with a Software Company is a Better Choice than Working with Freelancers?",
     mainPara:

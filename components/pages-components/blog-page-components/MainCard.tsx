@@ -20,7 +20,7 @@ const MainCard = () => {
           onClick={() => handleNavigate(`${currentPath}/${blogs[0].id}`)}
           src={blogs[0].img}
           alt="blogMain"
-          className="w-full h-full"
+          className="w-full h-full cursor-pointer"
         />
       </div>
       <div

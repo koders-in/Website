@@ -19,7 +19,7 @@ const Card = ({
   const handleNavigate = (href: string) => {
     router.push(href);
   };
-  const currentPath = router?.pathname; // to get current route
+  const currentPath = router?.pathname;
   return (
     <div
       data-aos="fade-up"

@@ -90,7 +90,7 @@ import basu from "../public/images/o&d.webp";
 import saksham from "../public/images/jd.webp";
 import groupImg from "../public/images/group-img.webp";
 import kodersProfile from "../public/images/koders-profile.svg";
-import blog1img from "../public/images/our-company-culture.jpg";
+import blog1img from "../public/images/our-company-culture.jpeg";
 import blog2img from "../public/images/how-to-plan.jpg";
 import blog3img from "../public/images/benefits-of-automating.jpg";
 import blog4img from "../public/images/developing-high-quality-software.jpg";

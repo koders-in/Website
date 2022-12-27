@@ -205,7 +205,7 @@ const Form = ({
                 list={[
                   "Social Media",
                   "Friends/Family",
-                  "Hiring Portal",
+                  // "Hiring Portal",
                   "Google",
                   "Other",
                 ]}

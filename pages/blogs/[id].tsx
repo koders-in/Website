@@ -56,19 +56,10 @@ const id = () => {
           >
             {blogs[blogNumber]?.title}
           </h1>
-          {/* <div
-            data-aos="fade-up"
-            className="flex items-center justify-start gap-3 mt-5"
-          >
-            <Tag className="" text="Ethical Hacking" />
-            <Tag className="" text="Cyber Security" />
-          </div> */}
           <div
             data-aos="fade-up"
             className="flex flex-wrap items-center justify-start gap-3 my-2 sm:my-5"
           >
-            {/* <Tag className="md:mb-2 lg:mb-0 md:w-fit" text="Ethical Hacking" />
-          <Tag className="md:w-fit" text="Cyber Security" /> */}
             {blogs[blogNumber]?.chips.map((item, i) => (
               <Tag key={i} text={item} />
             ))}
@@ -87,12 +78,14 @@ const id = () => {
             </span>
           </div>
           <Divider className="mt-11" />
-          <Image
-            data-aos="fade-up"
-            src={blogs[blogNumber].img}
-            alt="blog img"
-            className="w-full md:h-96"
-          />
+          <div className="md:h-[60vh] overflow-hidden">
+            <Image
+              data-aos="fade-up"
+              src={blogs[blogNumber].img}
+              alt="blog img"
+              className="h-full w-full"
+            />
+          </div>
           <Divider className="mt-6" />
           <div
             data-aos="fade-up"

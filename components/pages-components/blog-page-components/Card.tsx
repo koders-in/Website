@@ -14,22 +14,23 @@ const Card = ({ className, data }: { className?: string; data: any }) => {
   return (
     <div
       data-aos="fade-up"
-      className={`relative sm:h-[85vh] ${className} flex flex-wrap msm:flex-nowrap gap-3 sm:block md:w-[30%] lg:w-[31%] xl:w-[32%]`}
+      className={`h-fit relative sm:h-[85vh] ${className} flex flex-wrap msm:flex-nowrap gap-3 sm:block md:w-[30%] lg:w-[31%] xl:w-[32%]`}
     >
       <Image
+        onClick={() => handleNavigate(`${currentPath}/${data?.id}`)}
         src={data.img}
         alt="card"
         className="w-full relative msm:w-[45%] sm:w-full sm:h-[10rem] lg:h-[12rem] xl:h-[15rem] xxl:h-[20rem]"
       />
-      <div className="w-full msm:w-[75%] sm:w-full">
+      <div
+        onClick={() => handleNavigate(`${currentPath}/${data?.id}`)}
+        className="w-full msm:w-[75%] sm:w-full"
+      >
         <span className=" text-main-light_white block sm:hidden  font-miligramMedium text-[0.8rem]">
           {data?.date}
         </span>
         <Divider className="hidden sm:block mt-6" />
-        <h1
-          onClick={() => handleNavigate(`${currentPath}/${data?.id}`)}
-          className="text-white font-miligrambold text-[1rem] sm:text-[1.3rem] leading-none cursor-pointer"
-        >
+        <h1 className="text-white font-miligrambold text-[1rem] sm:text-[1.3rem] leading-none cursor-pointer">
           {data?.title}
         </h1>
         <div className="flex flex-wrap items-center justify-start gap-1 sm:gap-3 my-2 sm:my-5">
@@ -57,6 +58,7 @@ const Card = ({ className, data }: { className?: string; data: any }) => {
           <Image src={data.profile} alt="profile" className="h-full w-full" />
         </div>
       </div>
+      <div className="h-10 mt-10 pt-10"> f</div>
     </div>
   );
 };

@@ -16,7 +16,12 @@ const MainCard = () => {
   return (
     <div className="lg:flex mt-16 gap-9">
       <div data-aos="fade-right" className="w-full lg:w-[68%] py-2">
-        <Image src={blogs[0].img} alt="blogMain" className="w-full h-full" />
+        <Image
+          onClick={() => handleNavigate(`${currentPath}/${blogs[0].id}`)}
+          src={blogs[0].img}
+          alt="blogMain"
+          className="w-full h-full"
+        />
       </div>
       <div
         data-aos="fade-left"

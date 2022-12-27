@@ -55,7 +55,7 @@ const SelectBox = ({
   }, []);
 
   const changeField = (e) => {
-    const data = e.target.value
+    const data = e.target.value;
     handleSelect({ name: name, value: data });
   };
 
@@ -79,38 +79,39 @@ const SelectBox = ({
       className={`select relative h-[2.5rem] ${
         mainStyle
           ? mainStyle
-          : `flex gap-2 cursor-pointer items-center border-b-2 w-full text-[0.9rem] md:text-[1.2rem] relative ${
+          : `flex gap-2 items-center border-b-2 w-full text-[0.9rem] md:text-[1.2rem] relative ${
               show ? "border-main-teal" : "border-main-light_white"
             }`
       } `}
     >
-     {errorText&& <p
-        className={`absolute text-red-600 text-xs bottom-[-23px] left-0 flex justify-center items-center font-miligramTextMedium ${
-          errorText ? "opacity-100" : "opacity-0"
-        } `}
-      >
-        <Image
-          src={error}
-          alt={error}
-          width={17}
-          height={17}
-          className="mr-1"
-        />
-        {errorText}
-      </p>}
+      {errorText && (
+        <p
+          className={`absolute text-red-600 text-xs bottom-[-23px] left-0 flex justify-center items-center font-miligramTextMedium ${
+            errorText ? "opacity-100" : "opacity-0"
+          } `}
+        >
+          <Image
+            src={error}
+            alt={error}
+            width={17}
+            height={17}
+            className="mr-1"
+          />
+          {errorText}
+        </p>
+      )}
 
       <div
-        className={`select-field-container h-full font-miligramLight relative select-label px-1 text-main-light_white bg-transparent border-none outline-none tracking-[1px] sm:tracking-[2px] placeholder:text-main-light_white w-full ${innelStyle} ${
+        className={`select-field-container z-20 h-full font-miligramLight relative select-label px-1 text-main-light_white bg-transparent border-none outline-none tracking-[1px] sm:tracking-[2px] placeholder:text-main-light_white w-full ${innelStyle} ${
           fontSize ? fontSize : ""
         }`}
-  
       >
         <input
-        onChange={()=>{}}
-        name={name}
-        onClick={() => {
-          setShow(!show);
-        }}
+          onChange={() => {}}
+          name={name}
+          onClick={() => {
+            setShow(!show);
+          }}
           onBlur={(e) => {
             onBlur(e);
             setShow(false);
@@ -118,18 +119,18 @@ const SelectBox = ({
           type="text"
           value={value || ""}
           required
-          className="tracking-[1px] h-full sm:tracking-[2px]"
+          className="tracking-[1px] h-full sm:tracking-[2px] z-30 cursor-pointer"
         />
         {placeholder && <span id={labelID}>{placeholder}</span>}
       </div>
 
       <Image
-         onClick={() => {
+        onClick={() => {
           setShow(!show);
         }}
         src={aeroDown}
         alt="show"
-        className={`select-img h-2 w-3 mr-2 hover:brightness-75 transition-all duration-300 ${
+        className={`select-img absolute right-0 z-0 h-2 w-3 mr-2 hover:brightness-75 transition-all duration-300 ${
           show ? "rotate-180" : ""
         }`}
       />

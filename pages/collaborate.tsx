@@ -100,8 +100,9 @@ const Collabrate = () => {
           data-aos="slide-right"
           className="text-[0.8rem] sm:text-[1.3rem] leading-none w-[90%] sm:w-[85%] md:w-[75%] lg:w-[70%] mx-auto text-center text-main-light_white pb-5 mt-2 font-miligramText400"
         >
-          We believe that collaboration is key to driving innovation and achieving success. We’re a team who
-          love to work with like-minded individuals and organizations to create meaningful and impactful
+          We believe that collaboration is key to driving innovation and
+          achieving success. We’re a team who love to work with like-minded
+          individuals and organizations to create meaningful and impactful
           projects.
         </p>
         <Divider className="h-8" />
@@ -264,7 +265,11 @@ const Collabrate = () => {
                   placeholder="How did you hear about us? *"
                   errorText={errors.hearAboutUS}
                   list={[
-                    "Social Media", "Friends/Family", "Hiring Portal", "Google", "Other"
+                    "Social Media",
+                    "Friends/Family",
+                    "Hiring Portal",
+                    "Google",
+                    "Other",
                   ]}
                   value={values.hearAboutUS}
                   inputID="hearAboutUSd"

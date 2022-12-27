@@ -103,7 +103,7 @@ export const footerButtons = [
         target: true,
       },
       { title: "Contact Us", route: "/contact", target: false },
-      // { title: "GitHub", route: "https://github.com/koders-in", target: true },
+      { title: "Customer Support", route: "/customer-support", target: false },
     ],
   },
 ];

@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { Divider, Footer, GradientText, Navbar } from "../components";
-import { privacyPolicyPoints } from "../helper/constant";
 
 const PrivacyPolicy = () => {
   React.useEffect(() => {

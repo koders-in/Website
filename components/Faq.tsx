@@ -12,7 +12,7 @@ interface Props {
 
 const Faq = ({ answer, question, onClick, show }: Props) => {
   return (
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" id="faq">
       <div
         onClick={() => onClick(question)}
         className="cursor-pointer border-b-[1px] pt-2 pb-1 sm:pb-4 mt-3 w-[97%] mx-auto border-b-main-light_white flex justify-between items-center"

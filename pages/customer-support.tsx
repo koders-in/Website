@@ -4,6 +4,9 @@ import Head from "next/head";
 
 import "aos/dist/aos.css";
 import { Divider, Footer, GradientText, Navbar } from "../components";
+import { useRouter } from "next/router";
+
+const MAIL_TO = `mailto:info@koders.in?subject=Query&body=${""}`;
 
 const PrivacyPolicy = () => {
   React.useEffect(() => {
@@ -18,6 +21,16 @@ const PrivacyPolicy = () => {
       duration: 600,
     });
   }, []);
+
+  const router = useRouter();
+  const handleNavigate = (href: string) => {
+    router.push(href);
+  };
+
+  const handleMail = (mail) => {
+    window.open(`mailto:${mail}?`, "_bank");
+  };
+
   return (
     <div className="bg-main-primary overflow-hidden relative">
       <Head>
@@ -44,15 +57,28 @@ const PrivacyPolicy = () => {
         <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
           Contact Us:
         </h4>
-        <ul className="list-decimal ml-7 sm:ml-6">
+        <ul data-aos="fade-up" className="list-decimal ml-7 sm:ml-6">
           <li className="font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
             Phone: 0135-3504103 (available during business hours)
           </li>
-          <li className="font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
-            Email: support@koders.in (available 24/7)
+          <li className="cursor-pointer font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
+            Email:
+            <span
+              onClick={() => handleMail("support@koders.in")}
+              className="cursor-pointer"
+            >
+              &nbsp;support@koders.in&nbsp;
+            </span>
+            (available 24/7)
           </li>
-          <li className="font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
-            Contact Form: https://koders.in/contact
+          <li className=" font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
+            Contact Form:
+            <span
+              onClick={() => handleNavigate("/contact")}
+              className="cursor-pointer"
+            >
+              https://koders.in/contact
+            </span>
           </li>
         </ul>
         <Divider className="mt-8" />
@@ -75,8 +101,11 @@ const PrivacyPolicy = () => {
           className="font-miligramLight text-[1.05rem] mt-6 text-main-white-700 w-[96%] mx-auto text-justify"
         >
           For your convenience, we have compiled a list of frequently asked
-          questions (FAQs) on our website. Please visit https://koders/in/faq to
-          browse through these FAQs for answers to your common queries.
+          questions (FAQs) on our website. Please visit{" "}
+          <span onClick={() => handleNavigate("start-project/#faq")}>
+            https://koders.in/faq
+          </span>
+          to browse through these FAQs for answers to your common queries.
         </p>
         <Divider className="mt-8" />
         <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
@@ -101,7 +130,7 @@ const PrivacyPolicy = () => {
           Join our client server to connect with other users of our services and
           get help from our team and other experts. You can also share tips and
           tricks and participate in discussions about software development.
-          <br />
+          <br /> <br className="hidden sm:block" />
           We strive to respond to all customer support requests within 24 hours
           and to resolve issues as quickly as possible. If a problem cannot be
           resolved within that time frame, we will provide regular updates to

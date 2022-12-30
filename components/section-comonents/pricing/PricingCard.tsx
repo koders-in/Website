@@ -41,7 +41,7 @@ const PricingCard = ({
       {/* ------Most popular tag------- */}
       {index === 1 && (
         <Image
-          className="absolute top-[-25%] left-[1%] hidden lg:inline-block"
+          className="absolute top-[-26.5%] left-[-4%] hidden lg:inline-block"
           src={mostPopular}
           alt={mostPopular}
         />

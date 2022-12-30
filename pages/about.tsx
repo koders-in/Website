@@ -134,7 +134,7 @@ const about = () => {
           supportive and inclusive culture where everyone's contributions are
           valued.
         </p>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+        {/* <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
           <Divider className="h-10 sm:h-20" />
         </Suspense>
         <Image
@@ -146,7 +146,7 @@ const about = () => {
         />
         <p className="text-center font-miligramTextBookItalic font-light text-main-light_white text-[0.8em] sm:text-[1.2rem] py-2">
           Our founders Kartikey and Shaloni
-        </p>
+        </p> */}
         {/* <OurFamily /> */}
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
           <Divider className="h-10" />

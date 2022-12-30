@@ -35,24 +35,77 @@ const PrivacyPolicy = () => {
           data-aos="fade-up"
           className="font-miligramLight text-[1.05rem] mt-12 text-main-white-700 w-[96%] mx-auto text-justify"
         >
-          The Koders Customer Support page contains several types of problems
-          that you may have faced so that they can be resolved quickly and you
-          can be free of stress. For example, you can obtain further project
-          details, adjust delivery dates, assistance with refunds, and much
-          more. The Koders Customer Support also provides further information on
-          payments, project deliveries, and other related topics.
-          <br /> <br />
-          The website includes a number of criteria to help you get your
-          questions answered quickly, efficiently, and without difficulty. If
-          you require expert assistance on a variety of topics, you can call the
-          Koders Helpline or access Koders Customer Support. The Support
-          Executive will respond quickly to ensure that your experience is
-          positive and pleasurable. Please feel free to contact the Koders
-          Customer Support if you ever experience any bugs, problems with
-          software updates, or issues with system compatibility.
-          <br /> <br />
-          You can even notify your loved ones about the help page so that they
-          can properly address their issues as well.
+          Welcome to the Koders customer support page! We are committed to
+          providing the best possible support to our customers and we have a
+          range of resources available to help you get the most out of our
+          software development services.
+        </p>
+        <Divider className="mt-8" />
+        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+          Contact Us:
+        </h4>
+        <ul className="list-decimal ml-7 sm:ml-6">
+          <li className="font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
+            Phone: 0135-3504103 (available during business hours)
+          </li>
+          <li className="font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
+            Email: support@koders.in (available 24/7)
+          </li>
+          <li className="font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
+            Contact Form: https://koders.in/contact
+          </li>
+        </ul>
+        <Divider className="mt-8" />
+        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+          Support Hours:
+        </h4>
+        <p
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.05rem] mt-6 text-main-white-700 w-[96%] mx-auto text-justify"
+        >
+          Our customer support team is available to assist you Monday through
+          Friday, 10 am to 7 pm IST.
+        </p>
+        <Divider className="mt-8" />
+        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+          FAQ Section:
+        </h4>
+        <p
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.05rem] mt-6 text-main-white-700 w-[96%] mx-auto text-justify"
+        >
+          For your convenience, we have compiled a list of frequently asked
+          questions (FAQs) on our website. Please visit https://koders/in/faq to
+          browse through these FAQs for answers to your common queries.
+        </p>
+        <Divider className="mt-8" />
+        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+          Ticketing System:
+        </h4>
+        <p
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.05rem] mt-6 text-main-white-700 w-[96%] mx-auto text-justify"
+        >
+          We provide you with a ticketing system on our discord server, wherein
+          customers can submit support requests, track the progress of their
+          issues and directly get in touch with our staff members.
+        </p>
+        <Divider className="mt-8" />
+        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+          Client Server:
+        </h4>
+        <p
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.05rem] mt-6 text-main-white-700 w-[96%] mx-auto text-justify"
+        >
+          Join our client server to connect with other users of our services and
+          get help from our team and other experts. You can also share tips and
+          tricks and participate in discussions about software development.
+          <br />
+          We strive to respond to all customer support requests within 24 hours
+          and to resolve issues as quickly as possible. If a problem cannot be
+          resolved within that time frame, we will provide regular updates to
+          the customer until the issue is resolved.
         </p>
       </div>
       <Divider className="mt-8" />

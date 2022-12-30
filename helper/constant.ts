@@ -142,17 +142,17 @@ export interface CardObject {
   price: string;
   services: Array<string>;
   aos?: string;
-  setAppContext?:(data:string)=>void;
-  pricing?:string;
-  index?:number;
-  exactPrice:string;
+  setAppContext?: (data: string) => void;
+  pricing?: string;
+  index?: number;
+  exactPrice: string;
 }
 export const pricingCardData: Array<CardObject> = [
   {
     title: "Basic",
     description: "The best plan to start your journey at Koders.",
     price: "$12",
-    exactPrice:"Basic plan ($12/hour)",
+    exactPrice: "Basic plan ($12/hour)",
     services: [
       "Bug fixes and minor updates",
       "Basic technical support",
@@ -164,36 +164,36 @@ export const pricingCardData: Array<CardObject> = [
     title: "Basic Plus",
     description: "The best plan to start your journey at Koders.",
     price: "$15",
-    exactPrice:"Basic plus plan ($15/hour)",
+    exactPrice: "Basic plus plan ($15/hour)",
     services: [
       "Custom software development",
       "Complex feature development",
       "Integration with third-party platforms",
-      "Advanced technical support"
+      "Advanced technical support",
     ],
   },
   {
     title: "Premium",
     description: "The best plan to start your journey at Koders.",
     price: "$20",
-    exactPrice:"Premium plan ($20/hour)",
+    exactPrice: "Premium plan ($20/hour)",
     services: [
       "Advanced custom software development",
       "End-to-end software development lifecycle management",
       "Advanced integration with third-party platforms",
-      "Enterprise-level technical support"
+      "Enterprise-level technical support",
     ],
   },
   {
     title: "Enterprise",
     description: "The best plan to start your journey at Koders.",
     price: "$30",
-    exactPrice:"Enterprise plan ($30/hour)",
+    exactPrice: "Enterprise plan ($30/hour)",
     services: [
       "Large-scale custom software development projects",
       "Consulting and strategy services",
       "Comprehensive project management and support",
-      "Customized solutions and services"
+      "Customized solutions and services",
     ],
   },
 ];
@@ -227,35 +227,26 @@ export const whyWe = [
 
 export const faq = [
   {
-    question: "How long will it take to get a new website?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laboriosam nihil natus soluta porro ratione quaerat eligendi non, modi aut accusantium? Laborum at, ullam recusandae voluptates repudiandae cum nihil nisi voluptatibus saepe!",
-  },
+    question: "What types of software services do you offer?",
+    answer:"We offer a wide range of software services, including UI/UX, custom software development, mobile app development, web development, automated toolbots and a lot more."},
   {
-    question: "How long will it take to get a new mobile app?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laboriosam nihil natus soluta porro ratione quaerat eligendi non, modi aut accusantium? Laborum at, ullam recusandae voluptates repudiandae cum nihil nisi voluptatibus saepe!",
-  },
+    question: "How do I get a quote for a software development project?",
+    answer:"To get a quote for a software development project, please visit https://koders.in/start-project with details about your project. One of our sales representatives will get back to you with a quote within 7 business days after your request is submitted at our portal. "},
   {
-    question: "How long will it take to get a new ui/ux?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laboriosam nihil natus soluta porro ratione quaerat eligendi non, modi aut accusantium? Laborum at, ullam recusandae voluptates repudiandae cum nihil nisi voluptatibus saepe!",
-  },
+    question: "Do you offer a free trial of your software development services?",
+    answer:"No, we do not offer a free trial of our software development services. However, we are happy to provide a detailed proposal and quote for your project upon request."},
   {
-    question: "How long will it take to get a new discord bot?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laboriosam nihil natus soluta porro ratione quaerat eligendi non, modi aut accusantium? Laborum at, ullam recusandae voluptates repudiandae cum nihil nisi voluptatibus saepe!",
-  },
+    question: "How do you approach software development projects?",
+    answer:"We follow a proven software development process that includes discovery, design, development, testing, and deployment phases. Our goal is to deliver high-quality, reliable software that meets the needs of our clients."},
   {
-    question: "How long will it take to get a new desktop app?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laboriosam nihil natus soluta porro ratione quaerat eligendi non, modi aut accusantium? Laborum at, ullam recusandae voluptates repudiandae cum nihil nisi voluptatibus saepe!",
-  },
+    question: "How long will it take for my application to be developed?",
+    answer:"The estimated time to develop your application will depend on a number of factors, including the complexity of the project, the resources and team available, and any external dependencies. Our team will get back to you with an estimation after you’ve submitted your project requirements in detail. "},
   {
-    question: "How long will it take to get a new backend?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laboriosam nihil natus soluta porro ratione quaerat eligendi non, modi aut accusantium? Laborum at, ullam recusandae voluptates repudiandae cum nihil nisi voluptatibus saepe!",
-  },
+    question: "Do you offer ongoing support and maintenance for your software?",
+    answer:"Yes, we offer ongoing support and maintenance for our software to ensure that it is always up-to-date and running smoothly."},
+  {
+    question: "How will the progress of my project be handled?",
+    answer:"We use a project management tool to ensure that your project is managed effectively and efficiently. Our project manager will create a detailed workflow, breaking down all deliverables into tasks and assigning them to team members with deadlines. We hold weekly review meetings to make sure that everyone is on track with edits and changes, and all files, comments, and feedback are shared centrally to keep everyone in the loop. This approach helps us stay organized and ensure that your project is completed on time and to your satisfaction."},
 ];
 
 export const pricingList = ["100-500$", "500-1000$", "1000-5000$", ">5000$"];
@@ -798,20 +789,64 @@ export const blogs = [
   },
 ];
 
-
-
-
 // ---------------------------privacy policy page data-------------------------------------
 
 export const privacyPolicyPoints = [
-  "Your personal data may be collected which is necessary for technical and commercial purposes only",
-  "We are committed to data protection and respecting the privacy of our customers or anyone who might associate with us while delivering our products and services.",
-"The Contact Us form in the website collects your email which is used to keep you updated about our services which fulfill your needs and requirements by sending you regular emails and newsletters. We keep you assured that this information is protected and you may unsubscribe to the mails which are not required by you anymore.",
-"We undertake necessary measures within our capacity to make sure your privacy is safeguarded with utmost care and dedication, including actions such as associating with any third party services offered by Koders.",
-"As you use our services, we may also collect information through the use of commonly-used information-gathering tools, such as Cookies, log files and Web tokens.",
-"We’ll keep you updated with our newsletters, marketing advertisements, promotional materials and other information that may act as an interest to you.",
-"If you run into any technical error while using our services, an automated report will be generated which is used to rectify the error and may contain your data. This is required in order to provide the solution for the caused error",
-"We use cookies for providing our customers with the best possible experience on our website with the tint of content personalization, relevant tools, optimized services and much more.",
-"We may use data related to your Usage and Analytics Information which will help us in determining your geographical location for keeping our database updated with all your details for our further usage.",
-"You have the right to access the data which holds all your personal information that we have generated in respect to you.",
-"We may employ third party companies and individuals to facilitate our services which helps us to provide our services with better analysis and features. These third party services may not be owned by Koders but we ensure to keep your data safe while using these services.",]
+  "Data collection: We may collect personal details like names, email addresses, and payment information when you register for our services or communicate with us. The Contact Us form in the website collects your email which is used to keep you updated about our services which fulfill your needs and requirements by sending you regular emails and newsletters. We keep you assured that this information is protected and you may unsubscribe to the mails which are not required by you anymore.",
+  "Data use: We use the information we collect to provide and improve our software development services, communicate with you, and process your payments. We may also use your data for research and analytics, to personalize your experience, or to send you marketing communications.",
+  "Data sharing: Unless required by law or necessary to provide our services, we will not share your personal information with third parties. We may share anonymous or aggregated data with third parties for research and analytics purposes.",
+  "Data retention: We will retain your personal information for as long as necessary to provide our services or as required by law.",
+  "Data security: We implement appropriate technical and organizational measures to protect your personal information from unauthorized access, use, or disclosure.",
+  "Your rights: You have the right to access, rectify, erase, restrict, or object to the processing of your personal information. You also have the right to withdraw your consent or to exercise your right to data portability. If you have any concerns about how we handle your personal information, you can contact us at support@koders.in. ",
+];
+
+export const termsOfServices = [
+  {
+    heading:"Introduction",
+    description:'These terms of service (the "Terms") govern your access to and use of Koders’s software development services (the "Services"), including our website https://koders.in (including all web pages, sub-domains, and sub-parts contained within, the "website") and any services offered on or through the website or otherwise provided by Koders. Except as otherwise specified above, the services are owned and operated by Koders. The services are provided subject to your acceptance without change of all of the terms and conditions set forth herein, as well as all other operating rules, policies, and procedures announced by Koders from time to time on the website. By accessing or using the Services, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Services.'
+  },
+  {
+    heading:"Changes to the Terms",
+    description:'Koders reserves the right to modify these Terms at any time. Any changes will be effective immediately upon posting the modified terms on our website. You are responsible for reviewing the modified terms regularly. Your continued use of the Services after any changes have been made will constitute your acceptance of the modified terms.'
+  },
+  {
+    heading:"Trademark Information",
+    description:"Koders' trademarks, service marks, and logos used and displayed in connection with the services are Koders' registered and/or unregistered trademarks or service marks. The trademarks may not be used to denigrate Koders, any third party associated with Koders, or Koders' or the associated third party's products or services in any way (in Koders' sole discretion) that may harm the trademarks' goodwill. The use of any trademarks as part of a link to or from any website is prohibited unless Koders grants prior written approval for each such link. All goodwill derived from the use of any Koders’ trademark shall benefit Koders."
+  },
+  {
+    heading:"Use of the Services",
+    description:'You may use the Services only for lawful purposes and in accordance with these Terms. You may not use the Services in any way that violates any applicable federal, state, or international law or regulation.'
+  },
+  {
+    heading:"Intellectual Property",
+    description:'Koders retains all right, title, and interest in and to the Services, including all intellectual property rights. You may not use any of Koders’s intellectual property without our prior written consent.'
+  },
+  {
+    heading:"Disclaimer of Warranties",
+    description:'Koders provides the Services on an "as is" and "as available" basis. We make no representations or warranties of any kind, express or implied, as to the operation of the Services or the information, content, materials, or products included on the Services.'
+  },
+  {
+    heading:"Licence Grants",
+    description:"Koders grants you a non-exclusive, non-transferable license for the term to use the services we provide for the specific purpose specified in this agreement. This is only in order to provide software services, and comply with applicable law, and Koders' reasonable data verification and retention policies."
+  },
+  {
+    heading:"Limitation of Liability",
+    description:'Koders will not be liable for any damages of any kind arising from the use of the Services, including, but not limited to, direct, indirect, incidental, punitive, and consequential damages.'
+  },
+  {
+    heading:"Indemnification",
+    description:"You agree to indemnify and hold Koders and its affiliates, officers, agents, and employees harmless from any claim or demand, including reasonable attorneys' fees, made by any third party due to or arising out of your use of the Services, your violation of these Terms, or your violation of any rights of another."
+  },
+  {
+    heading:"Governing Law",
+    description:'These Terms and your use of the Services will be governed by and construed in accordance with the laws of the State of Uttarakhand, without giving effect to any principles of conflicts of law.'
+  },
+  {
+    heading:"Dispute Resolution",
+    description:'Any dispute arising out of or relating to these Terms or the Services will be resolved through binding arbitration in accordance with the Commercial Arbitration Rules of the American Arbitration Association. The arbitration will be conducted in the State of Uttarakhand.'
+  },
+  {
+    heading:"Entire Agreement",
+    description:'These Terms constitute the entire agreement between you and Koders with respect to the Services and supersede all prior or contemporaneous communications and proposals, whether oral or written. If any provision of these Terms is found to be invalid or unenforceable, that provision will be enforced to the maximum extent possible, and the remaining provisions will remain in full force and effect.'
+  },
+]

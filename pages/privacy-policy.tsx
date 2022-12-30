@@ -4,7 +4,7 @@ import Head from "next/head";
 
 import "aos/dist/aos.css";
 
-import { Footer, GradientText, Navbar } from "../components";
+import { Divider, Footer, GradientText, Navbar } from "../components";
 import { privacyPolicyPoints } from "../helper/constant";
 
 const PrivacyPolicy = () => {
@@ -37,9 +37,13 @@ const PrivacyPolicy = () => {
           data-aos="fade-up"
           className="font-miligramLight text-[1.05rem] mt-12 text-main-white-700 w-[96%] mx-auto text-justify"
         >
-          Before you use this website we encourage you to familiarize yourself
-          with our Privacy Policy and its details.
-          <ul className="list-disc ml-3 sm:ml-0">
+          At Koders,, we prioritize the privacy of our customers and take steps
+          to protect their personal information. We are committed to data
+          protection and respecting the privacy of our customers or anyone who
+          might associate with us while delivering our products and services.
+          This policy explains how we collect, use, and share data that we may
+          obtain through our website and our software development services.
+          <ul className="list-decimal ml-5 sm:ml-0">
             {privacyPolicyPoints.map((item, i) => (
               <li
                 className="font-miligramLight my-6 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify"
@@ -50,6 +54,17 @@ const PrivacyPolicy = () => {
             ))}
           </ul>
         </div>
+        <div
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.05rem] mt-8 text-main-white-700 w-[96%] mx-auto text-justify"
+        >
+          This privacy policy is subject to change at any time. We will make
+          reasonable efforts to notify customers of any changes in a timely
+          manner. By using our software development services, you consent to the
+          collection, use, and sharing of your personal information as described
+          in this privacy policy.
+        </div>
+        <Divider className="mt-12" />
       </div>
       <Footer />
     </div>

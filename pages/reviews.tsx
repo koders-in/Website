@@ -11,9 +11,9 @@ import {
   TestmonialCard,
 } from "../components";
 import axios from "axios";
-import { discordReviews, listOfBestReviewsUsers } from "../helper/constant";
-import { shortReviewArray } from "../helper";
 import { FadeLoader } from "react-spinners";
+import { shortReviewArray } from "../helper";
+import { discordReviews, listOfBestReviewsUsers } from "../helper/constant";
 
 const Testmonials = () => {
   const [loading, setLoading] = useState<boolean>(false);

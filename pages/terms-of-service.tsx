@@ -1,6 +1,6 @@
-import Head from "next/head";
-import React from "react";
 import AOS from "aos";
+import React from "react";
+import Head from "next/head";
 
 import "aos/dist/aos.css";
 

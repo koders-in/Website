@@ -1,17 +1,10 @@
-import React, { useEffect, useState, Suspense } from "react";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
-import { aim, founder, mission, quoteDown, quoteUp } from "../assets";
-// import {
-// Divider,
-// Footer,
-// GradientText,
-// Navbar,
-// OurFamily,
-// WorldMap,
-// } from "../components";
+import dynamic from "next/dynamic";
+import React, { useEffect, useState, Suspense } from "react";
+
 import { dataOfMapAnimation } from "../helper/constant";
+import { aim, founder, mission, quoteDown, quoteUp } from "../assets";
 
 const Footer = dynamic(() => import("../components/Footer"), {
   suspense: true,
@@ -113,10 +106,12 @@ const about = () => {
             <Divider className="h-14 sm:h-[10vh]" />
           </Suspense>
           <div className="text-center text-[1.25em] text-main-light_white  w-[100%] sm:w-[75%] md:w-[60%] lg:w-[70%] mx-auto leading-none font-miligramTextMedium font-medium">
-            We are committed to building software solutions that are innovative and unparalleled in quality. We
-            believe that by leveraging the full potential of our team, we can create software products that truly
-            stand out in the market. At Koders, we are always striving to build software with new dimensions that
-            truly make a difference for our customers.
+            We are committed to building software solutions that are innovative
+            and unparalleled in quality. We believe that by leveraging the full
+            potential of our team, we can create software products that truly
+            stand out in the market. At Koders, we are always striving to build
+            software with new dimensions that truly make a difference for our
+            customers.
           </div>
         </div>
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
@@ -133,9 +128,11 @@ const about = () => {
           data-aos="slide-left"
           className="mt-2 text-[0.8rem] sm:text-[1.3rem] w-[100%] sm:w-[70%] mx-auto text-center text-main-light_white pb-2 font-miligramText400 leading-none"
         >
-          We believe in fostering a positive and collaborative work environment where our team members can
-          grow and develop their skills. We offer opportunities for learning and professional development, as
-          well as a supportive and inclusive culture where everyone's contributions are valued.
+          We believe in fostering a positive and collaborative work environment
+          where our team members can grow and develop their skills. We offer
+          opportunities for learning and professional development, as well as a
+          supportive and inclusive culture where everyone's contributions are
+          valued.
         </p>
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
           <Divider className="h-10 sm:h-20" />
@@ -178,7 +175,8 @@ const about = () => {
               <Divider className="h-5" />
             </Suspense>
             <p className="text-main-light_white_eight text-center w-[80%] mx-auto text-[1.25em] md:text-[1.3rem] leading-none font-miligramTextBold">
-              Our mission is to help brands, particularly in the sneaker and E-commerce industries, fly to the moon.
+              Our mission is to help brands, particularly in the sneaker and
+              E-commerce industries, fly to the moon.
             </p>
           </div>
           <div className="border-b-2 w-[60%] mx-auto md:w-auto md:border-b-0 md:border-r-2 border-main-teal"></div>
@@ -196,8 +194,8 @@ const about = () => {
               <Divider className="h-5" />
             </Suspense>
             <p className="text-main-light_white_eight text-center w-[80%] mx-auto text-[1.25em] md:text-[1.3rem] leading-none font-miligramTextBold">
-              Our vision at Koders is to be the go-to software development company for businesses seeking
-              reliable, high quality solutions.
+              Our vision at Koders is to be the go-to software development
+              company for businesses seeking reliable, high quality solutions.
             </p>
           </div>
         </div>
@@ -216,7 +214,8 @@ const about = () => {
           data-aos="slide-left"
           className="mt-2 text-[0.8rem] sm:text-[1.3rem] w-[80%] sm:w-[45%] mx-auto text-center text-main-light_white pb-2 font-miligramText400 leading-none"
         >
-          Since our launch in 2018, Koders has had the pleasure of working with clients across 10+ countries.
+          Since our launch in 2018, Koders has had the pleasure of working with
+          clients across 10+ countries.
         </p>
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
           <Divider className="h-12 sm:h-0" />

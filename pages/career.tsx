@@ -1,17 +1,14 @@
-import React, { useState, useEffect, Suspense } from "react";
-import dynamic from "next/dynamic";
-import Head from "next/head";
 import AOS from "aos";
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import React, { useState, useEffect, Suspense } from "react";
 
 import "aos/dist/aos.css";
-
-import {
-  AnimatedBorder,
-} from "../components";
+import { AnimatedBorder } from "../components";
 import Image from "next/image";
 import { greenArrow } from "../assets";
-import { useFetchDataFromServer, useFilter } from "../helper/careerHooks";
 import { FadeLoader } from "react-spinners";
+import { useFetchDataFromServer, useFilter } from "../helper/careerHooks";
 
 const Divider = dynamic(() => import("../components/Divider"), {
   suspense: true,
@@ -58,7 +55,6 @@ const Jobs = () => {
   const [department, setDepartment] = useState<Array<string>>(["All"]);
   const fetchData = useFetchDataFromServer();
   const filterData = useFilter();
-
 
   useEffect(() => {
     AOS.init({

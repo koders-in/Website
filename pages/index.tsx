@@ -1,7 +1,7 @@
-import React, { useRef, Suspense } from "react";
-import dynamic from "next/dynamic";
 import AOS from "aos";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+import React, { Suspense } from "react";
 
 import "aos/dist/aos.css";
 

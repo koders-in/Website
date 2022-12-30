@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { Formik, FormikHelpers } from "formik";
 import Head from "next/head";
 import Image from "next/image";
+import { Formik, FormikHelpers } from "formik";
+import React, { useEffect, useState } from "react";
+
 import {
   discordWhite,
   githubWhite,
   linkedinWhite,
   location,
-  locationTeal,
   locationTealCont,
   mail,
   phone,
@@ -17,8 +17,8 @@ import {
   tealMobileCont,
   twitterWhite,
 } from "../assets";
+
 import {
-  AnimatedBorder,
   Button,
   Divider,
   Footer,
@@ -26,10 +26,9 @@ import {
   InputBox,
   Navbar,
 } from "../components";
-import TextArea from "../components/pages-components/jobs/TextArea";
 import { contactValidationSchima } from "../helper/validate";
+import TextArea from "../components/pages-components/jobs/TextArea";
 import { socialMediaHandles, socialMediaTealIcons } from "../helper/constant";
-import axios from "axios";
 
 interface initialValues {
   name: string;

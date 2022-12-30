@@ -1,6 +1,6 @@
-import { JobClient } from "./api";
 import Fuse from "fuse.js";
 import { useState } from "react";
+import { JobClient } from "./api";
 
 export const useFetchDataFromServer = () => {
   const fetchData = async (endpoint: any, setJobs) => {

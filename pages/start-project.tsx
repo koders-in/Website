@@ -1,6 +1,7 @@
-import React, { useContext, useState } from "react";
-import Head from "next/head";
 import AOS from "aos";
+import Head from "next/head";
+import { FormikHelpers } from "formik";
+import React, { useContext, useState } from "react";
 
 import "aos/dist/aos.css";
 
@@ -14,9 +15,8 @@ import {
   GradientText,
   Navbar,
 } from "../components";
-import { faq, typeOfProjects } from "../helper/constant";
 import { sendClientDetails } from "../helper/webhook";
-import { FormikHelpers } from "formik";
+import { faq, typeOfProjects } from "../helper/constant";
 import { useSetDataOnServer } from "../helper/careerHooks";
 
 export interface FormState {

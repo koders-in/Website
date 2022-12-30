@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 import Tag from "../../Tag";
-import { blogMain, blogProfile } from "../../../assets";
 import { blogs } from "../../../helper/constant";
 
 const MainCard = () => {

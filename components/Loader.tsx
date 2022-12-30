@@ -7,8 +7,6 @@ const Loader = () => {
       <FadeLoader
         color="#00A99D"
         loading={true}
-        // cssOverride={override}
-        // size={100}
         aria-label="Loading Spinner"
         data-testid="loader"
       />

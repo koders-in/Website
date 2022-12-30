@@ -4,8 +4,8 @@ import Image from "next/image";
 import Divider from "../../Divider";
 import { aeroUp } from "../../../assets";
 import GradientText from "../../GradientText";
-import { useSetDataOnServer } from "../../../helper/careerHooks";
 import { isEmailValid } from "../../../helper";
+import { useSetDataOnServer } from "../../../helper/careerHooks";
 
 const JobAlert = () => {
   const [email, setEmail] = useState("");

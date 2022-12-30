@@ -1,4 +1,5 @@
 import React from "react";
+
 import { blogs } from "../../../helper/constant";
 
 const WithPara = ({ id, showMore }: { id: number; showMore: boolean }) => {

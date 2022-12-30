@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { startBlank, startFill } from "../assets";
 
 interface Props {
   title: string;

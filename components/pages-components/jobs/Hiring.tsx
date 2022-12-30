@@ -1,9 +1,10 @@
 import React from "react";
-import { offersData } from "../../../helper/constant";
+
+import Tile from "./Tile";
+import Timeline from "./Timeline";
 import Divider from "../../Divider";
 import GradientText from "../../GradientText";
-import Timeline from "./Timeline";
-import Tile from "./Tile";
+import { offersData } from "../../../helper/constant";
 
 const Hiring = () => {
   return (
@@ -25,7 +26,8 @@ const Hiring = () => {
         data-aos="slide-right"
         className="mx-auto text-[0.8rem] leading-none m-1 w-[80%] lg:w-[50%] sm:text-[1.2rem] text-center text-main-light_white font-miligramText400"
       >
-        We are committed to providing our employees with a fulfilling and rewarding work experience.
+        We are committed to providing our employees with a fulfilling and
+        rewarding work experience.
       </p>
       <div className="w-full sm:w-[70%] flex-wrap gap-5  mx-auto mt-8 sm:mt-16 flex justify-between ">
         {[...offersData[0], ...offersData[1]].map((item, i) => {

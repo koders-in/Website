@@ -1,11 +1,10 @@
+import Modal from "react-modal";
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+
 import Button from "./Button";
 import GradientText from "./GradientText";
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-import Modal from "react-modal";
-import Image from "next/image";
-import { okay } from "../assets";
-import { useRouter } from "next/router";
 
 const customStyles = {
   content: {
@@ -46,7 +45,6 @@ const ThankModal = ({ isShow, toogleThankModal }: Props) => {
       contentLabel="Example Modal"
     >
       <div className="flex flex-col items-center justify-center gap-4 h-full">
-        {/* <Image src={okay} alt={okay} width={80} height={80} className="" /> */}
         <svg
           width="70"
           height="70"
@@ -55,8 +53,7 @@ const ThankModal = ({ isShow, toogleThankModal }: Props) => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <circle
-          id="circleID"
-          // 382
+            id="circleID"
             cx="63.5"
             cy="63.5"
             r="61"
@@ -64,7 +61,6 @@ const ThankModal = ({ isShow, toogleThankModal }: Props) => {
             strokeWidth="5"
           />
           <path
-          // 185
             id="check"
             strokeWidth="4"
             d="M95.2263 39.7923C96.7592 41.329 96.7592 43.8164 95.2263 45.3531L53.5175 87.1614C51.9546 88.728 49.4168 88.728 47.8539 87.1614L31.7748 71.0439C30.2412 69.5067 30.2412 67.0183 31.7748 65.4811V65.4811C33.3122 63.94 35.8082 63.9385 37.3475 65.4777L47.8552 75.9848C49.4182 77.5476 51.9523 77.5466 53.5141 75.9826L89.6536 39.791C91.1919 38.2504 93.6886 38.251 95.2263 39.7923V39.7923Z"

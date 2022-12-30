@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
+import Toogler from "../../Toogler";
 import Divider from "../../Divider";
 import GradientText from "../../GradientText";
-import { crossTeal, search, work } from "../../../assets";
-import Toogler from "../../Toogler";
 import { jobTypes } from "../../../helper/constant";
-import ButtonsGroup from "../project-page-components/ButtonsGroup";
+import { crossTeal, search, work } from "../../../assets";
 import { useLandingComp } from "../../../helper/careerHooks";
+import ButtonsGroup from "../project-page-components/ButtonsGroup";
 
 interface Props {
   setPinJobs: (data: any) => void;
@@ -48,8 +48,9 @@ const LandingSection = ({
         data-aos="slide-right"
         className="mx-auto text-[0.8rem] leading-none m-1 xl:w-[70%] sm:text-[1.3rem] text-center text-main-light_white font-miligramText400"
       >
-        At Koders, we are dedicated to providing our employees with a supportive and positive work
-        environment that fosters productivity, collaboration, and personal growth.
+        At Koders, we are dedicated to providing our employees with a supportive
+        and positive work environment that fosters productivity, collaboration,
+        and personal growth.
       </p>
       <Divider className="mt-14" />
 

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import Button from "../../Button";
-import { experienceIcon, locationTeal, work } from "../../../assets";
-import { ObjectOfJob } from "../../../helper/constant";
-import { useFetchDataFromServer } from "../../../helper/careerHooks";
-import DetailsModal from "./DetailsModal";
 import ApplyModal from "./ApplyModal";
 import ThankModal from "../../ThankModal";
+import DetailsModal from "./DetailsModal";
+import { ObjectOfJob } from "../../../helper/constant";
+import { useFetchDataFromServer } from "../../../helper/careerHooks";
+import { experienceIcon, locationTeal, work } from "../../../assets";
 
 const Job = ({ experience, location, title, type, id }: ObjectOfJob) => {
   const [showModal, setShowModal] = useState({

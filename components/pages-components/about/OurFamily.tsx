@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { abhishek, basu, ceo, cto, groupImg, saksham } from "../../../assets";
+
 import Label from "./Label";
+import { abhishek, basu, ceo, cto, groupImg, saksham } from "../../../assets";
 
 const OurFamily = () => {
   return (

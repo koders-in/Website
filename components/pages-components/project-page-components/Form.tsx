@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { FormikHelpers } from "formik";
 
+import { Formik } from "formik";
+import Button from "../../Button";
 import Divider from "../../Divider";
 import InputBox from "../../InputBox";
 import SelectBox from "../../SelectBox";
-import { pricingList, timeLineList } from "../../../helper/constant";
-import { Formik } from "formik";
-import { projectDataSchema } from "../../../helper/validate";
-import Button from "../../Button";
-import { PropagateLoader } from "react-spinners";
 import TextArea from "../jobs/TextArea";
+import { PropagateLoader } from "react-spinners";
+import { projectDataSchema } from "../../../helper/validate";
+import { pricingList, timeLineList } from "../../../helper/constant";
 
 interface Form {
   [key: string]: string;
@@ -202,13 +202,7 @@ const Form = ({
                 onBlur={handleBlur}
                 value={values?.hearAboutUs}
                 placeholder="How did you hear about us? *"
-                list={[
-                  "Social Media",
-                  "Friends/Family",
-                  // "Hiring Portal",
-                  "Google",
-                  "Other",
-                ]}
+                list={["Social Media", "Friends/Family", "Google", "Other"]}
                 name="hearAboutUs"
                 handleSelect={(obj: any) => {
                   const { name, value } = obj;
@@ -242,8 +236,6 @@ const Form = ({
               color="#00A99D"
               loading={showLoader}
               className="w-fit block mx-auto"
-              // cssOverride={override}
-              // size={100}
               aria-label="Loading Spinner"
               data-testid="loader"
             />

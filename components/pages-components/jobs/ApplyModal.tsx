@@ -1,7 +1,7 @@
-import { Formik, FormikHelpers } from "formik";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
+import { Formik, FormikHelpers } from "formik";
+import React, { useEffect, useState } from "react";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 import {
@@ -12,16 +12,16 @@ import {
   locationTeal,
   work,
 } from "../../../assets";
-import { useSetDataOnServer } from "../../../helper/careerHooks";
-import { jobValidationSchema } from "../../../helper/validate";
-import { sendCandidateDetails } from "../../../helper/webhook";
+import TextArea from "./TextArea";
 import Button from "../../Button";
 import Divider from "../../Divider";
-import GradientText from "../../GradientText";
 import InputBox from "../../InputBox";
 import SelectBox from "../../SelectBox";
-import TextArea from "./TextArea";
+import GradientText from "../../GradientText";
 import { PropagateLoader } from "react-spinners";
+import { sendCandidateDetails } from "../../../helper/webhook";
+import { jobValidationSchema } from "../../../helper/validate";
+import { useSetDataOnServer } from "../../../helper/careerHooks";
 
 interface initialState {
   email: string;
@@ -32,7 +32,6 @@ interface initialState {
   linkedIn?: string;
   portfolioURL?: string;
   hiringReason?: string;
-  // joiningReason?: string;
   hearAboutUs: string;
 }
 
@@ -45,7 +44,6 @@ const initialValue: initialState = {
   linkedIn: "",
   portfolioURL: "",
   hiringReason: "",
-  // joiningReason: "",
   hearAboutUs: "",
 };
 
@@ -392,16 +390,6 @@ const ApplyModal = ({
               handleChange={handleChange}
               errorText={errors.hiringReason}
             />
-            {/* <Divider className="mt-9 lg:mt-9" />
-            <TextArea
-              fontSize="text-[0.9rem] md:text-[1rem]"
-              placeholder="Why do you want to Work at Koders? *"
-              name="joiningReason"
-              onBlur={handleBlur}
-              value={values.joiningReason}
-              handleChange={handleChange}
-              errorText={errors.joiningReason}
-            /> */}
             <Divider className="mt-9 lg:mt-9" />
             <div className="flex flex-wrap md:flex-nowrap gap-10 md:gap-5 mt-2">
               <div className="w-full md:w-[50%]">

@@ -2,7 +2,6 @@ import React from "react";
 
 import Button from "../../Button";
 import { add, tick } from "../../../assets";
-import { FormState } from "../../../pages/start-project";
 
 interface Props {
   technologies: Array<string>;

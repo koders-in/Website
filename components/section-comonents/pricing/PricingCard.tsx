@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 import Button from "../../Button";
+import { useRouter } from "next/router";
 import { check, mostPopular } from "../../../assets";
 import { CardObject } from "../../../helper/constant";
-import { useRouter } from "next/router";
 
 const PricingCard = ({
   description,

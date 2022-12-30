@@ -1,20 +1,12 @@
-import React, { Suspense } from "react";
-import dynamic from "next/dynamic";
-import Image from "next/image";
 import AOS from "aos";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import React, { Suspense } from "react";
 
 import "aos/dist/aos.css";
 
 import { sleep } from "../helper";
-import {
-  img1,
-  img2,
-  img3,
-  indianArmy,
-  instaride,
-  projectOne,
-  theBest,
-} from "../assets";
+import { img3, indianArmy, instaride, theBest } from "../assets";
 
 const Divider = dynamic(() => import("../components/Divider"), {
   suspense: true,

@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState, Suspense } from "react";
-import dynamic from "next/dynamic";
-const { v4 } = require("uuid");
 import AOS from "aos";
+const { v4 } = require("uuid");
+import dynamic from "next/dynamic";
+import React, { useEffect, useRef, useState, Suspense } from "react";
 
 import "aos/dist/aos.css";
 
-import { toolsAndtechLogo } from "../assets";
 import { getRandomInt } from "../helper";
+import { toolsAndtechLogo } from "../assets";
 
 const CombCell = dynamic(() => import("../components/CombCell"), {
   suspense: true,
@@ -41,6 +41,7 @@ const Technologies = () => {
     }
   }, []);
 
+  // ---------------------Blink the combs of technologies--------------------------
   // useEffect(() => {
   //   const startAnimation = async () => {
   //     const parallelAnimatedComb = [1, 2, 3, 4, 5, 6, 7, 8, 9];

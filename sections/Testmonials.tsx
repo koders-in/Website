@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef, Suspense } from "react";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import { useRouter } from "next/router";
 import AOS from "aos";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+import React, { useEffect, useState, useRef, Suspense } from "react";
 
 import "aos/dist/aos.css";
 

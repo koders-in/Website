@@ -1,13 +1,13 @@
-import React, { Suspense, useState } from "react";
-import dynamic from "next/dynamic";
-import Image from "next/image";
 import AOS from "aos";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import React, { Suspense, useState } from "react";
 
 import "aos/dist/aos.css";
 
 import { aeroUp } from "../assets";
-import { usePostRequestToServer } from "../helper/hook";
 import { isEmailValid } from "../helper";
+import { usePostRequestToServer } from "../helper/hook";
 
 const Divider = dynamic(() => import("../components/Divider"), {
   suspense: true,

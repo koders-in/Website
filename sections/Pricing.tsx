@@ -1,12 +1,12 @@
-import React, { useState, Suspense, useContext } from "react";
-import dynamic from "next/dynamic";
 import AOS from "aos";
+import dynamic from "next/dynamic";
+import React, { Suspense, useContext } from "react";
 
 import "aos/dist/aos.css";
 
+import { AppContext } from "../components";
 import { useUpdateSlide } from "../helper/hook";
 import { pricingCardData } from "../helper/constant";
-import { AppContext } from "../components";
 
 const Divider = dynamic(() => import("../components/Divider"), {
   suspense: true,
@@ -23,19 +23,10 @@ const PricingCard = dynamic(
   }
 );
 
-// const Toogler = dynamic(() => import("../components/Toogler"), {
-//   suspense: true,
-// });
-
 const Pricing = () => {
   const handleSliding = useUpdateSlide();
-  // const [toggle, setToggle] = useState(true);
 
-  const { appContext, setAppContext }: any = useContext(AppContext);
-
-  // function handleToogle(data: boolean) {
-  //   setToggle(data);
-  // }
+  const { setAppContext }: any = useContext(AppContext);
 
   React.useEffect(() => {
     handleSliding.onSwipe("pricingSec");

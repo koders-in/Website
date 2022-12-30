@@ -73,13 +73,9 @@
   src: url("../assets/font/Milligram/Milligram-Thin.ttf");
   font-display: swap;
 }
-/*  */
 
-/* div{
-  animation: name duration timing-function delay iteration-count direction fill-mode;
-  animation: hide 1s ease-in-out 1s forwards;
-} */
 
+/***************clint component animations******************/
 .typing-animation-one {
   animation: typing 1.2s steps(40, end) forwards;
 }
@@ -668,10 +664,5 @@ textarea:focus {
   z-index: 2;
 }
 
-/* @media screen and (max-width: 410px){
-  .select-field-container span {
-    top: -21px;
-  }
-} */
 
 

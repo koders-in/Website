@@ -65,7 +65,7 @@ const PrivacyPolicy = () => {
             Email:
             <span
               onClick={() => handleMail("support@koders.in")}
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-white"
             >
               &nbsp;support@koders.in&nbsp;
             </span>
@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
             Contact Form:
             <span
               onClick={() => handleNavigate("/contact")}
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-white"
             >
               https://koders.in/contact
             </span>
@@ -102,10 +102,13 @@ const PrivacyPolicy = () => {
         >
           For your convenience, we have compiled a list of frequently asked
           questions (FAQs) on our website. Please visit{" "}
-          <span onClick={() => handleNavigate("start-project/#faq")}>
-            https://koders.in/faq
+          <span
+            className="hover:text-white cursor-pointer"
+            onClick={() => handleNavigate("start-project/#faq")}
+          >
+            https://koders.in/start-project#faq
           </span>
-          to browse through these FAQs for answers to your common queries.
+          &nbsp;to browse through these FAQs for answers to your common queries.
         </p>
         <Divider className="mt-8" />
         <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">

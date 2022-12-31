@@ -797,7 +797,6 @@ export const privacyPolicyPoints = [
   "Data sharing: Unless required by law or necessary to provide our services, we will not share your personal information with third parties. We may share anonymous or aggregated data with third parties for research and analytics purposes.",
   "Data retention: We will retain your personal information for as long as necessary to provide our services or as required by law.",
   "Data security: We implement appropriate technical and organizational measures to protect your personal information from unauthorized access, use, or disclosure.",
-  "Your rights: You have the right to access, rectify, erase, restrict, or object to the processing of your personal information. You also have the right to withdraw your consent or to exercise your right to data portability. If you have any concerns about how we handle your personal information, you can contact us at support@koders.in. ",
 ];
 
 export const termsOfServices = [

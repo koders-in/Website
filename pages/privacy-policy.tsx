@@ -52,6 +52,22 @@ const PrivacyPolicy = () => {
                 {item}
               </li>
             ))}
+            <li className="font-miligramLight my-6 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
+              Your rights: You have the right to access, rectify, erase,
+              restrict, or object to the processing of your personal
+              information. You also have the right to withdraw your consent or
+              to exercise your right to data portability. If you have any
+              concerns about how we handle your personal information, you can
+              contact us at
+              <span
+                onClick={() =>
+                  window.open(`mailto:support@koders.in"?`, "_bank")
+                }
+                className="cursor-pointer hover:text-white"
+              >
+                &nbsp;support@koders.in
+              </span>
+            </li>
           </ul>
         </div>
         <div

@@ -122,7 +122,7 @@ const ApplyModal = ({
     };
     try {
       const response = await fetch("/api/", requestOptions);
-      if (response.status !== 201) {
+      if (response.status !== 200) {
         window.alert("Unable to upload resume. Try again later.");
         setIsShowLoader(false);
         return;

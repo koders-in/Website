@@ -63,8 +63,8 @@ const handler = async (
       }
 
       const storage = await new Storage({
-        email: "sakshamchauhan79@gmail.com",
-        password: "thisisnewpasS@1",
+        email: "",
+        password: "",
       }).ready;
 
       const link: any = await storage.upload(file.originalname, data).complete;

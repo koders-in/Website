@@ -48,11 +48,7 @@ export const sendCandidateDetails = async (data) => {
             value: data?.hiringReason,
             inline: false,
           },
-          {
-            name: "Why do you want to Work at Koders?",
-            value: data?.joiningReason,
-            inline: false,
-          },
+  
           {
             name: "When can you start working?",
             value: data?.joiningIn,
@@ -149,11 +145,9 @@ export const sendCollaboratorDetails = async (data: any) => {
       {
         title: "Collaboration request",
         description: `${data?.name} wants to collaborate with us.`,
-        // url: data?.downloadLink,
         color: 3447003,
         author: {
           name: data?.fName,
-          //   icon_url: "user.profile_url",
         },
         fields: [
           {

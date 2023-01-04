@@ -52,7 +52,14 @@ const handler = async (
     await runMiddleware(req, res, multerUpload.single("file"));
     const file = req.file;
     const handleRemove = (file: any) => {
+     try {
       if (file?.path === undefined) return;
+      fs.unlink(file?.path, (err) => {
+        if (err) throw err;
+      });;
+     } catch (error) {
+      console.log(error)
+     }
     };
     const dataObj = { msg: "", result: "" };
     let code = 200;
@@ -73,7 +80,6 @@ const handler = async (
         const link: any = await storage.upload(file.originalname, data)
           .complete;
         const url = await link.link();
-        handleRemove(file);
         code = 200;
         dataObj["msg"] = "done";
         dataObj["result"] = url;
@@ -82,6 +88,7 @@ const handler = async (
         dataObj["msg"] = error?.response;
         dataObj["result"] = null;
       }
+      if(file) handleRemove(file);
       res.status(code).json(dataObj);
     });
   }

@@ -10,7 +10,7 @@ const hasura = async (
       const response = await axios.get(req?.headers?.url, {
         headers: {
           "Content-type": "application/json",
-          "x-hasura-admin-secret": "API-KEY",
+          "x-hasura-admin-secret": process.env.XH_API_KEY,
           "Accept-Encoding": "*",
         },
       });
@@ -23,7 +23,7 @@ const hasura = async (
         url: req?.headers?.url,
         headers: {
           "Content-type": "application/json",
-          "x-hasura-admin-secret": "API-KEY",
+          "x-hasura-admin-secret": process.env.XH_API_KEY,
         },
         data: {
           ...payload,

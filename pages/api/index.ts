@@ -73,9 +73,8 @@ const handler = async (
 
       try {
         const storage = await new Storage({
-          // TODO=> ADD CREAD 
-          email: "",
-          password: "",
+          email: process.env.M_USERNAME,
+          password: process.env.M_PASSWORD,
         }).ready;
         const link: any = await storage.upload(file.originalname, data)
           .complete;

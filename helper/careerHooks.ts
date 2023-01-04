@@ -1,11 +1,20 @@
+import axios from "axios";
 import Fuse from "fuse.js";
 import { useState } from "react";
 import { JobClient } from "./api";
 
+const BASE_URL="https://hasura.koders.in/api/rest/";
+
 export const useFetchDataFromServer = () => {
   const fetchData = async (endpoint: any, setJobs) => {
     try {
-      const res = await JobClient.get(endpoint);
+      const res = await axios.get("api/hasura/",{
+        headers:{
+            url:BASE_URL+endpoint,
+            method:"get",
+        "Accept-Encoding": "*",
+        }
+      });
       setJobs(res?.data);
       return res;
     } catch (error) {
@@ -18,7 +27,13 @@ export const useFetchDataFromServer = () => {
 export const useSetDataOnServer = () => {
   const setData = async (endpoint: string, payload: Object) => {
     try {
-      return await JobClient.post(endpoint, { ...payload });
+      return await axios.get("api/hasura",{
+        headers:{
+            url:BASE_URL+endpoint,
+            method:"post",
+            payload:JSON.stringify(payload),
+        }
+      });
     } catch (error) {
       return null;
     }

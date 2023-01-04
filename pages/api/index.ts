@@ -52,8 +52,17 @@ const handler = async (
     await runMiddleware(req, res, multerUpload.single("file"));
     const file = req.file;
     const handleRemove = (file: any) => {
+     try {
       if (file?.path === undefined) return;
+      fs.unlink(file?.path, (err) => {
+        if (err) throw err;
+      });;
+     } catch (error) {
+      console.log(error)
+     }
     };
+    const dataObj = { msg: "", result: "" };
+    let code = 200;
     fs.readFile(file.path, async (err: NodeJS.ErrnoException, data: Buffer) => {
       if (err) {
         handleRemove(file);
@@ -62,18 +71,24 @@ const handler = async (
           .json({ msg: "Error during uploading file", result: null });
       }
 
-      const storage = await new Storage({
-        email: "",
-        password: "",
-      }).ready;
-
-      const link: any = await storage.upload(file.originalname, data).complete;
-      const url = await link.link();
-      handleRemove(file);
-      res.status(201).json({
-        msg: "Successfully uploaded file to Mega Storage",
-        result: url,
-      });
+      try {
+        const storage = await new Storage({
+          email: process.env.M_USERNAME,
+          password: process.env.M_PASSWORD,
+        }).ready;
+        const link: any = await storage.upload(file.originalname, data)
+          .complete;
+        const url = await link.link();
+        code = 200;
+        dataObj["msg"] = "done";
+        dataObj["result"] = url;
+      } catch (error) {
+        code = 400;
+        dataObj["msg"] = error?.response;
+        dataObj["result"] = null;
+      }
+      if(file) handleRemove(file);
+      res.status(code).json(dataObj);
     });
   }
 };
@@ -100,7 +115,6 @@ const readFromFile = () => {
     try {
       fs.readFile(filePath, "utf8", async (err, jsonString) => {
         if (err) {
-          console.log( err);
           return resolve(null);
         }
         if (jsonString) {

@@ -9,6 +9,7 @@ import Image from "next/image";
 import { greenArrow } from "../assets";
 import { FadeLoader } from "react-spinners";
 import { useFetchDataFromServer, useFilter } from "../helper/careerHooks";
+import { AxiosResponse } from "axios";
 
 const Divider = dynamic(() => import("../components/Divider"), {
   suspense: true,
@@ -81,7 +82,7 @@ const Jobs = () => {
 
   const handleTryAgain = async () => {
     setPinJobs(false);
-    let res = await fetchData("open-job-listings", setJobs);
+    let res: any = await fetchData("open-job-listings", setJobs);
     if (res?.jobs_listing?.length > 3) {
       setPinJobs(res?.jobs_listing?.slice(0, 3));
     } else {

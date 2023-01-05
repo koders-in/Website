@@ -38,6 +38,9 @@ jobs:
           NEXT_PUBLIC_COLLABORATE=${{ secrets.NEXT_PUBLIC_COLLABORATE }} 
           NEXT_PUBLIC_JOB=${{ secrets.NEXT_PUBLIC_JOB }} 
           NEXT_PUBLIC_PROJECT_REQUEST=${{ secrets.NEXT_PUBLIC_PROJECT_REQUEST }}
+          M_USERNAME=${{ secrets.M_USERNAME }}
+          M_PASSWORD=${{ secrets.M_PASSWORD }}
+          XH_API_KEY=${{ secrets.XH_API_KEY }}
 
 
     - name: Image digest

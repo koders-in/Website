@@ -62,7 +62,7 @@ jobs:
       uses: fifsky/ssh-action@master
       with:
         command: |
-          docker run -d -e NEXT_PUBLIC_COLLABORATE=${{ secrets.NEXT_PUBLIC_COLLABORATE }} -e NEXT_PUBLIC_JOB=${{ secrets.NEXT_PUBLIC_JOB }} -e NEXT_PUBLIC_PROJECT_REQUEST=${{ secrets.NEXT_PUBLIC_PROJECT_REQUEST }} -e M_USERNAME=${{ secrets.M_USERNAME }} -e M_PASSWORD=${{ secrets.M_PASSWORD }} -e XH_API_KEY=${{ secrets.XH_API_KEY }} -p 9440:3000 --name koders-website-v5 ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v5
+          docker run -d -p 9440:3000 --name koders-website-v5 -e NEXT_PUBLIC_COLLABORATE=${{ secrets.NEXT_PUBLIC_COLLABORATE }} -e NEXT_PUBLIC_JOB=${{ secrets.NEXT_PUBLIC_JOB }} -e NEXT_PUBLIC_PROJECT_REQUEST=${{ secrets.NEXT_PUBLIC_PROJECT_REQUEST }} -e M_USERNAME=${{ secrets.M_USERNAME }} -e M_PASSWORD=${{ secrets.M_PASSWORD }} -e XH_API_KEY=${{ secrets.XH_API_KEY }} ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v5
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USERNAME }}
         pass: ${{ secrets.PASSWORD}}

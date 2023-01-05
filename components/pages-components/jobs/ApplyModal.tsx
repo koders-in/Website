@@ -179,6 +179,7 @@ const ApplyModal = ({
   const closeModal = () => {
     setResumeError(false);
     enableBodyScroll(document);
+    setResume(null);
     setShowModal((p: any) => {
       return {
         ...p,

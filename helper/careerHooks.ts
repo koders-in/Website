@@ -12,7 +12,7 @@ export const useFetchDataFromServer = () => {
         headers:{
             url:BASE_URL+endpoint,
             method:"get",
-        "Accept-Encoding": "*",
+        // "Accept-Encoding": "*",
         }
       });
       setJobs(res?.data);

@@ -129,10 +129,6 @@ const ApplyModal = ({
       }
       const data = await response.text();
       const { result } = JSON.parse(data);
-      await sendCandidateDetails({
-        ...value,
-        downloadLink: result,
-      });
       const res = await sendData("apply", {
         first_name: value?.fName,
         last_name: value?.lName,
@@ -153,6 +149,10 @@ const ApplyModal = ({
       } else {
         window.alert("Something went wrong. Try again later.");
       }
+      await sendCandidateDetails({
+        ...value,
+        downloadLink: result,
+      });
       setResume(null);
       setIsShowLoader(false);
       helper.resetForm();
@@ -179,6 +179,7 @@ const ApplyModal = ({
   const closeModal = () => {
     setResumeError(false);
     enableBodyScroll(document);
+    setResume(null);
     setShowModal((p: any) => {
       return {
         ...p,

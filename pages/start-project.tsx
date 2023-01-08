@@ -77,7 +77,7 @@ const StartProject = () => {
       if (res.status === 200) {
         window.alert("Your response has been recorded.");
         helper.resetForm();
-        sendClientDetails({ ...value, technologies });
+        await sendClientDetails({ ...value, technologies });
       } else {
         window.alert("Unable to record your response. Try again later.");
       }

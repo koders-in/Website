@@ -2,71 +2,88 @@ import axios from "axios";
 
 
 export const sendCandidateDetails = async (data) => {
-  const embed = {
-    embeds: [
-      {
-        title: "Download resume",
-        description: `${data.fName} is apply for job`,
-        url: data?.downloadLink,
-        color: 3447003,
-        author: {
-          name: data?.fName,
+  try {
+    const res:any =await  axios.get("api/webhook",{
+      headers:{
+        job:"job"
+      }
+    });
+    const embed = {
+      embeds: [
+        {
+          title: "Download resume",
+          description: `${data.fName} is apply for job`,
+          url: data?.downloadLink,
+          color: 3447003,
+          author: {
+            name: data?.fName,
+          },
+          fields: [
+            {
+              name: "First Name",
+              value: data?.fName,
+              inline: true,
+            },
+            {
+              name: "Last Name",
+              value: data?.lName,
+              inline: true,
+            },
+            {
+              name: "Email",
+              value: data?.email,
+              inline: true,
+            },
+            {
+              name: "Mobile Number",
+              value: data?.mobile,
+              inline: true,
+            },
+            {
+              name: "Website URL/Portfolio URL",
+              value: data?.portfolioURL || "Not provided",
+              inline: true,
+            },
+            {
+              name: "LinkedIn URL",
+              value: data?.linkedIn || "Not provided",
+              inline: true,
+            },
+            {
+              name: "Why should you be hired for this role?",
+              value: data?.hiringReason,
+              inline: false,
+            },
+    
+            {
+              name: "When can you start working?",
+              value: data?.joiningIn,
+              inline: false,
+            },
+            {
+              name: "Where did you learn of this opening?",
+              value: data?.hearAboutUs,
+              inline: false,
+            },
+          ],
         },
-        fields: [
-          {
-            name: "First Name",
-            value: data?.fName,
-            inline: true,
-          },
-          {
-            name: "Last Name",
-            value: data?.lName,
-            inline: true,
-          },
-          {
-            name: "Email",
-            value: data?.email,
-            inline: true,
-          },
-          {
-            name: "Mobile Number",
-            value: data?.mobile,
-            inline: true,
-          },
-          {
-            name: "Website URL/Portfolio URL",
-            value: data?.portfolioURL || "Not provided",
-            inline: true,
-          },
-          {
-            name: "LinkedIn URL",
-            value: data?.linkedIn || "Not provided",
-            inline: true,
-          },
-          {
-            name: "Why should you be hired for this role?",
-            value: data?.hiringReason,
-            inline: false,
-          },
-  
-          {
-            name: "When can you start working?",
-            value: data?.joiningIn,
-            inline: false,
-          },
-          {
-            name: "Where did you learn of this opening?",
-            value: data?.hearAboutUs,
-            inline: false,
-          },
-        ],
-      },
-    ],
-  };
-  return await axios.post(process.env.NEXT_PUBLIC_JOB, embed);
+      ],
+    };
+    if(res?.data?.webhook){
+      return await axios.post(res?.data?.webhook,embed);
+    }
+  } catch (error) {
+    console.log(error)
+  }
 };
 
 export const sendClientDetails = async (data: any) => {
+ try {
+  const res:any =await  axios.get("api/webhook",{
+    headers:{
+      projectRequest:"projectRequest"
+    }
+  });
   const embed = {
     embeds: [
       {
@@ -136,10 +153,21 @@ export const sendClientDetails = async (data: any) => {
       },
     ],
   };
-  return await axios.post(process.env.NEXT_PUBLIC_PROJECT_REQUEST, embed);
+  if(res?.data?.webhook){
+    return await axios.post(res?.data?.webhook,embed);
+  }
+ } catch (error) {
+  console.log(error);
+ }
 };
 
 export const sendCollaboratorDetails = async (data: any) => {
+try {
+  const res:any =await  axios.get("api/webhook",{
+    headers:{
+      collaborate:"collaborate"
+    }
+  });
   const embed = {
     embeds: [
       {
@@ -209,5 +237,10 @@ export const sendCollaboratorDetails = async (data: any) => {
       },
     ],
   };
-  return await axios.post(process.env.NEXT_PUBLIC_COLLABORATE, embed);
+  if(res?.data?.webhook){
+    return await axios.post(res?.data?.webhook,embed);
+  }
+} catch (error) {
+  console.log(error)
+}
 };

@@ -10,21 +10,21 @@ function runMiddleware(
   res: NextApiResponse,
   fn: (...args: any[]) => void
 ): Promise<any> {
- try {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result: any) => {
-      if (result instanceof Error) {
-        return reject(result);
-      }
+  try {
+    return new Promise((resolve, reject) => {
+      fn(req, res, (result: any) => {
+        if (result instanceof Error) {
+          return reject(result);
+        }
 
-      return resolve(result);
+        return resolve(result);
+      });
     });
-  });
- } catch (error) {
-  return new Promise((resolve, reject) => {
-    return reject(error);
-  })
- }
+  } catch (error) {
+    return new Promise((resolve, reject) => {
+      return reject(error);
+    });
+  }
 }
 
 export const config = {
@@ -51,56 +51,65 @@ const handler = async (
       res.status(201).json(reviewList);
     } else res.status(201).json(isMemorizesReviews);
   } else {
-   try {
-    const multerUpload = multer({
-      dest: "./public/uploads/",
-      preservePath: true,
-    });
-    await runMiddleware(req, res, multerUpload.single("file"));
-    const file = req.file;
-    const handleRemove = (file: any) => {
-     try {
-      if (file?.path === undefined) return;
-      fs.unlink(file?.path, (err) => {
-        if (err) throw err;
-      });;
-     } catch (error) {
-      console.log(error)
-     }
-    };
-    const dataObj = { msg: "", result: "" };
-    let code = 200;
-    fs.readFile(file.path, async (err: NodeJS.ErrnoException, data: Buffer) => {
-      if (err) {
-        handleRemove(file);
-        return res
-          .status(404)
-          .json({ msg: "Error during uploading file", result: null });
-      }
+    let storage=null;
+    try {
+      const multerUpload = multer({
+        dest: "./public/uploads/",
+        preservePath: true,
+      });
+      await runMiddleware(req, res, multerUpload.single("file"));
+      const file = req.file;
+      const handleRemove = (file: any) => {
+        try {
+          if (file?.path === undefined) return;
+          fs.unlink(file?.path, (err) => {
+            if (err) throw err;
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      const dataObj = { msg: "", result: "" };
+      let code = 200;
+      fs.readFile(
+        file.path,
+        async (err: NodeJS.ErrnoException, data: Buffer) => {
+          if (err) {
+            handleRemove(file);
+            return res
+              .status(404)
+              .json({ msg: "Error during uploading file", result: null });
+          }
 
-      try {
-        const storage = await new Storage({
-          email: process.env.M_USERNAME,
-          password: process.env.M_PASSWORD,
-        }).ready;
-        const link: any = await storage.upload(file.originalname, data)
-          .complete;
-        const url = await link.link();
-        code = 200;
-        dataObj["msg"] = "done";
-        dataObj["result"] = url;
-      } catch (error) {
-        code = 400;
-        dataObj["msg"] = error?.response;
-        dataObj["result"] = null;
+          try {
+             storage = await new Storage({
+              email: process.env.M_USERNAME,
+              password: process.env.M_PASSWORD,
+            }).ready;
+            const link: any = await storage.upload(file.originalname, data)
+              .complete;
+            const url = await link.link();
+            code = 200;
+            dataObj["msg"] = "done";
+            dataObj["result"] = url;
+            storage?.close();
+          } catch (error) {
+            code = 400;
+            dataObj["msg"] = error?.response;
+            dataObj["result"] = null;
+            storage?.close();
+          }
+          if (file) handleRemove(file);
+          res.status(code).json(dataObj);
+        }
+      );
+    } catch (error) {
+      if(storage){
+        storage?.close();
       }
-      if(file) handleRemove(file);
-      res.status(code).json(dataObj);
-    });
-   } catch (error) {
-    res.status(400).json({});
-    console.log(error);
-   }
+      res.status(400).json({});
+      console.log(error);
+    }
   }
 };
 

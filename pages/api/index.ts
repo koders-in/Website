@@ -10,6 +10,7 @@ function runMiddleware(
   res: NextApiResponse,
   fn: (...args: any[]) => void
 ): Promise<any> {
+ try {
   return new Promise((resolve, reject) => {
     fn(req, res, (result: any) => {
       if (result instanceof Error) {
@@ -19,6 +20,11 @@ function runMiddleware(
       return resolve(result);
     });
   });
+ } catch (error) {
+  return new Promise((resolve, reject) => {
+    return reject(error);
+  })
+ }
 }
 
 export const config = {
@@ -45,6 +51,7 @@ const handler = async (
       res.status(201).json(reviewList);
     } else res.status(201).json(isMemorizesReviews);
   } else {
+   try {
     const multerUpload = multer({
       dest: "./public/uploads/",
       preservePath: true,
@@ -90,6 +97,10 @@ const handler = async (
       if(file) handleRemove(file);
       res.status(code).json(dataObj);
     });
+   } catch (error) {
+    res.status(400).json({});
+    console.log(error);
+   }
   }
 };
 

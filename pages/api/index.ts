@@ -92,12 +92,16 @@ const handler = async (
             code = 200;
             dataObj["msg"] = "done";
             dataObj["result"] = url;
-            storage?.close();
+            if(storage){
+              storage?.close();
+            }
           } catch (error) {
             code = 400;
             dataObj["msg"] = error?.response;
             dataObj["result"] = null;
-            storage?.close();
+            if(storage){
+              storage?.close();
+            }
           }
           if (file) handleRemove(file);
           res.status(code).json(dataObj);

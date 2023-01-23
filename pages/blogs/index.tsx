@@ -55,7 +55,7 @@ const Blog = () => {
         <title>Blogs</title>
       </Head>
       <Navbar />
-      <div className="pb-10 pt-28 w-[91%] mx-auto relative">
+      <div className="pb-10 pt-28 w-[90%] mx-auto relative">
         <Divider className="mt-9" />
         <GradientText
           aos="fade-up"
@@ -72,7 +72,7 @@ const Blog = () => {
             />
           ))}
         </div>
-        <div className="flex justify-between flex-wrap  gap-5 sm:gap-9 mt-10">
+        <div className="flex justify-between items-stretch flex-wrap  gap-5 sm:gap-9 mt-10">
           {[...blogs.slice(2, blogs.length)].map((item) => (
             <Card key={item.id} data={item} />
           ))}

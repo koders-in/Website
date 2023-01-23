@@ -42,7 +42,7 @@ const id = () => {
           <title>Blogs</title>
         </Head>
         <Navbar />
-        <div className="py-16 mt-10 w-[91%] mx-auto">
+        <div className="py-16 mt-10 w-[90%] mx-auto">
           <Divider className="mt-16" />
           <Divider className="mt-6" />
           <div data-aos="fade-up" className="flex justify-between items-center">

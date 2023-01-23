@@ -23,7 +23,7 @@ const Card = ({
   return (
     <div
       data-aos="fade-up"
-      className={`h-fit relative sm:h-[85vh] lg:h-[80vh] xl:h-[75vh] xxl:h-[70vh] flex flex-wrap msm:flex-nowrap gap-3 sm:block ${
+      className={`relative flex flex-wrap msm:flex-nowrap gap-3 sm:block ${
         cardStyle ? cardStyle : "md:w-[30%] lg:w-[31%] xl:w-[32%]"
       } ${className}`}
     >
@@ -60,6 +60,7 @@ const Card = ({
             </button>
           </p>
         </div>
+        <Divider className="h-16" />
         <div className="md:fixed w-full bottom-0 flex md:mt-14 justify-between items-center">
           <span className=" text-white block  font-miligramMedium">
             {data?.date}

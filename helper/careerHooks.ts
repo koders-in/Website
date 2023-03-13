@@ -118,7 +118,8 @@ export const useCareerHook = () => {
   const [searchValue, setSearchValue] = useState("");
   const filterAndUpdate = (filterObj) => {
     const tempArr = [...jobs?.jobs_listing];
-    handleViewMore();
+    setViewMore(false);
+    // handleViewMore();
     let tempList: Array<any> = tempArr;
 
     if (filterObj.isRemote && tempList?.length) {

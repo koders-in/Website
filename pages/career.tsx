@@ -1,15 +1,13 @@
-import AOS from "aos";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 
 import "aos/dist/aos.css";
 import { AnimatedBorder } from "../components";
 import Image from "next/image";
 import { greenArrow } from "../assets";
 import { FadeLoader } from "react-spinners";
-import { useFetchDataFromServer, useFilter } from "../helper/careerHooks";
-import { AxiosResponse } from "axios";
+import { useCareerHook } from "../helper/careerHooks";
 
 const Divider = dynamic(() => import("../components/Divider"), {
   suspense: true,
@@ -43,61 +41,63 @@ const Navbar = dynamic(() => import("../components/Navbar"), {
 });
 
 const Jobs = () => {
-  const [filter, setFilter] = useState({
-    title: "",
-    isRemote: false,
-    departments: ["All"],
-  });
-  const [jobs, setJobs] = useState<any>(null);
-  const [viewMore, setViewMore] = useState<boolean>(true);
-  const [pinJobs, setPinJobs] = useState<any>();
-  const [tempData, setTempData] = useState<any>(null);
-  const [noMatch, setNoMatch] = useState<boolean>(false);
-  const [department, setDepartment] = useState<Array<string>>(["All"]);
-  const fetchData = useFetchDataFromServer();
-  const filterData = useFilter();
+  const { jobs, pinJobs, noMatch, handleTryAgain, viewMore, handleViewMore } =
+    useCareerHook();
+  // const  [filter, setFilter] = useState({
+  //   title: "",
+  //   isRemote: false,
+  //   departments: ["All"],
+  // });
+  // const [jobs, setJobs] = useState<any>(null);
+  // const [viewMore, setViewMore] = useState<boolean>(true);
+  // const [pinJobs, setPinJobs] = useState<any>();
+  // const [tempData, setTempData] = useState<any>(null);
+  // const [noMatch, setNoMatch] = useState<boolean>(false);
+  // const [department, setDepartment] = useState<Array<string>>(["All"]);
+  // const fetchData = useFetchDataFromServer();
+  // const filterData = useFilter();
 
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-out",
-      once: true,
-      duration: 600,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     easing: "ease-out",
+  //     once: true,
+  //     duration: 600,
+  //   });
+  // }, []);
 
-  useEffect(() => {
-    if (jobs === null || jobs === undefined)
-      fetchData("open-job-listings", setJobs);
+  // useEffect(() => {
+  //   if (jobs === null || jobs === undefined)
+  //     fetchData("open-job-listings", setJobs);
 
-    if (jobs && tempData === null) {
-      if (jobs?.jobs_listing?.length / 3 > 0) {
-        setPinJobs(jobs?.jobs_listing?.slice(0, 2));
-        setTempData(jobs?.jobs_listing?.slice(0, 2));
-      } else {
-        setPinJobs(jobs?.jobs_listing);
-        setTempData(jobs?.jobs_listing);
-      }
-    }
-  }, [jobs, pinJobs]);
+  //   if (jobs && tempData === null) {
+  //     if (jobs?.jobs_listing?.length / 3 > 0) {
+  //       setPinJobs(jobs?.jobs_listing?.slice(0, 2));
+  //       setTempData(jobs?.jobs_listing?.slice(0, 2));
+  //     } else {
+  //       setPinJobs(jobs?.jobs_listing);
+  //       setTempData(jobs?.jobs_listing);
+  //     }
+  //   }
+  // }, [jobs, pinJobs]);
 
-  const handleTryAgain = async () => {
-    setPinJobs(false);
-    let res: any = await fetchData("open-job-listings", setJobs);
-    if (res?.jobs_listing?.length > 3) {
-      setPinJobs(res?.jobs_listing?.slice(0, 3));
-    } else {
-      setPinJobs(res?.jobs_listing);
-    }
-  };
+  // const handleTryAgain = async () => {
+  //   setPinJobs(false);
+  //   let res: any = await fetchData("open-job-listings", setJobs);
+  //   if (res?.jobs_listing?.length > 3) {
+  //     setPinJobs(res?.jobs_listing?.slice(0, 3));
+  //   } else {
+  //     setPinJobs(res?.jobs_listing);
+  //   }
+  // };
 
-  const handleViewMore = () => {
-    if (!jobs?.jobs_listing?.length) return;
-    const tempArr = [...jobs?.jobs_listing];
-    setPinJobs(tempArr);
-    setTempData(tempArr);
-    setViewMore(false);
-    filterData(filter, tempArr, setPinJobs);
-  };
+  // const handleViewMore = () => {
+  //   if (!jobs?.jobs_listing?.length) return;
+  //   const tempArr = [...jobs?.jobs_listing];
+  //   setPinJobs(tempArr);
+  //   setTempData(tempArr);
+  //   setViewMore(false);
+  //   filterData(filter, tempArr, setPinJobs);
+  // };
 
   return (
     <div className="bg-main-primary overflow-hidden relative">
@@ -112,7 +112,7 @@ const Jobs = () => {
           <Divider className="mt-9" />
         </Suspense>
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <LandingSection
+          {/* <LandingSection
             {...{
               pinJobs,
               setPinJobs,
@@ -123,7 +123,7 @@ const Jobs = () => {
               filter,
               setFilter,
             }}
-          />
+          /> */}
         </Suspense>
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
           <Divider className="mt-12" />

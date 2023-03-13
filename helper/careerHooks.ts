@@ -3,17 +3,17 @@ import Fuse from "fuse.js";
 import { useState } from "react";
 import { JobClient } from "./api";
 
-const BASE_URL="https://hasura.koders.in/api/rest/";
+const BASE_URL = "https://hasura.koders.in/api/rest/";
 
 export const useFetchDataFromServer = () => {
   const fetchData = async (endpoint: any, setJobs) => {
     try {
-      const res = await axios.get("api/hasura/",{
-        headers:{
-            url:BASE_URL+endpoint,
-            method:"get",
-        // "Accept-Encoding": "*",
-        }
+      const res = await axios.get("api/hasura/", {
+        headers: {
+          url: BASE_URL + endpoint,
+          method: "get",
+          // "Accept-Encoding": "*",
+        },
       });
       setJobs(res?.data);
       return res;
@@ -27,12 +27,12 @@ export const useFetchDataFromServer = () => {
 export const useSetDataOnServer = () => {
   const setData = async (endpoint: string, payload: Object) => {
     try {
-      return await axios.get("api/hasura",{
-        headers:{
-            url:BASE_URL+endpoint,
-            method:"post",
-            payload:JSON.stringify(payload),
-        }
+      return await axios.get("api/hasura", {
+        headers: {
+          url: BASE_URL + endpoint,
+          method: "post",
+          payload: JSON.stringify(payload),
+        },
       });
     } catch (error) {
       return null;
@@ -62,10 +62,12 @@ export const useLandingComp = (
   setPinJobs,
   filter,
   setFilter,
-  setNoMatch
+  setNoMatch,
+  handleViewMore
 ) => {
   const [searchValue, setSearchValue] = useState("");
   const filterAndUpdate = (filterObj) => {
+    handleViewMore();
     let tempList: Array<any> = tempData;
 
     if (filterObj.isRemote && tempList?.length) {
@@ -112,7 +114,7 @@ export const useLandingComp = (
         tempList = temp;
       }
     }
-    if(tempList.length===0) setNoMatch(true);
+    if (tempList.length === 0) setNoMatch(true);
     else setNoMatch(false);
     setPinJobs(tempList);
   };

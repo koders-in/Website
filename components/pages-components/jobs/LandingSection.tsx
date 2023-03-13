@@ -18,6 +18,7 @@ interface Props {
   setDepartment: (data: any) => void;
   filter: any;
   setFilter: (data: any) => void;
+  handleViewMore: () => void;
 }
 const LandingSection = ({
   filter,
@@ -28,6 +29,7 @@ const LandingSection = ({
   tempData,
   department,
   setDepartment,
+  handleViewMore,
 }: Props) => {
   const {
     handleChange,
@@ -35,7 +37,14 @@ const LandingSection = ({
     handleClick,
     handleClickOnSearch,
     searchValue,
-  } = useLandingComp(tempData, setPinJobs, filter, setFilter, setNoMatch);
+  } = useLandingComp(
+    tempData,
+    setPinJobs,
+    filter,
+    setFilter,
+    setNoMatch,
+    handleViewMore
+  );
 
   return (
     <div className="">

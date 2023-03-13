@@ -122,6 +122,7 @@ const Jobs = () => {
               setDepartment,
               filter,
               setFilter,
+              handleViewMore,
             }}
           />
         </Suspense>

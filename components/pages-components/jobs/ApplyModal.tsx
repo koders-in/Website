@@ -151,6 +151,7 @@ const ApplyModal = ({
       }
       await sendCandidateDetails({
         ...value,
+        title,
         downloadLink: result,
       });
       setResume(null);

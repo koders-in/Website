@@ -228,25 +228,40 @@ export const whyWe = [
 export const faq = [
   {
     question: "What types of software services do you offer?",
-    answer:"We offer a wide range of software services, including UI/UX, custom software development, mobile app development, web development, automated toolbots and a lot more."},
+    answer:
+      "We offer a wide range of software services, including UI/UX, custom software development, mobile app development, web development, automated toolbots and a lot more.",
+  },
   {
     question: "How do I get a quote for a software development project?",
-    answer:"To get a quote for a software development project, please visit https://koders.in/start-project with details about your project. One of our sales representatives will get back to you with a quote within 7 business days after your request is submitted at our portal. "},
+    answer:
+      "To get a quote for a software development project, please visit https://koders.in/start-project with details about your project. One of our sales representatives will get back to you with a quote within 7 business days after your request is submitted at our portal. ",
+  },
   {
-    question: "Do you offer a free trial of your software development services?",
-    answer:"No, we do not offer a free trial of our software development services. However, we are happy to provide a detailed proposal and quote for your project upon request."},
+    question:
+      "Do you offer a free trial of your software development services?",
+    answer:
+      "No, we do not offer a free trial of our software development services. However, we are happy to provide a detailed proposal and quote for your project upon request.",
+  },
   {
     question: "How do you approach software development projects?",
-    answer:"We follow a proven software development process that includes discovery, design, development, testing, and deployment phases. Our goal is to deliver high-quality, reliable software that meets the needs of our clients."},
+    answer:
+      "We follow a proven software development process that includes discovery, design, development, testing, and deployment phases. Our goal is to deliver high-quality, reliable software that meets the needs of our clients.",
+  },
   {
     question: "How long will it take for my application to be developed?",
-    answer:"The estimated time to develop your application will depend on a number of factors, including the complexity of the project, the resources and team available, and any external dependencies. Our team will get back to you with an estimation after you’ve submitted your project requirements in detail. "},
+    answer:
+      "The estimated time to develop your application will depend on a number of factors, including the complexity of the project, the resources and team available, and any external dependencies. Our team will get back to you with an estimation after you’ve submitted your project requirements in detail. ",
+  },
   {
     question: "Do you offer ongoing support and maintenance for your software?",
-    answer:"Yes, we offer ongoing support and maintenance for our software to ensure that it is always up-to-date and running smoothly."},
+    answer:
+      "Yes, we offer ongoing support and maintenance for our software to ensure that it is always up-to-date and running smoothly.",
+  },
   {
     question: "How will the progress of my project be handled?",
-    answer:"We use a project management tool to ensure that your project is managed effectively and efficiently. Our project manager will create a detailed workflow, breaking down all deliverables into tasks and assigning them to team members with deadlines. We hold weekly review meetings to make sure that everyone is on track with edits and changes, and all files, comments, and feedback are shared centrally to keep everyone in the loop. This approach helps us stay organized and ensure that your project is completed on time and to your satisfaction."},
+    answer:
+      "We use a project management tool to ensure that your project is managed effectively and efficiently. Our project manager will create a detailed workflow, breaking down all deliverables into tasks and assigning them to team members with deadlines. We hold weekly review meetings to make sure that everyone is on track with edits and changes, and all files, comments, and feedback are shared centrally to keep everyone in the loop. This approach helps us stay organized and ensure that your project is completed on time and to your satisfaction.",
+  },
 ];
 
 export const pricingList = ["100-500$", "500-1000$", "1000-5000$", ">5000$"];
@@ -801,51 +816,117 @@ export const privacyPolicyPoints = [
 
 export const termsOfServices = [
   {
-    heading:"Introduction",
-    description:'These terms of service (the "Terms") govern your access to and use of Koders’s software development services (the "Services"), including our website https://koders.in (including all web pages, sub-domains, and sub-parts contained within, the "website") and any services offered on or through the website or otherwise provided by Koders. Except as otherwise specified above, the services are owned and operated by Koders. The services are provided subject to your acceptance without change of all of the terms and conditions set forth herein, as well as all other operating rules, policies, and procedures announced by Koders from time to time on the website. By accessing or using the Services, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Services.'
+    heading: "Introduction",
+    description:
+      'These terms of service (the "Terms") govern your access to and use of Koders’s software development services (the "Services"), including our website https://koders.in (including all web pages, sub-domains, and sub-parts contained within, the "website") and any services offered on or through the website or otherwise provided by Koders. Except as otherwise specified above, the services are owned and operated by Koders. The services are provided subject to your acceptance without change of all of the terms and conditions set forth herein, as well as all other operating rules, policies, and procedures announced by Koders from time to time on the website. By accessing or using the Services, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Services.',
   },
   {
-    heading:"Changes to the Terms",
-    description:'Koders reserves the right to modify these Terms at any time. Any changes will be effective immediately upon posting the modified terms on our website. You are responsible for reviewing the modified terms regularly. Your continued use of the Services after any changes have been made will constitute your acceptance of the modified terms.'
+    heading: "Changes to the Terms",
+    description:
+      "Koders reserves the right to modify these Terms at any time. Any changes will be effective immediately upon posting the modified terms on our website. You are responsible for reviewing the modified terms regularly. Your continued use of the Services after any changes have been made will constitute your acceptance of the modified terms.",
   },
   {
-    heading:"Trademark Information",
-    description:"Koders' trademarks, service marks, and logos used and displayed in connection with the services are Koders' registered and/or unregistered trademarks or service marks. The trademarks may not be used to denigrate Koders, any third party associated with Koders, or Koders' or the associated third party's products or services in any way (in Koders' sole discretion) that may harm the trademarks' goodwill. The use of any trademarks as part of a link to or from any website is prohibited unless Koders grants prior written approval for each such link. All goodwill derived from the use of any Koders’ trademark shall benefit Koders."
+    heading: "Trademark Information",
+    description:
+      "Koders' trademarks, service marks, and logos used and displayed in connection with the services are Koders' registered and/or unregistered trademarks or service marks. The trademarks may not be used to denigrate Koders, any third party associated with Koders, or Koders' or the associated third party's products or services in any way (in Koders' sole discretion) that may harm the trademarks' goodwill. The use of any trademarks as part of a link to or from any website is prohibited unless Koders grants prior written approval for each such link. All goodwill derived from the use of any Koders’ trademark shall benefit Koders.",
   },
   {
-    heading:"Use of the Services",
-    description:'You may use the Services only for lawful purposes and in accordance with these Terms. You may not use the Services in any way that violates any applicable federal, state, or international law or regulation.'
+    heading: "Use of the Services",
+    description:
+      "You may use the Services only for lawful purposes and in accordance with these Terms. You may not use the Services in any way that violates any applicable federal, state, or international law or regulation.",
   },
   {
-    heading:"Intellectual Property",
-    description:'Koders retains all right, title, and interest in and to the Services, including all intellectual property rights. You may not use any of Koders’s intellectual property without our prior written consent.'
+    heading: "Intellectual Property",
+    description:
+      "Koders retains all right, title, and interest in and to the Services, including all intellectual property rights. You may not use any of Koders’s intellectual property without our prior written consent.",
   },
   {
-    heading:"Disclaimer of Warranties",
-    description:'Koders provides the Services on an "as is" and "as available" basis. We make no representations or warranties of any kind, express or implied, as to the operation of the Services or the information, content, materials, or products included on the Services.'
+    heading: "Disclaimer of Warranties",
+    description:
+      'Koders provides the Services on an "as is" and "as available" basis. We make no representations or warranties of any kind, express or implied, as to the operation of the Services or the information, content, materials, or products included on the Services.',
   },
   {
-    heading:"Licence Grants",
-    description:"Koders grants you a non-exclusive, non-transferable license for the term to use the services we provide for the specific purpose specified in this agreement. This is only in order to provide software services, and comply with applicable law, and Koders' reasonable data verification and retention policies."
+    heading: "Licence Grants",
+    description:
+      "Koders grants you a non-exclusive, non-transferable license for the term to use the services we provide for the specific purpose specified in this agreement. This is only in order to provide software services, and comply with applicable law, and Koders' reasonable data verification and retention policies.",
   },
   {
-    heading:"Limitation of Liability",
-    description:'Koders will not be liable for any damages of any kind arising from the use of the Services, including, but not limited to, direct, indirect, incidental, punitive, and consequential damages.'
+    heading: "Limitation of Liability",
+    description:
+      "Koders will not be liable for any damages of any kind arising from the use of the Services, including, but not limited to, direct, indirect, incidental, punitive, and consequential damages.",
   },
   {
-    heading:"Indemnification",
-    description:"You agree to indemnify and hold Koders and its affiliates, officers, agents, and employees harmless from any claim or demand, including reasonable attorneys' fees, made by any third party due to or arising out of your use of the Services, your violation of these Terms, or your violation of any rights of another."
+    heading: "Indemnification",
+    description:
+      "You agree to indemnify and hold Koders and its affiliates, officers, agents, and employees harmless from any claim or demand, including reasonable attorneys' fees, made by any third party due to or arising out of your use of the Services, your violation of these Terms, or your violation of any rights of another.",
   },
   {
-    heading:"Governing Law",
-    description:'These Terms and your use of the Services will be governed by and construed in accordance with the laws of the State of Uttarakhand, without giving effect to any principles of conflicts of law.'
+    heading: "Governing Law",
+    description:
+      "These Terms and your use of the Services will be governed by and construed in accordance with the laws of the State of Uttarakhand, without giving effect to any principles of conflicts of law.",
   },
   {
-    heading:"Dispute Resolution",
-    description:'Any dispute arising out of or relating to these Terms or the Services will be resolved through binding arbitration in accordance with the Commercial Arbitration Rules of the American Arbitration Association. The arbitration will be conducted in the State of Uttarakhand.'
+    heading: "Dispute Resolution",
+    description:
+      "Any dispute arising out of or relating to these Terms or the Services will be resolved through binding arbitration in accordance with the Commercial Arbitration Rules of the American Arbitration Association. The arbitration will be conducted in the State of Uttarakhand.",
   },
   {
-    heading:"Entire Agreement",
-    description:'These Terms constitute the entire agreement between you and Koders with respect to the Services and supersede all prior or contemporaneous communications and proposals, whether oral or written. If any provision of these Terms is found to be invalid or unenforceable, that provision will be enforced to the maximum extent possible, and the remaining provisions will remain in full force and effect.'
+    heading: "Entire Agreement",
+    description:
+      "These Terms constitute the entire agreement between you and Koders with respect to the Services and supersede all prior or contemporaneous communications and proposals, whether oral or written. If any provision of these Terms is found to be invalid or unenforceable, that provision will be enforced to the maximum extent possible, and the remaining provisions will remain in full force and effect.",
   },
-]
+];
+
+export const datddd = [
+  {
+    id: 23,
+    job: {
+      title: "UI/UX Design Intern",
+      department: "Design",
+      exp_level: { experience_yrs: "0-1 yr", level: "Intern" },
+      listings: [{ updated_at: "2023-12-22T11:00:02.432905+00:00" }],
+    },
+    location: "Hybrid",
+  },
+  {
+    id: 28,
+    job: {
+      title: "Marketing Intern",
+      department: "Marketing",
+      exp_level: { experience_yrs: "0-1 yr", level: "Intern" },
+      listings: [{ updated_at: "2022-12-22T11:01:28.867484+00:00" }],
+    },
+    location: "Remote",
+  },
+  {
+    id: 31,
+    job: {
+      title: "UI/UX Design Intern",
+      department: "Content Creation",
+      exp_level: { experience_yrs: "0-1 yr", level: "Intern" },
+      listings: [{ updated_at: "2021-12-22T11:02:57.456455+00:00" }],
+    },
+    location: "Dehradun, Uttarakhand",
+  },
+  {
+    id: 32,
+    job: {
+      title: "UI/UX Design Intern p",
+      department: "Tech & Development",
+      exp_level: { experience_yrs: "0-1 yr", level: "Intern" },
+      listings: [{ updated_at: "2024-12-22T11:04:50.592353+00:00" }],
+    },
+    location: "Dehradun, Uttarakhand",
+  },
+
+  {
+    id: 28,
+    job: {
+      title: "Business Development Intern",
+      department: "Design",
+      exp_level: { experience_yrs: "0-1 yr", level: "Intern" },
+      listings: [{ updated_at: "2019-12-22T11:05:22.970543+00:00" }],
+    },
+    location: "Hybrid",
+  },
+];

@@ -3,6 +3,7 @@ import Fuse from "fuse.js";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import { JobClient } from "./api";
+import { datddd } from "./constant";
 
 const BASE_URL = "https://hasura.koders.in/api/rest/";
 
@@ -18,12 +19,12 @@ export const useFetchDataFromServer = () => {
           },
         });
         if (res?.data?.length) {
-          const sortedData = res?.data?.sort(
+          const sortedData = res?.data?.jobs_listing?.sort(
             (a, b) =>
               new Date(b.job.listings[0].updated_at).getTime() -
               new Date(a.job.listings[0].updated_at).getTime()
           );
-          setJobs(sortedData);
+          setJobs({ jobs_listing: sortedData });
         }
         return res;
       } catch (error) {

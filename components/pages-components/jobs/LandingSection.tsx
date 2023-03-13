@@ -6,7 +6,7 @@ import Divider from "../../Divider";
 import GradientText from "../../GradientText";
 import { jobTypes } from "../../../helper/constant";
 import { crossTeal, search, work } from "../../../assets";
-import { useCareerHook, useLandingComp } from "../../../helper/careerHooks";
+import { useLandingComp } from "../../../helper/careerHooks";
 import ButtonsGroup from "../project-page-components/ButtonsGroup";
 
 interface Props {
@@ -19,15 +19,23 @@ interface Props {
   filter: any;
   setFilter: (data: any) => void;
 }
-const LandingSection = () => {
+const LandingSection = ({
+  filter,
+  setFilter,
+  pinJobs,
+  setPinJobs,
+  setNoMatch,
+  tempData,
+  department,
+  setDepartment,
+}: Props) => {
   const {
     handleChange,
     handleToogle,
     handleClick,
     handleClickOnSearch,
     searchValue,
-    filter,
-  } = useCareerHook();
+  } = useLandingComp(tempData, setPinJobs, filter, setFilter, setNoMatch);
 
   return (
     <div className="">

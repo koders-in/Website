@@ -18,7 +18,9 @@ export const useFetchDataFromServer = () => {
             // "Accept-Encoding": "*",
           },
         });
-        if (res?.data?.length) {
+        console.log("res----------->", res);
+        if (res?.data?.jobs_listing?.length) {
+          console.log(res?.data?.jobs_listing);
           const sortedData = res?.data?.jobs_listing?.sort(
             (a, b) =>
               new Date(b.job.listings[0].updated_at).getTime() -

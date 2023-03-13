@@ -1,6 +1,7 @@
 import axios from "axios";
 import Fuse from "fuse.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
 import { JobClient } from "./api";
 
 const BASE_URL = "https://hasura.koders.in/api/rest/";
@@ -57,18 +58,70 @@ const getFilteredData = (list: Array<any>, options: any, pattern: string) => {
 };
 // -----------------------------------------------------
 
-export const useLandingComp = (
-  tempData,
-  setPinJobs,
-  filter,
-  setFilter,
-  setNoMatch,
-  handleViewMore
-) => {
+export const useCareerHook = () => {
+  const [filter, setFilter] = useState({
+    title: "",
+    isRemote: false,
+    departments: ["All"],
+  });
+  const [jobs, setJobs] = useState<any>(null);
+  const [viewMore, setViewMore] = useState<boolean>(true);
+  const [pinJobs, setPinJobs] = useState<any>();
+  const [tempData, setTempData] = useState<any>(null);
+  const [noMatch, setNoMatch] = useState<boolean>(false);
+  const [department, setDepartment] = useState<Array<string>>(["All"]);
+  const fetchData = useFetchDataFromServer();
+  const filterData = useFilter();
+
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out",
+      once: true,
+      duration: 600,
+    });
+  }, []);
+
+  useEffect(() => {
+    if (jobs === null || jobs === undefined)
+      fetchData("open-job-listings", setJobs);
+
+    if (jobs && tempData === null) {
+      if (jobs?.jobs_listing?.length / 3 > 0) {
+        setPinJobs(jobs?.jobs_listing?.slice(0, 2));
+        setTempData(jobs?.jobs_listing?.slice(0, 2));
+      } else {
+        setPinJobs(jobs?.jobs_listing);
+        setTempData(jobs?.jobs_listing);
+      }
+    }
+  }, [jobs, pinJobs]);
+
+  const handleTryAgain = async () => {
+    setPinJobs(false);
+    let res: any = await fetchData("open-job-listings", setJobs);
+    if (res?.jobs_listing?.length > 3) {
+      setPinJobs(res?.jobs_listing?.slice(0, 3));
+    } else {
+      setPinJobs(res?.jobs_listing);
+    }
+  };
+
+  const handleViewMore = () => {
+    if (!jobs?.jobs_listing?.length) return;
+    const tempArr = [...jobs?.jobs_listing];
+    setPinJobs(tempArr);
+    setTempData(tempArr);
+    setViewMore(false);
+    filterData(filter, tempArr, setPinJobs);
+  };
+  // --------Landing section helpers-------------
   const [searchValue, setSearchValue] = useState("");
   const filterAndUpdate = (filterObj) => {
-    handleViewMore();
-    let tempList: Array<any> = tempData;
+    const tempArr = [...jobs?.jobs_listing];
+    setPinJobs(tempArr);
+    setViewMore(false);
+    filterData(filter, tempArr, setPinJobs);
+    let tempList: Array<any> = tempArr;
 
     if (filterObj.isRemote && tempList?.length) {
       tempList = getFilteredData(
@@ -202,9 +255,16 @@ export const useLandingComp = (
       setPinJobs(tempData);
     } else return;
   };
-
+  // handleTryAgain, handleViewMore, jobs, pinJobs, noMatch, viewMore
   return {
-    filterAndUpdate,
+    jobs,
+    viewMore,
+    filter,
+    pinJobs,
+    noMatch,
+    handleTryAgain,
+    handleViewMore,
+    // --------Landing section helpers-------------
     handleChange,
     handleToogle,
     handleClick,
@@ -212,6 +272,25 @@ export const useLandingComp = (
     searchValue,
   };
 };
+
+// export const useLandingComp = (
+//   tempData,
+//   setPinJobs,
+//   filter,
+//   setFilter,
+//   setNoMatch,
+//   handleViewMore
+// ) => {
+
+//   return {
+//     filterAndUpdate,
+//     handleChange,
+//     handleToogle,
+//     handleClick,
+//     handleClickOnSearch,
+//     searchValue,
+//   };
+// };
 
 export const useFilter = () => {
   const filterData = (filterObj, tempData, setPinJobs) => {

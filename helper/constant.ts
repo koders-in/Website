@@ -892,7 +892,7 @@ export const datddd = [
     id: 28,
     job: {
       title: "Marketing Intern",
-      department: "Marketing",
+      department: "Tech & Development",
       exp_level: { experience_yrs: "0-1 yr", level: "Intern" },
       listings: [{ updated_at: "2022-12-22T11:01:28.867484+00:00" }],
     },
@@ -923,7 +923,7 @@ export const datddd = [
     id: 28,
     job: {
       title: "Business Development Intern",
-      department: "Design",
+      department: "Tech & Development",
       exp_level: { experience_yrs: "0-1 yr", level: "Intern" },
       listings: [{ updated_at: "2019-12-22T11:05:22.970543+00:00" }],
     },

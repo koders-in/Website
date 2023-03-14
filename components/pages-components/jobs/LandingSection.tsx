@@ -11,23 +11,23 @@ import ButtonsGroup from "../project-page-components/ButtonsGroup";
 
 interface Props {
   setPinJobs: (data: any) => void;
-  pinJobs: any;
   tempData: any;
   setNoMatch: (data: boolean) => void;
-  department: Array<string>;
-  setDepartment: (data: any) => void;
   filter: any;
   setFilter: (data: any) => void;
+  jobs: any;
+  handleViewMore: () => void;
+  viewMore: boolean;
 }
 const LandingSection = ({
   filter,
   setFilter,
-  pinJobs,
   setPinJobs,
   setNoMatch,
   tempData,
-  department,
-  setDepartment,
+  jobs,
+  handleViewMore,
+  viewMore,
 }: Props) => {
   const {
     handleChange,
@@ -35,7 +35,16 @@ const LandingSection = ({
     handleClick,
     handleClickOnSearch,
     searchValue,
-  } = useLandingComp(tempData, setPinJobs, filter, setFilter, setNoMatch);
+  } = useLandingComp(
+    tempData,
+    setPinJobs,
+    filter,
+    setFilter,
+    setNoMatch,
+    jobs,
+    handleViewMore,
+    viewMore
+  );
 
   return (
     <div className="">

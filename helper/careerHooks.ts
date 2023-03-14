@@ -1,8 +1,6 @@
 import axios from "axios";
 import Fuse from "fuse.js";
-import { useEffect, useState } from "react";
-import AOS from "aos";
-import { JobClient } from "./api";
+import { useState } from "react";
 import { datddd } from "./constant";
 
 const BASE_URL = "https://hasura.koders.in/api/rest/";
@@ -18,9 +16,7 @@ export const useFetchDataFromServer = () => {
             // "Accept-Encoding": "*",
           },
         });
-        console.log("res----------->", res);
         if (res?.data?.jobs_listing?.length) {
-          console.log(res?.data?.jobs_listing);
           const sortedData = res?.data?.jobs_listing?.sort(
             (a, b) =>
               new Date(b.job.listings[0].updated_at).getTime() -
@@ -89,11 +85,15 @@ export const useLandingComp = (
   setPinJobs,
   filter,
   setFilter,
-  setNoMatch
+  setNoMatch,
+  jobs,
+  handleViewMore,
+  viewMore
 ) => {
   const [searchValue, setSearchValue] = useState("");
   const filterAndUpdate = (filterObj) => {
-    let tempList: Array<any> = tempData;
+    if (viewMore) handleViewMore();
+    let tempList: Array<any> = jobs?.jobs_listing;
 
     if (filterObj.isRemote && tempList?.length) {
       tempList = getFilteredData(

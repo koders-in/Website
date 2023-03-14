@@ -9,7 +9,6 @@ import Image from "next/image";
 import { greenArrow } from "../assets";
 import { FadeLoader } from "react-spinners";
 import { useFetchDataFromServer, useFilter } from "../helper/careerHooks";
-import { AxiosResponse } from "axios";
 
 const Divider = dynamic(() => import("../components/Divider"), {
   suspense: true,
@@ -114,14 +113,14 @@ const Jobs = () => {
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
           <LandingSection
             {...{
-              pinJobs,
-              setPinJobs,
-              setNoMatch,
               tempData,
-              department,
-              setDepartment,
+              setPinJobs,
               filter,
               setFilter,
+              setNoMatch,
+              jobs,
+              handleViewMore,
+              viewMore,
             }}
           />
         </Suspense>

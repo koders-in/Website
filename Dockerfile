@@ -1,4 +1,6 @@
-FROM node:slim
+FROM alpine:latest
+RUN apk update
+RUN apk add --update nodejs npm
 ENV NODE_OPTIONS=--openssl-legacy-provider
 WORKDIR /app
 COPY package.json ./

@@ -43,7 +43,7 @@ import "aos/dist/aos.css";
 
 const Jobs = () => {
   useEffect(() => {
-    window.open("https://hr.koders.in/jobs");
+    window.open("https://odoo.koders.in/jobs");
   }, []);
 
   return <></>;

@@ -68,7 +68,7 @@ export const footerButtons = [
     title: "Resources",
     buttons: [
       { title: "About", route: "/about", target: false },
-      { title: "Jobs", route: "https://hr.koders.in/jobs", target: true, chip: "We are hiring" },
+      { title: "Jobs", route: "https://odoo.koders.in/jobs", target: true, chip: "We are hiring" },
       { title: "Collaborate", route: "/collaborate", target: false },
     ],
   },

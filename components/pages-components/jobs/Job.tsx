@@ -6,7 +6,7 @@ import ApplyModal from "./ApplyModal";
 import ThankModal from "../../ThankModal";
 import DetailsModal from "./DetailsModal";
 import { ObjectOfJob } from "../../../helper/constant";
-import { useFetchDataFromServer } from "../../../helper/careerHooks";
+// import { useFetchDataFromServer } from "../../../helper/careerHooks";
 import { experienceIcon, locationTeal, work } from "../../../assets";
 
 const Job = ({ experience, location, title, type, id }: ObjectOfJob) => {
@@ -16,22 +16,22 @@ const Job = ({ experience, location, title, type, id }: ObjectOfJob) => {
     thank: false,
   });
   const [viewDetails, setViewDetails] = useState<any>(null);
-  const fetchData = useFetchDataFromServer();
+  // const fetchData = useFetchDataFromServer();
 
   const toogleDetailModal = async () => {
     try {
       if (viewDetails === null || viewDetails === undefined) {
-        const res = await fetchData(`open-job-listings/${id}`, setViewDetails);
-        if (res?.status === 200) {
-          setShowModal((p) => {
-            return {
-              ...p,
-              viewDetails: !p.viewDetails,
-            };
-          });
-        } else {
-          window.alert("Unable to fetch the job details. Try again later.");
-        }
+        // const res = await fetchData(`open-job-listings/${id}`, setViewDetails);
+        // if (res?.status === 200) {
+        //   setShowModal((p) => {
+        //     return {
+        //       ...p,
+        //       viewDetails: !p.viewDetails,
+        //     };
+        //   });
+        // } else {
+        //   window.alert("Unable to fetch the job details. Try again later.");
+        // }
       } else {
         setShowModal((p) => {
           return {
@@ -48,17 +48,17 @@ const Job = ({ experience, location, title, type, id }: ObjectOfJob) => {
   const toogleApplyModal = async () => {
     try {
       if (viewDetails === null || viewDetails === undefined) {
-        const res = await fetchData(`open-job-listings/${id}`, setViewDetails);
-        if (res?.status === 200) {
-          setShowModal((p) => {
-            return {
-              ...p,
-              apply: !p.apply,
-            };
-          });
-        } else {
-          window.alert("Something went wrong. Try again later.");
-        }
+        // const res = await fetchData(`open-job-listings/${id}`, setViewDetails);
+        // if (res?.status === 200) {
+        //   setShowModal((p) => {
+        //     return {
+        //       ...p,
+        //       apply: !p.apply,
+        //     };
+        //   });
+        // } else {
+        //   window.alert("Something went wrong. Try again later.");
+        // }
       } else {
         setShowModal((p) => {
           return {

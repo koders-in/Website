@@ -1,5 +1,4 @@
 import {
-  benefits,
   blog1img,
   blog2img,
   blog3img,
@@ -11,23 +10,16 @@ import {
   germanGov,
   githubWhite,
   googleLogo,
-  impact,
   indianFlag,
-  instaLogo,
-  issue,
   kodersProfile,
   linkedinWhite,
-  performance,
   tealAwards,
   tealBenefits,
   tealImpact,
   tealIssue,
   tealWorkers,
   tealWorkspace,
-  twitterTeal,
   twitterWhite,
-  workers,
-  workspace,
 } from "../assets";
 
 export interface TestmonialData {

@@ -98,9 +98,9 @@ const Contact = () => {
                   window.open("https://goo.gl/maps/H91YctE1VjYX7p9J9", "_blank")
                 }
               >
-                <p className="inline sm:block">111, New Mohanpur Colony,</p>
-                <p className="inline sm:block"> Prem Nagar, Dehradun, </p>
-                <p className="inline sm:block"> Uttarakhand - 248007 </p>
+                <p className="inline sm:block"> IT-07, IT Park,</p>
+                <p className="inline sm:block"> Sahastradhara Rd, Dehradun, </p>
+                <p className="inline sm:block"> Uttarakhand - 248013 </p>
               </div>
             </div>
             <div
@@ -120,7 +120,7 @@ const Contact = () => {
                   hoverOnMob ? "text-main-lightTeal" : "text-white"
                 }`}
               >
-                0135-3504103
+                +91 7008493497
               </a>
             </div>
             <div
@@ -234,7 +234,7 @@ const Contact = () => {
             </div>
             <div className="flex  gap-5 my-8">
               <Image src={tealMobile} alt={tealMobile} width={15} height={15} />
-              <p className="text-white font-miligramText400">0135-3504103</p>
+              <p className="text-white font-miligramText400">+91 7008493497</p>
             </div>
             <div className="flex  gap-5">
               <Image

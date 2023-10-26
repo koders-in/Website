@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
         </h4>
         <ul data-aos="fade-up" className="list-decimal ml-7 sm:ml-6">
           <li className="font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
-            Phone: 0135-3504103 (available during business hours)
+            Phone: +91 7008493497 (available during business hours)
           </li>
           <li className="cursor-pointer font-miligramLight my-4 text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify">
             Email:

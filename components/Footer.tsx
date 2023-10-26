@@ -84,15 +84,15 @@ const Footer = () => {
               }
             >
               <p className="mt-1 w-fit group-hover:text-white relative inline lg:block">
-                111, New Mohanpur Colony,
+                IT-07, IT Park,
                 <AnimatedBorder />
               </p>
               <p className="mt-1 w-fit group-hover:text-white relative inline lg:block">
-                Prem Nagar, Dehradun,
+                Sahastradhara Rd, Dehradun,
                 <AnimatedBorder />
               </p>
               <p className="mt-1 w-fit group-hover:text-white relative inline lg:block">
-                Uttarakhand - 248007
+                Uttarakhand - 248013
                 <AnimatedBorder />
               </p>
             </div>
@@ -111,7 +111,7 @@ const Footer = () => {
               href="tel:01353504103"
               className={`group relative text-main-light_white m-0 ml-1 text-[0.9rem] sm:text-[1rem] mt-[4px] hover:text-white`}
             >
-              0135-3504103
+              +91 7008493497
               <AnimatedBorder />
             </a>
           </div>

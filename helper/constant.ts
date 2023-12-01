@@ -1,4 +1,5 @@
 import {
+  aloktomar,
   blog1img,
   blog2img,
   blog3img,
@@ -40,6 +41,12 @@ export const testmonialLogo: Array<TestmonialData> = [
     description:
       "“Very good team. Not only from a technical perspective but also from the human perspective. Helped us a lot even in difficult situations!”",
     title: "Lars Behrendt",
+  },
+  {
+    logo: aloktomar,
+    description:
+      "“Impressed by Koders, a stellar software development company from Dehradun, reaching 18+ countries. Their dedication to high-quality applications and enthusiastic work ethic is commendable. I highly recommend Koders for reliable and skilled software development. Keep up the excellent work!”",
+    title: "Alok Tomar",
   },
   {
     logo: camelJuno,

@@ -1,7 +1,6 @@
 const puppeteer = require("puppeteer");
 
-
- const sleep = (time: number) => {
+const sleep = (time: number) => {
   return new Promise((resolve) => {
     setTimeout(resolve, time);
   });
@@ -30,48 +29,53 @@ async function scrollPage(page, scrollContainer) {
 }
 
 async function getReviewsFromPage(page) {
- try {
-  const reviews = await page.evaluate(() => {
-    return Array.from(document.querySelectorAll(".jftiEf")).map((el: any) => {
-      return {
-        user: {
-          name: el.querySelector(".d4r55")?.textContent.trim(),
-          link: el.querySelector(".WNxzHc a")?.getAttribute("href"),
-          thumbnail: el.querySelector(".NBa7we")?.getAttribute("src"),
-          localGuide:
-            el.querySelector(".RfnDt span:first-child")?.style.display ===
-            "none"
-              ? undefined
-              : true,
-          reviews: parseInt(
-            el
-              .querySelector(".RfnDt span:last-child")
-              ?.textContent.replace("·", "")
+  try {
+    const reviews = await page.evaluate(() => {
+      return Array.from(document.querySelectorAll(".jftiEf")).map((el: any) => {
+        return {
+          user: {
+            name: el.querySelector(".d4r55")?.textContent.trim(),
+            link: el.querySelector(".WNxzHc a")?.getAttribute("href"),
+            thumbnail: el.querySelector(".NBa7we")?.getAttribute("src"),
+            localGuide:
+              el.querySelector(".RfnDt span:first-child")?.style.display ===
+              "none"
+                ? undefined
+                : true,
+            reviews: parseInt(
+              el
+                .querySelector(".RfnDt span:last-child")
+                ?.textContent.replace("·", "")
+            ),
+          },
+          rating: parseFloat(
+            el.querySelector(".kvMYJc")?.getAttribute("aria-label")
           ),
-        },
-        rating: parseFloat(
-          el.querySelector(".kvMYJc")?.getAttribute("aria-label")
-        ),
-        date: el.querySelector(".rsqaWe")?.textContent.trim(),
-        snippet: el.querySelector(".MyEned")?.textContent.trim(),
-        likes: parseFloat(
-          el.querySelector(".GBkF3d:nth-child(2)")?.getAttribute("aria-label")
-        ),
-        images: Array.from(el.querySelectorAll(".KtCyie button")).length
-          ? Array.from(el.querySelectorAll(".KtCyie button")).map((el: any) => {
-              return {
-                thumbnail: getComputedStyle(el).backgroundImage.slice(5, -2),
-              };
-            })
-          : undefined,
-      };
+          date: el.querySelector(".rsqaWe")?.textContent.trim(),
+          snippet: el.querySelector(".MyEned")?.textContent.trim(),
+          likes: parseFloat(
+            el.querySelector(".GBkF3d:nth-child(2)")?.getAttribute("aria-label")
+          ),
+          images: Array.from(el.querySelectorAll(".KtCyie button")).length
+            ? Array.from(el.querySelectorAll(".KtCyie button")).map(
+                (el: any) => {
+                  return {
+                    thumbnail: getComputedStyle(el).backgroundImage.slice(
+                      5,
+                      -2
+                    ),
+                  };
+                }
+              )
+            : undefined,
+        };
+      });
     });
-  return reviews;
-  });
- } catch (error) {
-  console.log("error",error)
-  return null;
- }
+    return reviews;
+  } catch (error) {
+    console.log("error", error);
+    return null;
+  }
 }
 
 async function fillPlaceInfo(page) {
@@ -98,23 +102,23 @@ async function getPageUrl(page) {
   try {
     return await page.evaluate(async () => {
       const urls = [];
-      const tempArr:any =  document.querySelectorAll(".GBkF3d");
+      const tempArr: any = document.querySelectorAll(".GBkF3d");
       for (let i = 0; i < tempArr.length; i++) {
         if (i % 2 !== 0) {
           tempArr[i].click();
           await new Promise((resolve) => {
             setTimeout(resolve, 2000);
           });
-          const tempVar:any = document.querySelectorAll('.vrsrZe')[0];
+          const tempVar: any = document.querySelectorAll(".vrsrZe")[0];
           urls.push(tempVar.value);
-          const tempVar1:any = document.querySelectorAll('.AmPKde')[0];
+          const tempVar1: any = document.querySelectorAll(".AmPKde")[0];
           tempVar1.click();
         }
       }
       return urls;
     });
   } catch (error) {
-   console.log(error);
+    console.log(error);
   }
 }
 
@@ -159,36 +163,37 @@ async function getLocalPlaceReviews() {
     await page.click(".HHrUdb.fontTitleSmall.rqjGif");
     await page.waitForTimeout(2000);
     await page.waitForSelector(".m6QErb.DxyBCb.kA9KIf.dS8AEf ");
-    console.log("before scroll-----")
     await scrollPage(
       page,
       ".w6VYqd > .tTVLSc > .k7jAl > .e07Vkf > .aIFcqe > .m6QErb > .m6QErb"
     );
     let reviews = await getReviewsFromPage(page);
     const url = await getPageUrl(page);
-    if(!reviews?.length) return;
-    reviews = reviews?.map((item, i) => {
-      if (i < url?.length)
-        return {
-          ...item,
-          user: {
-            ...item.user,
-            redirectTo: url[i]
-          }
-        };
-      else return {
-        ...item,
-        user: {
-          ...item.user,
-          redirectTo: item?.user?.link
-        }
-      };
-    })
-
     await browser.close();
+    if (reviews?.length) {
+      reviews = reviews?.map((item, i) => {
+        if (i < url?.length)
+          return {
+            ...item,
+            user: {
+              ...item.user,
+              redirectTo: url[i],
+            },
+          };
+        else
+          return {
+            ...item,
+            user: {
+              ...item.user,
+              redirectTo: item?.user?.link,
+            },
+          };
+      });
+    }else reviews = [];
     return { placeInfo: {}, reviews };
   } catch (error) {
     console.warn(error);
+    return { placeInfo: {}, reviews:[] };
   }
 }
 

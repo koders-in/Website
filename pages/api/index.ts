@@ -40,7 +40,7 @@ const handler = async (
   if (req.method.toLowerCase() === "get") {
     const isMemorizesReviews = await readFromFile();
     if (req.headers.home) {
-      if (isMemorizesReviews === null) startInterval();
+      if (isMemorizesReviews === null)setTimeout(startInterval,20*1000)
     }
     if (
       isMemorizesReviews === null ||
@@ -128,6 +128,7 @@ const writeInFile = (data) => {
         resolve(true);
       });
     } catch (error) {
+      console.log(error)
       resolve(false);
     }
   });

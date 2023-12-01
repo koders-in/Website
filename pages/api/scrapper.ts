@@ -30,6 +30,7 @@ async function scrollPage(page, scrollContainer) {
 }
 
 async function getReviewsFromPage(page) {
+ try {
   const reviews = await page.evaluate(() => {
     return Array.from(document.querySelectorAll(".jftiEf")).map((el: any) => {
       return {
@@ -65,8 +66,12 @@ async function getReviewsFromPage(page) {
           : undefined,
       };
     });
-  });
   return reviews;
+  });
+ } catch (error) {
+  console.log("error",error)
+  return null;
+ }
 }
 
 async function fillPlaceInfo(page) {
@@ -115,7 +120,7 @@ async function getPageUrl(page) {
 
 async function getLocalPlaceReviews() {
   const commonProps = {
-    headless: true,
+    headless: false,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   };
 
@@ -126,14 +131,14 @@ async function getLocalPlaceReviews() {
       if (process.platform === "darwin") {
         browser = await puppeteer.launch({
           ...commonProps,
-          executablePath:
-            "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+          // executablePath:
+          //   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
         });
       } else {
         browser = await puppeteer.launch({
           ...commonProps,
-          executablePath:
-            "node_modules/chromium/lib/chromium/chrome-win/chrome.exe",
+          // executablePath:
+          //   "node_modules/chromium/lib/chromium/chrome-win/chrome.exe",
         });
       }
     } else {
@@ -148,19 +153,21 @@ async function getLocalPlaceReviews() {
 
     await page.setDefaultNavigationTimeout(60000);
     await page.goto(placeUrl);
-    await page.waitForSelector(".DUwDvf");
+    await page.waitForSelector(".w6VYqd");
 
     // const placeInfo = await fillPlaceInfo(page);
-    await page.click(".F7nice");
+    await page.click(".HHrUdb.fontTitleSmall.rqjGif");
     await page.waitForTimeout(2000);
-    await page.waitForSelector(".W1neJ");
+    await page.waitForSelector(".m6QErb.DxyBCb.kA9KIf.dS8AEf ");
+    console.log("before scroll-----")
     await scrollPage(
       page,
       ".w6VYqd > .tTVLSc > .k7jAl > .e07Vkf > .aIFcqe > .m6QErb > .m6QErb"
     );
     let reviews = await getReviewsFromPage(page);
     const url = await getPageUrl(page);
-    reviews = reviews.map((item, i) => {
+    if(!reviews?.length) return;
+    reviews = reviews?.map((item, i) => {
       if (i < url?.length)
         return {
           ...item,

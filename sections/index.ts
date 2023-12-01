@@ -1,4 +1,5 @@
 export { default as Hero } from "./Hero";
+export { default as Mentor } from "./Mentor";
 export { default as Pricing } from "./Pricing";
 export { default as Clients } from "./Clients";
 export { default as WhyKoders } from "./WhyKoders";

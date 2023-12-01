@@ -96,6 +96,11 @@ import blog3img from "../public/images/benefits-of-automating.jpg";
 import blog4img from "../public/images/developing-high-quality-software.jpg";
 import blog5img from "../public/images/partnering-with-a-software-company.jpg";
 import mostPopular from "../public/images/mostPopular.svg";
+import aloktomar from "../public/images/aloktomar.svg";
+import lnk from "../public/images/in.svg";
+import bgQuote from "../public/images/bg-quots.svg";
+
+
 
 // Assets for technologies components
 
@@ -297,4 +302,7 @@ export {
   blog4img,
   blog5img,
   mostPopular,
+  aloktomar,
+  lnk,
+  bgQuote
 };

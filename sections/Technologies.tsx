@@ -25,6 +25,7 @@ const Technologies = () => {
     if (typeof window !== "undefined" && window?.screen) {
       const combInLine = Math.floor(window?.screen?.width / 70) + 2;
       const rowsOfComb = Math.floor(window?.screen?.height / 80) + 2;
+      console.log(combInLine, rowsOfComb);
       for (let i = 0; i < rowsOfComb; i++) {
         for (let j = 0; j <= combInLine; j++) {
           if (tempArr[i]?.length) {

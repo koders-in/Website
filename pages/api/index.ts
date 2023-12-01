@@ -38,18 +38,20 @@ const handler = async (
   res: NextApiResponse
 ): Promise<void> => {
   if (req.method.toLowerCase() === "get") {
-    const isMemorizesReviews = await readFromFile();
-    if (req.headers.home) {
-      if (isMemorizesReviews === null)setTimeout(startInterval,20*1000)
-    }
-    if (
-      isMemorizesReviews === null ||
-      Object.keys(isMemorizesReviews).length < 2
-    ) {
-      const reviewList = await getReview();
-      writeInFile(reviewList);
-      res.status(201).json(reviewList);
-    } else res.status(201).json(isMemorizesReviews);
+    let isMemorizesReviews = await readFromFile();
+    if(!isMemorizesReviews){ isMemorizesReviews=[];}2
+    res.status(201).json(isMemorizesReviews)
+    // if (req.headers.home) {
+    //   if (isMemorizesReviews === null)setTimeout(startInterval,20*1000)
+    // }
+    // if (
+    //   isMemorizesReviews === null ||
+    //   Object.keys(isMemorizesReviews).length < 2
+    // ) {
+    //   const reviewList = await getReview();
+    //   writeInFile(reviewList);
+    //   res.status(201).json(reviewList);
+    // } else res.status(201).json(isMemorizesReviews);
   } else {
     let storage=null;
     try {
@@ -163,3 +165,5 @@ const startInterval = async () => {
     }, 43200000);
   }
 };
+
+startInterval();

@@ -30,7 +30,7 @@ const Mentor = () => {
         <GradientText
           aos="slide-right"
           className="w-[90%]  leading-none mb-3 md:mb-0 md:leading-normal mx-auto sm:w-fit text-[2.2rem] sm:text-[3rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold"
-          text="Words of Appreciation for Our Mentor"
+          text="Appreciation for Our Mentor"
         />
       </Suspense>
       <p
@@ -69,12 +69,10 @@ const Mentor = () => {
             (MeitY)
           </div>
           <div className="mt-10 md:mt-16 text-center md:text-left text-white font-miligramLight leading-6 text-[1rem] sm:text-[1.2rem] xl:w-[90%] relative">
-            Koders is a software development company that provides
-            Infrastructure for High Quality Applications. Their mission is to
-            help businesses, especially in the Sneakers and E-commerce
-            industries, reach new heights. They foster a positive and
-            collaborative work environment where everyone's contributions are
-            valued.
+            In appreciation of Alok Tomar, our mentor, a seasoned professional
+            with 15+ years of expertise in IT projects, e-Governance, and drone
+            technology. His leadership and personal connection greatly
+            contribute to Koders' journey.
             <Image
               className="absolute top-[-40%] left-[-3%] w-28"
               alt="bgQuote"

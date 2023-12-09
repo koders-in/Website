@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import React, { useEffect, useState, Suspense } from "react";
+import React, { useEffect, Suspense } from "react";
 
-import { dataOfMapAnimation } from "../helper/constant";
-import { aim, founder, mission, quoteDown, quoteUp } from "../assets";
+import { aboutStats, dataOfMapAnimation } from "../helper/constant";
+import { aim, mission, quoteDown, quoteUp } from "../assets";
 
 const Footer = dynamic(() => import("../components/Footer"), {
   suspense: true,
@@ -26,31 +26,6 @@ const WorldMap = dynamic(
 );
 
 const about = () => {
-  const [stats, setStats] = useState([
-    {
-      stat: 4,
-      title: "Years",
-      classes: "border-main-teal border-r-2 border-b-2",
-    },
-    {
-      stat: 260,
-      title: "Projects",
-      classes: "border-main-teal md:border-r-2 border-b-2",
-    },
-    {
-      stat: 18,
-      title: "Countries",
-      classes: "border-main-teal border-b-2 border-r-2 sm:border-r-0",
-    },
-    {
-      stat: 110,
-      title: "Clients",
-      classes: "border-main-teal border-b-2 md:border-b-0 md:border-r-2",
-    },
-    { stat: 30, title: "Brands", classes: "border-main-teal border-r-2" },
-    { stat: 55, title: "Web Apps", classes: "" },
-  ]);
-
   useEffect(() => {
     window.onscroll = () => {
       const element = document?.getElementById("map");
@@ -227,7 +202,7 @@ const about = () => {
           <Divider className="h-12 sm:h-0" />
         </Suspense>
         <div className="w-[90%] justify-center mx-auto flex flex-wrap">
-          {stats.map((item, i) => {
+          {aboutStats.map((item, i) => {
             return (
               <div
                 key={i}

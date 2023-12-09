@@ -664,5 +664,12 @@ textarea:focus {
   z-index: 2;
 }
 
+/* -------about page-------- */
+
+@media screen and (min-width: 768px) {
+  .about-box-override{
+    border-right:  0 !important;
+  }
+}
 
 

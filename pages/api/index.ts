@@ -7,7 +7,6 @@ import { getReview } from "./scrapper";
 
 
 
-console.log("console on server file---------->");
 let flag = false;
 
 

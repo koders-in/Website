@@ -929,3 +929,29 @@ export const datddd = [
     location: "Hybrid",
   },
 ];
+
+
+export const aboutStats = [
+  {
+    stat: 4,
+    title: "Years",
+    classes: "border-main-teal border-r-2 border-b-2",
+  },
+  {
+    stat: 260,
+    title: "Projects",
+    classes: "border-main-teal md:border-r-2 border-b-2",
+  },
+  {
+    stat: 18,
+    title: "Countries",
+    classes: "border-main-teal border-b-2 border-r-2 sm:border-r-0 about-box-override",
+  },
+  {
+    stat: 110,
+    title: "Clients",
+    classes: "border-main-teal border-b-2 md:border-b-0 md:border-r-2",
+  },
+  { stat: 30, title: "Brands", classes: "border-main-teal border-r-2" },
+  { stat: 55, title: "Web Apps", classes: "" },
+]

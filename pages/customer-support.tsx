@@ -9,18 +9,18 @@ import { useRouter } from "next/router";
 const MAIL_TO = `mailto:info@koders.in?subject=Query&body=${""}`;
 
 const PrivacyPolicy = () => {
-  React.useEffect(() => {
-    window.scrollTo({
-      top: 0,
-    });
-  }, []);
-  React.useEffect(() => {
-    AOS.init({
-      easing: "ease-out",
-      once: true,
-      duration: 600,
-    });
-  }, []);
+  // React.useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //   });
+  // }, []);
+  // React.useEffect(() => {
+  //   AOS.init({
+  //     easing: "ease-out",
+  //     once: true,
+  //     duration: 600,
+  //   });
+  // }, []);
 
   const router = useRouter();
   const handleNavigate = (href: string) => {
@@ -54,7 +54,10 @@ const PrivacyPolicy = () => {
           software development services.
         </p>
         <Divider className="mt-8" />
-        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+        <h4
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify"
+        >
           Contact Us:
         </h4>
         <ul data-aos="fade-up" className="list-decimal ml-7 sm:ml-6">
@@ -82,7 +85,10 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
         <Divider className="mt-8" />
-        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+        <h4
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify"
+        >
           Support Hours:
         </h4>
         <p
@@ -93,7 +99,10 @@ const PrivacyPolicy = () => {
           Friday, 10 am to 7 pm IST.
         </p>
         <Divider className="mt-8" />
-        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+        <h4
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify"
+        >
           FAQ Section:
         </h4>
         <p
@@ -111,7 +120,10 @@ const PrivacyPolicy = () => {
           &nbsp;to browse through these FAQs for answers to your common queries.
         </p>
         <Divider className="mt-8" />
-        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+        <h4
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify"
+        >
           Ticketing System:
         </h4>
         <p
@@ -123,7 +135,10 @@ const PrivacyPolicy = () => {
           issues and directly get in touch with our staff members.
         </p>
         <Divider className="mt-8" />
-        <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+        <h4
+          data-aos="fade-up"
+          className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify"
+        >
           Client Server:
         </h4>
         <p

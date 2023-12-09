@@ -51,7 +51,6 @@ const Collabrate = () => {
     value: initialState,
     helper: FormikHelpers<initialState>
   ) => {
-    // -----------send data to server------------
     try {
       const res = await sendData("collaboration", {
         collaborator_email: value.email,

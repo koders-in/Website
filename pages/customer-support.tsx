@@ -9,19 +9,6 @@ import { useRouter } from "next/router";
 const MAIL_TO = `mailto:info@koders.in?subject=Query&body=${""}`;
 
 const PrivacyPolicy = () => {
-  // React.useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //   });
-  // }, []);
-  // React.useEffect(() => {
-  //   AOS.init({
-  //     easing: "ease-out",
-  //     once: true,
-  //     duration: 600,
-  //   });
-  // }, []);
-
   const router = useRouter();
   const handleNavigate = (href: string) => {
     router.push(href);

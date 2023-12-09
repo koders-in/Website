@@ -45,20 +45,19 @@ const StartProject = () => {
   const [isExpand, setIsExpand] = useState("");
 
   const sendData = useSetDataOnServer();
+  const { appContext, setAppContext }: any = useContext(AppContext);
 
   const handleExpand = (question: string) => {
     if (isExpand === question) setIsExpand("");
     else setIsExpand(question);
   };
 
-  const { appContext, setAppContext }: any = useContext(AppContext);
-
   const handleSubmitForm = async (
     value: initialState,
     helper: FormikHelpers<initialState>
   ) => {
-    setShowLoader(true);
     try {
+      setShowLoader(true);
       const res = await sendData("project-request", {
         client_company_name: value.company,
         client_email: value.email,
@@ -81,8 +80,9 @@ const StartProject = () => {
       } else {
         window.alert("Unable to record your response. Try again later.");
       }
-    } catch (error) {}
-    setShowLoader(false);
+    } catch (error) {
+      setShowLoader(false);
+    }
   };
 
   const handleClick = (item: string) => {
@@ -98,19 +98,19 @@ const StartProject = () => {
     }
   };
 
-  React.useEffect(() => {
-    window.scrollTo({
-      top: 0,
-    });
-  }, []);
+  // React.useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //   });
+  // }, []);
 
-  React.useEffect(() => {
-    AOS.init({
-      easing: "ease-out",
-      once: true,
-      duration: 600,
-    });
-  }, []);
+  // React.useEffect(() => {
+  //   AOS.init({
+  //     easing: "ease-out",
+  //     once: true,
+  //     duration: 600,
+  //   });
+  // }, []);
 
   return (
     <div className="bg-main-primary overflow-hidden relative">

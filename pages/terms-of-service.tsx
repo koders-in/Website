@@ -1,4 +1,3 @@
-import AOS from "aos";
 import React from "react";
 import Head from "next/head";
 
@@ -8,13 +7,6 @@ import { Divider, Footer, GradientText, Navbar } from "../components";
 import { termsOfServices } from "../helper/constant";
 
 const TermsOfServic = () => {
-  React.useEffect(() => {
-    AOS.init({
-      easing: "ease-out",
-      once: true,
-      duration: 600,
-    });
-  }, []);
   return (
     <div className="bg-main-primary overflow-hidden relative">
       <Head>
@@ -31,7 +23,10 @@ const TermsOfServic = () => {
         {termsOfServices.map((item, i) => (
           <React.Fragment key={i}>
             <Divider className="mt-8" />
-            <h4 className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify">
+            <h4
+              data-aos="fade-up"
+              className="font-miligramLight text-[1.2rem] sm:text-[1.5rem] mt-12 text-white w-[96%] mx-auto text-justify"
+            >
               {item.heading}
             </h4>
             <p

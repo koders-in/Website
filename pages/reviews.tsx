@@ -17,10 +17,10 @@ import { discordReviews, listOfBestReviewsUsers } from "../helper/constant";
 
 const Testmonials = () => {
   const [loading, setLoading] = useState<boolean>(false);
-
   const [allReviews, setAllReviews] = useState<Array<any>>([[], [], []]);
 
   const router = useRouter();
+
   const handleNavigate = (href: string) => {
     router.push(href);
   };

@@ -5,6 +5,13 @@ import fs from "fs";
 import path from "path";
 import { getReview } from "./scrapper";
 
+
+
+console.log("console on server file---------->");
+let flag = false;
+
+
+
 function runMiddleware(
   req: NextApiRequest & { [key: string]: any },
   res: NextApiResponse,
@@ -38,20 +45,23 @@ const handler = async (
   res: NextApiResponse
 ): Promise<void> => {
   if (req.method.toLowerCase() === "get") {
-    let isMemorizesReviews = await readFromFile();
-    if(!isMemorizesReviews){ isMemorizesReviews=[];}2
-    res.status(201).json(isMemorizesReviews)
-    // if (req.headers.home) {
-    //   if (isMemorizesReviews === null)setTimeout(startInterval,20*1000)
-    // }
-    // if (
-    //   isMemorizesReviews === null ||
-    //   Object.keys(isMemorizesReviews).length < 2
-    // ) {
-    //   const reviewList = await getReview();
-    //   writeInFile(reviewList);
-    //   res.status(201).json(reviewList);
-    // } else res.status(201).json(isMemorizesReviews);
+    const isMemorizesReviews = await readFromFile();
+    // console.log("main ...--------->",flag)
+    if (req.headers.home && !flag) {
+      flag = true;
+      // console.log("called...--------->",flag)
+      setTimeout(startInterval,43200000);
+    }
+    if (
+      isMemorizesReviews === null ||
+      Object.keys(isMemorizesReviews).length < 2
+    ) {
+      // console.log("no old reviews");
+      const reviewList = await getReview();
+      // console.log("reviewList-->",reviewList);
+      writeInFile(reviewList);
+      res.status(201).json(reviewList);
+    } else res.status(201).json(isMemorizesReviews);
   } else {
     let storage=null;
     try {
@@ -122,6 +132,7 @@ const handler = async (
 export default handler;
 
 const writeInFile = (data) => {
+  if(!data) return
   const filePath = path.join(__dirname, "review.json");
   return new Promise((resolve, reject) => {
     try {
@@ -156,6 +167,7 @@ const readFromFile = () => {
 };
 
 const startInterval = async () => {
+  // console.log("Interval has been started-------------->");
   await writeInFile({ jhone: "doe" });
   const res: any = await readFromFile();
   if (res?.jhone) {
@@ -166,4 +178,5 @@ const startInterval = async () => {
   }
 };
 
-startInterval();
+
+// setTimeout(startInterval,10*1000);

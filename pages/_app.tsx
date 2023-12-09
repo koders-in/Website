@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 
 import { AppContext } from "../components";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 // import { useFetchDataFromServer } from "../helper/careerHooks";
 
@@ -29,6 +29,14 @@ function MyApp({ Component, pageProps }) {
   //       });
   //   }
   // }, []);
+
+  useEffect(() => {
+    axios
+      .get("/api", { headers: { home: true } })
+      .then((data) => {})
+      .catch((e) => {});
+  }, []);
+
   return (
     <AppContext.Provider value={{ appContext, setAppContext, jobs, setJobs }}>
       <Component {...pageProps} />

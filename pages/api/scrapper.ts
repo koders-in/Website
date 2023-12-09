@@ -124,7 +124,7 @@ async function getPageUrl(page) {
 
 async function getLocalPlaceReviews() {
   const commonProps = {
-    headless: false,
+    headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   };
 
@@ -168,6 +168,7 @@ async function getLocalPlaceReviews() {
       ".w6VYqd > .tTVLSc > .k7jAl > .e07Vkf > .aIFcqe > .m6QErb > .m6QErb"
     );
     let reviews = await getReviewsFromPage(page);
+    console.log("reviews--->",reviews?.length)
     const url = await getPageUrl(page);
     await browser.close();
     if (reviews?.length) {

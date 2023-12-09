@@ -45,7 +45,7 @@ export const testmonialLogo: Array<TestmonialData> = [
   {
     logo: aloktomar,
     description:
-      "“Impressed by Koders, a stellar software development company from Dehradun, reaching 18+ countries. Their dedication to high-quality applications and enthusiastic work ethic is commendable. I highly recommend Koders for reliable and skilled software development. Keep up the excellent work!”",
+      "“Koders dedication to high-quality applications and enthusiastic work ethic is commendable. I highly recommend Koders for reliable and skilled software development. Keep up the excellent work!”",
     title: "Alok Tomar",
   },
   {
@@ -615,7 +615,7 @@ export const arrayOfBaseID = [
 
 export const listOfPrefferedUserReviewList: Array<string> = [
   "Bolt",
-  "asudev Tyagi",
+  "Basudev Tyagi",
   "Rahul Chamoli",
   "Nikhil Yadav",
 ];

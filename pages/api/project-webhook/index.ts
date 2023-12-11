@@ -83,8 +83,8 @@ const handler = async (
       ],
     };
 
-    if (process.env.PROJECT_REQUEST) {
-      const response =  await axios.post(process.env.PROJECT_REQUEST, embed);
+    if (process.env.WEBHOOK_URL) {
+      const response =  await axios.post(process.env.WEBHOOK_URL, embed);
       if(response.status === 204) {
         res.status(200).json({
           message: `Successfully sent`,

@@ -15,6 +15,7 @@ const JobAlert = () => {
     try {
       const isValid = await isEmailValid(email);
       if (isValid) {
+        // TODO = > update code here
         const res = await getJobAlert("job-alert", { email });
         if (res.status === 200) {
           window.alert("Your response has been recorded.");

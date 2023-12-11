@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { handleSlider } from ".";
-import { JobClient } from "./api";
+import { axiosClient } from "./api";
 
 export const useUpdateSlide = () => {
   const [translatePosition, setTranslatePosition] = useState([
@@ -90,7 +90,7 @@ export const useRedirectToPricing = () => {
 export const usePostRequestToServer = () => {
   const setData = async (endpoint: string, payload: Object) => {
     try {
-      return await JobClient.post(endpoint, { ...payload });
+      return await axiosClient.post(endpoint, { ...payload });
     } catch (error) {
       return null;
     }

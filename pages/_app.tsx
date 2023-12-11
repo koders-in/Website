@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
   //   if (!isRender.current) {
   //     isRender.current = true;
   //     if (jobs === null || jobs === undefined)
+  // TODO=> need to update code here
   //       fetchData("open-job-listings", setJobs);
 
   //     axios

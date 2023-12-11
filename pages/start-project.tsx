@@ -1,4 +1,3 @@
-import AOS from "aos";
 import Head from "next/head";
 import { FormikHelpers } from "formik";
 import React, { useContext, useState } from "react";
@@ -17,7 +16,7 @@ import {
 } from "../components";
 import { sendClientDetails } from "../helper/webhook";
 import { faq, typeOfProjects } from "../helper/constant";
-import { useSetDataOnServer } from "../helper/careerHooks";
+// import { useSetDataOnServer } from "../helper/careerHooks";
 
 export interface FormState {
   technologies: Array<string>;
@@ -43,10 +42,8 @@ const StartProject = () => {
     "UI/UX",
   ]);
   const [isExpand, setIsExpand] = useState("");
-
-  const sendData = useSetDataOnServer();
+  // const sendData = useSetDataOnServer();
   const { appContext, setAppContext }: any = useContext(AppContext);
-
   const handleExpand = (question: string) => {
     if (isExpand === question) setIsExpand("");
     else setIsExpand(question);
@@ -58,28 +55,36 @@ const StartProject = () => {
   ) => {
     try {
       setShowLoader(true);
-      const res = await sendData("project-request", {
-        client_company_name: value.company,
-        client_email: value.email,
-        project_estimated_budget: value.budget,
-        project_estimated_timeline: value.timeline,
-        client_firstname: value.fName,
-        client_lastname: value.lName,
-        client_reference: value.hearAboutUs,
-        client_company_jobrole: value.role,
-        client_phone_number: value.mobile,
-        project_description: value.aboutProject,
-        project_tags: technologies,
-        pricing_plan: value.pricingPlan,
-      });
-      setShowLoader(false);
-      if (res.status === 200) {
-        window.alert("Your response has been recorded.");
+      const res = await sendClientDetails({ ...value, technologies });
+      if (res) {
         helper.resetForm();
-        await sendClientDetails({ ...value, technologies });
+        window.alert("Your response has been recorded.");
       } else {
         window.alert("Unable to record your response. Try again later.");
       }
+      setShowLoader(false);
+      // TODO=> need to update code here
+      // const res = await sendData("project-request", {
+      //   client_company_name: value.company,
+      //   client_email: value.email,
+      //   project_estimated_budget: value.budget,
+      //   project_estimated_timeline: value.timeline,
+      //   client_firstname: value.fName,
+      //   client_lastname: value.lName,
+      //   client_reference: value.hearAboutUs,
+      //   client_company_jobrole: value.role,
+      //   client_phone_number: value.mobile,
+      //   project_description: value.aboutProject,
+      //   project_tags: technologies,
+      //   pricing_plan: value.pricingPlan,
+      // });
+      // setShowLoader(false);
+      // if (res.status === 200) {
+      //   window.alert("Your response has been recorded.");
+      //   helper.resetForm();
+      // } else {
+      //   window.alert("Unable to record your response. Try again later.");
+      // }
     } catch (error) {
       setShowLoader(false);
     }
@@ -97,20 +102,6 @@ const StartProject = () => {
       setTechnologies(["Other"]);
     }
   };
-
-  // React.useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //   });
-  // }, []);
-
-  // React.useEffect(() => {
-  //   AOS.init({
-  //     easing: "ease-out",
-  //     once: true,
-  //     duration: 600,
-  //   });
-  // }, []);
 
   return (
     <div className="bg-main-primary overflow-hidden relative">

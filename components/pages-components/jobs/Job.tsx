@@ -21,6 +21,7 @@ const Job = ({ experience, location, title, type, id }: ObjectOfJob) => {
   const toogleDetailModal = async () => {
     try {
       if (viewDetails === null || viewDetails === undefined) {
+        // TODO=> need to update code here
         // const res = await fetchData(`open-job-listings/${id}`, setViewDetails);
         // if (res?.status === 200) {
         //   setShowModal((p) => {
@@ -48,6 +49,7 @@ const Job = ({ experience, location, title, type, id }: ObjectOfJob) => {
   const toogleApplyModal = async () => {
     try {
       if (viewDetails === null || viewDetails === undefined) {
+        // TODO=> need to update code here
         // const res = await fetchData(`open-job-listings/${id}`, setViewDetails);
         // if (res?.status === 200) {
         //   setShowModal((p) => {

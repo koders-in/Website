@@ -52,25 +52,34 @@ const Collabrate = () => {
     helper: FormikHelpers<initialState>
   ) => {
     try {
-      const res = await sendData("collaboration", {
-        collaborator_email: value.email,
-        collaborator_phone_number: value.mobile,
-        collaborator_name: value.name,
-        company_website: value.websiteURL,
-        company_size: value.companySize,
-        company_name: value.company,
-        company_location: value.location,
-        collaborator_company_jobrole: value.jobTitle,
-        collab_seeks: value.questionOne,
-        collab_brings: value.questionTwo,
-        collab_reference: value.hearAboutUS,
-      });
-      if (res.status === 200) {
+      const res = await sendCollaboratorDetails(value);
+      if (res) {
+        helper.resetForm();
         window.alert("Your response has been recorded.");
-        sendCollaboratorDetails(value);
       } else {
         window.alert("Unable to record your response. Try again later.");
       }
+
+      // TODO => need to update code here
+      // const res = await sendData("collaboration", {
+      //   collaborator_email: value.email,
+      //   collaborator_phone_number: value.mobile,
+      //   collaborator_name: value.name,
+      //   company_website: value.websiteURL,
+      //   company_size: value.companySize,
+      //   company_name: value.company,
+      //   company_location: value.location,
+      //   collaborator_company_jobrole: value.jobTitle,
+      //   collab_seeks: value.questionOne,
+      //   collab_brings: value.questionTwo,
+      //   collab_reference: value.hearAboutUS,
+      // });
+      // if (res.status === 200) {
+      //   window.alert("Your response has been recorded.");
+      //   sendCollaboratorDetails(value);
+      // } else {
+      //   window.alert("Unable to record your response. Try again later.");
+      // }
     } catch (error) {
       window.alert("Unable to record your response. Try again later.");
     }

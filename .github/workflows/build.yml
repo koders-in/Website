@@ -1,69 +1,29 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   Deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js 16.13.2
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16.13.2
-    - name: Login to Docker Hub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKER_HUB_USERNAME }}
-        password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.13.2
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
 
-    - name: Set up Docker Buildx
-      id: buildx
-      uses: docker/setup-buildx-action@v2
-
-    - name: Build and push
-      id: docker_build
-      uses: docker/build-push-action@v3
-      with:
-        context: ./
-        file: ./Dockerfile
-        push: true
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v5:latest
-        secrets: |
-          COLLABORATE=${{ secrets.NEXT_PUBLIC_COLLABORATE }} 
-          JOB=${{ secrets.NEXT_PUBLIC_JOB }} 
-          PROJECT_REQUEST=${{ secrets.NEXT_PUBLIC_PROJECT_REQUEST }}
-          M_USERNAME=${{ secrets.M_USERNAME }}
-          M_PASSWORD=${{ secrets.M_PASSWORD }}
-          XH_API_KEY=${{ secrets.XH_API_KEY }}
-
-
-    - name: Image digest
-      run: echo ${{ steps.docker_build.outputs.digest }}
-  
-    - name: Cleaning remote docker image and container
-      uses: fifsky/ssh-action@master
-      continue-on-error: true
-      with:
-        command: |
-          docker rm $(docker stop $(docker ps -a -q --filter ancestor=${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v5 --format="{{.ID}}"))  && 
-          docker rmi ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v5
-        host: ${{ secrets.HOST }}
-        user: ${{ secrets.USERNAME }}
-        pass: ${{ secrets.PASSWORD}}
-        port: ${{ secrets.PORT}}
-
-    - name: Building and deploying new website
-      uses: fifsky/ssh-action@master
-      with:
-        command: |
-          docker run -d -p 9440:3000 --name koders-website-v5 -e COLLABORATE=${{ secrets.NEXT_PUBLIC_COLLABORATE }} -e JOB=${{ secrets.NEXT_PUBLIC_JOB }} -e PROJECT_REQUEST=${{ secrets.NEXT_PUBLIC_PROJECT_REQUEST }} -e M_USERNAME=${{ secrets.M_USERNAME }} -e M_PASSWORD=${{ secrets.M_PASSWORD }} -e XH_API_KEY=${{ secrets.XH_API_KEY }} ${{ secrets.DOCKER_HUB_USERNAME }}/koders-website-v5
-        host: ${{ secrets.HOST }}
-        user: ${{ secrets.USERNAME }}
-        pass: ${{ secrets.PASSWORD}}
-        port: ${{ secrets.PORT}}
+      - name: Building and deploying new website
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            cd /root/website
+            git pull 
+            docker build . -t koders-website-v5
+            docker rm $(docker stop $(docker ps -a -q --filter ancestor=koders-website-v5 --format="{{.ID}}"))
+            docker rmi koders-website-v5
+            docker run -d -p 9440:3000 --name koders-website-v5 -e ${{ secrets.WEBHOOK_URL }} koders-website-v5
+          host: ${{ secrets.REMOTE_HOST }}
+          user: ${{ secrets.REMOTE_USER }}
+          pass: ${{ secrets.REMOTE_PASSWORD }}

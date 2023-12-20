@@ -20,9 +20,9 @@ jobs:
           command: |
             cd /root/website
             git pull 
-            docker build . -t koders-website-v5
             docker rm $(docker stop $(docker ps -a -q --filter ancestor=koders-website-v5 --format="{{.ID}}"))
             docker rmi koders-website-v5
+            docker build . -t koders-website-v5
             docker run -d -p 8081:3000 --name koders-website-v5 -e ${{ secrets.WEBHOOK_URL }} koders-website-v5
           host: ${{ secrets.REMOTE_HOST }}
           user: ${{ secrets.REMOTE_USER }}

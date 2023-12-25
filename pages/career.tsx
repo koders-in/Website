@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import "aos/dist/aos.css";
 
 const Jobs = () => {
+  const router = useRouter();
+
   useEffect(() => {
-    window.open("https://odoo.koders.in/jobs");
+    window.open("https://odoo.koders.in/jobs", "_self");
   }, []);
   return <></>;
 };

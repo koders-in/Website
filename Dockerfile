@@ -1,18 +1,16 @@
-FROM node:14 as builder
+FROM node:14-slim as builder
 
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm install
-
 COPY . .
 
+RUN npm ci --force
 RUN npm run build
+RUN npm run export
 
-FROM nginx:alpine
+FROM nginx:alpine-slim
 
-COPY --from=builder /app /usr/share/nginx/html
+COPY --from=builder /app/out/ /usr/share/nginx/html
 
 EXPOSE 80
 

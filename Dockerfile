@@ -1,11 +1,17 @@
-FROM alpine:latest
-RUN apk update
-RUN apk add --update nodejs npm
-ENV NODE_OPTIONS=--openssl-legacy-provider
+FROM node:14-slim as builder
+
 WORKDIR /app
-COPY package.json ./
-COPY package-lock.json ./
+
 COPY . .
+
 RUN npm ci --force
 RUN npm run build
-CMD ["npm", "start"]
+RUN npm run export
+
+FROM nginx:alpine-slim
+
+COPY --from=builder /app/out/ /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

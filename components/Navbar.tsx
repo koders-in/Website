@@ -66,14 +66,14 @@ const Navbar = () => {
             hoverLogo={discordWhite}
             text="Join Discord"
             logoStyle="h-5 xxl:h-[19px]"
-            className="hidden sm:flex text-[0.8rem] xxl:text-[1rem] font-miligramMedium mr-6 border-[1px] bg-main-blueOpt-200 border-main-blueOpt-1000 text-main-blueOpt-1000 px-5 py-[0.55rem]  rounded-lg hover:bg-main-blueOpt-1000 hover:text-white"
+            className="hidden sm:flex text-[0.8rem] xxl:text-[1rem] font-miligramMedium mr-6 border-[1px] bg-main-blueOpt-200 border-main-blueOpt-1000 text-main-blueOpt-1000 px-5 py-[0.55rem]  rounded-lg hover:bg-main-blueOpt-1000 hover:text-white transition ease-out duration-500"
           />
           <Button
             OnClick={() => {
               handleNavigate("/start-project");
             }}
             text="Get Started"
-            className="font-miligramMedium text-[0.8rem] xxl:text-[1rem] bg-main-greenOpt-200 border-[1px] border-main-lightTeal text-main-lightTeal px-4 py-[0.4rem] sm:py-[0.55rem] sm:px-8 rounded-lg hover:bg-main-lightTeal hover:text-white"
+            className="font-miligramMedium text-[0.8rem] xxl:text-[1rem] bg-main-greenOpt-200 border-[1px] border-main-lightTeal text-main-lightTeal px-4 py-[0.4rem] sm:py-[0.55rem] sm:px-8 rounded-lg hover:bg-main-lightTeal hover:text-white transition ease-out duration-500"
           />
         </div>
       </div>

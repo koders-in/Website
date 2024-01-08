@@ -14,14 +14,14 @@ const Cancellation = () => (
     <div className="py-28 w-[95%] sm:w-[90%] mx-auto">
       <GradientText
         aos="fade-up"
-        className="w-[100%] mx-auto sm:w-fit text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold mt-9"
+        className="w-[100%] mx-auto sm:w-fit text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold mt-9 aos-animate"
         text="Cancellation and Refund Policy"
       />
       <Divider className="mt-8" />
       <div className="px-2 md:px-0 whitespace-normal">
         <p
           data-aos="fade-up"
-          className="font-miligramLight text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify"
+          className="font-miligramLight text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify aos-animate"
         >
           All the services provided by Koders including Web Design, Web
           Development, Mobile Application Development, Software Development,
@@ -51,7 +51,7 @@ const Cancellation = () => (
         </p>
         <ul
           data-aos="fade-up"
-          className="font-miligramLight text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify list-disc pl-4 md:pl-10 mt-3"
+          className="font-miligramLight text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify list-disc pl-4 md:pl-10 mt-3 aos-animate"
         >
           <li>
             Koders will refund you, in full, if a project has not started within
@@ -89,7 +89,7 @@ const Cancellation = () => (
         </ul>
         <p
           data-aos="fade-up"
-          className="font-miligramLight text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify mt-10"
+          className="font-miligramLight text-[1.05rem] text-main-white-700 w-[96%] mx-auto text-justify mt-10 aos-animate"
         >
           We are eager to collaborate with you, and once we receive confirmation
           from you, we immediately take action and send your work in progress.

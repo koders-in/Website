@@ -111,7 +111,7 @@ const StartProject = () => {
       <Navbar />
       <div
         data-aos="fade-up"
-        className="py-20 sm:py-28 w-[90%] md:w-[85%] mx-auto"
+        className="py-20 sm:py-28 w-[90%] md:w-[85%] mx-auto aos-animate"
       >
         <GradientText
           className="text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] w-fit mx-auto text-center mt-9 bg-gradient-to-r from-white to-main-teal font-miligrambold"
@@ -138,10 +138,10 @@ const StartProject = () => {
         <Divider className="mt-20" />
         <GradientText
           aos="fade-up"
-          className="text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem]  w-fit mx-auto text-center bg-gradient-to-r from-white to-main-teal font-miligrambold pt-"
+          className="text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem]  w-fit mx-auto text-center bg-gradient-to-r from-white to-main-teal font-miligrambold aos-animate"
           text="Frequently Asked Questions"
         />
-        <Divider className="mt-8 xxl:mt-16 xxl:pt-3" />
+        <Divider className="mt-8 xxl:mt-16 xxl:pt-3 aos-animate" />
         {faq.map((item, i) => (
           <Faq
             answer={item.answer}

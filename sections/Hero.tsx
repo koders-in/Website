@@ -22,11 +22,13 @@ const Hero = () => {
         src={homeBg}
         alt=""
         className="absolute top-0 left-0 w-[70%] md:w-[30%]"
+        priority
       />
       <Image
         src={homeBgBottom}
         alt=""
         className="absolute -bottom-10 right-0 w-[70%] md:w-[28%]"
+        priority
       />
       <h1 className="leading-[38px] sm:leading-[60px] text-[1.5rem] xsm:text-[2.5rem] sm:text-[4rem] text-white text-center m-0 p-0 font-medium font-miligrambold">
         Infrastructure for

@@ -26,14 +26,15 @@
     "next-optimized-images": "^2.6.2",
     "npm": "^8.19.3",
     "puppeteer": "^19.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.3.0-canary-1d5667a12-20240102",
+    "react-dom": "^18.3.0-canary-1d5667a12-20240102",
     "react-modal": "^3.16.1",
     "react-spinners": "^0.13.6",
     "uuid": "^9.0.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/formidable": "^2.0.5",
     "@types/multer": "^1.4.7",
     "@types/node": "18.11.5",
@@ -43,6 +44,7 @@
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
     "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.1"
+    "tailwindcss": "^3.2.1",
+    "typescript": "5.3.3"
   }
 }

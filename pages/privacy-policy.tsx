@@ -15,13 +15,13 @@ const PrivacyPolicy = () => (
     <div className="pb-10 pt-28 w-[95%] sm:w-[90%] mx-auto">
       <GradientText
         aos="fade-up"
-        className="w-[100%] mx-auto sm:w-fit text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold mt-9"
+        className="w-[100%] mx-auto sm:w-fit text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold mt-9 aos-animate"
         text="Privacy Policy"
       />
       <br />
       <div
         data-aos="fade-up"
-        className="font-miligramLight text-[1.05rem] mt-12 text-main-white-700 w-[96%] mx-auto text-justify"
+        className="font-miligramLight text-[1.05rem] mt-12 text-main-white-700 w-[96%] mx-auto text-justify aos-animate"
       >
         At Koders,, we prioritize the privacy of our customers and take steps to
         protect their personal information. We are committed to data protection

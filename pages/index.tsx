@@ -39,9 +39,9 @@ const Testmonials = dynamic(() => import("../sections/Testmonials"), {
 const WhyKoders = dynamic(() => import("../sections/WhyKoders"), {
   suspense: true,
 });
-const Mentor = dynamic(() => import("../sections/Mentor"), {
-  suspense: true,
-});
+// const Mentor = dynamic(() => import("../sections/Mentor"), {
+//   suspense: true,
+// });
 
 export default function Home() {
   React.useEffect(() => {
@@ -76,9 +76,6 @@ export default function Home() {
         </Suspense>
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
           <Testmonials />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Mentor />
         </Suspense>
         <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
           <Pricing />

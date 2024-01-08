@@ -17,21 +17,35 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+<<<<<<< HEAD
     "jsx": "preserve",
     "plugins": [
       {
         "name": "next"
       }
     ]
+=======
+    "jsx": "preserve"
+>>>>>>> f62b6c2c6dad765e736737482c6bfa6a6688891c
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
+<<<<<<< HEAD
     "**/*.tsx",
     "pages/api/scrapper.ts",
     ".next/types/**/*.ts"
   ],
+=======
+    "**/*.tsx"
+, "pages/api/scrapper.ts"  ],
+>>>>>>> f62b6c2c6dad765e736737482c6bfa6a6688891c
   "exclude": [
     "node_modules"
   ]
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f62b6c2c6dad765e736737482c6bfa6a6688891c

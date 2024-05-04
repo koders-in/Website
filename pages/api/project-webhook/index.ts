@@ -82,6 +82,12 @@ const handler = async (
         },
       ],
     };
+    if (!process.env.WEBHOOK_URL) {
+      res.status(400).json({
+        message: "Webhook URL is not configured",
+      });
+      return;
+    }
 
     if (process.env.WEBHOOK_URL) {
       const response =  await axios.post(process.env.WEBHOOK_URL, embed);

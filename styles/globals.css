@@ -1,0 +1,675 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* normal 400 */
+/* bold 700 */
+
+@font-face {
+  font-family: "MILIGRAM BOLD";
+  src: url("../assets/font/Milligram/Milligram-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MILIGRAM LIGHT";
+  src: url("../assets/font/Milligram/Milligram-Light.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MILIGRAM MEDIUM";
+  src: url("../assets/font/Milligram/Milligram-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BATTAMBANG BOLD";
+  src: url("../assets/font/Battambang/Battambang-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BATTAMBANG MEDIUM";
+  src: url("../assets/font/Battambang/Battambang-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MILIGRAM TEXT NORMAL";
+  src: url("../assets/font/Milligram/MilligramText-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MILIGRAM TEXT BOOK";
+  src: url("../assets/font/Milligram/MilligramText-Book.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MILIGRAM TEXT MEDIUM";
+  src: url("../assets/font/Milligram/MilligramText-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MILIGRAM TEXT ITALIC";
+  src: url("../assets/font/Milligram/MilligramText-Italic.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MILIGRAM TEXT BOLD";
+  src: url("../assets/font/Milligram/MilligramText-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MILIGRAM TEXT BOOK ITALIC";
+  src: url("../assets/font/Milligram/MilligramText-BookItalic.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MILIGRAM THIN";
+  src: url("../assets/font/Milligram/Milligram-Thin.ttf");
+  font-display: swap;
+}
+
+
+/***************clint component animations******************/
+.typing-animation-one {
+  animation: typing 1.2s steps(40, end) forwards;
+}
+.typing-animation-two {
+  animation: typing 1.2s steps(40, end) 1.2s forwards;
+}
+.typing-animation-three {
+  animation: typing 1.2s steps(40, end) 2.4s forwards;
+}
+.typing-animation-four {
+  animation: typing 1.2s steps(40, end) 3.6s forwards;
+}
+.typing-animation-five {
+  animation: typing 1.2s steps(40, end) 4.8s forwards;
+}
+
+@keyframes first {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25%;
+  }
+}
+@keyframes second {
+  from {
+    width: 25%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes third {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes fourth {
+  from {
+    width: 75%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes fillBg {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #00a99d;
+  }
+}
+
+@keyframes typing {
+  from {
+    /* width: 0; */
+    opacity: 0;
+    transform: translateX(-180px);
+  }
+  to {
+    /* width: 100%; */
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes blink-caret {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #00a99d;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+/* Keyframe for honey comb cell in technologies section */
+
+.combOuter {
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+.combInner {
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+
+
+@keyframes fading {
+  0% {
+    filter: invert(0);
+  }
+  50% {
+    filter: invert(0.8);
+    background-color: transparent;
+  }
+  100% {
+    filter: invert(0);
+    background-color: #00a99d;
+  }
+}
+
+/* stroke-dasharray: 10;
+stroke-dashoffset: 279;
+stroke: white;
+animation: draw-line 2s forwards;
+stroke-dashoffset: 0; */
+
+/* map css */
+#line-1 {
+  stroke-dasharray: 690;
+  stroke-dashoffset: 690;
+
+  stroke: white;
+  animation: draw-line 3s forwards;
+}
+#line-2 {
+  stroke-dasharray: 890;
+  stroke-dashoffset: 890;
+
+  stroke: white;
+  animation: draw-line 2s 1s forwards;
+}
+#line-3 {
+  stroke-dasharray: 850;
+  stroke-dashoffset: 850;
+
+  stroke: white;
+  animation: draw-line 2s 3s forwards;
+}
+#line-4 {
+  stroke-dasharray: 430;
+  stroke-dashoffset: 430;
+
+  stroke: white;
+  animation: draw-line 2s 1s forwards;
+}
+#line-5 {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+
+  stroke: white;
+  animation: draw-line 2s 4s forwards;
+}
+#line-6 {
+  stroke-dasharray: 330;
+  stroke-dashoffset: 330;
+
+  stroke: white;
+  animation: draw-line 2s 2s forwards;
+}
+#line-7 {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+
+  stroke: white;
+  animation: draw-line 2s 1s forwards;
+}
+#line-8 {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+
+  stroke: white;
+  animation: draw-line 2s 4s forwards;
+}
+#line-9 {
+  stroke-dasharray: 380;
+  stroke-dashoffset: 380;
+
+  stroke: white;
+  animation: draw-line 2s 1s forwards;
+}
+#line-10 {
+  stroke-dasharray: 380;
+  stroke-dashoffset: 380;
+
+  stroke: white;
+  animation: draw-line 2s forwards;
+}
+#line-11 {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+
+  stroke: white;
+  animation: draw-line 2s 1s forwards;
+}
+#line-12 {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+
+  stroke: white;
+  animation: draw-line 2s 4s forwards;
+}
+#line-13 {
+  stroke-dasharray: 110;
+  stroke-dashoffset: 110;
+
+  stroke: white;
+  animation: draw-line 2s 1s forwards;
+}
+#line-14 {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+
+  stroke: white;
+  animation: draw-line 2s forwards;
+}
+#line-15 {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  stroke: white;
+  animation: draw-line 2s forwards;
+}
+/* -----------thank modal sbg------------ */
+#circleID {
+  stroke-dasharray: 383;
+  stroke-dashoffset: 383;
+  stroke: #00a99d;
+  animation: draw-line 1.5s forwards;
+}
+#check {
+  stroke-dasharray: 185;
+  stroke-dashoffset: 185;
+  stroke: #00a99d;
+  transition: all 1s;
+  animation: fill-check 1.5s forwards;
+}
+/* -----------svg animation key frames----------- */
+@keyframes fill-check {
+  0% {
+    stroke-dashoffset: 185;
+    fill: none;
+  }
+  98%{
+    stroke-dashoffset: 0;
+    fill: none;
+  }
+  100% {
+    /* fill: #38D8CC; */
+    fill: #00a99d;;
+  }
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*  ----------------- */
+#location-1 {
+  fill: transparent;
+  animation: show 1s 1s forwards;
+}
+#base-1 {
+  fill: transparent;
+  animation: show-base 1s 1s forwards;
+}
+#location-2 {
+  fill: transparent;
+  animation: show 1s 2s forwards;
+}
+#base-2 {
+  fill: transparent;
+  animation: show-base 1s 2s forwards;
+}
+
+#location-3 {
+  fill: transparent;
+  animation: show 1s 5s forwards;
+}
+#base-3 {
+  fill: transparent;
+  animation: show-base 1s 5s forwards;
+}
+
+#location-4 {
+  fill: transparent;
+  animation: show 1s 2s forwards;
+}
+#base-4 {
+  fill: transparent;
+  animation: show-base 1s 2s forwards;
+}
+
+#location-5 {
+  fill: transparent;
+  animation: show 1s 1s forwards;
+}
+#base-5 {
+  fill: transparent;
+  animation: show-base 1s 1s forwards;
+}
+
+#location-6 {
+  fill: transparent;
+  animation: show 1s 2s forwards;
+}
+#base-6 {
+  fill: transparent;
+  animation: show-base 1s 2s forwards;
+}
+#location-7 {
+  fill: transparent;
+  animation: show 1s 5s forwards;
+}
+#base-7 {
+  fill: transparent;
+  animation: show-base 1s 5s forwards;
+}
+#location-8 {
+  fill: transparent;
+  animation: show 1s 2s forwards;
+}
+#base-8 {
+  fill: transparent;
+  animation: show-base 1s 2s forwards;
+}
+#location-9 {
+  fill: transparent;
+  animation: show 1s 1s forwards;
+}
+#base-9 {
+  fill: transparent;
+  animation: show-base 1s 1s forwards;
+}
+#location-10 {
+  fill: transparent;
+  animation: show 1s 4s forwards;
+}
+#base-10 {
+  fill: transparent;
+  animation: show-base 1s 4s forwards;
+}
+#location-11 {
+  fill: transparent;
+  animation: show 1s 4s forwards;
+}
+#base-11 {
+  fill: transparent;
+  animation: show-base 1s 4s forwards;
+}
+#location-12 {
+  fill: transparent;
+  animation: show 1s 2s forwards;
+}
+#base-12 {
+  fill: transparent;
+  animation: show-base 1s 2s forwards;
+}
+#location-13 {
+  fill: transparent;
+  animation: show 1s 3s forwards;
+}
+#base-13 {
+  fill: transparent;
+  animation: show-base 1s 3s forwards;
+}
+#location-14 {
+  fill: transparent;
+  animation: show 1s 2s forwards;
+}
+#base-14 {
+  fill: transparent;
+  animation: show-base 1s 2s forwards;
+}
+#location-15 {
+  fill: transparent;
+  animation: show 1s 2s forwards;
+}
+#base-15 {
+  fill: transparent;
+  animation: show-base 1s 2s forwards;
+}
+
+
+@keyframes show-base {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: transparent;
+  }
+  100% {
+    opacity: 1;
+    fill: white;
+  }
+}
+
+@keyframes show {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: transparent;
+  }
+  100% {
+    opacity: 1;
+    fill: #00a99d;
+  }
+}
+
+@keyframes moveLabelUp {
+  from {
+    left: 4px;
+    top: 20px;
+    transform: scale(1);
+  }
+  to {
+    left: -5px;
+    top: -10px;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes moveLabelDown {
+  from {
+    left: -5px;
+    top: -10px;
+    transform: scale(0.9);
+  }
+  to {
+    left: 4px;
+    top: 20px;
+    transform: scale(1);
+  }
+}
+
+/* -------------Modal----------- */
+
+.ReactModal__Overlay {
+  background-color: transparent !important;
+  font-family: "MILIGRAM MEDIUM";
+  backdrop-filter: blur(10px);
+}
+
+.ReactModal__Content {
+  overflow: hidden !important;
+  width: calc(100%-10px) !important;
+  overflow-y: auto !important;
+}
+.ReactModal__Content:hover {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+/* width */
+.ReactModal__Content::-webkit-scrollbar {
+  width: 0 !important;
+  opacity: 0;
+}
+
+/* Track */
+.ReactModal__Content::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+@media screen and (max-width: 768px) {
+  .ReactModal__Content {
+    width: 90% !important;
+    margin: 0 auto;
+    inset: 10% 17px 40px !important;
+    padding: 10px 15px !important;
+  }
+}
+
+/* -----------------Customize scrollbar ----------------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* --------------- */
+input:-webkit-autofill {
+  background-color: transparent !important;
+}
+
+/* -----------------change border color on focus-------------------- */
+input:focus {
+  outline: none !important;
+  border-color: #00a99d !important;
+}
+textarea:focus {
+  outline: none !important;
+  border-color: #00a99d !important;
+}
+
+#selctBox {
+  outline: none !important;
+}
+#selectBox:focus {
+  border-color: #00a99d !important;
+}
+
+/* ------------field title animation-------------- */
+.select-field-container input:not(:focus):valid ~ span,
+.select-field-container input:focus ~ span {
+  transform: translate(0, -28px);
+  left: 0;
+  font-size: 13px;
+}
+.input-field-container input:not(:focus):valid ~ span,
+.input-field-container input:focus ~ span {
+  transform: translate(0, -28px);
+  left: 0;
+  font-size: 13px;
+}
+.field-container textarea:not(:focus):valid ~ span,
+.field-container textarea:focus ~ span{
+  transform: translate(0, -22px);
+  left: 0;
+  font-size: 13px;
+}
+.field-container span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 74%;
+  left: 5px;
+  transition: 0.5s;
+  display: inline-block;
+  line-height: normal;
+}
+.field-container textarea {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+}
+
+.input-field-container span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  left: 5px;
+  transition: 0.5s;
+  display: inline-block;
+  line-height: normal;
+}
+.input-field-container input {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+}
+
+.select-field-container span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  left: 5px;
+  transition: 0.5s;
+  display: inline-block;
+  line-height: normal;
+}
+.select-field-container input {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+}
+
+/* -------about page-------- */
+
+@media screen and (min-width: 768px) {
+  .about-box-override{
+    border-right:  0 !important;
+  }
+}
+
+

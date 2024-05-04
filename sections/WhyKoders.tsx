@@ -14,7 +14,7 @@ const Divider = dynamic(() => import("../components/Divider"), {
 });
 
 const Info = dynamic(
-  () => import("../components/section-comonents/why-koders/Info"),
+  () => import("../components/section-components/why-koders/Info"),
   {
     suspense: true,
   }

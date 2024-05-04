@@ -36,6 +36,6 @@ export { default as OurFamily } from "./pages-components/about/OurFamily";
 
 // ********** ---| SECTIONS COMPONENTS |--- *********
 // WHY KODERS SECTION COMPONENTS
-export { default as Info } from "./section-comonents/why-koders/Info";
+export { default as Info } from "./section-components/why-koders/Info";
 // PRICING SECTION COMPONENTS
-export { default as PricingCard } from "./section-comonents/pricing/PricingCard";
+export { default as PricingCard } from "./section-components/pricing/PricingCard";

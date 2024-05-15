@@ -16,6 +16,7 @@ import {
 } from "../components";
 import { sendClientDetails } from "../helper/webhook";
 import { faq, typeOfProjects } from "../helper/constant";
+import ErrorBoundary from "../components/ErrorBoundary";
 // import { useSetDataOnServer } from "../helper/careerHooks";
 
 export interface FormState {
@@ -63,28 +64,7 @@ const StartProject = () => {
         window.alert("Unable to record your response. Try again later.");
       }
       setShowLoader(false);
-      // TODO=> need to update code here
-      // const res = await sendData("project-request", {
-      //   client_company_name: value.company,
-      //   client_email: value.email,
-      //   project_estimated_budget: value.budget,
-      //   project_estimated_timeline: value.timeline,
-      //   client_firstname: value.fName,
-      //   client_lastname: value.lName,
-      //   client_reference: value.hearAboutUs,
-      //   client_company_jobrole: value.role,
-      //   client_phone_number: value.mobile,
-      //   project_description: value.aboutProject,
-      //   project_tags: technologies,
-      //   pricing_plan: value.pricingPlan,
-      // });
-      // setShowLoader(false);
-      // if (res.status === 200) {
-      //   window.alert("Your response has been recorded.");
-      //   helper.resetForm();
-      // } else {
-      //   window.alert("Unable to record your response. Try again later.");
-      // }
+      
     } catch (error) {
       setShowLoader(false);
     }
@@ -108,7 +88,10 @@ const StartProject = () => {
       <Head>
         <title>Start Project</title>
       </Head>
-      <Navbar />
+      <ErrorBoundary>
+        <Navbar />
+      </ErrorBoundary>
+      
       <div
         data-aos="fade-up"
         className="py-20 sm:py-28 w-[90%] md:w-[85%] mx-auto aos-animate"
@@ -143,6 +126,7 @@ const StartProject = () => {
         />
         <Divider className="mt-8 xxl:mt-16 xxl:pt-3 aos-animate" />
         {faq.map((item, i) => (
+          
           <Faq
             answer={item.answer}
             question={item.question}
@@ -152,7 +136,9 @@ const StartProject = () => {
           />
         ))}
       </div>
-      <Footer />
+      <ErrorBoundary>
+        <Footer />
+      </ErrorBoundary>
     </div>
   );
 };

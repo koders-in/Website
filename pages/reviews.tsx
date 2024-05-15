@@ -14,6 +14,7 @@ import axios from "axios";
 import { FadeLoader } from "react-spinners";
 import { shortReviewArray } from "../helper";
 import { discordReviews, listOfBestReviewsUsers } from "../helper/constant";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 const Testmonials = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -92,85 +93,92 @@ const Testmonials = () => {
       <Head>
         <title>Reviews</title>
       </Head>
-      <Navbar />
-      <div className="pb-10 pt-28">
-        <GradientText
-          className="text-[2.2rem] leading-none mb-3 md:mb-0 font-miligrambold  sm:text-[2.5rem] md:text-[2.8rem] mt-10 w-[90%] mx-auto text-center bg-gradient-to-r from-white to-main-teal"
-          text="Don't just take our word for it."
-        />
+      <ErrorBoundary>
+        <Navbar />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <div className="pb-10 pt-28">
+          <GradientText
+            className="text-[2.2rem] leading-none mb-3 md:mb-0 font-miligrambold  sm:text-[2.5rem] md:text-[2.8rem] mt-10 w-[90%] mx-auto text-center bg-gradient-to-r from-white to-main-teal"
+            text="Don't just take our word for it."
+          />
 
-        <p className="mt-2 text-[0.8rem] sm:text-[1.3rem] w-[80%] sm:w-1/2 mx-auto text-center text-main-light_white pb-2 font-miligramText400 leading-none">
-          Take a look at what some of our customers have to say about Koders.
-        </p>
-        <Divider className="mt-4 md:mt-14" />
-        {loading ? (
-          <div className="">
-            <FadeLoader
-              className="w-fit block mx-auto"
-              loading={loading}
-              color="#00a99d"
-            />
-          </div>
-        ) : (
-          <div className="flex gap-3 w-[85%] mx-auto flex-wrap">
-            <div className="w-full md:w-[45%] xl:w-[32%]">
-              {allReviews[0]?.map((item, i) => {
-                return (
-                  <TestmonialCard
-                    key={i}
-                    {...{
-                      description: item.snippet,
-                      logo: item.user.thumbnail,
-                      title: item.user.name,
-                      rating: item.rating,
-                      link: item?.user?.redirectTo || null,
-                    }}
-                  />
-                );
-              })}
+          <p className="mt-2 text-[0.8rem] sm:text-[1.3rem] w-[80%] sm:w-1/2 mx-auto text-center text-main-light_white pb-2 font-miligramText400 leading-none">
+            Take a look at what some of our customers have to say about Koders.
+          </p>
+          <Divider className="mt-4 md:mt-14" />
+          {loading ? (
+            <div className="">
+              <FadeLoader
+                className="w-fit block mx-auto"
+                loading={loading}
+                color="#00a99d"
+              />
             </div>
-            <div className="w-full md:w-[45%] xl:w-[32%]">
-              {allReviews[1]?.map((item, i) => {
-                return (
-                  <TestmonialCard
-                    key={i}
-                    {...{
-                      description: item.snippet,
-                      logo: item.user.thumbnail,
-                      title: item.user.name,
-                      rating: item.rating,
-                      link: item?.user?.redirectTo || null,
-                    }}
-                  />
-                );
-              })}
+          ) : (
+            <div className="flex gap-3 w-[85%] mx-auto flex-wrap">
+              <div className="w-full md:w-[45%] xl:w-[32%]">
+                {allReviews[0]?.map((item, i) => {
+                  return (
+                    <TestmonialCard
+                      key={i}
+                      {...{
+                        description: item.snippet,
+                        logo: item.user.thumbnail,
+                        title: item.user.name,
+                        rating: item.rating,
+                        link: item?.user?.redirectTo || null,
+                      }}
+                    />
+                  );
+                })}
+              </div>
+              <div className="w-full md:w-[45%] xl:w-[32%]">
+                {allReviews[1]?.map((item, i) => {
+                  return (
+                    <TestmonialCard
+                      key={i}
+                      {...{
+                        description: item.snippet,
+                        logo: item.user.thumbnail,
+                        title: item.user.name,
+                        rating: item.rating,
+                        link: item?.user?.redirectTo || null,
+                      }}
+                    />
+                  );
+                })}
+              </div>
+              <div className="w-full md:w-[45%] xl:w-[32%]">
+                {allReviews[2]?.map((item, i) => {
+                  return (
+                    <TestmonialCard
+                      key={i}
+                      {...{
+                        description: item.snippet,
+                        logo: item.user.thumbnail,
+                        title: item.user.name,
+                        rating: item.rating,
+                        link: item?.user?.redirectTo || null,
+                      }}
+                    />
+                  );
+                })}
+              </div>
             </div>
-            <div className="w-full md:w-[45%] xl:w-[32%]">
-              {allReviews[2]?.map((item, i) => {
-                return (
-                  <TestmonialCard
-                    key={i}
-                    {...{
-                      description: item.snippet,
-                      logo: item.user.thumbnail,
-                      title: item.user.name,
-                      rating: item.rating,
-                      link: item?.user?.redirectTo || null,
-                    }}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        )}
-        <Button
-          OnClick={() => handleNavigate("start-project")}
-          text="Get Started"
-          className="text-[0.8rem] xxl:text-[1rem] mx-auto block mt-8 sm:mt-12 bg-main-greenOpt-200 font-miligramMedium text-main-lightTeal py-[8px] sm:py-[10px] px-6 sm:px-9 rounded-lg border-[1px] border-main-lightTeal hover:bg-main-lightTeal hover:text-white"
-        />
-        <Divider className="mt-16 py-2" />
-      </div>
-      <Footer />
+          )}
+          <Button
+            OnClick={() => handleNavigate("start-project")}
+            text="Get Started"
+            className="text-[0.8rem] xxl:text-[1rem] mx-auto block mt-8 sm:mt-12 bg-main-greenOpt-200 font-miligramMedium text-main-lightTeal py-[8px] sm:py-[10px] px-6 sm:px-9 rounded-lg border-[1px] border-main-lightTeal hover:bg-main-lightTeal hover:text-white"
+          />
+          <Divider className="mt-16 py-2" />
+        </div>
+      </ErrorBoundary>
+      <ErrorBoundary>
+          <Footer />
+      </ErrorBoundary>
+      
     </div>
   );
 };

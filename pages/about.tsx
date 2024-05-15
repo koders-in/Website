@@ -223,9 +223,9 @@ const about = () => {
           <Divider className="h-32" />
         </Suspense>
       </div>
-      <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-        <Footer />
-      </Suspense>
+        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+          <Footer />
+        </Suspense>
     </div>
   );
 };

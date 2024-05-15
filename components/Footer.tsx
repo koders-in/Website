@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -18,6 +18,7 @@ const Footer = () => {
   const [hoverOnSocialMedia, setHoverOnSocialMedia] = useState<any>(false);
   const { jobs }: any = useContext(AppContext);
 
+
   const router = useRouter();
   const handleNavigate = (href: string) => {
     router.push(href);
@@ -35,8 +36,21 @@ const Footer = () => {
     }
   };
 
+  // const [stats,setStats] = useState({
+  //   stats:10
+  // })
+
+  
+
+  // const handleClick = () =>{
+  //   setStats(null)
+  // }
+
+
   return (
     <>
+      {/* stats{stats.stats}
+      <button onClick={handleClick}>Click me</button> */}
       <div
         id="footer"
         className="flex gap-4 md:gap-10 lg:gap-20 xl:gap-24 flex-col lg:flex-row justify-center pl-4 xsm:px-6 sm:pl-8 lg:pl-20 py-10 bg-main-secondary"

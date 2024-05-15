@@ -2,7 +2,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 
-import { homeBg, homeBgBottom } from "../assets";
+import { homeBg, homeBgBottom } from "../assets/index";
 
 const Divider = dynamic(() => import("../components/Divider"), {
   suspense: true,
@@ -18,18 +18,24 @@ const Hero = () => {
       <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
         <Divider className="mt-[28vh]" />
       </Suspense>
-      <Image
-        src={homeBg}
-        alt=""
-        className="absolute top-0 left-0 w-[70%] md:w-[30%]"
-        priority
-      />
-      <Image
-        src={homeBgBottom}
-        alt=""
-        className="absolute -bottom-10 right-0 w-[70%] md:w-[28%]"
-        priority
-      />
+      <div className=" absolute top-0 left-0 w-[50%] md:w-[30%]">
+        <Image
+          src={homeBg}
+          alt=""
+          // className=""
+          priority ={true}
+        />
+      </div>
+      <div className="absolute -bottom-10 right-0 w-[50%] md:w-[28%]">
+        <Image
+            src={homeBgBottom}
+            alt=""
+            
+            priority ={true}
+          />
+          
+      </div>
+      
       <h1 className="leading-[38px] sm:leading-[60px] text-[1.5rem] xsm:text-[2.5rem] sm:text-[4rem] text-white text-center m-0 p-0 font-medium font-miligrambold">
         Infrastructure for
       </h1>

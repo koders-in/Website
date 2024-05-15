@@ -34,13 +34,16 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     axios
       .get("/api", { headers: { home: true } })
-      .then((data) => {})
-      .catch((e) => {});
+      .then((response) => {})
+      .catch((e) => { 
+        console.error("Error fetching data:", e);
+      });
+
   }, []);
 
   return (
     <AppContext.Provider value={{ appContext, setAppContext, jobs, setJobs }}>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </AppContext.Provider>
   );
 }

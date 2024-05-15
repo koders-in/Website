@@ -13,6 +13,7 @@ import {
   Navbar,
 } from "../../components";
 import { blogs } from "../../helper/constant";
+import ErrorBoundary from "../../components/ErrorBoundary";
 
 const body = `INSTRUCTIONS FOR SUBMISSION:\n
 1. Attach your blog as a Word document.\n
@@ -54,51 +55,58 @@ const Blog = () => {
       <Head>
         <title>Blogs</title>
       </Head>
-      <Navbar />
-      <div className="pb-10 pt-28 w-[90%] mx-auto relative">
-        <Divider className="mt-9" />
-        <GradientText
-          aos="fade-up"
-          className="w-fit mx-auto text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold"
-          text="Blogs"
-        />
-        {/* <MainCard /> */}
-        <div className="flex flex-wrap md:flex-nowrap  gap-5 sm:gap-9 mt-10">
-          {[...blogs.slice(0, 2)].map((item) => (
-            <Card
-              customStyle="w-full md:w-[49%] lg:w-[49%] xl:w-[49%]"
-              key={item.id}
-              data={item}
-            />
-          ))}
-        </div>
-        <div className="flex justify-between items-stretch flex-wrap  gap-5 sm:gap-9 mt-10">
-          {[...blogs.slice(2, blogs.length)].map((item) => (
-            <Card key={item.id} data={item} />
-          ))}
-        </div>
-        <Divider className="h-20 py-10" />
-        <GradientText
-          aos="slide-left"
-          className="w-fit mx-auto text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold xxl:pt-10"
-          text="Wish your blog was here too?"
-        />
-        <p
-          data-aos="slide-right"
-          className="text-[0.8rem] sm:text-[1.3rem] text-main-light_white text-center font-miligramLight xxl:pb-10"
-        >
-          Submit your blog. Write to us at&nbsp;
-          <span
-            onClick={() => {
-              window.open(MAIL_TO);
-            }}
-            className="text-main-teal cursor-pointer hover:border-main-teal hover:border-b-2"
+      <ErrorBoundary>
+         <Navbar />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <div className="pb-10 pt-28 w-[90%] mx-auto relative">
+          <Divider className="mt-9" />
+          <GradientText
+            aos="fade-up"
+            className="w-fit mx-auto text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold"
+            text="Blogs"
+          />
+          {/* <MainCard /> */}
+          <div className="flex flex-wrap md:flex-nowrap  gap-5 sm:gap-9 mt-10">
+            {[...blogs.slice(0, 2)].map((item) => (
+              <Card
+                customStyle="w-full md:w-[49%] lg:w-[49%] xl:w-[49%]"
+                key={item.id}
+                data={item}
+              />
+            ))}
+          </div>
+          <div className="flex justify-between items-stretch flex-wrap  gap-5 sm:gap-9 mt-10">
+            {[...blogs.slice(2, blogs.length)].map((item) => (
+              <Card key={item.id} data={item} />
+            ))}
+          </div>
+          <Divider className="h-20 py-10" />
+          <GradientText
+            aos="slide-left"
+            className="w-fit mx-auto text-[2.2rem] leading-none mb-3 md:mb-0 md:leading-normal  sm:text-[2.8rem] text-center bg-gradient-to-r from-white to-main-teal font-miligrambold xxl:pt-10"
+            text="Wish your blog was here too?"
+          />
+          <p
+            data-aos="slide-right"
+            className="text-[0.8rem] sm:text-[1.3rem] text-main-light_white text-center font-miligramLight xxl:pb-10"
           >
-            info@koders.in
-          </span>
-        </p>
-      </div>
-      <Footer />
+            Submit your blog. Write to us at&nbsp;
+            <span
+              onClick={() => {
+                window.open(MAIL_TO);
+              }}
+              className="text-main-teal cursor-pointer hover:border-main-teal hover:border-b-2"
+            >
+              info@koders.in
+            </span>
+          </p>
+        </div>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Footer />
+      </ErrorBoundary>
+     
     </div>
   );
 };

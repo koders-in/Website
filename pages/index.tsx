@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 
 import "aos/dist/aos.css";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 const Footer = dynamic(() => import("../components/Footer"), {
   suspense: true,
@@ -39,9 +40,6 @@ const Testmonials = dynamic(() => import("../sections/Testmonials"), {
 const WhyKoders = dynamic(() => import("../sections/WhyKoders"), {
   suspense: true,
 });
-// const Mentor = dynamic(() => import("../sections/Mentor"), {
-//   suspense: true,
-// });
 
 export default function Home() {
   React.useEffect(() => {
@@ -51,7 +49,13 @@ export default function Home() {
       duration: 1500,
     });
   }, []);
-  // ------------
+
+  // Check if WEBHOOK_URL environment variable is set
+  const webhookUrl = process.env.WEBHOOK_URL;
+
+  if (!webhookUrl) {
+    console.error("Webhook URL is missing. Please set the WEBHOOK_URL environment variable.");
+  }
 
   return (
     <div className="bg-main-primary overflow-hidden relative">
@@ -59,33 +63,51 @@ export default function Home() {
         <title>Koders</title>
       </Head>
       <>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Navbar />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Hero />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <WhyKoders />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Clients />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Technologies />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Testmonials />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Pricing />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Newsletter />
-        </Suspense>
-        <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-          <Footer />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <Navbar />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <Hero />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <WhyKoders />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <Clients />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <Technologies />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <Testmonials />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <Pricing />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <Newsletter />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
+            <Footer />
+          </Suspense>
+        </ErrorBoundary>
       </>
     </div>
   );

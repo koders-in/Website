@@ -107,7 +107,32 @@ const Cancellation = () => (
           that any application or transaction fees that may be in place with
           other service providers, including the gateway, may be carried over to
           (and collected and retained by) Koders, and you hereby agree that
-          Koders may keep all such
+          Koders may keep all such fees. Any additional costs or fees associated
+          with the transaction process will be clearly communicated to you
+          before finalizing the purchase.
+          <br />
+          <br />
+          By proceeding with the purchase of any services from Koders, you
+          acknowledge and agree to these terms, understanding that any payments
+          made are generally non-refundable except under the specific conditions
+          outlined above. You also agree that Koders reserves the right to amend
+          these terms and prices of services at any time, which will be
+          effective upon being posted on our website or communicated to you
+          through the appropriate channels.
+          <br />
+          <br />
+          We encourage you to read the service descriptions carefully,
+          understand the scope of the services you are purchasing, and consider
+          any potential additional costs that might arise during the execution
+          of services. If you have any doubts or require clarification on any
+          aspect of our services or terms, please do not hesitate to contact our
+          customer support team who are available to provide assistance and
+          ensure your satisfaction prior to making any commitment.
+          <br />
+          <br />
+          Thank you for choosing Koders. We look forward to successfully
+          delivering your projects and surpassing your expectations with our
+          quality and dedication.
         </p>
       </div>
     </div>

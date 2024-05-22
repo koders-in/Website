@@ -5,6 +5,7 @@ import React, { useEffect, Suspense } from "react";
 
 import { aboutStats, dataOfMapAnimation } from "../helper/constant";
 import { aim, mission, quoteDown, quoteUp } from "../assets";
+import ErrorBoundary from "../components/ErrorBoundaries";
 
 const Footer = dynamic(() => import("../components/Footer"), {
   suspense: true,
@@ -49,6 +50,7 @@ const about = () => {
 
   return (
     <div className="font-miligrambold bg-main-primary pt-28 relative overflow-hidden">
+      <ErrorBoundary>
       <Head>
         <title>About</title>
       </Head>
@@ -224,8 +226,11 @@ const about = () => {
         </Suspense>
       </div>
       <Suspense fallback={<div className="text-main-teal">Loading...</div>}>
-        <Footer />
+        
+          <Footer />
+        
       </Suspense>
+      </ErrorBoundary>
     </div>
   );
 };

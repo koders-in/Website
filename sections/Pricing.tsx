@@ -17,7 +17,7 @@ const GradientText = dynamic(() => import("../components/GradientText"), {
 });
 
 const PricingCard = dynamic(
-  () => import("../components/section-comonents/pricing/PricingCard"),
+  () => import("../components/section-components/pricing/PricingCard"),
   {
     suspense: true,
   }

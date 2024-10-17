@@ -6,8 +6,9 @@ import AnimatedBorder from "./AnimatedBorder";
 import { footerButtons, socialMediaHandles, socialMediaTealIcons } from "../helper/constant";
 import AppContext from "./AppContext";
 import Link from "next/link";
-
+import { useAptabase } from '@aptabase/react';
 const Footer = () => {
+  const { trackEvent } = useAptabase();
   const [onHover, setOnHover] = useState(false);
   const [hoverOnMob, setHoverOnMob] = useState(false);
   const [hoverOnSocialMedia, setHoverOnSocialMedia] = useState<any>(false);
@@ -54,6 +55,7 @@ const Footer = () => {
                 key={i}
                 className="h-7 cursor-pointer brightness-50 hover:brightness-100"
                 onClick={() => {
+                  trackEvent('Social_Media', { Social_Media:item.title });
                   window.open(item.url, "_blank");
                 }}
                 onMouseEnter={() => setHoverOnSocialMedia(i)}
@@ -119,6 +121,7 @@ const Footer = () => {
                   key={j}
                   className="relative group text-[0.9rem] md:text-[1.2rem] text-main-light_white mt-3 cursor-pointer font-miligramTextBook font-light hover:text-white w-fit"
                   onClick={() => {
+                    trackEvent('Footer_Button', { List_Item:item.title });
                     handleNavigateTo(item);
                   }}
                 >

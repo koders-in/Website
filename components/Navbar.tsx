@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-
+import { useAptabase } from '@aptabase/react';
 import { discordSvg, discordWhite, logo } from "../assets/index";
 
 const Button = dynamic(() => import("./Button"), {
@@ -15,6 +15,7 @@ const AnimatedBorder = dynamic(() => import("./AnimatedBorder"), {
 });
 
 const Navbar = () => {
+  const { trackEvent } = useAptabase();
   const router = useRouter();
   const currentRoute = router?.pathname;
   const handleNavigate = (href: string) => {
@@ -71,6 +72,7 @@ const Navbar = () => {
           <Button
             OnClick={() => {
               handleNavigate("/start-project");
+              trackEvent('Start-Project');
             }}
             text="Get Started"
             className="font-miligramMedium text-[0.8rem] xxl:text-[1rem] bg-main-greenOpt-200 border-[1px] border-main-lightTeal text-main-lightTeal px-4 py-[0.4rem] sm:py-[0.55rem] sm:px-8 rounded-lg hover:bg-main-lightTeal hover:text-white"

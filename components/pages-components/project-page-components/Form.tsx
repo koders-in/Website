@@ -10,7 +10,7 @@ import TextArea from "../jobs/TextArea";
 import { PropagateLoader } from "react-spinners";
 import { projectDataSchema } from "../../../helper/validate";
 import { pricingList, timeLineList } from "../../../helper/constant";
-
+import { useAptabase } from '@aptabase/react';
 interface Form {
   [key: string]: string;
 }
@@ -65,6 +65,7 @@ const Form = ({
     const elm = document.getElementById("abproject");
     elm.focus();
   }, []);
+  const { trackEvent } = useAptabase();
   return (
     <Formik
       className="w-[97%] mx-auto mt-10 font-miligramMedium"
@@ -243,7 +244,7 @@ const Form = ({
               disabled={showLoader}
               styleObj={showLoader ? { pointerEvents: "none" } : {}}
               type="submit"
-              OnClick={handleSubmit}
+              OnClick={()=>{handleSubmit() ; trackEvent('Start-Project',{label:"Start-project_Submit-Button"});}}
               className="mx-auto text-[0.8rem] xxl:text-[1rem] py-[0.4rem] sm:py-[0.6rem] w-[7.3rem] sm:w-[9.5rem] block mt-16 bg-main-greenOpt-200 font-miligramMedium text-main-lightTeal  rounded-lg border-[1px] border-main-lightTeal hover:bg-main-lightTeal hover:text-white"
               text="Submit"
             />

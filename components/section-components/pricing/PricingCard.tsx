@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import { useAptabase } from '@aptabase/react';
 import Button from "../../Button";
 import { useRouter } from "next/router";
 import { check, mostPopular } from "../../../assets";
@@ -24,6 +24,8 @@ const PricingCard = ({
   const handleNavigate = (href: string) => {
     router.push(href);
   };
+  const { trackEvent } = useAptabase();
+
   return (
     <div
       data-aos={aos}
@@ -60,6 +62,7 @@ const PricingCard = ({
       </div>
       <Button
         OnClick={() => {
+          trackEvent('Pricing_Selected_Price', {Seleted_price:price});
           setAppContext(`${exactPrice}`);
           handleNavigate("start-project");
         }}

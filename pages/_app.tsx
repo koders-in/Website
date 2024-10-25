@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-
+import { AptabaseProvider } from '@aptabase/react';
 import { AppContext } from "../components";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -40,7 +40,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <AppContext.Provider value={{ appContext, setAppContext, jobs, setJobs }}>
+        <AptabaseProvider appKey={process.env.NEXT_PUBLIC_APTAKEY}>
       <Component {...pageProps} />
+      </AptabaseProvider>
     </AppContext.Provider>
   );
 }
